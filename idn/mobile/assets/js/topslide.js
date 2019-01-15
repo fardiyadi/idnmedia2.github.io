@@ -1,30 +1,37 @@
-// Thanks to http://youmightnotneedjquery.com/
+//function addClass(el, className) {
+//    var el = document.querySelectorAll(el);
+//    
+//    for (i = 0; i < el.length; i++) {
+//      if (el.classList) {
+//        el[i].classList.add(className);
+//      } else {
+//        el[i].className += ' ' + className;
+//      }
+//    }
+//}
+//
+//
+//function removeClass(el, className) {
+//    var el = document.querySelectorAll(el);
+//    
+//    for (i = 0; i < el.length; i++) {
+//
+//      if (el[i].classList) {
+//        el[i].classList.remove(className);
+//      } else {
+//        el[i].className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+//      }
+//    }
+//}
 
-function addClass(el, className) {
-    var el = document.querySelectorAll(el);
-    
-    for (i = 0; i < el.length; i++) {
-      if (el.classList) {
-        el[i].classList.add(className);
-      } else {
-        el[i].className += ' ' + className;
-      }
-    }
+
+function show_big() {
+   var element = document.getElementById("big");
+   element.classList.add("shown");
+    $('body').css('overflow', 'hidden');
 }
-
-
-function removeClass(el, className) {
-    var el = document.querySelectorAll(el);
-    
-    for (i = 0; i < el.length; i++) {
-
-      if (el[i].classList) {
-        el[i].classList.remove(className);
-      } else {
-        el[i].className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
-      }
-    }
+function remove_big() {
+   var element = document.getElementById("big");
+   element.classList.remove("shown");
+    $('body').css('overflow', 'scroll');
 }
-
-
- 

@@ -772,21 +772,44 @@ function callAnalytics(path, queryString) {
     
     <!-- Banner idn_ads Top Slide -->
         
+        
+        <style>@import url("assets/css/topslide.css");</style>
+        <div class="topads">
+            
+            <div class="big_topads" id="big">
+                <img src="assets/images/close.png" class="popup_close_btn"  onclick="remove_big()">
+                <a href="#" target="_blank">
+                    <img src="320x480.jpg">
+                </a>
+            </div>
+            
+            <div class="mini_topads" id="mini" onclick="show_big()"> 
+                <img src="320x150.jpg">
+            </div>
+        </div>
+        <script src="assets/js/topslide.js"></script>
+        
+         
+<!--
         <style>@import url("assets/css/topslide.css");</style>
         <div class="topads">
             
             <div class="big_topads" id="big">
                 <img src="assets/images/close.png" class="popup_close_btn"  onclick="removeClass('.big_topads', 'shown')">
                 <a href="#" target="_blank">
-                    <img src="banner/320x480.jpg">
+                    <img src="320x480.jpg">
                 </a>
             </div>
             
             <div class="mini_topads" id="mini" onclick="addClass('.big_topads', 'shown')"> 
-                <img src="banner/320x150.jpg">
+                <img src="320x150.jpg">
             </div>
         </div>
         <script src="assets/js/topslide.js"></script>
+-->
+        
+        
+        
         
 <!--        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
         
