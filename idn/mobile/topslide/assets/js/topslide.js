@@ -27,11 +27,11 @@
 
 function show_big() {
    var element = document.getElementById("big");
-   element.classList.add("shown");
+   element.classList.add("show_big_ads");
     $('body').css('overflow', 'hidden');
 }
 function remove_big() {
    var element = document.getElementById("big");
-   element.classList.remove("shown");
+   element.classList.remove("show_big_ads");
     $('body').css('overflow', 'scroll');
 }
