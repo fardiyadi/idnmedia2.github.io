@@ -138,7 +138,7 @@ ul {
 }
 
 #wrapper.toggled {
-  padding-left: 250px;
+    padding-left: 250px;
 }
 
 #sidebar-wrapper {
@@ -157,7 +157,8 @@ ul {
 }
 
 #wrapper.toggled #sidebar-wrapper {
-  width: 250px;
+    width: 250px;
+    height: calc(100% - 66px);
 }
 
 #page-content-wrapper {

@@ -15,14 +15,21 @@
         <!-- Custom styles  -->
         <link href="../assets/css/idn_ads_style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+        
+        <!-- include sidebar.html -->
+        <script> 
+            $(function(){
+              $("#samping").load("../sidebar.html"); 
+            });
+        </script>
     </head>
 <body>
     
-        <!-- /#sidebar-wrapper -->
-    
-
-    
-    <?php include '../sidebar.php';?>
+    <!-- /#sidebar-wrapper -->
+    <div id="samping"></div>
         
         <!-- Page Content -->
 
@@ -81,33 +88,6 @@
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle, #menu-toggle2").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
-    
-    <script>
-    $('.toggle').click(function(e) {
-        e.preventDefault();
-
-        var $this = $(this);
-
-        if ($this.next().hasClass('show')) {
-            $this.next().removeClass('show');
-            $this.next().slideUp(350);
-        } else {
-            $this.parent().parent().find('li .inner').removeClass('show');
-            $this.parent().parent().find('li .inner').slideUp(350);
-            $this.next().toggleClass('show');
-            $this.next().slideToggle(350);
-        }
-    });
-    </script>
-    
-    
 
 </body>
 
