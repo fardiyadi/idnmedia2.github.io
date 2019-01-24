@@ -33,6 +33,12 @@
     transition: all 0.3s ease;
     border: 3px solid #fff;
 }
+#home_awal h1 {
+    font-size: 40px;
+    font-family: 'Cabin', sans-serif;
+    margin: 4% 0;
+    font-weight: bold;
+}
 .section_content {
     top: 45%;
     color: white;
@@ -288,7 +294,10 @@ ul {
         background-image: none;
         background-color: white;
     }
-
+    #home_awal h1 {
+        font-size: 32px;
+        margin: 10% 0;
+    }
     .img-fluid {
         margin-bottom: 10px;
     }
