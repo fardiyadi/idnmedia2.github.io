@@ -222,6 +222,9 @@ ul {
     background: #292929;
     transition: all 0.5s ease;
 }
+.sidebar-brand > a:hover {
+    background-color: #fff!important;
+}
 
 .sidebar-nav li a:active, .sidebar-nav li a:focus {
   text-decoration: none;
