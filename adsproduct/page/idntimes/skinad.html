@@ -29,7 +29,25 @@
     </head>
 <body>
     
-        <!-- /#sidebar-wrapper -->
+        
+    
+    <div class="loader">
+        <div class="bouncybox">
+           <img src="http://www.idn.media/assets/img/logo/idn-media.png" class="img-fluid">
+        </div>
+    </div>
+
+    <script>
+        $(window).on("load", function() {
+            "use strict";
+            $(".loader").fadeOut(1200);
+
+        });
+    </script>
+    
+    
+    
+    <!-- /#sidebar-wrapper -->
     
 
      <div id="samping"></div>
@@ -45,10 +63,10 @@
             <div id="page-content-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-7 animated fadeIn delay-1s">
                         <img src="screenshots/skinad.png" class="img-fluid">
                     </div>
-                    <div class="col-md-5 spec-des">
+                    <div class="col-md-5 spec-des animated fadeIn delay-1sets">
                         <h1>Skinad</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                         <h3>Specification :</h3>
@@ -72,9 +90,9 @@
                             <li>CPM</li>
                         </ul>
 
-                        <a href="../../preview/desktop/idntimes/idntimes-skinad.html" target="_blank" class="preview">Go To Preview</a>
+                        <a href="../../preview/desktop/idntimes/idntimes-skinad.html" target="_blank" class="preview animated bounceIn delay-2s">Go To Preview</a>
                         
-                        <a href="#menu-toggle2" id="menu-toggle2" class="d-sm-none d-md-inline-block browse">Browse Other Ads</a>
+                        <a href="#menu-toggle2" id="menu-toggle2" class="d-sm-none d-md-inline-block browse animated bounceIn delay-2sets">Browse Other Ads</a>
                         
                     </div>
                 </div>
