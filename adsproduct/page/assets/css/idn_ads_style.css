@@ -278,12 +278,19 @@ ul {
     #wrapper {
         margin-top: 66px;
     }
+    .wrappermin {
+        margin-top: 0!important;
+    }
+    .sidebar2 {
+        height: 100%!important;
+    }
 }
 @media screen and (max-width:480px){
     #bg-image {
         background-image: none;
         background-color: white;
     }
+
     .img-fluid {
         margin-bottom: 10px;
     }
