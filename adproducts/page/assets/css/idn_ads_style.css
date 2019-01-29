@@ -72,7 +72,7 @@ body {
     background-image: url(../images/bg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     width: auto;
     background-attachment: fixed;
 }
@@ -92,7 +92,7 @@ body {
     border: 2px solid #ed2028;
     transition: all 0.5s ease;
     font-weight: bold;
-    margin: 0 10px;
+    margin: 0;
 }
 .spec-des > a.preview:hover {
     text-decoration: none;
@@ -134,7 +134,7 @@ body {
     list-style: disc;
 }
 .mobile-ss > img {
-    max-width: 320px;
+    max-width: 400px;
 }
 ul {
     list-style: none;
