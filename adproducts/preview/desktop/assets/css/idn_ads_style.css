@@ -1,0 +1,124 @@
+.text-center {
+    text-align: center!important;
+}
+.idn_ads_1 {
+    background-color: grey;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    display: block;
+    padding: 5px;
+}
+.bg_red {
+    background-color: red!important;
+}
+.leaderboard_1 {
+    width: 970px;
+    height: 250px;
+}
+.leaderboard_2 {
+    width: 970px;
+    height: 90px;
+}
+.leaderboard_3 {
+    width: 728px;
+    height: 90px;
+}
+.med_rect {
+    width: 300px;
+    height: 250px;
+}
+.big_rect {
+    width: 300px;
+    height: 600px;
+}
+.in_feed {
+    width: 728px;
+    height: 90px;
+    display: inline-block;
+}
+.in_article {
+    width: 728px;
+    height: 90px;
+    display: inline-block;
+}
+.skin_ad {
+    width: 90px;
+    height: 600px;
+}
+.popup_ad {
+    width: 600px;
+    height: 400px;
+    box-shadow: 0px 10px 20px #000;
+}
+.sticky_bot {
+    width: 728px;
+    height: 90px;
+}
+.rotate_l {
+    -webkit-transform: rotate(90deg);	
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.ads_spec {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    font-family: 'Nunito Sans', sans-serif;
+    display: inline-block;
+    color: #fff!important;
+}
+.ads_spec h2 {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff!important;
+}
+.ads_spec h3 {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff!important;
+}
+.ads_spec h4 {
+    font-size: 18px!important;
+    font-weight: bold;
+    margin: 5px!important;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff!important;
+}
+.ads_spec h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff!important;
+}
+.ads_spec p {
+    font-size: 20px;
+    margin: auto;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.fsize_14  {
+    font-size: 14px!important;
+    margin: 0!important;
+}
+.fsize_16  {
+    font-size: 16px!important;
+    margin: 0!important;
+    line-height: 1.3!important;
+}
+.marbot_15 {
+    margin-bottom: 15px!important;
+}
+.marbot_10 {
+    margin-bottom: 10px!important;
+}
+.marbot_20 {
+    margin-bottom: 20px!important;
+}
