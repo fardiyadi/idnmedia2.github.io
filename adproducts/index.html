@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="IDN Media is a multi-platform media company for Millennials and Gen Z in Indonesia">
+        <meta name="description" content="IDN Media is a multi-platform media company for Millennials and Gen Z in Indonesia, 50 million monthly unique audience across all IDN Media owned properties">
         <meta name="author" content="IDN Media">
 
         <title>IDN Media Sales Products</title>
@@ -31,6 +31,7 @@
         <!-- Menu Sidebar -->
     
         <div id="menubtn" class="menubtn" onclick="showhideMenu()" style="opacity: 0;">Hide Menu</div>
+        <div id="sidebar-overlay" onclick="showhideMenu()"></div>
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav accordion">
                 
@@ -787,15 +788,19 @@
             function showhideMenu() {
                 var menubtn1 = document.getElementById("menubtn");
                 var menu = document.getElementById("sidebar-wrapper");
+                var menuover = document.getElementById("sidebar-overlay");
 
                 if (menu.style.width === "250px") {
                     menu.style.width = "0px";
                     menubtn1.innerHTML = "Show Menu"; 
                     menubtn1.style.left = "0";
+                    menuover.style.width = "0px";
+                    
                 } else {
                     menu.style.width = "250px";
                     menubtn1.innerHTML = "Hide Menu"; 
                     menubtn1.style.left = "250px";
+                    menuover.style.width = "100vw";
                 }
             }
         </script> 
