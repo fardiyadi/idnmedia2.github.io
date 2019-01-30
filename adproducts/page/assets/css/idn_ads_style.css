@@ -134,7 +134,10 @@ body {
     list-style: disc;
 }
 .mobile-ss > img {
-    max-width: 400px;
+    max-width: 300px;
+}
+.mobile2-ss > img {
+    max-width: 450px;
 }
 ul {
     list-style: none;
