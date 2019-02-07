@@ -25,37 +25,32 @@
     font-size: 16px;
 }
 #home_awal {
-    background-image: url(../images/bg1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100vh;
     width: auto;
-    background-attachment: fixed;
 }
 #home_awal a {
-    color: red;
+    color: white;
     position: relative;
     display: inline-block;
-    border: 3px solid #fff;
+    border: 3px solid red;
     padding: 10px 40px;
     font-size: 20px;
     font-weight: bold;
-    background-color: #fff;
+    background-color: red;
     border-radius: 40px;
     transition: all 0.3s ease;
 }
 #home_awal a:hover {
     text-decoration: none;
-    color: #fff;
-    background-color: transparent;
     transition: all 0.3s ease;
-    border: 3px solid #fff;
+    box-shadow: 0px 3px 5px #333;
 }
 #home_awal h1 {
     font-size: 40px;
     font-family: 'Cabin', sans-serif;
     margin: 4% 0;
     font-weight: bold;
+    text-shadow: 1px 1px 5px #626262;
 }
 .section_content {
     top: 45%;
@@ -75,6 +70,7 @@ body {
     background-image: url(../images/bg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     height: 100%;
     width: auto;
     background-attachment: fixed;
@@ -251,6 +247,10 @@ ul {
     color: #fff;
     background: #292929;
     transition: all 0.5s ease;
+}
+.aktif {
+  background-color: #292929;
+  color: #fff!important;
 }
 .sidebar-brand > a:hover {
     background-color: #fff!important;

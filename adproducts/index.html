@@ -50,7 +50,7 @@
                         <img src="page/assets/images/idn-times.png" class="img-fluid">
                         <i class="fa fa-angle-down "></i>
                     </a>
-                    <ul class="inner nakma">
+                    <ul class="inner nakma" onclick="myFunction(event)">
                         <!-- idntimes display ads -->
                         <li>
                             <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Display</a>
@@ -311,7 +311,7 @@
                         <img src="page/assets/images/popbela.png" class="img-fluid">
                         <i class="fa fa-angle-down "></i>
                     </a>
-                    <ul class="inner nakma">
+                    <ul class="inner nakma" onclick="myFunction(event)">
                         <!-- popbela display ads -->
                         <li>
                             <a href="#" class="toggle"><i class="fa fa-angle-down"></i>Display</a>
@@ -511,7 +511,7 @@
                         <img src="page/assets/images/popmama.png" class="img-fluid">
                         <i class="fa fa-angle-down "></i>
                     </a>
-                    <ul class="inner nakma">
+                    <ul class="inner nakma" onclick="myFunction(event)">
                         <!-- popmama display ads -->
                         <li>
                             <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Display</a>
@@ -689,7 +689,7 @@
                         <img src="page/assets/images/yummy.png" class="img-fluid">
                         <i class="fa fa-angle-down "></i>
                     </a>
-                    <ul class="inner nakma">
+                    <ul class="inner nakma" onclick="myFunction(event)">
                         <!-- yummy native video -->
                         <li>
                             <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Native Video</a>
@@ -755,10 +755,11 @@
             </ul>
         </div>
         
+        
         <div id="home_awal">
             <div class="section_content col-md-8 offset-md-2">
                 <img src="page/assets/images/ads-device.png" class="img-fluid animated fadeIn delay-1s" style="max-width: 500px;">
-                <h1 class="animated fadeIn delay-1sets"><span style="color: red; font-weight: bold;">50 million</span> monthly unique audience across all IDN Media owned properties</h1>
+                <h1 class="animated fadeIn delay-1sets"><span style="color: red; font-weight: bold; text-shadow: none;">50 Million</span> monthly unique audience across all IDN Media owned properties</h1>
                 <a onclick="showhideMenu()" id="menubtn" class="menubtn animated fadeIn delay-2s" >Browse Our Ads</a>
             </div> 
         </div>
@@ -803,7 +804,17 @@
                     menuover.style.width = "100vw";
                 }
             }
-        </script> 
+        </script>
+
+        <script>
+            function myFunction(e) {
+                var elems = document.querySelectorAll(".aktif");
+                [].forEach.call(elems, function(el) {
+                    el.classList.remove("aktif");
+                });
+                e.target.className = "aktif";
+            }
+        </script>
         
         <script>
             function remove_home() {
