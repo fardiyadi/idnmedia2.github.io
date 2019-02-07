@@ -52,6 +52,7 @@
     font-weight: bold;
     text-shadow: 1px 1px 5px #626262;
 }
+
 .section_content {
     top: 45%;
     color: white;
@@ -97,6 +98,9 @@ body {
     text-decoration: none;
     transition: all 0.5s ease;
     border-radius: 20px;
+}
+.preview > .fa {
+    margin-left: 10px;
 }
 .spec-des > a.browse {
     background-color: #f6f6f6;
@@ -335,10 +339,6 @@ ul {
     }
 }
 @media screen and (max-width:480px){
-    #body {
-        background-image: none;
-        background-color: white;
-    }
     #home_awal h1 {
         font-size: 32px;
         margin: 10% 0;
