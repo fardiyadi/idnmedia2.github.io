@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 .menubtn {
     background-color: #ed2028;
     display: inline-block;
@@ -43,14 +44,14 @@
 #home_awal a:hover {
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0px 3px 5px #333;
+    box-shadow: 0px 2px 5px #171717e6;
 }
 #home_awal h1 {
     font-size: 40px;
     font-family: 'Cabin', sans-serif;
     margin: 4% 0;
     font-weight: bold;
-    text-shadow: 1px 1px 5px #626262;
+    /* text-shadow: 2px 1px 5px #3a5471e6; */
 }
 
 .section_content {
