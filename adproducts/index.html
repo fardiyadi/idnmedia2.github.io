@@ -29,36 +29,41 @@
             }
         </style>
         <!-- Menu Sidebar -->
+
+        <nav id="navbar-cus" class="navbar navbar-custom fixed-top">
+            <div class="container-fluid">
+                  <div class="navbar-header">
+                      <i class="fa fa-bars" onclick="showhideMenu()"></i>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="page/assets/images/idn-ads.png" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+              </nav>
     
-        <div id="menubtn" class="menubtn" onclick="showhideMenu()" style="opacity: 0;">Hide Menu</div>
-        <div id="sidebar-overlay" onclick="showhideMenu()"></div>
+        <!-- <div id="menubtn" class="menubtn" onclick="showhideMenu()" style="opacity: 0;">Hide Menu</div>
+        <div id="sidebar-overlay" onclick="showhideMenu()"></div> -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav accordion">
-                
-                <!-- logo idn media -->
-                
-                <li class="sidebar-brand">
-                    <a href="http://www.idn.media/" target="_blank"> 
-                        <img src="http://www.idn.media/assets/img/logo/idn-media.png" class="img-fluid">
-                    </a>
-                </li>
-              
+
                 <!-- idntimes -->              
                 
                 <li>
                     <a class="toggle logo-img" href="javascript:void(0);">
                         <img src="page/assets/images/idn-times.png" class="img-fluid">
-                        <i class="fa fa-angle-down "></i>
+                        <i class="fa fa-angle-right"></i>
                     </a>
                     <ul class="inner nakma" onclick="myFunction(event)">
                         <!-- idntimes display ads -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Display</a>
+                            <a href="#" class="toggle">
+                                <i class="fa fa-angle-right"></i>
+                                Display</a>
                             <ul class="inner nakwa">
                                 
                                 <!-- idntimes display mobile -->
                                 <li>
-                                    <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Mobile</a>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Mobile</a>
                                     <ul class="inner nakga">
                                         <li>
                                             <a href="page/m.idntimes/inart1-1.html" target="myiframe" onclick="remove_home()">In Article 1</a>
@@ -104,7 +109,7 @@
                                 
                                 <!-- idntimes display desktop -->
                                 <li>
-                                    <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Desktop</a>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Desktop</a>
                                     <ul class="inner nakga">
                                         <li>
                                             <a href="page/idntimes/br-1.html" target="myiframe" onclick="remove_home()">Big Rectangle 1</a>
@@ -162,7 +167,7 @@
                         
                         <!-- idntimes content -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Content</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Content</a>
                             <ul class="inner nakwa">
                                 <!-- idntimes content native editorial -->
                                 <li>
@@ -203,7 +208,7 @@
                         
                         <!-- idntimes social media -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Social</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Social</a>
                             <ul class="inner nakwa">
                                 <!-- idntimes social media facebook live poll -->
                                 <li>
@@ -249,7 +254,7 @@
                         
                         <!-- idntimes video -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Video</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Video</a>
                             <ul class="inner nakwa">
                                  <li>
                                     <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home()">Video Placement</a>
@@ -259,7 +264,7 @@
                         
                         <!-- idntimes online activation -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Online Activation</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Online Activation</a>
                             <ul class="inner nakwa">
                                  <li>
                                     <a href="page/idntimes/on-act.html" target="myiframe" onclick="remove_home()">Online Activation</a>
@@ -269,7 +274,7 @@
                         
                         <!-- idntimes offline activation -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Offline Activation</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Offline Activation</a>
                             <ul class="inner nakwa">
                                 <!-- idntimes offline ims -->
                                 <li>
@@ -309,7 +314,7 @@
                 <li>
                     <a class="toggle logo-img" href="javascript:void(0);">
                         <img src="page/assets/images/popbela.png" class="img-fluid">
-                        <i class="fa fa-angle-down "></i>
+                        <i class="fa fa-angle-right"></i>
                     </a>
                     <ul class="inner nakma" onclick="myFunction(event)">
                         <!-- popbela display ads -->
@@ -420,7 +425,7 @@
                         
                         <!-- popbela content -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Content</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Content</a>
                             <ul class="inner nakwa">
                                 <li>
                                     <a href="page/popbela/cont-native.html" target="myiframe" onclick="remove_home()">Native Editorial</a>
@@ -439,7 +444,7 @@
                         
                         <!-- popbela social -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Social</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Social</a>
                             <ul class="inner nakwa">
                                 <li>
                                     <a href="page/idntimes/sos-fbpoll.html" target="myiframe" onclick="remove_home()">Facebook Live Poll</a>
@@ -470,7 +475,7 @@
                         
                         <!-- popbela video -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Video</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Video</a>
                             <ul class="inner nakwa">
                                 <li>
                                     <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home()">Video Placement</a>
@@ -480,7 +485,7 @@
                         
                         <!-- popbela online activation -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Online Activation</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Online Activation</a>
                             <ul class="inner nakwa">
                                 <li>
                                     <a href="#" target="myiframe" onclick="remove_home()">Online Activation</a>
@@ -490,7 +495,7 @@
                         
                         <!-- popbela offline activation -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Offline Activation</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Offline Activation</a>
                             <ul class="inner nakwa">
                                 <li>
                                     <a href="page/popbela/off-act-bfa.html" target="myiframe" onclick="remove_home()">BeautyFest Asia</a>
@@ -509,18 +514,18 @@
                 <li>
                     <a class="toggle logo-img" href="javascript:void(0);">
                         <img src="page/assets/images/popmama.png" class="img-fluid">
-                        <i class="fa fa-angle-down "></i>
+                        <i class="fa fa-angle-right"></i>
                     </a>
                     <ul class="inner nakma" onclick="myFunction(event)">
                         <!-- popmama display ads -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Display</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Display</a>
                             
                             <ul class="inner nakwa">
                                 
                                 <!-- popmama display ads mobile -->
                                 <li>
-                                    <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Mobile</a>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Mobile</a>
                                     <ul class="inner nakga">
                                         <li>
                                             <a href="page/m.popmama/inart1.html" target="myiframe" onclick="remove_home()">In Article 1</a>
@@ -548,7 +553,7 @@
                                 
                                 <!-- popmama display ads desktop -->
                                 <li>
-                                    <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Desktop</a>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Desktop</a>
                                     <ul class="inner nakga">
                                         <li>
                                             <a href="page/popmama/br1.html" target="myiframe" onclick="remove_home()">Big Rectangle 1</a>
@@ -602,7 +607,7 @@
                         
                         <!-- popmama content -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Content</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Content</a>
                             <ul class="inner nakwa">
                                 <li>
                                     <a href="page/popmama/cont-native.html" target="myiframe" onclick="remove_home()">Native Editorial</a>
@@ -621,7 +626,7 @@
                         
                         <!-- popmama social -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Social</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Social</a>
                             <ul class="inner nakwa">
                                 <li>
                                     <a href="page/idntimes/sos-fbpoll.html" target="myiframe" onclick="remove_home()">Facebook Live Poll</a>
@@ -649,7 +654,7 @@
                         
                         <!-- popmama video -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Video</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Video</a>
                             <ul class="inner nakwa">
                                 <li>
                                     <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home()">Video Placement</a>
@@ -659,7 +664,7 @@
                         
                         <!-- popmama online activation -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Online Activation</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Online Activation</a>
                             <ul class="inner nakwa">
                                 <li>
                                     <a href="page/idntimes/on-act.html" target="myiframe" onclick="remove_home()">Online Activation</a>
@@ -669,7 +674,7 @@
                         
                         <!-- popmama offline activation -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Offline Activation</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Offline Activation</a>
                             <ul class="inner nakwa">
                                 <li>
                                     <a href="page/popmama/off-act-pme.html" target="myiframe" onclick="remove_home()">Popmama Expo</a>
@@ -687,12 +692,12 @@
                 <li>
                     <a class="toggle logo-img" href="javascript:void(0);">
                         <img src="page/assets/images/yummy.png" class="img-fluid">
-                        <i class="fa fa-angle-down "></i>
+                        <i class="fa fa-angle-right"></i>
                     </a>
                     <ul class="inner nakma" onclick="myFunction(event)">
                         <!-- yummy native video -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Native Video</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Native Video</a>
                             <ul class="inner nakwa">
                                 <li>
                                     <a href="page/yummy/video-recipe.html" target="myiframe" onclick="remove_home()">Recipe Video</a>  
@@ -708,7 +713,7 @@
                         
                         <!-- yummy ig live -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Instagram Live</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Instagram Live</a>
                             <ul class="inner nakwa">
                                 <li>
                                     <a href="page/yummy/live-cnq.html" target="myiframe" onclick="remove_home()">Cooking & Quiz</a>  
@@ -727,7 +732,7 @@
                         
                         <!-- yummy ig story -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Instagram Story</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Instagram Story</a>
                             <ul class="inner nakwa">
                                 <li>
                                     <a href="page/yummy/story-nf.html" target="myiframe" onclick="remove_home()">Nutrition Fact</a>  
@@ -743,7 +748,7 @@
                         
                         <!-- yummy off act -->
                         <li>
-                            <a href="#" class="toggle"><i class="fa fa-angle-down "></i>Offline Activation</a>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Offline Activation</a>
                             <ul class="inner nakwa">
                                 <li>
                                     <a href="page/yummy/foodfest.html" target="myiframe" onclick="remove_home()">Food Festival</a>  
@@ -751,6 +756,78 @@
                             </ul>
                         </li>
                     </ul>
+                </li>
+
+                <!-- idn creator network -->
+
+                <li>
+                    <a class="toggle logo-img" href="javascript:void(0);">
+                        <img src="page/assets/images/icn.png" class="img-fluid">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <ul class="inner nakma" onclick="myFunction(event)">
+                        <!-- idn creator -->
+                        <li>
+                            <a href="https://www.idncreatornetwork.com/" target="_blank">Mega Creator</a>
+                        </li>
+                        <li>
+                            <a href="https://www.idncreatornetwork.com/" target="_blank">Macro Creator</a>
+                        </li>
+                        <li>
+                            <a href="https://www.idncreatornetwork.com/" target="_blank">Micro Creator</a>
+                        </li>
+                        <li>
+                            <a href="https://www.idncreatornetwork.com/" target="_blank">Nano Creator</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- idn creative -->
+
+                <li>
+                    <a class="toggle logo-img" href="javascript:void(0);">
+                        <img src="page/assets/images/idn-creative.png" class="img-fluid">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <ul class="inner nakma" onclick="myFunction(event)">
+                        <!-- idn creative -->
+                        <li>
+                            <a href="" target="myiframe" onclick="remove_home()">Digital Strategy Creation</a>
+                        </li>
+                        <li>
+                            <a href="" target="myiframe" onclick="remove_home()">Campaign Management</a>
+                        </li>
+                        <li>
+                            <a href="" target="myiframe" onclick="remove_home()">Video Production</a>
+                        </li>
+                        <li>
+                            <a href="" target="myiframe" onclick="remove_home()">Social Media Management</a>
+                        </li>
+                        <li>
+                            <a href="" target="myiframe" onclick="remove_home()">Content Creation</a>
+                        </li>
+                        <li>
+                            <a href="" target="myiframe" onclick="remove_home()">Portal Management</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- idn event -->
+
+                <li>
+                    <a class="toggle logo-img" href="javascript:void(0);">
+                        <img src="page/assets/images/idn-event.png" class="img-fluid">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </li>
+
+                <!-- idn research inst -->
+
+                <li>
+                    <a class="toggle logo-img" href="javascript:void(0);">
+                        <img src="page/assets/images/IDN-Research-Institute.png" class="img-fluid" style="max-width: 150px;">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -760,7 +837,7 @@
             <div class="section_content col-md-8 offset-md-2">
                 <img src="page/assets/images/ads-device.png" class="img-fluid animated fadeIn delay-1s" style="max-width: 500px;">
                 <h1 class="animated fadeIn delay-1sets"><span style="color: red; font-weight: bold; text-shadow: none;">50 Million</span> monthly unique audience across all IDN Media owned properties</h1>
-                <a onclick="showhideMenu()" id="menubtn" class="menubtn animated fadeIn delay-2s" >Browse Our Ads</a>
+                <a onclick="showhideMenu2()" id="menubtn" class="menubtn animated fadeIn delay-2s" >Browse Our Ads</a>
             </div> 
         </div>
         
@@ -776,11 +853,15 @@
             if ($this.next().hasClass('show')) {
                 $this.next().removeClass('show');
                 $this.next().slideUp(350);
+                $this.children('.fa').removeClass('fa-angle-down');
             } else {
                 $this.parent().parent().find('li .inner').removeClass('show');
                 $this.parent().parent().find('li .inner').slideUp(350);
+                $this.parent().parent().find('.fa-angle-down').removeClass('fa-angle-down');
+                $this.parent().parent().find('.fa').addClass('fa-angle-right');
                 $this.next().toggleClass('show');
                 $this.next().slideToggle(350);
+                $this.children('.fa').addClass('fa-angle-down');  
             }
         });
         </script>
@@ -790,18 +871,38 @@
                 var menubtn1 = document.getElementById("menubtn");
                 var menu = document.getElementById("sidebar-wrapper");
                 var menuover = document.getElementById("sidebar-overlay");
+                var navcus = document.getElementById("navbar-cus");
 
                 if (menu.style.width === "250px") {
                     menu.style.width = "0px";
-                    menubtn1.innerHTML = "Show Menu"; 
-                    menubtn1.style.left = "0";
-                    menuover.style.width = "0px";
+                    menu.style.opacity = "0";
+                    // menubtn1.innerHTML = "Show Menu"; 
+                    // menubtn1.style.left = "0";
+                    // menuover.style.width = "0px";
                     
                 } else {
                     menu.style.width = "250px";
-                    menubtn1.innerHTML = "Hide Menu"; 
-                    menubtn1.style.left = "250px";
-                    menuover.style.width = "100vw";
+                    menu.style.opacity = "1";
+                    // menubtn1.innerHTML = "Hide Menu"; 
+                    // menubtn1.style.left = "250px";
+                    // menuover.style.width = "100vw";
+                }
+            }
+
+            function showhideMenu2() {
+                var menubtn1 = document.getElementById("menubtn");
+                var menu = document.getElementById("sidebar-wrapper");
+                var menuover = document.getElementById("sidebar-overlay");
+                var navcus = document.getElementById("navbar-cus");
+
+                if (menu.style.width === "250px") {
+                    menu.style.width = "0px";
+                    menu.style.opacity = "0";
+                    navcus.style.opacity = "0"; 
+                } else {
+                    menu.style.width = "250px";
+                    menu.style.opacity = "1";
+                    navcus.style.opacity = "1";
                 }
             }
         </script>
