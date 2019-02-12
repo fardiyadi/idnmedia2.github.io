@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+    overflow-x: hidden;
+}
 .menubtn {
     background-color: #ed2028;
     display: inline-block;
@@ -41,9 +44,13 @@
 .navbar-brand > img {
   max-width: 150px;
 }
+#iframe_idn {
+    transition: margin-left .5s;
+}
 #home_awal {
     height: 100vh;
     width: auto;
+    transition: margin-left .5s;
 }
 #home_awal a {
     color: white;
