@@ -41,8 +41,8 @@
                 </div>
               </nav>
     
-        <!-- <div id="menubtn" class="menubtn" onclick="showhideMenu()" style="opacity: 0;">Hide Menu</div>
-        <div id="sidebar-overlay" onclick="showhideMenu()"></div> -->
+<!--         <div id="menubtn" class="menubtn" onclick="showhideMenu()" style="opacity: 0;">Hide Menu</div>-->
+        <div id="sidebar-overlay" onclick="showhideMenu()"></div> 
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav accordion">
 
@@ -949,16 +949,18 @@
                 if (menu.style.width === "250px") {
                     menu.style.width = "0px";
                     menu.style.opacity = "0";
+                    menuover.style.width = "0px"; 
                     // menubtn1.innerHTML = "Show Menu"; 
                     // menubtn1.style.left = "0";
-                    // menuover.style.width = "0px";
+                    
                     
                 } else {
                     menu.style.width = "250px";
                     menu.style.opacity = "1";
+                    menuover.style.width = "100vw";
                     // menubtn1.innerHTML = "Hide Menu"; 
                     // menubtn1.style.left = "250px";
-                    // menuover.style.width = "100vw";
+                     
                 }
             }
 
@@ -972,10 +974,12 @@
                     menu.style.width = "0px";
                     menu.style.opacity = "0";
                     navcus.style.opacity = "0"; 
+                    menuover.style.width = "0px"; 
                 } else {
                     menu.style.width = "250px";
                     menu.style.opacity = "1";
                     navcus.style.opacity = "1";
+                    menuover.style.width = "100vw";
                 }
             }
         </script>
