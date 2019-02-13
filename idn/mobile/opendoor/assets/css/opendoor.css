@@ -19,15 +19,18 @@
     z-index: 2;
 }
 
-.doorDelay {
-     -webkit-transition-delay: 2s;
-    -moz-transition-delay: 2s;
-    -o-transition-delay: 2s;
-    transition-delay: 2s;
-}
 
+.doorDelay {
+    -webkit-transition-delay: 2s!important;
+    -moz-transition-delay: 2s!important;
+    -o-transition-delay: 2s!important;
+    transition-delay: 2s!important;
+}
 .doorOpen {
-    transform: perspective(2400px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-92deg)
+    animation-name: door_anim;
+    animation-delay: 2s;
+    animation-direction: normal;
+    animation-duration: 2s;
 }
 .doorClose {
     transform: none;
@@ -49,4 +52,12 @@ a.opendoor-link {
     right: 0;
     max-width: 65px;
     z-index: 1;
+}
+@keyframes door_anim {
+  0%   {
+      transform: none;
+    }
+  100% {
+      transform: perspective(2400px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-92deg);
+    }
 }
