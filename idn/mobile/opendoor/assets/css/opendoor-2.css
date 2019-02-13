@@ -1,0 +1,50 @@
+.backDoor {
+    position:relative;
+    width:300px;
+    height:250px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.door {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:300px;
+    height:250px;
+    transform-origin: left;
+    transition: all 1s ease-in-out; 
+}
+
+.doorDelay {
+    transition-delay: 2s;
+}
+
+.doorOpen {
+    margin-left: -295px;
+    z-index: 1;
+}
+.doorClose {
+    margin-left: 0;
+    transition-delay: 0s;
+    z-index: 1;
+}
+a.opendoor-link {
+    width: 300px;
+    height: 250px;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.door_close_btn {
+    position: absolute;
+    right: 0;
+    max-width: 65px;
+    z-index: 1;
+}
