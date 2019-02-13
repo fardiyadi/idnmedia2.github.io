@@ -20,6 +20,9 @@
 }
 
 .doorDelay {
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay: 2s;
+    -o-transition-delay: 2s;
     transition-delay: 2s;
 }
 
