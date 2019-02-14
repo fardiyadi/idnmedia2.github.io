@@ -27,15 +27,27 @@
     transition-delay: 2s!important;
 }
 .doorOpen {
-    animation-name: door_anim;
+    animation-name: door_anim_open;
     animation-delay: 2s;
     animation-direction: normal;
     animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
+.doorOpen_nodelay {
+    animation-name: door_anim_open;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
 .doorClose {
     transform: none;
     transition-delay: 0s;
     z-index: 1;
+    animation-name: door_anim_close;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 a.opendoor-link {
     width: 300px;
@@ -53,11 +65,19 @@ a.opendoor-link {
     max-width: 65px;
     z-index: 1;
 }
-@keyframes door_anim {
+@keyframes door_anim_open {
   0%   {
       transform: none;
     }
   100% {
       transform: perspective(2400px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-92deg);
+    }
+}
+@keyframes door_anim_close {
+  0%   {
+      transform: perspective(2400px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-92deg);
+    }
+  100% {
+      transform: none;
     }
 }

@@ -792,7 +792,8 @@ function callAnalytics(path, queryString) {
         <script>
             function closeDoor() {
               var element = document.getElementById("door_ads");
-                element.classList.remove("doorDelay");
+                element.classList.remove("doorOpen");
+                element.classList.add("doorOpen_nodelay");
               if (element.classList) { 
                 element.classList.toggle("doorClose");
               } else {

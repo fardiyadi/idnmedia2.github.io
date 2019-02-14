@@ -783,7 +783,7 @@ function callAnalytics(path, queryString) {
         <a href="https://ims.idntimes.com/" target="_blank" class="opendoor-link"></a>
         <div class="backDoor" style="background-image: url(banner/300x250-utama.jpg)">
             <img src="assets/images/close-btnv1.jpg" class="door_close_btn" onclick="closeDoor()">
-            <div id="door_ads" class="door doorDelay doorOpen" onclick="closeDoor()">  
+            <div id="door_ads" class="door doorOpen" onclick="closeDoor()">  
                 <img src="banner/300x250-depan.jpg">
             </div>
         </div>
@@ -791,7 +791,8 @@ function callAnalytics(path, queryString) {
         <script>
             function closeDoor() {
               var element = document.getElementById("door_ads");
-                element.classList.remove("doorDelay");
+                element.classList.remove("doorOpen");
+                element.classList.add("doorOpen_nodelay");
               if (element.classList) { 
                 element.classList.toggle("doorClose");
               } else {

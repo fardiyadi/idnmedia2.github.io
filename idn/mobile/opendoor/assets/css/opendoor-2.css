@@ -27,13 +27,27 @@
 }
 
 .doorOpen {
-    margin-left: -295px;
+    animation-name: door_anim_open;
+    animation-delay: 2s;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
     z-index: 1;
 }
+.doorOpen_nodelay {
+    animation-name: door_anim_open;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
 .doorClose {
-    margin-left: 0;
+    transform: none;
     transition-delay: 0s;
     z-index: 1;
+    animation-name: door_anim_close;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 a.opendoor-link {
     width: 300px;
@@ -50,4 +64,20 @@ a.opendoor-link {
     right: 0;
     max-width: 65px;
     z-index: 1;
+}
+@keyframes door_anim_open {
+  0%   {
+      margin-left: 0;
+    }
+  100% {
+      margin-left: -295px;
+    }
+}
+@keyframes door_anim_close {
+  0%   {
+      margin-left: -295px;
+    }
+  100% {
+      margin-left: 0px;
+    }
 }
