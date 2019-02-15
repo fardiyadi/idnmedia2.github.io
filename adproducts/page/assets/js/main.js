@@ -54,32 +54,28 @@ function showhideMenu2() {
     var menu = document.getElementById("sidebar-wrapper");
     var menuover = document.getElementById("sidebar-overlay");
     var navcus = document.getElementById("navbar-cus");
-    var main1 = document.getElementById("home_awal");
 
     if (menu.style.width === "250px") {
         menu.style.width = "0px";
         menu.style.opacity = "0";
         navcus.style.opacity = "0"; 
         menuover.style.width = "0px";
-        main1.style.marginLeft = "0px";
     } else {
         menu.style.width = "250px";
         menu.style.opacity = "1";
         navcus.style.opacity = "1";
         menuover.style.width = "100vw";
-        main1.style.marginLeft = "250px";
     }
 }
 
 // js is active
+
+$('.inner').on('click', 'li a', function() {
+    $('.inner li a.aktif').removeClass('aktif');
+    $(this).addClass('aktif');
+});
        
-function myFunction(e) {
-    var elems = document.querySelectorAll(".aktif");
-    [].forEach.call(elems, function(el) {
-        el.classList.remove("aktif");
-    });
-    e.target.className = "aktif";
-}
+
         
 // js remove home change to iframe        
 
