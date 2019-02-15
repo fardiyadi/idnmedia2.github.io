@@ -1770,12 +1770,19 @@ googletag.cmd.push(function(){
     <section class="section__ads">
         
         <div id="idnads_popup" style="position: fixed; width: 300px; height: 300px; top: 50%; left: 50%; margin-left: -150px; margin-top: -120px; z-index: 99999; font-weight: bold; transform: translate(-50%, -50%);">
-		<div onclick="HidePopupjcwtp8()" style="position: absolute;top: -30px!important;left: 0;background: #ed2126;border:none;cursor:pointer;">
+		<div onclick="closePop()" style="position: absolute;top: -30px!important;left: 0;background: #ed2126;border:none;cursor:pointer;">
 			<div style="width:30px!important;height:30px!important;z-index: 999999;color:#fff;background-color: #ed2126;padding: 5px 6px;float:left;" title="Tutup">
 				<i class="fa fa-times" style="font-size:20px;"></i>
 			</div><span style="color:#fff;line-height: 30px;padding: 0 10px;">CLOSE ADS</span>
 		</div><a href="#" style="display:block;width:300px;height:300px;" target="_blank"><img alt="ads" height="300" src="../assets/images/popup.jpg" width="300"></a>
 	</div>
+        
+        <script>
+        function closePop() {
+            document.getElementById("idnads_popup").style.display = "none";
+        }
+        </script>
+
 	
 </section></main>
 
