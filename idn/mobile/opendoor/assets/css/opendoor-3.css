@@ -23,10 +23,10 @@ a.card-link {
     perspective: 1000;
 }
 .front, .back {
-    -webkit-animation: preserve-3d 8s infinite ease forwards;
-    -moz-animation: preserve-3d 8s infinite ease forwards;
-    -ms-animation: preserve-3d 8s infinite ease forwards;
-    animation: preserve-3d 8s infinite ease forwards; 
+    -webkit-animation: preserve-3d 6s infinite ease forwards;
+    -moz-animation: preserve-3d 6s infinite ease forwards;
+    -ms-animation: preserve-3d 6s infinite ease forwards;
+    animation: preserve-3d 6s infinite ease forwards; 
     padding: 0;
 }
 /* Call the animations for each side of the card */
