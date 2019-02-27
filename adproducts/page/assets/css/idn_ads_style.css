@@ -113,7 +113,7 @@ body {
     padding: 20px 20px 20px 30px;
     font-family: 'Roboto', sans-serif;
 }
-.spec-des > a.preview {
+a.preview {
     background-color: #ed2028;
     color: white;
     border-radius: 2px;
@@ -127,7 +127,7 @@ body {
     margin-top: 20px;
     box-shadow: none;
 }
-.spec-des > a.preview:hover {
+a.preview:hover {
     text-decoration: none;
     transition: all 0.5s ease;
     box-shadow: 1px 3px 8px #4e4e4ecc;
@@ -406,7 +406,7 @@ ul {
     .spec-des {
         padding: 15px;
     }
-    .spec-des > a.preview, .spec-des > a.browse {
+    a.preview, a.browse {
         margin: 5px;
         font-size: 14px;
         font-weight: 400;
