@@ -34,18 +34,11 @@ function showhideMenu() {
         menu.style.opacity = "0";
         menuover.style.width = "0px";
         main2.style.marginLeft = "0px";
-        // menubtn1.innerHTML = "Show Menu"; 
-        // menubtn1.style.left = "0";
-
-
     } else {
         menu.style.width = "250px";
         menu.style.opacity = "1";
         menuover.style.width = "100vw";
         main2.style.marginLeft = "100px";
-        // menubtn1.innerHTML = "Hide Menu"; 
-        // menubtn1.style.left = "250px";
-
     }
 }
 
@@ -53,18 +46,21 @@ function showhideMenu2() {
     var menubtn1 = document.getElementById("menubtn");
     var menu = document.getElementById("sidebar-wrapper");
     var menuover = document.getElementById("sidebar-overlay");
-    var navcus = document.getElementById("navbar-cus");
+    var navcus = document.getElementById("navbar-cus");     
+    var main2 = document.getElementById("iframe_idn");
 
     if (menu.style.width === "250px") {
         menu.style.width = "0px";
         menu.style.opacity = "0";
-        navcus.style.opacity = "0"; 
+        navcus.style.display = "none"; 
         menuover.style.width = "0px";
+        main2.style.marginLeft = "0px";
     } else {
         menu.style.width = "250px";
         menu.style.opacity = "1";
-        navcus.style.opacity = "1";
+        navcus.style.display = "block";
         menuover.style.width = "100vw";
+        main2.style.marginLeft = "100px";
     }
 }
 
