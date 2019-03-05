@@ -34,11 +34,13 @@ function showhideMenu() {
         menu.style.opacity = "0";
         menuover.style.width = "0px";
         main2.style.marginLeft = "0px";
+        main2.style.width = "100%";
     } else {
         menu.style.width = "250px";
         menu.style.opacity = "1";
         menuover.style.width = "100vw";
-        main2.style.marginLeft = "100px";
+        main2.style.marginLeft = "250px";
+        main2.style.width = "calc(100% - 250px)";
     }
 }
 
@@ -55,12 +57,14 @@ function showhideMenu2() {
         navcus.style.display = "none"; 
         menuover.style.width = "0px";
         main2.style.marginLeft = "0px";
+        main2.style.width = "100%";
     } else {
         menu.style.width = "250px";
         menu.style.opacity = "1";
         navcus.style.display = "block";
         menuover.style.width = "100vw";
-        main2.style.marginLeft = "100px";
+        main2.style.marginLeft = "250px";
+        main2.style.width = "calc(100% - 250px)";
     }
 }
 
