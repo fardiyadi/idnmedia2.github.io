@@ -27,6 +27,72 @@
         <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f2202800-da8d-4aa7-9e34-81c020a3ee27"> </script>
         <!-- End of idnmedia Zendesk Widget script -->
         
+        
+        <script>
+            {
+                "event": "page_enter",
+                "condition": [
+                    "and",
+                    [
+                        "stillOnSite",
+                        5
+                    ],
+                    [
+                        "eq",
+                        "@visitor_previous_visits",
+                        0
+                    ],
+                    [
+                        "eq",
+                        "@visitor_requesting_chat",
+                        false
+                    ],
+                    [
+                        "eq",
+                        "@visitor_served",
+                        false
+                    ]
+                ],
+                "actions": [
+                    [
+                        "sendMessageToVisitor",
+                        "William dari IDN Media",
+                        "Halo, mau coba pasang iklan di IDN Media? Tanya aku dulu gpp lho :)"
+                    ]
+                ]
+            }
+        </script>
+        
+        <script>
+        {
+            "event": "chat_requested",
+            "condition": [
+                "and",
+                [
+                    "eq",
+                    "@visitor_requesting_chat",
+                    true
+                ],
+                [
+                    "eq",
+                    "@visitor_served",
+                    false
+                ]
+            ],
+            "actions": [
+                [
+                    "wait",
+                    3
+                ],
+                [
+                    "sendMessageToVisitor",
+                    "Customer Service",
+                    "Wah kebetulan kita lagi offline, boleh minta no telp dan email kamu?"
+                ]
+            ]
+        }
+        </script>
+        
         <!-- Menu Sidebar -->
 
         <nav id="navbar-cus" class="navbar navbar-custom fixed-top">

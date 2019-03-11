@@ -241,7 +241,7 @@ ul > li a:hover {
   width: 0px;
   margin-top: 62px;
   height: calc(100% - 62px);
-  overflow-y: auto;
+  overflow-y: hidden;
   background: #fff;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -251,7 +251,9 @@ ul > li a:hover {
     overflow-x: hidden;
     opacity: 0;
 }
-
+#sidebar-wrapper:hover {
+    overflow-y: auto;
+}
 #wrapper.toggled #sidebar-wrapper {
     width: 250px;
 }
@@ -392,6 +394,9 @@ ul > li a:hover {
     #home_awal h1 {
         font-size: 32px;
         margin: 10% 0;
+    }
+    #sidebar-wrapper {
+        overflow-y: auto!important;
     }
     #sidebar-overlay {
         width: 0px;
