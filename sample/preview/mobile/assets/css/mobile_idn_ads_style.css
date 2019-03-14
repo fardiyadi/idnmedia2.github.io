@@ -1,0 +1,110 @@
+
+.m_idn_ads_1 { 
+    background-color: grey;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    display: block;
+    padding: 5px;
+}
+.bg_red {
+    background-color: red;
+}
+.m_leaderboard_1, .m_infeed_1, .m_inart_1 {
+    width: 320px;
+    height: 100px;
+}
+.m_leaderboard_2, .m_infeed_2, .m_inart_2 {
+    width: 300px;
+    height: 250px;
+}
+.m_stickybot {
+    width: 320px;
+    height: 50px;
+}
+.m_popup {
+    width: 300px;
+    height: 300px;
+}
+.parallax_luar {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    float: left;
+    margin-bottom: 10px;
+}
+.parallaxA_abs {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip: rect(auto,auto,auto,auto);
+}
+.parallaxA_fix {
+    max-width: 480px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0 10px;
+}
+.parallaxA_fix img {
+    width: 100%;
+    height: auto;
+}
+.ads_spec {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    font-family: 'Nunito Sans', sans-serif;
+    display: inline-block;
+    color: #fff!important;
+}
+.ads_spec h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px!important;
+    color: #fff!important;
+    text-align: center!important;
+}
+.ads_spec h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px!important;
+    color: #fff!important;
+    text-align: center!important;
+}
+.ads_spec h6 {
+    font-size: 16px!important;
+    font-weight: 300;
+    margin: 5px!important;
+    color: #fff!important;
+    text-align: center!important;
+}
+.ads_spec p {
+    font-size: 14px;
+    margin: auto!important;
+    color: #fff!important;
+    text-align: center!important;
+}
+.fsize_13 {
+    font-size: 13px!important;
+}
+.martop_10 {
+    margin-top: 10px;
+}
+.marbot_10 {
+    margin-bottom: 10px;
+}
+.marbot_15 {
+    margin-bottom: 15px;
+}
+.marbot_20 {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="We help brands connect through beautiful ads experiences: native editorial, native video, high impact banners, or strategic partnerships">
+        <meta name="author" content="IDN Media">
+
+        <title>IDN Ads: Tell Your Brand Story</title>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="http://www.idn.media/favicon.png" />
+
+        <!-- Bootstrap core CSS -->
+        <link href="page/assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom style -->
+        <link href="page/assets/css/idn_ads_style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+        <script src="page/assets/js/jquery.min.js"></script>
+    </head>
+    
+    <body style="background-image: url(page/assets/images/bg1.jpg);">
+        
+        <!-- Start of idnmedia Zendesk Widget script -->
+        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f2202800-da8d-4aa7-9e34-81c020a3ee27"> </script>
+        <!-- End of idnmedia Zendesk Widget script -->
+        
+        
+        <script>
+            {
+                "event": "page_enter",
+                "condition": [
+                    "and",
+                    [
+                        "stillOnSite",
+                        5
+                    ],
+                    [
+                        "eq",
+                        "@visitor_previous_visits",
+                        0
+                    ],
+                    [
+                        "eq",
+                        "@visitor_requesting_chat",
+                        false
+                    ],
+                    [
+                        "eq",
+                        "@visitor_served",
+                        false
+                    ]
+                ],
+                "actions": [
+                    [
+                        "sendMessageToVisitor",
+                        "William dari IDN Media",
+                        "Halo, mau coba pasang iklan di IDN Media? Tanya aku dulu gpp lho :)"
+                    ]
+                ]
+            }
+        </script>
+        
+        <script>
+        {
+            "event": "chat_requested",
+            "condition": [
+                "and",
+                [
+                    "eq",
+                    "@visitor_requesting_chat",
+                    true
+                ],
+                [
+                    "eq",
+                    "@visitor_served",
+                    false
+                ]
+            ],
+            "actions": [
+                [
+                    "wait",
+                    3
+                ],
+                [
+                    "sendMessageToVisitor",
+                    "Customer Service",
+                    "Wah kebetulan kita lagi offline, boleh minta no telp dan email kamu?"
+                ]
+            ]
+        }
+        </script>
+        
+        <!-- Menu Sidebar -->
+
+        <nav id="navbar-cus" class="navbar navbar-custom fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <i class="fa fa-bars" onclick="showhideMenu()"></i>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="page/assets/images/idn-ads.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    
+        <div id="sidebar-overlay" onclick="showhideMenu()"></div> 
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav accordion">
+
+                <!-- idntimes -->              
+                
+                <li>
+                    <a class="toggle logo-img" href="#">
+                        <img src="page/assets/images/idn-times.png" class="img-fluid">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <ul class="inner nakma" onclick="myFunction(event)">
+                        
+                        <!-- idntimes tvc spot -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-down"></i>TVC Spot Masthead</a>
+                            <ul class="inner nakwa">
+                                <li>
+                                    <a href="page/idntimes/tvc-cpm.html" target="myiframe" onclick="remove_home()">
+                                        CPM
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="page/idntimes/tvc-cpd.html" target="myiframe" onclick="remove_home()">
+                                        CPD
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- idntimes display ads -->
+                        <li>
+                            <a href="#" class="toggle">
+                                <i class="fa fa-angle-right"></i>
+                                Display</a>
+                            <ul class="inner nakwa">
+                                
+                                <!-- idntimes display mobile -->
+                                <li>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Mobile</a>
+                                    <ul class="inner nakga">
+                                        <li>
+                                            <a href="page/m.idntimes/popup.html" target="myiframe" onclick="remove_home()">Pop Up Mobile</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.idntimes/sticky.html" target="myiframe" onclick="remove_home()">Sticky Bottom</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.idntimes/parallax1.html" target="myiframe" onclick="remove_home()">Parallax 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.idntimes/parallax2.html" target="myiframe" onclick="remove_home()">Parallax 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.idntimes/parallax3.html" target="myiframe" onclick="remove_home()">Parallax 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.idntimes/inart1-1.html" target="myiframe" onclick="remove_home()">In Article 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.idntimes/inart2-1.html" target="myiframe" onclick="remove_home()">In Article 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.idntimes/inart3-1.html" target="myiframe" onclick="remove_home()">In Article 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.idntimes/infeed1-1.html" target="myiframe" onclick="remove_home()">In Feed 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.idntimes/infeed2-1.html" target="myiframe" onclick="remove_home()">In Feed 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.idntimes/infeed3-1.html" target="myiframe" onclick="remove_home()">In Feed 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.idntimes/leaderboard-1.html" target="myiframe" onclick="remove_home()">Leaderboard V1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.idntimes/leaderboard-2.html" target="myiframe" onclick="remove_home()">Leaderboard V2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <!-- idntimes display desktop -->
+                                <li>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Desktop</a>
+                                    <ul class="inner nakga">
+                                        <li>
+                                            <a href="page/idntimes/popup.html" target="myiframe" onclick="remove_home()">Pop Up</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/sticky.html" target="myiframe" onclick="remove_home()">Sticky Bottom</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/skinad.html" target="myiframe" onclick="remove_home()">Skin Ad</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/br-1.html" target="myiframe" onclick="remove_home()">Big Rectangle 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/br-2.html" target="myiframe" onclick="remove_home()">Big Rectangle 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/inart1.html" target="myiframe" onclick="remove_home()">In Article 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/inart2.html" target="myiframe" onclick="remove_home()">In Article 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/inart3.html" target="myiframe" onclick="remove_home()">In Article 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/infeed1.html" target="myiframe" onclick="remove_home()">In Feed 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/infeed2.html" target="myiframe" onclick="remove_home()">In Feed 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/infeed3.html" target="myiframe" onclick="remove_home()">In Feed 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/leaderboard-1.html" target="myiframe" onclick="remove_home()">Leaderboard V1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/leaderboard-2.html" target="myiframe" onclick="remove_home()">Leaderboard V2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/leaderboard-3.html" target="myiframe" onclick="remove_home()">Leaderboard V3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/mr-1.html" target="myiframe" onclick="remove_home()">Medium Rectangle 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/mr-2.html" target="myiframe" onclick="remove_home()">Medium Rectangle 2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- idntimes content -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Content</a>
+                            <ul class="inner nakwa">
+                                <!-- idntimes content native editorial -->
+                                <li>
+                                    <a href="page/idntimes/cont-native.html" target="myiframe" onclick="remove_home()">Native Editorial</a>
+                                </li>
+                                
+                                <!-- idntimes content branded quiz -->
+                                <li>
+                                    <a href="page/idntimes/cont-quiz.html" target="myiframe" onclick="remove_home()">Branded Quiz</a>
+                                </li>
+                                
+                                <!-- idntimes content event coverage -->
+                                <li>
+                                    <a href="page/idntimes/cont-event.html" target="myiframe" onclick="remove_home()">Event Coverage</a>
+                                </li>
+                                
+                                <!-- idntimes content community article -->
+                                <li>
+                                    <a href="page/idntimes/cont-comart.html" target="myiframe" onclick="remove_home()">Community Article</a>
+                                </li>
+                                
+                                <!-- idntimes content interactive infographics -->
+                                <li>
+                                    <a href="page/idntimes/cont-fyi.html" target="myiframe" onclick="remove_home()">Interactive Infographic</a>
+                                </li>
+                                
+                                <!-- idntimes content special channel -->
+                                <li>
+                                    <a href="page/idntimes/cont-spchan.html" target="myiframe" onclick="remove_home()">Special Channel</a>
+                                </li>
+                                
+                                <!-- idntimes content regular infographics -->
+                                <li>
+                                    <a href="page/idntimes/cont-infograph.html" target="myiframe" onclick="remove_home()">Regular Infographic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- idntimes social media -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Social</a>
+                            <ul class="inner nakwa">
+                                 
+                                <!-- idntimes social media LINE Broadcast -->
+                                <li>
+                                    <a href="page/idntimes/sos-line.html" target="myiframe" onclick="remove_home()">LINE Broadcast</a>
+                                </li>
+                                
+                                <!-- idntimes social media WA Broadcast -->
+                                <li>
+                                    <a href="page/idntimes/sos-wabrod.html" target="myiframe" onclick="remove_home()">WhatsApp Broadcast</a>
+                                </li>
+                                                   
+                                <!-- idntimes social media instagram story -->
+                                <li>
+                                    <a href="page/idntimes/sos-igstory.html" target="myiframe" onclick="remove_home()">Instagram Story</a>
+                                </li>
+                                                                
+                                <!-- idntimes social media instagram post -->
+                                <li>
+                                    <a href="page/idntimes/sos-igpost.html" target="myiframe" onclick="remove_home()">Instagram Post</a>
+                                </li>
+                                                                
+                                <!-- idntimes social media instagram live -->
+                                <li>
+                                    <a href="page/idntimes/sos-iglive.html" target="myiframe" onclick="remove_home()">Instagram Live</a>
+                                </li>
+                                                                
+                                <!-- idntimes social media instagram post carousel -->
+                                <li>
+                                    <a href="page/idntimes/sos-igcar.html" target="myiframe" onclick="remove_home()">Instagram Carousel</a>
+                                </li>
+                                
+                                <!-- idntimes social media facebook post -->
+                                <li>
+                                    <a href="page/idntimes/sos-fbpost.html" target="myiframe" onclick="remove_home()">Facebook Post</a>
+                                </li>
+                                                                
+                                <!-- idntimes social media facebook live poll -->
+                                <li>
+                                    <a href="page/idntimes/sos-fbpoll.html" target="myiframe" onclick="remove_home()">Facebook Live Poll</a>
+                                </li>
+                                                                
+                                <!-- idntimes social media facebook live event coverage -->
+                                <li>
+                                    <a href="page/idntimes/sos-fbevent.html" target="myiframe" onclick="remove_home()">Facebook Live Event</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- idntimes video -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Video</a>
+                            <ul class="inner nakwa">
+                                 <li>
+                                    <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home()">Video Placement</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- idntimes online activation -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Online Activation</a>
+                            <ul class="inner nakwa">
+                                 <li>
+                                    <a href="page/idntimes/on-act.html" target="myiframe" onclick="remove_home()">Online Activation</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- idntimes offline activation -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Offline Activation</a>
+                            <ul class="inner nakwa">
+                                <!-- idntimes offline ims -->
+                                <li>
+                                    <a href="page/idntimes/off-act-ims.html" target="myiframe" onclick="remove_home()">
+                                        Indonesia Millennial Summit
+                                    </a>
+                                </li>
+                                
+                                <!-- idntimes offline iwf -->
+                                <li>
+                                    <a href="page/idntimes/off-act-iwf.html" target="myiframe" onclick="remove_home()">
+                                        Indonesia Writers Festival
+                                    </a>
+                                </li>
+                                
+                                <!-- idntimes community writers gahtering -->
+                                <li>
+                                    <a href="page/idntimes/off-act-comgath.html" target="myiframe" onclick="remove_home()">
+                                        Community Writers Gath
+                                    </a>
+                                </li>
+                                
+                                <!-- idntimes custom -->
+                                <li>
+                                    <a href="page/idntimes/off-act-cus.html" target="myiframe" onclick="remove_home()">
+                                        Custom Activation
+                                    </a>    
+                                </li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </li>          
+                
+                <!-- popbela -->
+                
+                <li>
+                    <a class="toggle logo-img" href="#">
+                        <img src="page/assets/images/popbela.png" class="img-fluid">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <ul class="inner nakma" onclick="myFunction(event)">
+                        
+                        <!-- popbela tvc spot -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-down"></i>TVC Spot Masthead</a>
+                            <ul class="inner nakwa">
+                                <li>
+                                    <a href="page/popbela/tvc-cpm.html" target="myiframe" onclick="remove_home()">
+                                        CPM
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="page/popbela/tvc-cpd.html" target="myiframe" onclick="remove_home()">
+                                        CPD
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- popbela display ads -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-down"></i>Display</a>
+                            <ul class="inner nakwa">
+                                
+                                <!-- popbela display ads mobile -->
+                                <li>
+                                     <a href="#" class="toggle"><i class="fa fa-angle-down"></i>Mobile</a>
+                                    <ul class="inner nakga">
+                                        <li>
+                                            <a href="page/m.popbela/popup.html" target="myiframe" onclick="remove_home()">Pop Up Mobile</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popbela/sticky.html" target="myiframe" onclick="remove_home()">Sticky Bottom</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popbela/parallax1.html" target="myiframe" onclick="remove_home()">Parallax 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popbela/parallax2.html" target="myiframe" onclick="remove_home()">Parallax 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popbela/parallax3.html" target="myiframe" onclick="remove_home()">Parallax 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popbela/inart1.html" target="myiframe" onclick="remove_home()">In Article 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popbela/inart2.html" target="myiframe" onclick="remove_home()">In Article 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popbela/inart3.html" target="myiframe" onclick="remove_home()">In Article 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popbela/infeed1.html" target="myiframe" onclick="remove_home()">In Feed 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popbela/infeed2.html" target="myiframe" onclick="remove_home()">In Feed 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popbela/infeed3.html" target="myiframe" onclick="remove_home()">In Feed 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popbela/leaderboard-1.html" target="myiframe" onclick="remove_home()">Leaderboard V1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popbela/leaderboard-2.html" target="myiframe" onclick="remove_home()">Leaderboard V2</a>
+                                        </li> 
+                                    </ul>
+                                </li>
+                                
+                                <!-- popbela display ads dektop -->
+                                <li>
+                                     <a href="#" class="toggle"><i class="fa fa-angle-down"></i>Desktop</a>
+                                    <ul class="inner nakga">
+                                        <li>
+                                            <a href="page/popbela/popup.html" target="myiframe" onclick="remove_home()">Pop Up</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popbela/sticky.html" target="myiframe" onclick="remove_home()">Sticky Bottom</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popbela/br1.html" target="myiframe" onclick="remove_home()">Big Rectangle 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popbela/br2.html" target="myiframe" onclick="remove_home()">Big Rectangle 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popbela/inart1.html" target="myiframe" onclick="remove_home()">In Article 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popbela/inart2.html" target="myiframe" onclick="remove_home()">In Article 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popbela/inart3.html" target="myiframe" onclick="remove_home()">In Article 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popbela/infeed1.html" target="myiframe" onclick="remove_home()">In Feed 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popbela/infeed2.html" target="myiframe" onclick="remove_home()">In Feed 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popbela/infeed3.html" target="myiframe" onclick="remove_home()">In Feed 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popbela/leaderboard-1.html" target="myiframe" onclick="remove_home()">Leaderboard V1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popbela/leaderboard-2.html" target="myiframe" onclick="remove_home()">Leaderboard V2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popbela/leaderboard-3.html" target="myiframe" onclick="remove_home()">Leaderboard V3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popbela/mr1.html" target="myiframe" onclick="remove_home()">Medium Rectangle 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popbela/mr2.html" target="myiframe" onclick="remove_home()">Medium Rectangle 1</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- popbela content -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Content</a>
+                            <ul class="inner nakwa">
+                                <li>
+                                    <a href="page/popbela/cont-native.html" target="myiframe" onclick="remove_home()">Native Editorial</a>
+                                </li>
+                                <li>
+                                    <a href="page/popbela/cont-event.html" target="myiframe" onclick="remove_home()">Event Coverage</a>
+                                </li>
+                                <li>
+                                    <a href="page/popbela/cont-spch.html" target="myiframe" onclick="remove_home()">Special Channel</a>
+                                </li>
+                                <li>
+                                    <a href="page/popbela/cont-infograph.html" target="myiframe" onclick="remove_home()">Regular Infographic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- popbela social -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Social</a>
+                            <ul class="inner nakwa">
+                                
+                                <li>
+                                    <a href="page/idntimes/sos-line.html" target="myiframe" onclick="remove_home()">LINE Broadcast</a>
+                                </li>
+                                <li>
+                                    <a href="page/popbela/sos-wabrod.html" target="myiframe" onclick="remove_home()">WhatsApp Broadcast</a>
+                                </li>
+                                <li>
+                                    <a href="page/popbela/sos-igstory.html" target="myiframe" onclick="remove_home()">Instagram Story</a>
+                                </li>
+                                <li>
+                                    <a href="page/popbela/sos-igpost.html" target="myiframe" onclick="remove_home()">Instagram Post</a>
+                                </li>
+                                <li>
+                                    <a href="page/popbela/sos-iglive.html" target="myiframe" onclick="remove_home()">Instagram Live</a>
+                                </li>
+                                <li>
+                                    <a href="page/popbela/sos-igcar.html" target="myiframe" onclick="remove_home()">Instagram Carousel</a>
+                                </li>
+                                <li>
+                                    <a href="page/popbela/sos-fbpost.html" target="myiframe" onclick="remove_home()">Facebook Post</a>
+                                </li>
+                                <li>
+                                    <a href="page/idntimes/sos-fbpoll.html" target="myiframe" onclick="remove_home()">Facebook Live Poll</a>
+                                </li>
+                                <li>
+                                    <a href="page/idntimes/sos-fbevent.html" target="myiframe" onclick="remove_home()">Facebook Live Event</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- popbela video -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Video</a>
+                            <ul class="inner nakwa">
+                                <li>
+                                    <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home()">Video Placement</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- popbela online activation -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Online Activation</a>
+                            <ul class="inner nakwa">
+                                <li>
+                                    <a href="page/popbela/on-act.html" target="myiframe" onclick="remove_home()">Online Activation</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- popbela offline activation -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Offline Activation</a>
+                            <ul class="inner nakwa">
+                                <li>
+                                    <a href="page/popbela/off-act-bfa.html" target="myiframe" onclick="remove_home()">BeautyFest Asia</a>
+                                </li>
+                                <li>
+                                    <a href="page/popbela/off-act-comgath.html" target="myiframe" onclick="remove_home()">Community Gathering</a>
+                                </li>
+                                <li>
+                                    <a href="page/popbela/custom-act.html" target="myiframe" onclick="remove_home()">Custom Activation</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <!-- popmama -->
+                
+                <li>
+                    <a class="toggle logo-img" href="#">
+                        <img src="page/assets/images/popmama.png" class="img-fluid">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <ul class="inner nakma" onclick="myFunction(event)">
+                        
+                        <!-- popmama tvc spot -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-down"></i>TVC Spot Masthead</a>
+                            <ul class="inner nakwa">
+                                <li>
+                                    <a href="page/popmama/tvc-cpm.html" target="myiframe" onclick="remove_home()">
+                                        CPM
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="page/popmama/tvc-cpd.html" target="myiframe" onclick="remove_home()">
+                                        CPD
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- popmama display ads -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Display</a>
+                            
+                            <ul class="inner nakwa">
+                                
+                                <!-- popmama display ads mobile -->
+                                <li>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Mobile</a>
+                                    <ul class="inner nakga">
+                                        <li>
+                                            <a href="page/m.popmama/popup.html" target="myiframe" onclick="remove_home()">Pop Up Mobile</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popmama/sticky.html" target="myiframe" onclick="remove_home()">Sticky Bottom</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popmama/inart1.html" target="myiframe" onclick="remove_home()">In Article 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popmama/inart2.html" target="myiframe" onclick="remove_home()">In Article 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popmama/inart3.html" target="myiframe" onclick="remove_home()">In Article 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popmama/infeed1.html" target="myiframe" onclick="remove_home()">In Feed 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.popmama/leaderboard-1.html" target="myiframe" onclick="remove_home()">Leaderboard V1</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <!-- popmama display ads desktop -->
+                                <li>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Desktop</a>
+                                    <ul class="inner nakga">
+                                        <li>
+                                            <a href="page/popmama/popup.html" target="myiframe" onclick="remove_home()">Pop Up</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popmama/sticky.html" target="myiframe" onclick="remove_home()">Sticky Bottom</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popmama/br1.html" target="myiframe" onclick="remove_home()">Big Rectangle 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popmama/br2.html" target="myiframe" onclick="remove_home()">Big Rectangle 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popmama/inart1.html" target="myiframe" onclick="remove_home()">In Article 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popmama/inart2.html" target="myiframe" onclick="remove_home()">In Article 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popmama/inart3.html" target="myiframe" onclick="remove_home()">In Article 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popmama/infeed1.html" target="myiframe" onclick="remove_home()">In Feed 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popmama/infeed2.html" target="myiframe" onclick="remove_home()">In Feed 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popmama/infeed3.html" target="myiframe" onclick="remove_home()">In Feed 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popmama/leaderboard-1.html" target="myiframe" onclick="remove_home()">Leaderboard V1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popmama/leaderboard-2.html" target="myiframe" onclick="remove_home()">Leaderboard V2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popmama/leaderboard-3.html" target="myiframe" onclick="remove_home()">Leaderboard V3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popmama/mr1.html" target="myiframe" onclick="remove_home()">Medium Rectangle 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/popmama/mr2.html" target="myiframe" onclick="remove_home()">Medium Rectangle 1</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- popmama content -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Content</a>
+                            <ul class="inner nakwa">
+                                <li>
+                                    <a href="page/popmama/cont-native.html" target="myiframe" onclick="remove_home()">Native Editorial</a>
+                                </li>
+                                <li>
+                                    <a href="page/popmama/cont-event.html" target="myiframe" onclick="remove_home()">Event Coverage</a>
+                                </li>
+                                <li>
+                                    <a href="page/popmama/cont-spch.html" target="myiframe" onclick="remove_home()">Special Channel</a>
+                                </li>
+                                <li>
+                                    <a href="page/popmama/cont-infograph.html" target="myiframe" onclick="remove_home()">Regular Infographic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- popmama social -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Social</a>
+                            <ul class="inner nakwa">
+                                <li>
+                                    <a href="page/popmama/sos-wabrod.html" target="myiframe" onclick="remove_home()">WhatsApp Broadcast</a>
+                                </li>
+                                <li>
+                                    <a href="page/popmama/sos-igstory.html" target="myiframe" onclick="remove_home()">Instagram Story</a>
+                                </li>
+                                <li>
+                                    <a href="page/popmama/sos-igpost.html" target="myiframe" onclick="remove_home()">Instagram Post</a>
+                                </li>
+                                <li>
+                                    <a href="page/popmama/sos-iglive.html" target="myiframe" onclick="remove_home()">Instagram Live</a>
+                                </li>
+                                <li>
+                                    <a href="page/popmama/sos-igcar.html" target="myiframe" onclick="remove_home()">Instagram Carousel</a>
+                                </li>
+                                <li>
+                                    <a href="page/popmama/sos-fbpost.html" target="myiframe" onclick="remove_home()">Facebook Post</a>
+                                </li>
+                                <li>
+                                    <a href="page/idntimes/sos-fbpoll.html" target="myiframe" onclick="remove_home()">Facebook Live Poll</a>
+                                </li>
+                                <li>
+                                    <a href="page/idntimes/sos-fbevent.html" target="myiframe" onclick="remove_home()">Facebook Live Event</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- popmama video -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Video</a>
+                            <ul class="inner nakwa">
+                                <li>
+                                    <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home()">Video Placement</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- popmama online activation -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Online Activation</a>
+                            <ul class="inner nakwa">
+                                <li>
+                                    <a href="page/idntimes/on-act.html" target="myiframe" onclick="remove_home()">Online Activation</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- popmama offline activation -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Offline Activation</a>
+                            <ul class="inner nakwa">
+                                <li>
+                                    <a href="page/popmama/off-act-pme.html" target="myiframe" onclick="remove_home()">Popmama Expo</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="myiframe" onclick="remove_home()">Custom Activation</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+                <!-- yummy -->
+                
+                <li>
+                    <a class="toggle logo-img" href="#">
+                        <img src="page/assets/images/yummy.png" class="img-fluid">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <ul class="inner nakma" onclick="myFunction(event)">
+                        
+                         <li>
+                            <a href="page/yummy/sos-wabrod.html" target="myiframe" onclick="remove_home()">WhatsApp Broadcast</a>
+                        </li>
+                        <!-- yummy native video -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Native Video</a>
+                            <ul class="inner nakwa">
+                                <li>
+                                    <a href="page/yummy/video-recipe.html" target="myiframe" onclick="remove_home()">Recipe Video</a>  
+                                </li>
+                                <li>
+                                    <a href="page/yummy/video-ngiler.html" target="myiframe" onclick="remove_home()">#YUMMYNGILER</a>  
+                                </li>
+                                <li>
+                                    <a href="page/yummy/video-tips.html" target="myiframe" onclick="remove_home()">#YUMMYTIPS</a>  
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- yummy ig live -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Instagram Live</a>
+                            <ul class="inner nakwa">
+                                <li>
+                                    <a href="page/yummy/live-cnq.html" target="myiframe" onclick="remove_home()">Cooking & Quiz</a>  
+                                </li>
+                                <li>
+                                    <a href="page/yummy/live-gs.html" target="myiframe" onclick="remove_home()">Grocery Shopping</a>  
+                                </li>
+                                <li>
+                                    <a href="page/yummy/live-cc.html" target="myiframe" onclick="remove_home()">Cooking Collaboration</a>  
+                                </li>
+                                <li>
+                                    <a href="page/yummy/live-fr.html" target="myiframe" onclick="remove_home()">Food Review</a>  
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- yummy ig story -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Instagram Story</a>
+                            <ul class="inner nakwa">
+                                <li>
+                                    <a href="page/yummy/story-nf.html" target="myiframe" onclick="remove_home()">Nutrition Fact</a>  
+                                </li>
+                                <li>
+                                    <a href="page/yummy/story-pnq.html" target="myiframe" onclick="remove_home()">Polling & Quiz</a>  
+                                </li>
+                                <li>
+                                    <a href="page/yummy/story-mg.html" target="myiframe" onclick="remove_home()">Mini Games</a>  
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- yummy off act -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Offline Activation</a>
+                            <ul class="inner nakwa">
+                                <li>
+                                    <a href="page/yummy/foodfest.html" target="myiframe" onclick="remove_home()">Food Festival</a>  
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- idn creator network -->
+
+                <li>
+                    <a class="toggle logo-img" href="#">
+                        <img src="page/assets/images/icn.png" class="img-fluid">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <ul class="inner nakma" onclick="myFunction(event)">
+                        <!-- idn creator -->
+                        <li>
+                            <a href="https://www.idncreatornetwork.com/" target="_blank">Mega Creator</a>
+                        </li>
+                        <li>
+                            <a href="https://www.idncreatornetwork.com/" target="_blank">Macro Creator</a>
+                        </li>
+                        <li>
+                            <a href="https://www.idncreatornetwork.com/" target="_blank">Micro Creator</a>
+                        </li>
+                        <li>
+                            <a href="https://www.idncreatornetwork.com/" target="_blank">Nano Creator</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- idn creative -->
+
+                <li>
+                    <a class="toggle logo-img" href="#">
+                        <img src="page/assets/images/idn-creative.png" class="img-fluid">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <ul class="inner nakma" onclick="myFunction(event)">
+                        <!-- idn creative -->
+                        <li>
+                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home()">Digital Strategy Creation</a>
+                        </li>
+                        <li>
+                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home()">Campaign Management</a>
+                        </li>
+                        <li>
+                            <a href="page/idn-creative/video-prod.html" target="myiframe" onclick="remove_home()">Video Production</a>
+                        </li>
+                        <li>
+                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home()">Social Media Management</a>
+                        </li>
+                        <li>
+                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home()">Content Creation</a>
+                        </li>
+                        <li>
+                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home()">Portal Management</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- idn event -->
+
+                <li>
+                    <a class="toggle logo-img" href="#">
+                        <img src="page/assets/images/idn-event.png" class="img-fluid">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <ul class="inner nakma" onclick="myFunction(event)">
+                        <!-- idn event -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Signature Event</a>
+                            <ul class="inner nakwa" onclick="myFunction(event)">
+                                <li>
+                                    <a href="page/idntimes/off-act-ims.html" target="myiframe" onclick="remove_home()">Indonesia Millennial Summit</a>
+                                </li>
+                                <li>
+                                    <a href="page/popbela/off-act-bfa.html" target="myiframe" onclick="remove_home()">BeautyFest Asia</a>
+                                </li>
+                                <li>
+                                    <a href="page/popmama/off-act-pme.html" target="myiframe" onclick="remove_home()">Popmama Expo</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/yummy.idn/" target="_blank">Yummy Community Gath</a>
+                                </li>
+                                <li>
+                                    <a href="page/idn-event/signature-national-roadshow.html" target="myiframe" onclick="remove_home()">National Roadshow</a>
+                                </li>
+                                <li>
+                                    <a href="page/idntimes/off-act-iwf.html" target="myiframe" onclick="remove_home()">Indonesia Writers Fest</a>
+                                </li>
+                                <li>
+                                    <a href="page/idntimes/off-act-comgath.html" target="myiframe" onclick="remove_home()">Community Writers Gath</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.popmama.com/life/home-and-living/onicmetheany/popmama-arisan-bersama-modena-memasak-bersama-sahabat" target="_blank">Popmama Arisan</a>
+                                </li>
+                                <li>
+                                    <a href="page/popbela/off-act-comgath.html" target="myiframe" onclick="remove_home()">Popbela Community Gath</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Custom Event</a>
+                            <ul class="inner nakwa" onclick="myFunction(event)">
+                                <li>
+                                    <a href="page/idn-event/custom-concert.html" target="myiframe" onclick="remove_home()">Concert</a>
+                                </li>
+                                <li>
+                                    <a href="page/idn-event/custom-gathering.html" target="myiframe" onclick="remove_home()">Gathering</a>
+                                </li>
+                                <li>
+                                    <a href="page/idn-event/custom-conference.html" target="myiframe" onclick="remove_home()">Conference</a>
+                                </li>
+                                <li>
+                                    <a href="page/idn-event/custom-workshop.html" target="myiframe" onclick="remove_home()">Workshop</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- idn research inst -->
+
+                <li>
+                    <a href="page/idn-ri/idn-ri.html" class="logo-img" target="myiframe" onclick="remove_home()">
+                        <img src="page/assets/images/IDN-Research-Institute.png" class="img-fluid" style="max-width: 150px;">
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+        
+
+        
+        <div id="home_awal">
+            <div class="section_content col-md-6 offset-md-3">
+                <img src="page/assets/images/ads-device.png" class="img-fluid animated fadeIn delay-1s" style="max-width: 500px;">
+                <h1 class="animated fadeIn delay-1sets">Your one-stop destination to reach Millennials and Gen-Z in Indonesia</h1>
+                <div class="mini-intro animated fadeIn delay-1sets">We help brands connect through beautiful ads experiences: native editorial, native video, high impact banners, or strategic partnerships.</div>
+                <a onclick="showhideMenu2()" id="menubtn" class="menubtn animated fadeIn delay-2s" >Browse Our Ads</a>
+            </div> 
+        </div>
+        
+        <iframe id="iframe_idn" name="myiframe" frameborder="0" scrolling="yes" width="100%" height="100%" class="iframebox" style="transition: all 0.5s ease;"></iframe>
+
+        <!-- javascript custom -->
+        <script src="page/assets/js/main.js"></script>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="page/assets/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
+
