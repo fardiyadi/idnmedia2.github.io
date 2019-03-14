@@ -705,11 +705,6 @@ ul > li a:hover {
     }
 }
 @media screen and (max-width:480px){
-    #contoh-popmama1 {
-        background-image: url(../images/bg-reg-m.jpg);
-        background-attachment: fixed;
-        background-size: cover;
-    }
     #home_awal h1 {
         font-size: 32px;
         margin: 10% 0;
