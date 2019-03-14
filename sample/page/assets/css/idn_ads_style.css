@@ -239,6 +239,7 @@ body {
 
 
 
+
 /* popbela style */
 
 #popbela {
@@ -574,7 +575,6 @@ ul > li a:hover {
 
 #page-content-wrapper {
   width: 100%;
-  position: absolute;
   padding: 15px;
   margin-top: 50px;
 }
