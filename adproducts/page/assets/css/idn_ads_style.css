@@ -695,7 +695,7 @@ ul > li a:hover {
         background-size: cover;
         background-position: center;
     }
-    #yummy-style {
+    #yummy-style::before {
         content: "";
         display: block;
       position: fixed;
