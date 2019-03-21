@@ -1,4 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@font-face {
+    font-family: 'Helvetica Neue Black';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/HelveticaNeue-Black.woff') format('woff');
+}
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/HelveticaNeueBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/HelveticaNeueMedium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Helvetica Neue Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/HelveticaNeue-Condensed.woff') format('woff');
+}
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/HelveticaNeue-Light.woff') format('woff');
+}
 body {
     overflow-x: hidden;
 }
@@ -31,6 +60,21 @@ body {
     font-size: 16px;
     margin-left: 20px;
 }
+.navbar a.contact-us {
+    background-color: #e93f33;
+    border-radius: 20px;
+    color: white;
+    padding: 8px 14px;
+    font-family: 'Helvetica Neue Light', sans-serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+    box-shadow: none;
+}
+.navbar a.contact-us:hover {
+    text-decoration: none;
+    box-shadow: 1px 2px 5px #333;
+    transition: all 0.3s ease;
+}
 .navbar-custom {
   background-color: white;
   box-shadow: 0px 2px 5px #ccc;
@@ -44,6 +88,12 @@ body {
 }
 .fa .fa-angle-down, .fa .fa-angle-right {
     transition: all 0.5s ease;
+}
+.menu-mobile {
+    display: none!important;
+}
+.menu-desktop {
+    display: block!important;
 }
 .navbar-custom .fa {
   vertical-align: middle;
@@ -77,25 +127,34 @@ body {
     color: white;
     position: relative;
     display: inline-block;
-    border: 3px solid red;
-    padding: 10px 40px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: red;
+    border: 3px solid #e93f33;
+    padding: 5px 40px;
+    font-size: 16px;
+    font-family: 'Helvetica Neue Light', sans-serif;
+    background-color: #e93f33;
     border-radius: 40px;
     transition: all 0.3s ease;
+    letter-spacing: 1px;
 }
 #home_awal a:hover {
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0px 2px 5px #171717e6;
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #fff;
 }
 #home_awal h1 {
-    font-size: 40px;
-    font-family: 'Cabin', sans-serif;
+    font-size: 33px;
+    font-family: 'Helvetica Neue Light', sans-serif;
     margin: 4% 0;
     font-weight: bold;
+    letter-spacing: 1.2px;
     /* text-shadow: 2px 1px 5px #3a5471e6; */
+}
+#home_awal .mini-intro {
+    font-family: 'Helvetica Neue Light' , sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.2px;
 }
 
 .section_content {
@@ -121,11 +180,201 @@ body {
     background-attachment: fixed;
     background-color: transparent!important;
 }
+.contact-us-page {
+    background-color: #fff;
+    box-shadow: 1px 2px 10px #1e1e1e80;
+    font-family: 'Helvetica Neue Light', sans-serif;
+    letter-spacing: 1.2px;
+    padding-bottom: 30px;
+}
+.contact-us-page h1 {
+    font-family: 'Helvetica Neue Medium', sans-serif;
+    letter-spacing: 1.2px;
+    padding: 20px 0;
+    margin-bottom: 20px;   
+}
+.contact-us-page h1::after {
+    content: '';
+    position: relative;
+    top: 10px;
+    background-color: #ccc;
+    height: 1px;
+    border-radius: 10px;
+    width: 20%;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.contact-info h4 {
+    font-family: 'Helvetica Neue Medium', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.3px;
+}
+th, td {
+    text-align: left;
+    font-family: 'Helvetica Neue Light', sans-serif;
+    padding-right: 30px;
+    vertical-align: top;
+    padding-bottom: 5px;
+    letter-spacing: 0.4px;
+}
+.map-frame {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+/* popbela */
+#popbela-style {
+    background-color: #000;
+    min-height: 100vh;
+    background-image: url(../images/shapes/popbela-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+#popbela-style .spec-des {
+    background-color: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: 1px solid #807d7d;
+}
+#popbela-style .spec-des > h1, #popbela-style .spec-des > h3 {
+    color: #d51c6a;
+}
+#popbela-style .spec-des > h1::after {
+    content: '';
+    position: relative;
+    top: 10px;
+    right: 0;
+    background-color: #fff;
+    height: 5px;
+    width: 100px;
+    display: block;
+}
+#popbela-style .spec-des > a.preview {
+    border: 1px solid #fff;
+    color: #d51c6a;
+    background-color: transparent;
+    border-radius: 0px;
+}
+#popbela-style .spec-des > a.preview:hover {
+    background-color: #fff;
+    color: #000;
+}
+/* popmama */
+#popmama-style {
+    background-color: #fde9f1;
+    min-height: 100vh;
+    background-image: url(../images/shapes/popmama-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+#popmama-style .spec-des::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background:url(../images/shapes/mom-pregnant.png) no-repeat 100% 100%;
+    background-size: 60%;
+    opacity: 1;
+    z-index: -1;
+}
+#popmama-style .spec-des {
+    background: -webkit-gradient(left top,left bottom,color-stop(0,#9d80d6),color-stop(79%,#e286b9),color-stop(100%,#e286b9));
+    background: -webkit-gradient(linear,left top,left bottom,from(#9d80d6),color-stop(79%,#e286b9),to(#e286b9));
+    background: linear-gradient(180deg,#9d80d6 0,#e286b9 79%,#e286b9);
+    color: #fff;
+    border-radius: 20px;
+}
+
+#popmama-style .spec-des > h1::after {
+    content: '';
+    position: relative;
+    top: 10px;
+    right: 0;
+    background-color: #fbc3b4;
+    height: 5px;
+    border-radius: 10px;
+    width: 100px;
+    display: block;
+}
+#popmama-style a.preview {
+    background-color: #9c80d7;
+    border-radius: 30px;
+    border: 1px solid #9c80d7;
+}
+
+/* yummy style */
+#yummy-style {
+    background-color: #ffcf7e;
+    min-height: 100vh;
+    background-image: url(../images/shapes/yummy-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+#yummy-style .spec-des {
+    background-color: #fff;
+    color: #000;
+}
+#yummy-style .spec-des::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background:url(../images/shapes/yummy.png) no-repeat 100% 100%;
+    background-size: 150px;
+    opacity: 1;
+    z-index: -1;
+}
+#yummy-style .spec-des > h1, #yummy-style .spec-des > h3, #yummy-style .spec-des > h4 {
+    color: #f69524;
+}
+#yummy-style .spec-des > h1::after {
+    content: '';
+    position: relative;
+    top: 10px;
+    right: 0;
+    background-color: #f69524;
+    height: 5px;
+    border-radius: 10px;
+    width: 100px;
+    display: block;
+}
+#yummy-style a.preview {
+    background-color: white;
+    color: #f69425;
+    border: 3px solid #f69425;
+    border-radius: 30px;
+}
+#yummy-style a.preview:hover {
+    background-color: #f69425;
+    color: #fff;
+    border: 3px solid #f69425;
+    border-radius: 30px;
+    box-shadow: none;
+    transition: all 0.5s ease;
+}
+
+
+
+
+
+
+
+
 .spec-des {
     background-color: #f6f6f6;
-    border-left: 2px solid #eee;
+    box-shadow: 1px 2px 10px #1e1e1e80;
     padding: 20px 20px 20px 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Helvetica Neue Light', sans-serif;
+    letter-spacing: 1.2px;
 }
 a.preview {
     background-color: #ed2028;
@@ -168,21 +417,35 @@ a.preview:hover {
     border-radius: 20px;
 }
 .spec-des > h1 {
-    font-weight: bold;
+    font-family: 'Helvetica Neue Medium';
     font-size: 2rem;
     padding-bottom: 15px;
-    border-bottom: 3px solid #cbc8c8;
+    letter-spacing: 0px
 }
 .spec-des > h3 {
     font-size: 1.5rem;
+    font-family: 'Helvetica Neue Medium';
+    letter-spacing: 0px;
 }
 .spec-des > h4 {
     font-size: 1.2rem;
-    font-weight: bold;
+    font-family: 'Helvetica Neue Medium';
+    letter-spacing: 0px;
 }
 .spec-des > ul {
     padding-left: 20px;
     list-style: disc;
+}
+.spec-des > h1::after {
+    content: '';
+    position: relative;
+    top: 10px;
+    right: 0;
+    background-color: #aaa9a8;
+    height: 5px;
+    border-radius: 0px;
+    width: 100px;
+    display: block;
 }
 .video-only-title {
     
@@ -260,7 +523,7 @@ ul > li a:hover {
 
 #page-content-wrapper {
   width: 100%;
-  position: absolute;
+  position: relative;
   padding: 15px;
   margin-top: 50px;
 }
@@ -391,12 +654,60 @@ ul > li a:hover {
     }
 }
 @media screen and (max-width:480px){
+    #popmama-style {
+        background-color: #fde9f1;
+        height: 100%!important;
+        background-image: url(../images/shapes/popmama-bg-mobile.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    #popbela-style {
+        background-color: #fde9f1;
+        height: 100%!important;
+        background-image: url(../images/shapes/popbela-bg-mobile.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    #yummy-style {
+        background-color: #fde9f1;
+        height: 100%!important;
+        background-image: url(../images/shapes/yummy-bg-mobile.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    .menu-mobile {
+        display: block!important;
+    }
+    .menu-desktop {
+        display: none!important;
+    }
     #home_awal h1 {
         font-size: 32px;
         margin: 10% 0;
     }
     #sidebar-wrapper {
         overflow-y: auto!important;
+    }
+    .navbar-brand > img {
+        max-width: 100px;
+    }
+    .navbar a.contact-us {
+        font-size: 12px;
+    }
+    .navbar-custom {
+        padding: 10px;
+    }
+    .contact-us-page {
+        font-size: .9rem;
+    }
+    .contact-us-page h1 {
+        font-size: 2rem;
+    }
+    .contact-info h4 {
+        font-size: 1.1rem;
     }
     #sidebar-overlay {
         width: 0px;

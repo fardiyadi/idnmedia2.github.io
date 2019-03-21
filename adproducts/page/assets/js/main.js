@@ -84,4 +84,16 @@ function remove_home() {
     document.getElementById("menubtn").style.opacity = "1";
     document.getElementById("iframe_idn").style.display = "block";
 }
-        
+
+// hide menu on mobile
+
+function remove_home_mobile() {
+    document.getElementById("home_awal").style.display = "none";
+    document.getElementById("menubtn").style.opacity = "1";
+    document.getElementById("iframe_idn").style.display = "block";
+    document.getElementById("sidebar-wrapper").style.width = "0px";
+    document.getElementById("sidebar-overlay").style.width = "0px";
+    document.getElementById("iframe_idn").style.width = "100%";
+    document.getElementById("iframe_idn").style.marginLeft = "0px";
+}
+  

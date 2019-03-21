@@ -26,6 +26,7 @@
         <!-- Start of idnmedia Zendesk Widget script -->
         <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f2202800-da8d-4aa7-9e34-81c020a3ee27"> </script>
         <!-- End of idnmedia Zendesk Widget script -->
+
         
         
         <script>
@@ -103,9 +104,15 @@
                         <img src="page/assets/images/idn-ads.png" class="img-fluid">
                     </a>
                 </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="page/idntimes/contact-us.html" class="contact-us" target="myiframe" onclick="remove_home()" ><i class="fa fa-envelope" style="margin-right: 5px; top: -2px; position: relative;"></i>Contact Us</a>
+                    </li>
+                </ul>
             </div>
         </nav>
-    
+        
+        <!-- sidebar menu -->
         <div id="sidebar-overlay" onclick="showhideMenu()"></div> 
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav accordion">
@@ -124,12 +131,18 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-down"></i>TVC Spot Masthead</a>
                             <ul class="inner nakwa">
                                 <li>
-                                    <a href="page/idntimes/tvc-cpm.html" target="myiframe" onclick="remove_home()">
+                                    <a href="page/idntimes/tvc-cpm.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                        CPM
+                                    </a>
+                                    <a href="page/idntimes/tvc-cpm.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
                                         CPM
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="page/idntimes/tvc-cpd.html" target="myiframe" onclick="remove_home()">
+                                    <a href="page/idntimes/tvc-cpd.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                        CPD
+                                    </a>
+                                    <a href="page/idntimes/tvc-cpd.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
                                         CPD
                                     </a>
                                 </li>
@@ -148,43 +161,55 @@
                                     <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Mobile</a>
                                     <ul class="inner nakga">
                                         <li>
-                                            <a href="page/m.idntimes/popup.html" target="myiframe" onclick="remove_home()">Pop Up Mobile</a>
+                                            <a href="page/m.idntimes/popup.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Pop Up Mobile</a>
+                                            <a href="page/m.idntimes/popup.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Pop Up Mobile</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.idntimes/sticky.html" target="myiframe" onclick="remove_home()">Sticky Bottom</a>
+                                            <a href="page/m.idntimes/sticky.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Sticky Bottom</a>
+                                            <a href="page/m.idntimes/sticky.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Sticky Bottom</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.idntimes/parallax1.html" target="myiframe" onclick="remove_home()">Parallax 1</a>
+                                            <a href="page/m.idntimes/parallax1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Parallax 1</a>
+                                            <a href="page/m.idntimes/parallax1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Parallax 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.idntimes/parallax2.html" target="myiframe" onclick="remove_home()">Parallax 2</a>
+                                            <a href="page/m.idntimes/parallax2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Parallax 2</a>
+                                            <a href="page/m.idntimes/parallax2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Parallax 2</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.idntimes/parallax3.html" target="myiframe" onclick="remove_home()">Parallax 3</a>
+                                            <a href="page/m.idntimes/parallax3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Parallax 3</a>
+                                            <a href="page/m.idntimes/parallax3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Parallax 3</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.idntimes/inart1-1.html" target="myiframe" onclick="remove_home()">In Article 1</a>
+                                            <a href="page/m.idntimes/inart1-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 1</a>
+                                            <a href="page/m.idntimes/inart1-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.idntimes/inart2-1.html" target="myiframe" onclick="remove_home()">In Article 2</a>
+                                            <a href="page/m.idntimes/inart2-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 2</a>
+                                            <a href="page/m.idntimes/inart2-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 2</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.idntimes/inart3-1.html" target="myiframe" onclick="remove_home()">In Article 3</a>
+                                            <a href="page/m.idntimes/inart3-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 3</a>
+                                            <a href="page/m.idntimes/inart3-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 3</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.idntimes/infeed1-1.html" target="myiframe" onclick="remove_home()">In Feed 1</a>
+                                            <a href="page/m.idntimes/infeed1-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 1</a>
+                                            <a href="page/m.idntimes/infeed1-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.idntimes/infeed2-1.html" target="myiframe" onclick="remove_home()">In Feed 2</a>
+                                            <a href="page/m.idntimes/infeed2-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 2</a>
+                                            <a href="page/m.idntimes/infeed2-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 2</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.idntimes/infeed3-1.html" target="myiframe" onclick="remove_home()">In Feed 3</a>
+                                            <a href="page/m.idntimes/infeed3-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 3</a>
+                                            <a href="page/m.idntimes/infeed3-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 3</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.idntimes/leaderboard-1.html" target="myiframe" onclick="remove_home()">Leaderboard V1</a>
+                                            <a href="page/m.idntimes/leaderboard-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard V1</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.idntimes/leaderboard-2.html" target="myiframe" onclick="remove_home()">Leaderboard V2</a>
+                                            <a href="page/m.idntimes/leaderboard-2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard V2</a>
+                                            <a href="page/m.idntimes/leaderboard-2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard V2</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -194,52 +219,68 @@
                                     <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Desktop</a>
                                     <ul class="inner nakga">
                                         <li>
-                                            <a href="page/idntimes/popup.html" target="myiframe" onclick="remove_home()">Pop Up</a>
+                                            <a href="page/idntimes/popup.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Pop Up</a>
+                                            <a href="page/idntimes/popup.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Pop Up</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/sticky.html" target="myiframe" onclick="remove_home()">Sticky Bottom</a>
+                                            <a href="page/idntimes/sticky.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Sticky Bottom</a>
+                                            <a href="page/idntimes/sticky.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Sticky Bottom</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/skinad.html" target="myiframe" onclick="remove_home()">Skin Ad</a>
+                                            <a href="page/idntimes/skinad.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Skin Ad</a>
+                                            <a href="page/idntimes/skinad.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Skin Ad</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/br-1.html" target="myiframe" onclick="remove_home()">Big Rectangle 1</a>
+                                            <a href="page/idntimes/br-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Big Rectangle 1</a>
+                                            <a href="page/idntimes/br-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Big Rectangle 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/br-2.html" target="myiframe" onclick="remove_home()">Big Rectangle 2</a>
+                                            <a href="page/idntimes/br-2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Big Rectangle 2</a>
+                                            <a href="page/idntimes/br-2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Big Rectangle 2</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/inart1.html" target="myiframe" onclick="remove_home()">In Article 1</a>
+                                            <a href="page/idntimes/inart1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 1</a>
+                                            <a href="page/idntimes/inart1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/inart2.html" target="myiframe" onclick="remove_home()">In Article 2</a>
+                                            <a href="page/idntimes/inart2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 2</a>
+                                            <a href="page/idntimes/inart2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 2</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/inart3.html" target="myiframe" onclick="remove_home()">In Article 3</a>
+                                            <a href="page/idntimes/inart3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 3</a>
+                                            <a href="page/idntimes/inart3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 3</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/infeed1.html" target="myiframe" onclick="remove_home()">In Feed 1</a>
+                                            <a href="page/idntimes/infeed1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 1</a>
+                                            <a href="page/idntimes/infeed1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/infeed2.html" target="myiframe" onclick="remove_home()">In Feed 2</a>
+                                            <a href="page/idntimes/infeed2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 2</a>
+                                            <a href="page/idntimes/infeed2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 2</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/infeed3.html" target="myiframe" onclick="remove_home()">In Feed 3</a>
+                                            <a href="page/idntimes/infeed3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 3</a>
+                                            <a href="page/idntimes/infeed3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 3</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/leaderboard-1.html" target="myiframe" onclick="remove_home()">Leaderboard V1</a>
+                                            <a href="page/idntimes/leaderboard-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard V1</a>
+                                            <a href="page/idntimes/leaderboard-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard V1</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/leaderboard-2.html" target="myiframe" onclick="remove_home()">Leaderboard V2</a>
+                                            <a href="page/idntimes/leaderboard-2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard V2</a>
+                                            <a href="page/idntimes/leaderboard-2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard V2</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/leaderboard-3.html" target="myiframe" onclick="remove_home()">Leaderboard V3</a>
+                                            <a href="page/idntimes/leaderboard-3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard V3</a>
+                                            <a href="page/idntimes/leaderboard-3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard V3</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/mr-1.html" target="myiframe" onclick="remove_home()">Medium Rectangle 1</a>
+                                            <a href="page/idntimes/mr-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Medium Rectangle 1</a>
+                                            <a href="page/idntimes/mr-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Medium Rectangle 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/mr-2.html" target="myiframe" onclick="remove_home()">Medium Rectangle 2</a>
+                                            <a href="page/idntimes/mr-2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Medium Rectangle 2</a>
+                                            <a href="page/idntimes/mr-2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Medium Rectangle 2</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -252,37 +293,44 @@
                             <ul class="inner nakwa">
                                 <!-- idntimes content native editorial -->
                                 <li>
-                                    <a href="page/idntimes/cont-native.html" target="myiframe" onclick="remove_home()">Native Editorial</a>
+                                    <a href="page/idntimes/cont-native.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Native Editorial</a>
+                                    <a href="page/idntimes/cont-native.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Native Editorial</a>
                                 </li>
                                 
                                 <!-- idntimes content branded quiz -->
                                 <li>
-                                    <a href="page/idntimes/cont-quiz.html" target="myiframe" onclick="remove_home()">Branded Quiz</a>
+                                    <a href="page/idntimes/cont-quiz.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Branded Quiz</a>
+                                    <a href="page/idntimes/cont-quiz.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Branded Quiz</a>
                                 </li>
                                 
                                 <!-- idntimes content event coverage -->
                                 <li>
-                                    <a href="page/idntimes/cont-event.html" target="myiframe" onclick="remove_home()">Event Coverage</a>
+                                    <a href="page/idntimes/cont-event.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Event Coverage</a>
+                                    <a href="page/idntimes/cont-event.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Event Coverage</a>
                                 </li>
                                 
                                 <!-- idntimes content community article -->
                                 <li>
-                                    <a href="page/idntimes/cont-comart.html" target="myiframe" onclick="remove_home()">Community Article</a>
+                                    <a href="page/idntimes/cont-comart.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Community Article</a>
+                                    <a href="page/idntimes/cont-comart.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Community Article</a>
                                 </li>
                                 
                                 <!-- idntimes content interactive infographics -->
                                 <li>
-                                    <a href="page/idntimes/cont-fyi.html" target="myiframe" onclick="remove_home()">Interactive Infographic</a>
+                                    <a href="page/idntimes/cont-fyi.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Interactive Infographic</a>
+                                    <a href="page/idntimes/cont-fyi.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Interactive Infographic</a>
                                 </li>
                                 
                                 <!-- idntimes content special channel -->
                                 <li>
-                                    <a href="page/idntimes/cont-spchan.html" target="myiframe" onclick="remove_home()">Special Channel</a>
+                                    <a href="page/idntimes/cont-spchan.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Special Channel</a>
+                                    <a href="page/idntimes/cont-spchan.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Special Channel</a>
                                 </li>
                                 
                                 <!-- idntimes content regular infographics -->
                                 <li>
-                                    <a href="page/idntimes/cont-infograph.html" target="myiframe" onclick="remove_home()">Regular Infographic</a>
+                                    <a href="page/idntimes/cont-infograph.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Regular Infographic</a>
+                                    <a href="page/idntimes/cont-infograph.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Regular Infographic</a>
                                 </li>
                             </ul>
                         </li>
@@ -294,47 +342,56 @@
                                  
                                 <!-- idntimes social media LINE Broadcast -->
                                 <li>
-                                    <a href="page/idntimes/sos-line.html" target="myiframe" onclick="remove_home()">LINE Broadcast</a>
+                                    <a href="page/idntimes/sos-line.html" target="myiframe" onclick="remove_home()" class="menu-desktop">LINE Broadcast</a>
+                                    <a href="page/idntimes/sos-line.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">LINE Broadcast</a>
                                 </li>
                                 
                                 <!-- idntimes social media WA Broadcast -->
                                 <li>
-                                    <a href="page/idntimes/sos-wabrod.html" target="myiframe" onclick="remove_home()">WhatsApp Broadcast</a>
+                                    <a href="page/idntimes/sos-wabrod.html" target="myiframe" onclick="remove_home()" class="menu-desktop">WhatsApp Broadcast</a>
+                                    <a href="page/idntimes/sos-wabrod.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">WhatsApp Broadcast</a>
                                 </li>
                                                    
                                 <!-- idntimes social media instagram story -->
                                 <li>
-                                    <a href="page/idntimes/sos-igstory.html" target="myiframe" onclick="remove_home()">Instagram Story</a>
+                                    <a href="page/idntimes/sos-igstory.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Story</a>
+                                    <a href="page/idntimes/sos-igstory.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Story</a>
                                 </li>
                                                                 
                                 <!-- idntimes social media instagram post -->
                                 <li>
-                                    <a href="page/idntimes/sos-igpost.html" target="myiframe" onclick="remove_home()">Instagram Post</a>
+                                    <a href="page/idntimes/sos-igpost.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Post</a>
+                                    <a href="page/idntimes/sos-igpost.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Post</a>
                                 </li>
                                                                 
                                 <!-- idntimes social media instagram live -->
                                 <li>
-                                    <a href="page/idntimes/sos-iglive.html" target="myiframe" onclick="remove_home()">Instagram Live</a>
+                                    <a href="page/idntimes/sos-iglive.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Live</a>
+                                    <a href="page/idntimes/sos-iglive.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Live</a>
                                 </li>
                                                                 
                                 <!-- idntimes social media instagram post carousel -->
                                 <li>
-                                    <a href="page/idntimes/sos-igcar.html" target="myiframe" onclick="remove_home()">Instagram Carousel</a>
+                                    <a href="page/idntimes/sos-igcar.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Carousel</a>
+                                    <a href="page/idntimes/sos-igcar.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Carousel</a>
                                 </li>
                                 
                                 <!-- idntimes social media facebook post -->
                                 <li>
-                                    <a href="page/idntimes/sos-fbpost.html" target="myiframe" onclick="remove_home()">Facebook Post</a>
+                                    <a href="page/idntimes/sos-fbpost.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Post</a>
+                                    <a href="page/idntimes/sos-fbpost.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Post</a>
                                 </li>
                                                                 
                                 <!-- idntimes social media facebook live poll -->
                                 <li>
-                                    <a href="page/idntimes/sos-fbpoll.html" target="myiframe" onclick="remove_home()">Facebook Live Poll</a>
+                                    <a href="page/idntimes/sos-fbpoll.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Live Poll</a>
+                                    <a href="page/idntimes/sos-fbpoll.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Live Poll</a>
                                 </li>
                                                                 
                                 <!-- idntimes social media facebook live event coverage -->
                                 <li>
-                                    <a href="page/idntimes/sos-fbevent.html" target="myiframe" onclick="remove_home()">Facebook Live Event</a>
+                                    <a href="page/idntimes/sos-fbevent.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Live Event</a>
+                                    <a href="page/idntimes/sos-fbevent.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Live Event</a>
                                 </li>
                             </ul>
                         </li>
@@ -344,7 +401,8 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Video</a>
                             <ul class="inner nakwa">
                                  <li>
-                                    <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home()">Video Placement</a>
+                                    <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Video Placement</a>
+                                    <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Video Placement</a>
                                 </li>
                             </ul>
                         </li>
@@ -354,7 +412,8 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Online Activation</a>
                             <ul class="inner nakwa">
                                  <li>
-                                    <a href="page/idntimes/on-act.html" target="myiframe" onclick="remove_home()">Online Activation</a>
+                                    <a href="page/idntimes/on-act.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Online Activation</a>
+                                    <a href="page/idntimes/on-act.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Online Activation</a>
                                 </li>
                             </ul>
                         </li>
@@ -365,28 +424,36 @@
                             <ul class="inner nakwa">
                                 <!-- idntimes offline ims -->
                                 <li>
-                                    <a href="page/idntimes/off-act-ims.html" target="myiframe" onclick="remove_home()">
+                                    <a href="page/idntimes/off-act-ims.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                        Indonesia Millennial Summit
+                                    </a><a href="page/idntimes/off-act-ims.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
                                         Indonesia Millennial Summit
                                     </a>
                                 </li>
                                 
                                 <!-- idntimes offline iwf -->
                                 <li>
-                                    <a href="page/idntimes/off-act-iwf.html" target="myiframe" onclick="remove_home()">
+                                    <a href="page/idntimes/off-act-iwf.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                        Indonesia Writers Festival
+                                    </a><a href="page/idntimes/off-act-iwf.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
                                         Indonesia Writers Festival
                                     </a>
                                 </li>
                                 
                                 <!-- idntimes community writers gahtering -->
                                 <li>
-                                    <a href="page/idntimes/off-act-comgath.html" target="myiframe" onclick="remove_home()">
+                                    <a href="page/idntimes/off-act-comgath.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                        Community Writers Gath
+                                    </a><a href="page/idntimes/off-act-comgath.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
                                         Community Writers Gath
                                     </a>
                                 </li>
                                 
                                 <!-- idntimes custom -->
                                 <li>
-                                    <a href="page/idntimes/off-act-cus.html" target="myiframe" onclick="remove_home()">
+                                    <a href="page/idntimes/off-act-cus.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                        Custom Activation
+                                    </a>  <a href="page/idntimes/off-act-cus.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
                                         Custom Activation
                                     </a>    
                                 </li>
@@ -410,12 +477,16 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-down"></i>TVC Spot Masthead</a>
                             <ul class="inner nakwa">
                                 <li>
-                                    <a href="page/popbela/tvc-cpm.html" target="myiframe" onclick="remove_home()">
+                                    <a href="page/popbela/tvc-cpm.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                        CPM
+                                    </a><a href="page/popbela/tvc-cpm.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
                                         CPM
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="page/popbela/tvc-cpd.html" target="myiframe" onclick="remove_home()">
+                                    <a href="page/popbela/tvc-cpd.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                        CPD
+                                    </a><a href="page/popbela/tvc-cpd.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
                                         CPD
                                     </a>
                                 </li>
@@ -432,43 +503,55 @@
                                      <a href="#" class="toggle"><i class="fa fa-angle-down"></i>Mobile</a>
                                     <ul class="inner nakga">
                                         <li>
-                                            <a href="page/m.popbela/popup.html" target="myiframe" onclick="remove_home()">Pop Up Mobile</a>
+                                            <a href="page/m.popbela/popup.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Pop Up Mobile</a>
+                                            <a href="page/m.popbela/popup.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Pop Up Mobile</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popbela/sticky.html" target="myiframe" onclick="remove_home()">Sticky Bottom</a>
+                                            <a href="page/m.popbela/sticky.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Sticky Bottom</a>
+                                            <a href="page/m.popbela/sticky.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Sticky Bottom</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popbela/parallax1.html" target="myiframe" onclick="remove_home()">Parallax 1</a>
+                                            <a href="page/m.popbela/parallax1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Parallax 1</a>
+                                            <a href="page/m.popbela/parallax1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Parallax 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popbela/parallax2.html" target="myiframe" onclick="remove_home()">Parallax 2</a>
+                                            <a href="page/m.popbela/parallax2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Parallax 2</a>
+                                            <a href="page/m.popbela/parallax2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Parallax 2</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popbela/parallax3.html" target="myiframe" onclick="remove_home()">Parallax 3</a>
+                                            <a href="page/m.popbela/parallax3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Parallax 3</a>
+                                            <a href="page/m.popbela/parallax3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Parallax 3</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popbela/inart1.html" target="myiframe" onclick="remove_home()">In Article 1</a>
+                                            <a href="page/m.popbela/inart1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 1</a>
+                                            <a href="page/m.popbela/inart1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popbela/inart2.html" target="myiframe" onclick="remove_home()">In Article 2</a>
+                                            <a href="page/m.popbela/inart2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 2</a>
+                                            <a href="page/m.popbela/inart2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 2</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popbela/inart3.html" target="myiframe" onclick="remove_home()">In Article 3</a>
+                                            <a href="page/m.popbela/inart3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 3</a>
+                                            <a href="page/m.popbela/inart3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 3</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popbela/infeed1.html" target="myiframe" onclick="remove_home()">In Feed 1</a>
+                                            <a href="page/m.popbela/infeed1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popbela/infeed2.html" target="myiframe" onclick="remove_home()">In Feed 2</a>
+                                            <a href="page/m.popbela/infeed2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 2</a>
+                                            <a href="page/m.popbela/infeed2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 2</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popbela/infeed3.html" target="myiframe" onclick="remove_home()">In Feed 3</a>
+                                            <a href="page/m.popbela/infeed3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 3</a>
+                                            <a href="page/m.popbela/infeed3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 3</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popbela/leaderboard-1.html" target="myiframe" onclick="remove_home()">Leaderboard V1</a>
+                                            <a href="page/m.popbela/leaderboard-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard V1</a>
+                                            <a href="page/m.popbela/leaderboard-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard V1</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popbela/leaderboard-2.html" target="myiframe" onclick="remove_home()">Leaderboard V2</a>
+                                            <a href="page/m.popbela/leaderboard-2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard V2</a>
+                                            <a href="page/m.popbela/leaderboard-2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard V2</a>
                                         </li> 
                                     </ul>
                                 </li>
@@ -478,49 +561,64 @@
                                      <a href="#" class="toggle"><i class="fa fa-angle-down"></i>Desktop</a>
                                     <ul class="inner nakga">
                                         <li>
-                                            <a href="page/popbela/popup.html" target="myiframe" onclick="remove_home()">Pop Up</a>
+                                            <a href="page/popbela/popup.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Pop Up</a>
+                                            <a href="page/popbela/popup.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Pop Up</a>
                                         </li>
                                         <li>
-                                            <a href="page/popbela/sticky.html" target="myiframe" onclick="remove_home()">Sticky Bottom</a>
+                                            <a href="page/popbela/sticky.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Sticky Bottom</a>
+                                            <a href="page/popbela/sticky.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Sticky Bottom</a>
                                         </li>
                                         <li>
-                                            <a href="page/popbela/br1.html" target="myiframe" onclick="remove_home()">Big Rectangle 1</a>
+                                            <a href="page/popbela/br1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Big Rectangle 1</a>
+                                            <a href="page/popbela/br1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Big Rectangle 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/popbela/br2.html" target="myiframe" onclick="remove_home()">Big Rectangle 2</a>
+                                            <a href="page/popbela/br2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Big Rectangle 2</a>
+                                            <a href="page/popbela/br2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Big Rectangle 2</a>
                                         </li>
                                         <li>
-                                            <a href="page/popbela/inart1.html" target="myiframe" onclick="remove_home()">In Article 1</a>
+                                            <a href="page/popbela/inart1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 1</a>
+                                            <a href="page/popbela/inart1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/popbela/inart2.html" target="myiframe" onclick="remove_home()">In Article 2</a>
+                                            <a href="page/popbela/inart2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 2</a>
+                                            <a href="page/popbela/inart2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 2</a>
                                         </li>
                                         <li>
-                                            <a href="page/popbela/inart3.html" target="myiframe" onclick="remove_home()">In Article 3</a>
+                                            <a href="page/popbela/inart3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 3</a>
+                                            <a href="page/popbela/inart3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 3</a>
                                         </li>
                                         <li>
-                                            <a href="page/popbela/infeed1.html" target="myiframe" onclick="remove_home()">In Feed 1</a>
+                                            <a href="page/popbela/infeed1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 1</a>
+                                            <a href="page/popbela/infeed1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/popbela/infeed2.html" target="myiframe" onclick="remove_home()">In Feed 2</a>
+                                            <a href="page/popbela/infeed2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 2</a>
+                                            <a href="page/popbela/infeed2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 2</a>
                                         </li>
                                         <li>
-                                            <a href="page/popbela/infeed3.html" target="myiframe" onclick="remove_home()">In Feed 3</a>
+                                            <a href="page/popbela/infeed3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 3</a>
+                                            <a href="page/popbela/infeed3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 3</a>
                                         </li>
                                         <li>
-                                            <a href="page/popbela/leaderboard-1.html" target="myiframe" onclick="remove_home()">Leaderboard V1</a>
+                                            <a href="page/popbela/leaderboard-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard V1</a>
+                                            <a href="page/popbela/leaderboard-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard V1</a>
                                         </li>
                                         <li>
-                                            <a href="page/popbela/leaderboard-2.html" target="myiframe" onclick="remove_home()">Leaderboard V2</a>
+                                            <a href="page/popbela/leaderboard-2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard V2</a>
+                                            <a href="page/popbela/leaderboard-2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard V2</a>
                                         </li>
                                         <li>
-                                            <a href="page/popbela/leaderboard-3.html" target="myiframe" onclick="remove_home()">Leaderboard V3</a>
+                                            <a href="page/popbela/leaderboard-3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard V3</a>
+                                            <a href="page/popbela/leaderboard-3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard V3</a>
                                         </li>
                                         <li>
-                                            <a href="page/popbela/mr1.html" target="myiframe" onclick="remove_home()">Medium Rectangle 1</a>
+                                            <a href="page/popbela/mr1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Medium Rectangle 1</a>
+                                            <a href="page/popbela/mr1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Medium Rectangle 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/popbela/mr2.html" target="myiframe" onclick="remove_home()">Medium Rectangle 1</a>
+                                            <a href="page/popbela/mr2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Medium Rectangle 1</a>
+                                            <a href="page/popbela/mr2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Medium Rectangle 1</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -532,16 +630,20 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Content</a>
                             <ul class="inner nakwa">
                                 <li>
-                                    <a href="page/popbela/cont-native.html" target="myiframe" onclick="remove_home()">Native Editorial</a>
+                                    <a href="page/popbela/cont-native.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Native Editorial</a>
+                                    <a href="page/popbela/cont-native.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Native Editorial</a>
                                 </li>
                                 <li>
-                                    <a href="page/popbela/cont-event.html" target="myiframe" onclick="remove_home()">Event Coverage</a>
+                                    <a href="page/popbela/cont-event.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Event Coverage</a>
+                                    <a href="page/popbela/cont-event.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Event Coverage</a>
                                 </li>
                                 <li>
-                                    <a href="page/popbela/cont-spch.html" target="myiframe" onclick="remove_home()">Special Channel</a>
+                                    <a href="page/popbela/cont-spch.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Special Channel</a>
+                                    <a href="page/popbela/cont-spch.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Special Channel</a>
                                 </li>
                                 <li>
-                                    <a href="page/popbela/cont-infograph.html" target="myiframe" onclick="remove_home()">Regular Infographic</a>
+                                    <a href="page/popbela/cont-infograph.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Regular Infographic</a>
+                                    <a href="page/popbela/cont-infograph.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Regular Infographic</a>
                                 </li>
                             </ul>
                         </li>
@@ -552,31 +654,40 @@
                             <ul class="inner nakwa">
                                 
                                 <li>
-                                    <a href="page/idntimes/sos-line.html" target="myiframe" onclick="remove_home()">LINE Broadcast</a>
+                                    <a href="page/popbela/sos-line.html" target="myiframe" onclick="remove_home()" class="menu-desktop">LINE Broadcast</a>
+                                    <a href="page/popbela/sos-line.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">LINE Broadcast</a>
                                 </li>
                                 <li>
-                                    <a href="page/popbela/sos-wabrod.html" target="myiframe" onclick="remove_home()">WhatsApp Broadcast</a>
+                                    <a href="page/popbela/sos-wabrod.html" target="myiframe" onclick="remove_home()" class="menu-desktop">WhatsApp Broadcast</a>
+                                    <a href="page/popbela/sos-wabrod.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">WhatsApp Broadcast</a>
                                 </li>
                                 <li>
-                                    <a href="page/popbela/sos-igstory.html" target="myiframe" onclick="remove_home()">Instagram Story</a>
+                                    <a href="page/popbela/sos-igstory.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Story</a>
+                                    <a href="page/popbela/sos-igstory.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Story</a>
                                 </li>
                                 <li>
-                                    <a href="page/popbela/sos-igpost.html" target="myiframe" onclick="remove_home()">Instagram Post</a>
+                                    <a href="page/popbela/sos-igpost.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Post</a>
+                                    <a href="page/popbela/sos-igpost.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Post</a>
                                 </li>
                                 <li>
-                                    <a href="page/popbela/sos-iglive.html" target="myiframe" onclick="remove_home()">Instagram Live</a>
+                                    <a href="page/popbela/sos-iglive.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Live</a>
+                                    <a href="page/popbela/sos-iglive.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Live</a>
                                 </li>
                                 <li>
-                                    <a href="page/popbela/sos-igcar.html" target="myiframe" onclick="remove_home()">Instagram Carousel</a>
+                                    <a href="page/popbela/sos-igcar.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Carousel</a>
+                                    <a href="page/popbela/sos-igcar.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Carousel</a>
                                 </li>
                                 <li>
-                                    <a href="page/popbela/sos-fbpost.html" target="myiframe" onclick="remove_home()">Facebook Post</a>
+                                    <a href="page/popbela/sos-fbpost.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Post</a>
+                                    <a href="page/popbela/sos-fbpost.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Post</a>
                                 </li>
                                 <li>
-                                    <a href="page/idntimes/sos-fbpoll.html" target="myiframe" onclick="remove_home()">Facebook Live Poll</a>
+                                    <a href="page/idntimes/sos-fbpoll.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Live Poll</a>
+                                    <a href="page/popbela/sos-fbpoll.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Live Poll</a>
                                 </li>
                                 <li>
-                                    <a href="page/idntimes/sos-fbevent.html" target="myiframe" onclick="remove_home()">Facebook Live Event</a>
+                                    <a href="page/idntimes/sos-fbevent.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Live Event</a>
+                                    <a href="page/popbela/sos-fbevent.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Live Event</a>
                                 </li>
                             </ul>
                         </li>
@@ -586,7 +697,8 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Video</a>
                             <ul class="inner nakwa">
                                 <li>
-                                    <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home()">Video Placement</a>
+                                    <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Video Placement</a>
+                                    <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Video Placement</a>
                                 </li>
                             </ul>
                         </li>
@@ -596,7 +708,8 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Online Activation</a>
                             <ul class="inner nakwa">
                                 <li>
-                                    <a href="page/popbela/on-act.html" target="myiframe" onclick="remove_home()">Online Activation</a>
+                                    <a href="page/popbela/on-act.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Online Activation</a>
+                                    <a href="page/popbela/on-act.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Online Activation</a>
                                 </li>
                             </ul>
                         </li>
@@ -606,13 +719,16 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Offline Activation</a>
                             <ul class="inner nakwa">
                                 <li>
-                                    <a href="page/popbela/off-act-bfa.html" target="myiframe" onclick="remove_home()">BeautyFest Asia</a>
+                                    <a href="page/popbela/off-act-bfa.html" target="myiframe" onclick="remove_home()" class="menu-desktop">BeautyFest Asia</a>
+                                    <a href="page/popbela/off-act-bfa.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">BeautyFest Asia</a>
                                 </li>
                                 <li>
-                                    <a href="page/popbela/off-act-comgath.html" target="myiframe" onclick="remove_home()">Community Gathering</a>
+                                    <a href="page/popbela/off-act-comgath.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Community Gathering</a>
+                                    <a href="page/popbela/off-act-comgath.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Community Gathering</a>
                                 </li>
                                 <li>
-                                    <a href="page/popbela/custom-act.html" target="myiframe" onclick="remove_home()">Custom Activation</a>
+                                    <a href="page/popbela/custom-act.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Custom Activation</a>
+                                    <a href="page/popbela/custom-act.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Custom Activation</a>
                                 </li>
                             </ul>
                         </li>
@@ -635,12 +751,16 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-down"></i>TVC Spot Masthead</a>
                             <ul class="inner nakwa">
                                 <li>
-                                    <a href="page/popmama/tvc-cpm.html" target="myiframe" onclick="remove_home()">
+                                    <a href="page/popmama/tvc-cpm.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                        CPM
+                                    </a><a href="page/popmama/tvc-cpm.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
                                         CPM
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="page/popmama/tvc-cpd.html" target="myiframe" onclick="remove_home()">
+                                    <a href="page/popmama/tvc-cpd.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                        CPD
+                                    </a> <a href="page/popmama/tvc-cpd.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
                                         CPD
                                     </a>
                                 </li>
@@ -658,25 +778,32 @@
                                     <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Mobile</a>
                                     <ul class="inner nakga">
                                         <li>
-                                            <a href="page/m.popmama/popup.html" target="myiframe" onclick="remove_home()">Pop Up Mobile</a>
+                                            <a href="page/m.popmama/popup.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Pop Up Mobile</a>
+                                            <a href="page/m.popmama/popup.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Pop Up Mobile</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popmama/sticky.html" target="myiframe" onclick="remove_home()">Sticky Bottom</a>
+                                            <a href="page/m.popmama/sticky.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Sticky Bottom</a>
+                                            <a href="page/m.popmama/sticky.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Sticky Bottom</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popmama/inart1.html" target="myiframe" onclick="remove_home()">In Article 1</a>
+                                            <a href="page/m.popmama/inart1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 1</a>
+                                            <a href="page/m.popmama/inart1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popmama/inart2.html" target="myiframe" onclick="remove_home()">In Article 2</a>
+                                            <a href="page/m.popmama/inart2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 2</a>
+                                            <a href="page/m.popmama/inart2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 2</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popmama/inart3.html" target="myiframe" onclick="remove_home()">In Article 3</a>
+                                            <a href="page/m.popmama/inart3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 3</a>
+                                            <a href="page/m.popmama/inart3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 3</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popmama/infeed1.html" target="myiframe" onclick="remove_home()">In Feed 1</a>
+                                            <a href="page/m.popmama/infeed1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 1</a>
+                                            <a href="page/m.popmama/infeed1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/m.popmama/leaderboard-1.html" target="myiframe" onclick="remove_home()">Leaderboard V1</a>
+                                            <a href="page/m.popmama/leaderboard-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard V1</a>
+                                            <a href="page/m.popmama/leaderboard-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard V1</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -686,49 +813,64 @@
                                     <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Desktop</a>
                                     <ul class="inner nakga">
                                         <li>
-                                            <a href="page/popmama/popup.html" target="myiframe" onclick="remove_home()">Pop Up</a>
+                                            <a href="page/popmama/popup.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Pop Up</a>
+                                            <a href="page/popmama/popup.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Pop Up</a>
                                         </li>
                                         <li>
-                                            <a href="page/popmama/sticky.html" target="myiframe" onclick="remove_home()">Sticky Bottom</a>
+                                            <a href="page/popmama/sticky.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Sticky Bottom</a>
+                                            <a href="page/popmama/sticky.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Sticky Bottom</a>
                                         </li>
                                         <li>
-                                            <a href="page/popmama/br1.html" target="myiframe" onclick="remove_home()">Big Rectangle 1</a>
+                                            <a href="page/popmama/br1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Big Rectangle 1</a>
+                                            <a href="page/popmama/br1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Big Rectangle 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/popmama/br2.html" target="myiframe" onclick="remove_home()">Big Rectangle 2</a>
+                                            <a href="page/popmama/br2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Big Rectangle 2</a>
+                                            <a href="page/popmama/br2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Big Rectangle 2</a>
                                         </li>
                                         <li>
-                                            <a href="page/popmama/inart1.html" target="myiframe" onclick="remove_home()">In Article 1</a>
+                                            <a href="page/popmama/inart1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 1</a>
+                                            <a href="page/popmama/inart1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/popmama/inart2.html" target="myiframe" onclick="remove_home()">In Article 2</a>
+                                            <a href="page/popmama/inart2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 2</a>
+                                            <a href="page/popmama/inart2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 2</a>
                                         </li>
                                         <li>
-                                            <a href="page/popmama/inart3.html" target="myiframe" onclick="remove_home()">In Article 3</a>
+                                            <a href="page/popmama/inart3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 3</a>
+                                            <a href="page/popmama/inart3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 3</a>
                                         </li>
                                         <li>
-                                            <a href="page/popmama/infeed1.html" target="myiframe" onclick="remove_home()">In Feed 1</a>
+                                            <a href="page/popmama/infeed1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 1</a>
+                                            <a href="page/popmama/infeed1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/popmama/infeed2.html" target="myiframe" onclick="remove_home()">In Feed 2</a>
+                                            <a href="page/popmama/infeed2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 2</a>
+                                            <a href="page/popmama/infeed2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 2</a>
                                         </li>
                                         <li>
-                                            <a href="page/popmama/infeed3.html" target="myiframe" onclick="remove_home()">In Feed 3</a>
+                                            <a href="page/popmama/infeed3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 3</a>
+                                            <a href="page/popmama/infeed3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 3</a>
                                         </li>
                                         <li>
-                                            <a href="page/popmama/leaderboard-1.html" target="myiframe" onclick="remove_home()">Leaderboard V1</a>
+                                            <a href="page/popmama/leaderboard-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard V1</a>
+                                            <a href="page/popmama/leaderboard-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard V1</a>
                                         </li>
                                         <li>
-                                            <a href="page/popmama/leaderboard-2.html" target="myiframe" onclick="remove_home()">Leaderboard V2</a>
+                                            <a href="page/popmama/leaderboard-2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard V2</a>
+                                            <a href="page/popmama/leaderboard-2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard V2</a>
                                         </li>
                                         <li>
-                                            <a href="page/popmama/leaderboard-3.html" target="myiframe" onclick="remove_home()">Leaderboard V3</a>
+                                            <a href="page/popmama/leaderboard-3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard V3</a>
+                                            <a href="page/popmama/leaderboard-3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard V3</a>
                                         </li>
                                         <li>
-                                            <a href="page/popmama/mr1.html" target="myiframe" onclick="remove_home()">Medium Rectangle 1</a>
+                                            <a href="page/popmama/mr1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Medium Rectangle 1</a>
+                                            <a href="page/popmama/mr1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Medium Rectangle 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/popmama/mr2.html" target="myiframe" onclick="remove_home()">Medium Rectangle 1</a>
+                                            <a href="page/popmama/mr2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Medium Rectangle 1</a>
+                                            <a href="page/popmama/mr2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Medium Rectangle 1</a>
                                         </li>
                                         
                                     </ul>
@@ -741,16 +883,20 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Content</a>
                             <ul class="inner nakwa">
                                 <li>
-                                    <a href="page/popmama/cont-native.html" target="myiframe" onclick="remove_home()">Native Editorial</a>
+                                    <a href="page/popmama/cont-native.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Native Editorial</a>
+                                    <a href="page/popmama/cont-native.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Native Editorial</a>
                                 </li>
                                 <li>
-                                    <a href="page/popmama/cont-event.html" target="myiframe" onclick="remove_home()">Event Coverage</a>
+                                    <a href="page/popmama/cont-event.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Event Coverage</a>
+                                    <a href="page/popmama/cont-event.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Event Coverage</a>
                                 </li>
                                 <li>
-                                    <a href="page/popmama/cont-spch.html" target="myiframe" onclick="remove_home()">Special Channel</a>
+                                    <a href="page/popmama/cont-spch.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Special Channel</a>
+                                    <a href="page/popmama/cont-spch.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Special Channel</a>
                                 </li>
                                 <li>
-                                    <a href="page/popmama/cont-infograph.html" target="myiframe" onclick="remove_home()">Regular Infographic</a>
+                                    <a href="page/popmama/cont-infograph.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Regular Infographic</a>
+                                    <a href="page/popmama/cont-infograph.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Regular Infographic</a>
                                 </li>
                             </ul>
                         </li>
@@ -760,28 +906,36 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Social</a>
                             <ul class="inner nakwa">
                                 <li>
-                                    <a href="page/popmama/sos-wabrod.html" target="myiframe" onclick="remove_home()">WhatsApp Broadcast</a>
+                                    <a href="page/popmama/sos-wabrod.html" target="myiframe" onclick="remove_home()" class="menu-desktop">WhatsApp Broadcast</a>
+                                    <a href="page/popmama/sos-wabrod.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">WhatsApp Broadcast</a>
                                 </li>
                                 <li>
-                                    <a href="page/popmama/sos-igstory.html" target="myiframe" onclick="remove_home()">Instagram Story</a>
+                                    <a href="page/popmama/sos-igstory.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Story</a>
+                                    <a href="page/popmama/sos-igstory.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Story</a>
                                 </li>
                                 <li>
-                                    <a href="page/popmama/sos-igpost.html" target="myiframe" onclick="remove_home()">Instagram Post</a>
+                                    <a href="page/popmama/sos-igpost.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Post</a>
+                                    <a href="page/popmama/sos-igpost.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Post</a>
                                 </li>
                                 <li>
-                                    <a href="page/popmama/sos-iglive.html" target="myiframe" onclick="remove_home()">Instagram Live</a>
+                                    <a href="page/popmama/sos-iglive.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Live</a>
+                                    <a href="page/popmama/sos-iglive.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Live</a>
                                 </li>
                                 <li>
-                                    <a href="page/popmama/sos-igcar.html" target="myiframe" onclick="remove_home()">Instagram Carousel</a>
+                                    <a href="page/popmama/sos-igcar.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Carousel</a>
+                                    <a href="page/popmama/sos-igcar.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Carousel</a>
                                 </li>
                                 <li>
-                                    <a href="page/popmama/sos-fbpost.html" target="myiframe" onclick="remove_home()">Facebook Post</a>
+                                    <a href="page/popmama/sos-fbpost.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Post</a>
+                                    <a href="page/popmama/sos-fbpost.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Post</a>
                                 </li>
                                 <li>
-                                    <a href="page/idntimes/sos-fbpoll.html" target="myiframe" onclick="remove_home()">Facebook Live Poll</a>
+                                    <a href="page/idntimes/sos-fbpoll.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Live Poll</a>
+                                    <a href="page/idntimes/sos-fbpoll.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Live Poll</a>
                                 </li>
                                 <li>
-                                    <a href="page/idntimes/sos-fbevent.html" target="myiframe" onclick="remove_home()">Facebook Live Event</a>
+                                    <a href="page/idntimes/sos-fbevent.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Live Event</a>
+                                    <a href="page/idntimes/sos-fbevent.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Live Event</a>
                                 </li>
                             </ul>
                         </li>
@@ -791,7 +945,8 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Video</a>
                             <ul class="inner nakwa">
                                 <li>
-                                    <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home()">Video Placement</a>
+                                    <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Video Placement</a>
+                                    <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Video Placement</a>
                                 </li>
                             </ul>
                         </li>
@@ -801,7 +956,8 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Online Activation</a>
                             <ul class="inner nakwa">
                                 <li>
-                                    <a href="page/idntimes/on-act.html" target="myiframe" onclick="remove_home()">Online Activation</a>
+                                    <a href="page/idntimes/on-act.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Online Activation</a>
+                                    <a href="page/idntimes/on-act.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Online Activation</a>
                                 </li>
                             </ul>
                         </li>
@@ -811,10 +967,12 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Offline Activation</a>
                             <ul class="inner nakwa">
                                 <li>
-                                    <a href="page/popmama/off-act-pme.html" target="myiframe" onclick="remove_home()">Popmama Expo</a>
+                                    <a href="page/popmama/off-act-pme.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Popmama Expo</a>
+                                    <a href="page/popmama/off-act-pme.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Popmama Expo</a>
                                 </li>
                                 <li>
-                                    <a href="#" target="myiframe" onclick="remove_home()">Custom Activation</a>
+                                    <a href="#" target="myiframe" onclick="remove_home()" class="menu-desktop">Custom Activation</a>
+                                    <a href="#" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Custom Activation</a>
                                 </li>
                             </ul>
                         </li>
@@ -832,20 +990,24 @@
                     <ul class="inner nakma" onclick="myFunction(event)">
                         
                          <li>
-                            <a href="page/yummy/sos-wabrod.html" target="myiframe" onclick="remove_home()">WhatsApp Broadcast</a>
+                            <a href="page/yummy/sos-wabrod.html" target="myiframe" onclick="remove_home()" class="menu-desktop">WhatsApp Broadcast</a>
+                            <a href="page/yummy/sos-wabrod.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">WhatsApp Broadcast</a>
                         </li>
                         <!-- yummy native video -->
                         <li>
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Native Video</a>
                             <ul class="inner nakwa">
                                 <li>
-                                    <a href="page/yummy/video-recipe.html" target="myiframe" onclick="remove_home()">Recipe Video</a>  
+                                    <a href="page/yummy/video-recipe.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Recipe Video</a>  
+                                    <a href="page/yummy/video-recipe.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Recipe Video</a>  
                                 </li>
                                 <li>
-                                    <a href="page/yummy/video-ngiler.html" target="myiframe" onclick="remove_home()">#YUMMYNGILER</a>  
+                                    <a href="page/yummy/video-ngiler.html" target="myiframe" onclick="remove_home()" class="menu-desktop">#YUMMYNGILER</a>  
+                                    <a href="page/yummy/video-ngiler.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">#YUMMYNGILER</a>  
                                 </li>
                                 <li>
-                                    <a href="page/yummy/video-tips.html" target="myiframe" onclick="remove_home()">#YUMMYTIPS</a>  
+                                    <a href="page/yummy/video-tips.html" target="myiframe" onclick="remove_home()" class="menu-desktop">#YUMMYTIPS</a>  
+                                    <a href="page/yummy/video-tips.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">#YUMMYTIPS</a>  
                                 </li>
                             </ul>
                         </li>
@@ -855,16 +1017,20 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Instagram Live</a>
                             <ul class="inner nakwa">
                                 <li>
-                                    <a href="page/yummy/live-cnq.html" target="myiframe" onclick="remove_home()">Cooking & Quiz</a>  
+                                    <a href="page/yummy/live-cnq.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Cooking & Quiz</a>  
+                                    <a href="page/yummy/live-cnq.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Cooking & Quiz</a>  
                                 </li>
                                 <li>
-                                    <a href="page/yummy/live-gs.html" target="myiframe" onclick="remove_home()">Grocery Shopping</a>  
+                                    <a href="page/yummy/live-gs.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Grocery Shopping</a>  
+                                    <a href="page/yummy/live-gs.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Grocery Shopping</a>  
                                 </li>
                                 <li>
-                                    <a href="page/yummy/live-cc.html" target="myiframe" onclick="remove_home()">Cooking Collaboration</a>  
+                                    <a href="page/yummy/live-cc.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Cooking Collaboration</a>  
+                                    <a href="page/yummy/live-cc.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Cooking Collaboration</a>  
                                 </li>
                                 <li>
-                                    <a href="page/yummy/live-fr.html" target="myiframe" onclick="remove_home()">Food Review</a>  
+                                    <a href="page/yummy/live-fr.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Food Review</a>  
+                                    <a href="page/yummy/live-fr.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Food Review</a>  
                                 </li>
                             </ul>
                         </li>
@@ -874,13 +1040,16 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Instagram Story</a>
                             <ul class="inner nakwa">
                                 <li>
-                                    <a href="page/yummy/story-nf.html" target="myiframe" onclick="remove_home()">Nutrition Fact</a>  
+                                    <a href="page/yummy/story-nf.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Nutrition Fact</a>  
+                                    <a href="page/yummy/story-nf.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Nutrition Fact</a>  
                                 </li>
                                 <li>
-                                    <a href="page/yummy/story-pnq.html" target="myiframe" onclick="remove_home()">Polling & Quiz</a>  
+                                    <a href="page/yummy/story-pnq.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Polling & Quiz</a>  
+                                    <a href="page/yummy/story-pnq.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Polling & Quiz</a>  
                                 </li>
                                 <li>
-                                    <a href="page/yummy/story-mg.html" target="myiframe" onclick="remove_home()">Mini Games</a>  
+                                    <a href="page/yummy/story-mg.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Mini Games</a>  
+                                    <a href="page/yummy/story-mg.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Mini Games</a>  
                                 </li>
                             </ul>
                         </li>
@@ -890,7 +1059,8 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Offline Activation</a>
                             <ul class="inner nakwa">
                                 <li>
-                                    <a href="page/yummy/foodfest.html" target="myiframe" onclick="remove_home()">Food Festival</a>  
+                                    <a href="page/yummy/foodfest.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Food Festival</a>  
+                                    <a href="page/yummy/foodfest.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Food Festival</a>  
                                 </li>
                             </ul>
                         </li>
@@ -931,22 +1101,28 @@
                     <ul class="inner nakma" onclick="myFunction(event)">
                         <!-- idn creative -->
                         <li>
-                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home()">Digital Strategy Creation</a>
+                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Digital Strategy Creation</a>
+                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Digital Strategy Creation</a>
                         </li>
                         <li>
-                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home()">Campaign Management</a>
+                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Campaign Management</a>
+                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Campaign Management</a>
                         </li>
                         <li>
-                            <a href="page/idn-creative/video-prod.html" target="myiframe" onclick="remove_home()">Video Production</a>
+                            <a href="page/idn-creative/video-prod.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Video Production</a>
+                            <a href="page/idn-creative/video-prod.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Video Production</a>
                         </li>
                         <li>
-                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home()">Social Media Management</a>
+                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Social Media Management</a>
+                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Social Media Management</a>
                         </li>
                         <li>
-                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home()">Content Creation</a>
+                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Content Creation</a>
+                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Content Creation</a>
                         </li>
                         <li>
-                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home()">Portal Management</a>
+                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Portal Management</a>
+                            <a href="page/idn-creative/digital-strategy-creation.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Portal Management</a>
                         </li>
                     </ul>
                 </li>
@@ -964,31 +1140,38 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Signature Event</a>
                             <ul class="inner nakwa" onclick="myFunction(event)">
                                 <li>
-                                    <a href="page/idntimes/off-act-ims.html" target="myiframe" onclick="remove_home()">Indonesia Millennial Summit</a>
+                                    <a href="page/idntimes/off-act-ims.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Indonesia Millennial Summit</a>
+                                    <a href="page/idntimes/off-act-ims.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Indonesia Millennial Summit</a>
                                 </li>
                                 <li>
-                                    <a href="page/popbela/off-act-bfa.html" target="myiframe" onclick="remove_home()">BeautyFest Asia</a>
+                                    <a href="page/popbela/off-act-bfa.html" target="myiframe" onclick="remove_home()" class="menu-desktop">BeautyFest Asia</a>
+                                    <a href="page/popbela/off-act-bfa.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">BeautyFest Asia</a>
                                 </li>
                                 <li>
-                                    <a href="page/popmama/off-act-pme.html" target="myiframe" onclick="remove_home()">Popmama Expo</a>
+                                    <a href="page/popmama/off-act-pme.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Popmama Expo</a>
+                                    <a href="page/popmama/off-act-pme.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Popmama Expo</a>
                                 </li>
                                 <li>
                                     <a href="https://www.instagram.com/yummy.idn/" target="_blank">Yummy Community Gath</a>
                                 </li>
                                 <li>
-                                    <a href="page/idn-event/signature-national-roadshow.html" target="myiframe" onclick="remove_home()">National Roadshow</a>
+                                    <a href="page/idn-event/signature-national-roadshow.html" target="myiframe" onclick="remove_home()" class="menu-desktop">National Roadshow</a>
+                                    <a href="page/idn-event/signature-national-roadshow.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">National Roadshow</a>
                                 </li>
                                 <li>
-                                    <a href="page/idntimes/off-act-iwf.html" target="myiframe" onclick="remove_home()">Indonesia Writers Fest</a>
+                                    <a href="page/idntimes/off-act-iwf.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Indonesia Writers Fest</a>
+                                    <a href="page/idntimes/off-act-iwf.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Indonesia Writers Fest</a>
                                 </li>
                                 <li>
-                                    <a href="page/idntimes/off-act-comgath.html" target="myiframe" onclick="remove_home()">Community Writers Gath</a>
+                                    <a href="page/idntimes/off-act-comgath.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Community Writers Gath</a>
+                                    <a href="page/idntimes/off-act-comgath.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Community Writers Gath</a>
                                 </li>
                                 <li>
                                     <a href="https://www.popmama.com/life/home-and-living/onicmetheany/popmama-arisan-bersama-modena-memasak-bersama-sahabat" target="_blank">Popmama Arisan</a>
                                 </li>
                                 <li>
-                                    <a href="page/popbela/off-act-comgath.html" target="myiframe" onclick="remove_home()">Popbela Community Gath</a>
+                                    <a href="page/popbela/off-act-comgath.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Popbela Community Gath</a>
+                                    <a href="page/popbela/off-act-comgath.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Popbela Community Gath</a>
                                 </li>
                             </ul>
                         </li>
@@ -996,16 +1179,20 @@
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Custom Event</a>
                             <ul class="inner nakwa" onclick="myFunction(event)">
                                 <li>
-                                    <a href="page/idn-event/custom-concert.html" target="myiframe" onclick="remove_home()">Concert</a>
+                                    <a href="page/idn-event/custom-concert.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Concert</a>
+                                    <a href="page/idn-event/custom-concert.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Concert</a>
                                 </li>
                                 <li>
-                                    <a href="page/idn-event/custom-gathering.html" target="myiframe" onclick="remove_home()">Gathering</a>
+                                    <a href="page/idn-event/custom-gathering.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Gathering</a>
+                                    <a href="page/idn-event/custom-gathering.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Gathering</a>
                                 </li>
                                 <li>
-                                    <a href="page/idn-event/custom-conference.html" target="myiframe" onclick="remove_home()">Conference</a>
+                                    <a href="page/idn-event/custom-conference.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Conference</a>
+                                    <a href="page/idn-event/custom-conference.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Conference</a>
                                 </li>
                                 <li>
-                                    <a href="page/idn-event/custom-workshop.html" target="myiframe" onclick="remove_home()">Workshop</a>
+                                    <a href="page/idn-event/custom-workshop.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Workshop</a>
+                                    <a href="page/idn-event/custom-workshop.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Workshop</a>
                                 </li>
                             </ul>
                         </li>
@@ -1015,20 +1202,24 @@
                 <!-- idn research inst -->
 
                 <li>
-                    <a href="page/idn-ri/idn-ri.html" class="logo-img" target="myiframe" onclick="remove_home()">
+                    <a href="page/idn-ri/idn-ri.html" class="logo-img menu-desktop" target="myiframe" onclick="remove_home()">
+                        <img src="page/assets/images/IDN-Research-Institute.png" class="img-fluid" style="max-width: 150px;">
+                    </a>
+                    <a href="page/idn-ri/idn-ri.html" class="logo-img menu-mobile" target="myiframe" onclick="remove_home_mobile()">
                         <img src="page/assets/images/IDN-Research-Institute.png" class="img-fluid" style="max-width: 150px;">
                     </a>
                 </li>
             </ul>
             
         </div>
-        
+               
 
         
         <div id="home_awal">
-            <div class="section_content col-md-8 offset-md-2">
+            <div class="section_content col-md-6 offset-md-3">
                 <img src="page/assets/images/ads-device.png" class="img-fluid animated fadeIn delay-1s" style="max-width: 500px;">
-                <h1 class="animated fadeIn delay-1sets"><span style="color: red; font-weight: bold; text-shadow: none;">50 Million</span> monthly unique audience across all IDN Media owned properties</h1>
+                <h1 class="animated fadeIn delay-1sets">Your one-stop destination to reach Millennials and Gen-Z in Indonesia</h1>
+                <div class="mini-intro animated fadeIn delay-1sets">We help brands connect through beautiful ads experiences: native editorial, native video, high impact banners, or strategic partnerships.</div>
                 <a onclick="showhideMenu2()" id="menubtn" class="menubtn animated fadeIn delay-2s" >Browse Our Ads</a>
             </div> 
         </div>
@@ -1036,6 +1227,7 @@
         <iframe id="iframe_idn" name="myiframe" frameborder="0" scrolling="yes" width="100%" height="100%" class="iframebox" style="transition: all 0.5s ease;"></iframe>
 
         <!-- javascript custom -->
+        
         <script src="page/assets/js/main.js"></script>
 
         <!-- Bootstrap core JavaScript -->
