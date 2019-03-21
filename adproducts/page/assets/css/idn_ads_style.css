@@ -170,29 +170,12 @@ body {
 
 /* =========== yummy style =========== */
 #yummy-style {
-/*
     background-color: #ffb343;
     min-height: 100vh;
     background-image: url(../images/shapes/yummy-bg.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-*/
-}
-#yummy-style::before {
-    content: "";
-    display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
-  background: url(../images/shapes/yummy-bg.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 #yummy-style .spec-des {
     background-color: #fff;
@@ -683,32 +666,50 @@ ul > li a:hover {
     }
 }
 @media screen and (max-width:480px){
-    #popmama-style {
-        background-image: url(../images/shapes/popmama-bg-mobile.jpg);
-        background-attachment: fixed;
+    #popmama-style::before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url(../images/shapes/popmama-bg-mobile.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
-        background-position: center;
     }
-    #popbela-style {
-        background-image: url(../images/shapes/popbela-bg-mobile.jpg);
-        background-attachment: fixed;
+    #popbela-style::before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url(../images/shapes/popbela-bg-mobile.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
-        background-position: center;
     }
     #yummy-style::before {
         content: "";
         display: block;
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -10;
-      background: url(../images/shapes/yummy-bg-mobile.jpg) no-repeat center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url(../images/shapes/yummy-bg-mobile.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         
 /*
         
