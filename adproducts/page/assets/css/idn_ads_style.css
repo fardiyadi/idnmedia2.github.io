@@ -87,7 +87,7 @@ body {
 /* =========== popbela =========== */
 #popbela-style {
     background-color: #000413;
-    height: 100vh;
+    min-height: 100%;
     background-image: url(../images/shapes/popbela-bg.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -126,7 +126,7 @@ body {
 /* =========== popmama =========== */
 #popmama-style {
     background-color: #fff;
-    height: 100vh;
+    min-height: 100%;
     background-image: url(../images/shapes/popmama-bg.jpg);
     background-attachment: fixed;
     background-size: cover;
