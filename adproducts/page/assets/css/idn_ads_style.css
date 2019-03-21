@@ -87,7 +87,7 @@ body {
 /* =========== popbela =========== */
 #popbela-style {
     background-color: #000413;
-    min-height: 100%;
+    min-height: 100vh;
     background-image: url(../images/shapes/popbela-bg.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -126,7 +126,7 @@ body {
 /* =========== popmama =========== */
 #popmama-style {
     background-color: #fff;
-    min-height: 100%;
+    min-height: 100vh;
     background-image: url(../images/shapes/popmama-bg.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -171,7 +171,7 @@ body {
 /* =========== yummy style =========== */
 #yummy-style {
     background-color: #ffb343;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../images/shapes/yummy-bg.jpg);
     background-attachment: fixed;
     background-size: cover;
