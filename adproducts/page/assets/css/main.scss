@@ -86,7 +86,7 @@ body, html {
 
 // shaping background
 .shaping-wrap {
-    position: absolute;
+    position: fixed;
     top: auto;
     bottom: 0;
     left: 0;
@@ -114,15 +114,7 @@ body, html {
 
 // overlay untuk sidebar 
 #sidebar-overlay {
-    width: 0px;
-    height: 100vh;
-    background-color: #000;
-    display: block;
-    position: absolute;
-    z-index: 99;
-    opacity: 0.6;
-    cursor: pointer;
-    transition: all 0.4s ease;
+    display: none;
 }
 // overlay warna untuk video
 .overlay {
@@ -643,6 +635,17 @@ th, td {
 
     .background {
         display: none;
+    }
+    #sidebar-overlay {
+        width: 0px;
+        height: 100vh;
+        background-color: #000;
+        display: block;
+        position: absolute;
+        z-index: 99;
+        opacity: 0.6;
+        cursor: pointer;
+        transition: all 0.4s ease;
     }
     #sidebar-wrapper {
         margin-top: 5rem;
