@@ -14,20 +14,19 @@
         <link href="page/assets/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom style -->
-        <link href="page/assets/css/idn_ads_style.css" rel="stylesheet">
+        <!-- <link href="page/assets/css/idn_ads_style.css" rel="stylesheet"> -->
+        <link href="page/assets/css/main.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         
         <script src="page/assets/js/jquery.min.js"></script>
+
+        <!-- Start of  Zendesk Widget script -->
+        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f2202800-da8d-4aa7-9e34-81c020a3ee27"> </script>
+        <!-- End of  Zendesk Widget script -->
     </head>
     
     <body>
-        
-        <!-- Start of idnmedia Zendesk Widget script -->
-        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f2202800-da8d-4aa7-9e34-81c020a3ee27"> </script>
-        <!-- End of idnmedia Zendesk Widget script -->
-
-        
         
         <script>
             {
@@ -106,7 +105,7 @@
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="page/idntimes/contact-us.html" class="contact-us" target="myiframe" onclick="remove_home()" ><i class="fa fa-envelope" style="margin-right: 5px; top: -2px; position: relative;"></i>Contact Us</a>
+                        <a href="page/idntimes/contact-us.html" class="contact-us" target="myiframe" onclick="remove_home()">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -1212,21 +1211,77 @@
             </ul>
             
         </div>
-               
+        
+        <!-- background video desktop only -->
         <div class="background menu-desktop">
-			    <video autoplay loop id="video-background" muted class="hidden-xs hidden-sm" poster="page/assets/images/bg1.jpg">
-                    <source src="page/assets/video/aerialvideo-bg.mp4" type="video/mp4">
-                </video>
+            <video autoplay loop id="video-background" muted class="hidden-xs hidden-sm" poster="page/assets/images/poster.jpg">
+                <source src="page/assets/video/videoplayback.mp4" type="video/mp4">
+            </video>
         </div>
+
+        <!-- gradient overlay for background -->
+        <div class="overlay"></div>
             
+        <!-- welcome page -->
         <div id="home_awal">
             <div class="section_content col-md-6 offset-md-3">
-                <img src="page/assets/images/ads-device.png" class="img-fluid animated fadeIn delay-1s" style="max-width: 500px;">
+                <img src="page/assets/images/idn-ads.png" class="img-fluid animated fadeIn delay-1s">
                 <h1 class="animated fadeIn delay-1sets">Your one-stop destination to reach Millennials and Gen-Z in Indonesia</h1>
-                <div class="mini-intro animated fadeIn delay-1sets">We help brands connect through beautiful ads experiences: native editorial, native video, high impact banners, or strategic partnerships.</div>
+                <div class="mini-intro animated fadeIn delay-1sets">We help brands connect through beautiful ads experiences: native editorial, TVC spot masthead, interactive infographic, high impact display banner, built-in video program, signature event, influencer marketing or strategic partnerships.</div>
                 <a onclick="showhideMenu2()" id="menubtn" class="menubtn animated fadeIn delay-2s" >Browse Our Ads</a>
             </div> 
+        </div> 
+
+        <!-- shaping -->
+        <div class="shaping-wrap" style="height: 200px;"  data-front="" data-style="curve_opacity" data-position="bottom">
+            <svg class="shaping" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path d="M 0 14 s 88.64 3.48 300 36 c 260 40 514 27 703 -10 l 12 28 l 3 36 h -1018 z"></path>
+                <path d="M 0 45 s 271 45.13 500 32 c 157 -9 330 -47 515 -63 v 86 h -1015 z"></path>
+                <path d="M 0 58 s 188.29 32 508 32 c 290 0 494 -35 494 -35 v 45 h -1002 z"></path>
+            </svg>
         </div>
+<!--
+            <div class="container">
+                <div class="row">
+                <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5G6CLwJh3gA?rel=0?&amp;autoplay=0" allowfullscreen=""></iframe>
+                            </div>
+            </div>
+            <div class="section_content col-md-6">
+                <img src="page/assets/images/idn-ads.png" class="img-fluid animated fadeIn delay-1s" style="max-width: 200px;">
+                <h1 class="animated fadeIn delay-1sets">Your one-stop destination to reach Millennials and Gen-Z in Indonesia</h1>
+                <div class="mini-intro animated fadeIn delay-1sets">We help brands connect through beautiful ads experiences: native editorial, TVC spot masthead, interactive infographic, high impact display banner, built-in video program, signature event, influencer marketing or strategic partnerships.</div>
+                <a onclick="showhideMenu2()" id="menubtn" class="menubtn animated fadeIn delay-2s" >Browse Our Ads</a>
+            </div> 
+            </div>
+            </div>
+-->
+        </div>
+        
+<!--
+        <section id="our-media">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Our Media</h1>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="logo-box">
+                    <img src="page/assets/images/idn-times.png">
+                </div>
+                <div class="logo-box">
+                    <img src="page/assets/images/popbela.png">
+                </div>
+                <div class="logo-box">
+                    <img src="page/assets/images/popmama.png">
+                </div>
+                <div class="logo-box">
+                    <img src="page/assets/images/yummy.png">
+                </div>
+            </div>
+        </section>
+-->
         
         <iframe id="iframe_idn" name="myiframe" frameborder="0" scrolling="yes" width="100%" height="100%" class="iframebox" style="transition: all 0.5s ease;"></iframe>
 
