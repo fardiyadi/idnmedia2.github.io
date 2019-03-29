@@ -124,7 +124,7 @@ body, html {
   display: block;
   width: 100%;
   min-height: 100vh;
-  opacity: .9;
+  opacity: .88;
 }
 
 #home_awal {
@@ -139,28 +139,58 @@ body, html {
 }
 
 #home_awal a {
-  color: #fff;
-  position: relative;
   display: inline-block;
-  border: 2px solid #e93f33;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  background-color: transparent;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   padding: .5rem 4rem;
-  font-size: 1.6rem;
-  font-family: 'Helvetica Neue Light', sans-serif;
-  background-color: #e93f33;
+  cursor: pointer;
+  border: 2px solid #fff;
   border-radius: 5px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  letter-spacing: 1px;
-  cursor: pointer;
+  font-family: 'Helvetica Neue Medium', sans-serif;
+}
+
+#home_awal a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e93f33;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
 #home_awal a:hover {
-  text-decoration: none;
+  border: 2px solid #e93f33;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-color: transparent;
-  color: #fff;
-  border: 2px solid #fff;
+}
+
+#home_awal a:hover::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 #home_awal h1 {
@@ -229,10 +259,10 @@ body, html {
 }
 
 .navbar a.contact-us {
-  background-color: #e93f33;
+  background-color: transparent;
   border: 2px solid #e93f33;
   border-radius: 5px;
-  color: white;
+  color: #e93f33;
   padding: .6rem 1.3rem;
   font-family: 'Helvetica Neue Light', sans-serif;
   letter-spacing: 1px;
@@ -247,8 +277,8 @@ body, html {
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-color: white;
-  color: #e93f33;
+  background-color: #e93f33;
+  color: #fff;
 }
 
 .navbar-custom {
@@ -540,15 +570,48 @@ th, td {
   border: 1px solid #e5e5e4;
 }
 
-#bg-image .spec-des a.preview, #popbela-style .spec-des a.preview, #popmama-style .spec-des a.preview, #yummy-style .spec-des a.preview {
-  background-color: #ed2028;
-  color: white;
+#bg-image .spec-des a.preview {
+  background-color: transparent;
+  color: #ed2028;
   border: 2px solid #ed2028;
 }
 
-#bg-image .spec-des a.preview:hover, #popbela-style .spec-des a.preview:hover, #popmama-style .spec-des a.preview:hover, #yummy-style .spec-des a.preview:hover {
+#bg-image .spec-des a.preview:hover {
+  background-color: #ed2028;
+  color: #fff;
+}
+
+#popbela-style .spec-des a.preview {
   background-color: transparent;
-  color: #ed2028;
+  color: #d72772;
+  border: 2px solid #d72772;
+}
+
+#popbela-style .spec-des a.preview:hover {
+  background-color: #d72772;
+  color: #fff;
+}
+
+#popmama-style .spec-des a.preview {
+  background-color: transparent;
+  color: #9c80d7;
+  border: 2px solid #9c80d7;
+}
+
+#popmama-style .spec-des a.preview:hover {
+  background-color: #9c80d7;
+  color: #fff;
+}
+
+#yummy-style .spec-des a.preview {
+  background-color: transparent;
+  color: #ffb343;
+  border: 2px solid #ffb343;
+}
+
+#yummy-style .spec-des a.preview:hover {
+  background-color: #ffb343;
+  color: #fff;
 }
 
 .contact-us-page {
@@ -612,6 +675,20 @@ th, td {
     background-position: center;
     height: 100vh;
     width: auto;
+    padding: 10px;
+  }
+  #home_awal img {
+    max-width: 160px;
+  }
+  #home_awal a {
+    padding: .5rem 2rem;
+    font-size: 1.4rem;
+  }
+  #home_awal h1 {
+    font-size: 2.7rem;
+  }
+  #home_awal .mini-intro {
+    font-size: 1.4rem;
   }
   #page-content-wrapper .spec-des h1 {
     font-size: 2.2rem;
@@ -640,22 +717,6 @@ th, td {
   }
   #sidebar-wrapper .sidebar-nav li .menu-mobile {
     display: block;
-  }
-  #home_awal {
-    padding: 10px;
-  }
-  #home_awal img {
-    max-width: 160px;
-  }
-  #home_awal a {
-    padding: .5rem 2rem;
-    font-size: 1.4rem;
-  }
-  #home_awal h1 {
-    font-size: 2.7rem;
-  }
-  #home_awal .mini-intro {
-    font-size: 1.4rem;
   }
   .navbar a {
     margin-left: 1rem;
