@@ -1,4 +1,4 @@
-// SCSS ini masih tahap development 
+// SCSS maret 2019
 
 @font-face {
     font-family: 'Helvetica Neue Black';
@@ -118,7 +118,7 @@ body, html {
 }
 // overlay warna untuk video
 .overlay {
-    background: linear-gradient(45deg, rgba(6,88,199,1) 0%, rgba(255,57,218,1) 100%); 
+    background: linear-gradient(45deg, #0658c7 0%, #ff39da 50%, #e93f33 100%);
     position: absolute;
     display: block;
     width: 100%;
@@ -134,6 +134,10 @@ body, html {
 
     img {
         max-width: 200px;
+
+        &.filter-white {
+            filter: brightness(0) invert(1);
+        }
     }
     a {
         display: inline-block;
@@ -290,7 +294,7 @@ body, html {
 // sidebar menu 
 #sidebar-wrapper {
     font-family: 'Helvetica Neue Light', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
     z-index: 1000;
     position: fixed;
@@ -482,7 +486,7 @@ th, td {
     .mobile-ss {
 
         img {
-            max-width: 300px;
+            max-width: 250px;
         }
     }
 
@@ -490,8 +494,9 @@ th, td {
     .spec-des {
         padding: 20px 20px 20px 30px;
         font-family: 'Helvetica Neue Light', sans-serif;
-        letter-spacing: 1.2px;
-        font-size: 1.4rem;
+        letter-spacing: 1px;
+        font-size: 1.35rem;
+        color: #3f3f3f;
 
         h1, h3, h4  {
             font-family: 'Helvetica Neue Medium';

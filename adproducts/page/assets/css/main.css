@@ -119,7 +119,7 @@ body, html {
 }
 
 .overlay {
-  background: linear-gradient(45deg, #0658c7 0%, #ff39da 100%);
+  background: linear-gradient(45deg, #0658c7 0%, #ff39da 50%, #e93f33 100%);
   position: absolute;
   display: block;
   width: 100%;
@@ -136,6 +136,11 @@ body, html {
 
 #home_awal img {
   max-width: 200px;
+}
+
+#home_awal img.filter-white {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 
 #home_awal a {
@@ -299,7 +304,7 @@ body, html {
 
 #sidebar-wrapper {
   font-family: 'Helvetica Neue Light', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   letter-spacing: 1px;
   z-index: 1000;
   position: fixed;
@@ -482,14 +487,15 @@ th, td {
 }
 
 #page-content-wrapper .mobile-ss img {
-  max-width: 300px;
+  max-width: 250px;
 }
 
 #page-content-wrapper .spec-des {
   padding: 20px 20px 20px 30px;
   font-family: 'Helvetica Neue Light', sans-serif;
-  letter-spacing: 1.2px;
-  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-size: 1.35rem;
+  color: #3f3f3f;
 }
 
 #page-content-wrapper .spec-des h1, #page-content-wrapper .spec-des h3, #page-content-wrapper .spec-des h4 {
