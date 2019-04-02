@@ -118,7 +118,7 @@ body, html {
 }
 // overlay warna untuk video
 .overlay {
-    background: linear-gradient(45deg, #0658c7 0%, #ff39da 50%, #e93f33 100%);
+    background: linear-gradient(45deg, #c12828 0%, #e93f33 50%, #fc8500 100%);
     position: absolute;
     display: block;
     width: 100%;
@@ -165,7 +165,7 @@ body, html {
             bottom: 0;
             left: 0;
             right: 0;
-            background: #e93f33;
+            background: #fff;
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
             -webkit-transform-origin: 50%;
@@ -179,8 +179,9 @@ body, html {
         }
 
         &:hover {
-            border: 2px solid #e93f33;
+            border: 2px solid #fff;
             transition: all 0.3s ease;
+            color: #e93f33;
 
             &::before {
                 -webkit-transform: scaleX(1);
