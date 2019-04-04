@@ -741,6 +741,7 @@ th, td {
   #sidebar-wrapper {
     margin-top: 5rem;
     height: calc(100% - 5rem);
+    overflow-y: scroll;
   }
   #sidebar-wrapper .sidebar-nav li .menu-desktop {
     display: none;
