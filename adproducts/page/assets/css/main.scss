@@ -43,6 +43,48 @@ body, html {
     overflow-x: hidden;
     background-color: white;
 }
+
+// video background video youtube
+.videoContainer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: url(../images/wave-cover-bg.png) no-repeat center center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    iframe {
+        position: absolute;
+        height: 150%;
+        width: 150%;
+        display: block;
+        left: -25%;
+        top: -25%;
+    }
+  }
+
 // background video
 .background {
     height: 100%;
@@ -766,6 +808,9 @@ th, td {
     }
 
     .background {
+        display: none;
+    }
+    .videoContainer {
         display: none;
     }
     #sidebar-overlay {

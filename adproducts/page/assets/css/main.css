@@ -47,6 +47,53 @@ body, html {
   background-color: white;
 }
 
+.videoContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.videoContainer::before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url(../images/wave-cover-bg.png) no-repeat center center;
+  background-size: cover;
+  background-size: cover;
+}
+
+.videoContainer iframe {
+  position: absolute;
+  height: 150%;
+  width: 150%;
+  display: block;
+  left: -25%;
+  top: -25%;
+}
+
 .background {
   height: 100%;
   left: 0;
@@ -724,6 +771,9 @@ th, td {
     font-size: 2.2rem;
   }
   .background {
+    display: none;
+  }
+  .videoContainer {
     display: none;
   }
   #sidebar-overlay {

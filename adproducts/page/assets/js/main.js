@@ -83,6 +83,7 @@ function remove_home() {
     document.getElementById("home_awal").style.display = "none";
     document.getElementById("menubtn").style.opacity = "1";
     document.getElementById("iframe_idn").style.display = "block";
+    document.getElementById("ytbg").style.display = "none";
 }
 
 // hide menu on mobile
