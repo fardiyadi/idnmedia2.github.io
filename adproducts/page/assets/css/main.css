@@ -626,6 +626,14 @@ th, td {
   margin-right: 0;
 }
 
+#bg-pdf {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #404040;
+}
+
 #bg-image::before, #popbela-style::before, #popmama-style::before, #yummy-style::before {
   content: "";
   display: block;
@@ -741,6 +749,70 @@ th, td {
   padding: 5px;
   border: 1px solid #ccc;
   margin-bottom: 20px;
+}
+
+#materi {
+  font-family: 'Source Code Pro', monospace;
+  padding: 100px 0;
+  font-size: 1.5rem;
+}
+
+#materi .bl1 {
+  border-left: 1px solid #878787;
+  padding-left: 20px;
+}
+
+#materi .fc {
+  color: brown;
+}
+
+#materi .fp {
+  color: white;
+}
+
+#materi .fb {
+  color: #1ee7ff;
+}
+
+#materi .fk {
+  color: #ffe949;
+}
+
+#materi .fh {
+  color: black;
+}
+
+#materi .fmj {
+  color: #ff68dd;
+}
+
+#materi .fhj {
+  color: #21f22b;
+}
+
+#materi .materi-box {
+  background-color: #efefef;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#materi .materi-box:hover {
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#materi .materi-box .materi-script {
+  background-color: #393e4a;
+  padding: 10px;
+}
+
+#materi .materi-box .materi-script .code-inline {
+  display: block;
 }
 
 @media screen and (max-width: 480px) {
