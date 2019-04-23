@@ -80,17 +80,19 @@ $('.inner').on('click', 'li a', function() {
 // js remove home change to iframe        
 
 function remove_home() {
+    document.getElementById("dn1").style.display = "none";
+    document.getElementById("dn2").style.display = "none";
     document.getElementById("home_awal").style.display = "none";
     document.getElementById("menubtn").style.opacity = "1";
     document.getElementById("iframe_idn").style.display = "block";
     document.getElementById("ytbg").style.display = "none";
-    document.getElementById("dn1").style.display = "none";
-    document.getElementById("dn2").style.display = "none";
 }
 
 // hide menu on mobile
 
 function remove_home_mobile() {
+    document.getElementById("dn1").style.display = "none";
+    document.getElementById("dn2").style.display = "none";
     document.getElementById("home_awal").style.display = "none";
     document.getElementById("menubtn").style.opacity = "1";
     document.getElementById("iframe_idn").style.display = "block";
@@ -98,7 +100,5 @@ function remove_home_mobile() {
     document.getElementById("sidebar-overlay").style.width = "0px";
     document.getElementById("iframe_idn").style.width = "100%";
     document.getElementById("iframe_idn").style.marginLeft = "0px";
-    document.getElementById("dn1").style.display = "none";
-    document.getElementById("dn2").style.display = "none";
 }
   
