@@ -626,14 +626,6 @@ th, td {
   margin-right: 0;
 }
 
-#bg-pdf {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  background-color: #404040;
-}
-
 #bg-image::before, #popbela-style::before, #popmama-style::before, #yummy-style::before {
   content: "";
   display: block;

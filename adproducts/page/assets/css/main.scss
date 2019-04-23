@@ -620,14 +620,6 @@ th, td {
     }
 }
 
-#bg-pdf {
-    content: "";
-    display: block;
-    height: 100%;
-    width: 100%;
-    background-color: #404040;
-}
-
 #bg-image, #popbela-style, #popmama-style, #yummy-style {
     &::before {
         content: "";
