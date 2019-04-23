@@ -39,8 +39,8 @@ function showhideMenu() {
         menu.style.width = "250px";
         menu.style.opacity = "1";
         menuover.style.width = "100vw";
-        main2.style.marginLeft = "200px";
-        main2.style.width = "calc(100% - 200px)";
+        main2.style.marginLeft = "250px";
+        main2.style.width = "calc(100% - 250px)";
     }
 }
 
@@ -63,8 +63,8 @@ function showhideMenu2() {
         menu.style.opacity = "1";
         navcus.style.display = "block";
         menuover.style.width = "100vw";
-        main2.style.marginLeft = "200px";
-        main2.style.width = "calc(100% - 200px)";
+        main2.style.marginLeft = "250px";
+        main2.style.width = "calc(100% - 250px)";
     }
 }
 
