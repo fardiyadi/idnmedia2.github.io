@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Billboard</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+
+	.video-container {
+		width: 350px;
+	    height: 200px;
+	    margin: 40px 0px 0px 15px;
+	    position: absolute;
+	    z-index: ;
+	}
+</style>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Save for Web Slices (Billboard.psd) -->
+
+<a href="%%CLICK_URL_UNESC%%http://onelink.to/cfjnyt" target="_blank">
+	<div id="ad" style="margin: 0 auto; width: 300px; height: 250px; position: absolute;">
+		<img id="canvas" width="300" height="250" src="https://tpc.googlesyndication.com/pageadimg/imgad?id=CICAgKCHnJLhxQEQrAIY-gEoATIIUVSsCz4xhW4" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></img>
+			<div class="video-container">
+<div id="player"></div>
+<script>
+  var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+function onYouTubeIframeAPIReady() {
+player = new YT.Player('player', {
+height: '150',
+width: '267',
+playerVars: {
+controls: 1,
+showinfo: 0,
+rel: 1,
+fs : 0,
+modestbranding: 1,
+vq: 'auto'},
+videoId: 'mo6k5fM73qo',
+events: {
+'onReady': onPlayerReady,
+'onStateChange': onPlayerStateChange
+}
+});
+}
+
+function onPlayerReady(event) {
+event.target.playVideo();
+player.mute();
+}
+
+   var done = false;
+   function onPlayerStateChange(event) {
+     
+   }
+
+   function stopVideo() {
+   	player.stopVideo();
+   }
+
+   </script>
+</div>
+</div>
+</a>
+
+</body>
+</html>
