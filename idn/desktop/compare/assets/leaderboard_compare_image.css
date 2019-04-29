@@ -1,0 +1,85 @@
+.leaderboard_comp {
+    position: relative;
+    height: 250px;
+    width: 970px;
+    display: block
+}
+.comp_img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow:hidden;
+}
+.com_img img {
+    display:block;
+    vertical-align:middle;
+}
+.leaderboard_comp_slider {
+    position: absolute;
+    z-index:9;
+    cursor: ew-resize;
+    background-image: url('https://ads.idntimes.com/ads-assets/internal/images/button/slide_button.png');
+    background-repeat: no-repeat;
+    opacity: 1;
+    width: 60px;
+    height: 34px;
+    animation-delay: 2s;
+    -webkit-animation-name: shake; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: shake;
+    animation-duration: 2s;
+} 
+@-webkit-keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
