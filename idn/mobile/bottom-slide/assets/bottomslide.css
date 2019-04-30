@@ -1,0 +1,40 @@
+/* update 9 april 2019 */
+#bottom_slide {
+    width: 320px;
+    height: 50px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: fixed;
+    display: block;
+    text-align: center;
+    bottom: 0;
+}
+#bottom_slide img {
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#bottom_slide .bs_sticky { 
+    width:320px; 
+    height:50px;
+    position: fixed;
+    bottom: 0;
+}
+#bottom_slide .bs_ad { 
+    width:320px; 
+    height:400px; 
+    display: none;
+}
+.close_bs {
+    position: absolute;
+    display: block;
+    z-index: 9;
+    top: 0;
+    right: 0;
+}
+.close_bs > img {
+    height: 20px;
+}
