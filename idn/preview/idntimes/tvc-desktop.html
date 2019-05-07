@@ -802,6 +802,7 @@ function callAnalytics(path, queryString) {
 -->
                         
      
+<!--
 <div style="height: 250px; width: 970px; position: relative; display: block">
     <a href="{clickurl}" target="_blank" style="position: absolute; width: 970px; height: 250px;"></a>
     <video controls autoplay muted playsinline preload="metadata" poster="https://ads.idntimes.com/ads-assets/client/pertamina/mei2019/poster.jpg" style="width: 391px; height: 220px; position: absolute; left: 14px; top: 15px; z-index: 1;">
@@ -810,6 +811,7 @@ function callAnalytics(path, queryString) {
     <img src="https://ads.idntimes.com/ads-assets/client/pertamina/mei2019/970x250.jpg" alt="leaderboard"/>
 </div>
          
+-->
                         
 <!--
                         <center>
@@ -3272,9 +3274,19 @@ function callAnalytics(path, queryString) {
         <div class="right-content sidebar-content ">
             <div class="sidebar-ads">
                 
-                <a href="#" target="_blank">
-                    <img src="300x250.jpg">
-                </a>
+               <div style="position: relative; width: 300px; height: 250px; display: block; left: 0; right: 0; margin: auto;">
+      <a href="{clickurl}" target="_blank" style="position: absolute; display: block; width: 300px; height: 250px;"></a>
+    
+      <video poster="https://ads.idntimes.com/ads-assets/client/pertamina/mei2019/poster.jpg" id="clientVideo" controls muted playsinline preload="metadata" style="width: 259px; height: 157px; position: absolute; left: 20px; top: 45px; z-index: 1;">
+          <source src="https://ads.idntimes.com/ads-assets/client/pertamina/mei2019/video_pertamina.mp4" type="video/mp4">
+      </video>
+    <img src="https://ads.idntimes.com/ads-assets/client/pertamina/mei2019/300x250-fix.jpg" style="max-width: 300px; height: auto;">
+</div>               
+        <script type='text/javascript'>
+            setTimeout(function(){
+                document.getElementById("clientVideo").play();
+            }, 7000);
+        </script> 
 
     
 <!--
