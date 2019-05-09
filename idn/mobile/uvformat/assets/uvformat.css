@@ -25,10 +25,13 @@
     height: 380px; 
     display: none;
 }
+.uv_ads_container iframe {
+    overflow: scroll;
+}
 #uvformat_m .uv_btn {
     position: absolute;
     background-color: #ee1a23;
-    z-index: 99;
+    z-index: 9;
     bottom: 0;
     width: 100%;
     color: white;
