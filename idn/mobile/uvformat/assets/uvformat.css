@@ -1,0 +1,39 @@
+/* update 9 mei 2019 */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#uvformat_m {
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+#uvformat_m img {
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#uvformat_m .uv_banner { 
+    width: 100%; 
+    height: 100px; 
+}
+#uvformat_m .uv_ads_container { 
+    width: 100%; 
+    height: 380px; 
+    display: none;
+}
+#uvformat_m .uv_btn {
+    position: absolute;
+    background-color: red;
+    z-index: 99;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 2px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
