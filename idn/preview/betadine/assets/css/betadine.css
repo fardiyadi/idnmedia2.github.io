@@ -15,9 +15,7 @@ body {
     max-width: 450px;
     position: absolute;
     left: 200px;
-    color: #633d34;
-    top: 50%;
-    transform: translateY(-30%);
+    color: #633d34;margin-top: 18%;
 }
 .wp_text h1 {
     font-family: 'Space Mono', monospace;
@@ -551,7 +549,58 @@ body {
     100% { opacity:1; }
 }
 
+
+
+
+@media (max-width: 770px) {
+    .home .hero--section_wraper {
+        margin-top: -130px;
+    }
+    .wp_text {
+        left: 50px;
+        margin-top: 10%;
+    }
+    .wp_text h1 {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .daun1 {
+        max-width: 200px;
+    }
+    .daun2 {
+        max-width: 200px;
+        margin-top: -100px;
+    }
+    .daun3 {
+        max-width: 200px;
+    }
+    .sect1 .image_box {
+        max-width: 300px;
+    }
+    .sect2 .image_box img {
+        max-width: 300px;
+    }
+    .sect3 img {
+        max-width: 350px;
+    }
+    .sect4 .image_box {
+        margin-top: 20px;
+    }
+    .sect4 .image_box img {
+        max-width: 350px;
+    }
+    .sect6 .image_box img {
+        max-width: 350px;
+        margin-top: 100px;
+    }
+    .sect7 {
+        height: auto;
+    }
+}
 @media (max-width: 480px) {
+    .home .hero--section_wraper {
+        margin-top: -35vh;
+    }
     .hero--section {
         padding-top: 120px;
     }
@@ -561,11 +610,14 @@ body {
     .wp_text {
         max-width: 220px;
         left: 20px;
-        margin-top: -45px;
+        top: 18%;
     }
     .wp_text h1 {
         font-size: 20px;
         margin-bottom: 10px;
+    }
+    .wp_text p {
+        font-size: 14px;
     }
     .sect1 h3, .sect2 h3, .sect3 h3, .sect4 h3, .sect5 h3 {
         font-size: 20px;
@@ -615,6 +667,7 @@ body {
     }
     .sect6 .image_box img {
         max-width: 220px;
+        margin-top: -120px;
     }
     .sect6 .text_box {
         margin-top: 170px;
@@ -647,6 +700,22 @@ body {
         max-width: 80%;
     }
     
+}
+@media (max-width: 375px) {
+    .home .hero--section_wraper {
+        margin-top: -220px;
+    }
+    .daun3 img {
+        max-width: 170px;
+    }
+}
+@media (max-width: 321px) {
+    .home .hero--section_wraper {
+        margin-top: -37vh;
+    }
+    .daun3 img {
+        max-width: 170px;
+    }
 }
 
 
