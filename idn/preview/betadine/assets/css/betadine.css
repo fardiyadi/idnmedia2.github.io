@@ -15,13 +15,14 @@ body {
     max-width: 450px;
     position: absolute;
     left: 200px;
-    color: #633d34;margin-top: 18%;
+    color: #633d34;
+    margin-top: 22%;
 }
 .wp_text h1 {
     font-family: 'Space Mono', monospace;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .wp_text p {
     font-family: 'Open Sans', sans-serif;
@@ -95,7 +96,6 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    animation: shake 2s linear alternate infinite;
 }
 
 /* ========== section 3 ========== */
@@ -225,7 +225,9 @@ body {
     margin-top: -120px;
 }
 .sect6 .image_box .bet-daun {
-    animation: rotation 7s linear alternate infinite;
+    animation: rotation 5s linear alternate infinite;
+    transform: rotate(-90deg);
+    top: 200px;
 }
 
 /* ========== section 7 ========== */
@@ -331,18 +333,18 @@ body {
     position: absolute;
 }
 .daun1 {
-    left: 0;
-    max-width: 300px;
-    margin-top: 200px;
+    left: -230px;
+    max-width: 500px;
+    margin-top: 150px;
 }
 .daun2 {
-    right: 0;
-    max-width: 350px;
+    right: -260px;
+    max-width: 500px;
     margin-top: -200px;
 }
 .daun3 {
-    left: 0;
-    max-width: 350px;
+    left: -250px;
+    max-width: 500px;
     margin-top: -200px;
 }
 .path {
@@ -486,69 +488,63 @@ body {
 
 @-webkit-keyframes rotation {
 		0% {
-				-webkit-transform: rotate(0deg);
+				transform: rotate(-90deg);
 		}
 		33% {
-				-webkit-transform: rotate(10deg);
+				transform: rotate(-80deg);
 		}
         66% {
-				-webkit-transform: rotate(0deg);
+				transform: rotate(-90deg);
 		}
         100% {
-				-webkit-transform: rotate(-10deg);
+				transform: rotate(-100deg);
 		}
     
 }
 @keyframes rotation {
 		0% {
-				transform: rotate(0deg);
+				transform: rotate(-90deg);
 		}
 		33% {
-				transform: rotate(10deg);
+				transform: rotate(-80deg);
 		}
         66% {
-				transform: rotate(0deg);
+				transform: rotate(-90deg);
 		}
         100% {
-				transform: rotate(-10deg);
+				transform: rotate(-100deg);
 		}
     
 }
-.typed-cursor {
-    opacity: 1;
-    font-weight: 100;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    -ms-animation: blink 0.7s infinite;
-    -o-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-ms-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-o-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+[data-aos="rotate-ac"] {
+  transform: rotate(20deg);
+  transition-property: transform;
+    opacity: 0;
+     -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
+[data-aos="rotate-ac"].aos-animate {
+  transform: rotate(0deg);
+    opacity: 1;
+     -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+[data-aos="rotate-c"] {
+  transform: rotate(-20deg);
+  transition-property: transform;
+    opacity: 0;
+     -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+[data-aos="rotate-c"].aos-animate {
+  transform: rotate(0deg);
+    opacity: 1;
+     -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 
 
 
@@ -558,21 +554,24 @@ body {
     }
     .wp_text {
         left: 50px;
-        margin-top: 10%;
+        margin-top: 20%;
     }
     .wp_text h1 {
         margin-bottom: 20px;
         font-size: 30px;
     }
     .daun1 {
-        max-width: 200px;
+        max-width: 400px;
+        left: -200px;
     }
     .daun2 {
-        max-width: 200px;
+        max-width: 400px;
         margin-top: -100px;
+        right: -220px;
     }
     .daun3 {
-        max-width: 200px;
+        max-width: 400px;
+        left: -200px;
     }
     .sect1 .image_box {
         max-width: 300px;
@@ -596,6 +595,9 @@ body {
     .sect7 {
         height: auto;
     }
+    .sect6 .image_box .bet-daun {
+        top: 150px;
+    }
 }
 @media (max-width: 480px) {
     .home .hero--section_wraper {
@@ -610,7 +612,7 @@ body {
     .wp_text {
         max-width: 220px;
         left: 20px;
-        top: 18%;
+        top: 5%;
     }
     .wp_text h1 {
         font-size: 20px;
@@ -680,24 +682,30 @@ body {
     }
     .daun1 {
         margin-top: 120px;
+        left: -140px;
     }
     .daun1 img {
-        max-width: 200px;
+        max-width: 300px;
     }
     .daun2 {
         margin-top: -100px;
+        right: -160px
     }
     .daun2 img {
-        max-width: 180px;
+        max-width: 300px;
     }
     .daun3 {
         margin-top: -60px;
+        left: -140px;
     }
     .daun3 img {
-        max-width: 200px;
+        max-width: 300px;
     }
     .break-sect3 .svg-line {
         max-width: 80%;
+    }
+    .sect6 .image_box .bet-daun {
+        top: 100px;
     }
     
 }
@@ -706,7 +714,7 @@ body {
         margin-top: -220px;
     }
     .daun3 img {
-        max-width: 170px;
+        max-width: 280px;
     }
 }
 @media (max-width: 321px) {
