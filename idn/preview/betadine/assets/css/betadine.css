@@ -4,8 +4,8 @@ body {
 .logo_idn {
     position: relative;
     float: right;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-top: 50px;
+    margin-right: 50px;
 }
 .logo_idn a img {
     max-width: 200px;
@@ -14,7 +14,7 @@ body {
 .wp_text {
     max-width: 450px;
     position: absolute;
-    left: 200px;
+    left: 100px;
     color: #633d34;
     margin-top: 22%;
 }
@@ -156,15 +156,26 @@ body {
 }
 .sect4 .image_box {
     text-align: center;
-    margin-top: -180px
+    margin-top: -180px;
+    position: relative;
+    display: block;
 }
 .sect4 .image_box img {
     max-height: 500px;
 }
-.sect4 .image_box . senyawa {
-    max-width: 400px;
+.sect4 .image_box .senyawa {
     position: absolute;
+    left: 300px;
+    top: 0;
 }
+.sect4 .image_box .senyawa img {
+    max-width: 280px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 
 /* ========== section 5 ========== */
 .sect5 {
@@ -301,6 +312,7 @@ body {
     overflow: hidden;
     color: #fff;
 }
+
 
 
 
@@ -485,6 +497,41 @@ body {
     }
 }
 
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 5s linear infinite;
+  -moz-animation: rotating 5s linear infinite;
+  -ms-animation: rotating 5s linear infinite;
+  -o-animation: rotating 5s linear infinite;
+  animation: rotating 5s linear infinite;
+}
 
 @-webkit-keyframes rotation {
 		0% {
@@ -546,7 +593,29 @@ body {
   transition: all 0.3s ease;
 }
 
-
+@media (max-width: 991px) {
+    .home .hero--section_wraper {
+        margin-top: -10vh;
+    }
+    .sect4 .image_box {
+        margin-top: 0;
+    }
+    .sect4 .image_box .senyawa {
+        left: 350px;
+    }
+    .sect4 .image_box .senyawa img {
+        max-width: 200px;
+    }
+    .sect6 .image_box img {
+        margin-top: 120px;
+    }
+    .sect7 .text_box {
+        margin-top: 120px;
+    }
+    .sect7 {
+        height: auto;
+    }
+}
 
 @media (max-width: 770px) {
     .home .hero--section_wraper {
@@ -600,6 +669,10 @@ body {
     }
 }
 @media (max-width: 480px) {
+    .logo_idn {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
     .home .hero--section_wraper {
         margin-top: -35vh;
     }
@@ -657,6 +730,12 @@ body {
     }
     .sect4 .image_box img {
         max-width: 200px;
+    }
+    .sect4 .image_box .senyawa {
+        left: 180px;
+    }
+    .sect4 .image_box .senyawa img {
+        max-width: 120px;
     }
     .sect5 .text_box {
       padding: 0 15px;  
