@@ -754,7 +754,7 @@ body {
     .sect6 .text_box {
         text-align: right;
         position: absolute;
-        right: 0;
+        right: 20px;
         max-width: 340px;
     }
     .sect6 .image_box {
@@ -839,13 +839,16 @@ body {
         font-size: 30px;
     }
     .sect1 .image_box {
-        margin-top: 220px;
+        margin-top: 180px;
     }
     .sect1 .text_box {
-        top: -680px;
+        top: -700px;
     }
     .sect2 .image_box {
         padding-top: 100px;
+    }
+    .sect2 .image_box img {
+        max-width: 370px;
     }
     .sect3 .text_box {
         margin-top: 0;
@@ -855,6 +858,9 @@ body {
     }
     .sect3 .image_box img {
         max-width: 350px;
+    }
+    .sect4 .image_box img {
+        max-width: 340px;
     }
     .sect5 .text_box {
         margin-top: 100px;
@@ -913,13 +919,16 @@ body {
         top: -600px;
     }
     .sect1 .image_box {
-        padding-top: 120px;
+        padding-top: 160px;
     }
     .sect1 .image_box img {
         max-width: 80px;
     }
     .sect2 .image_box {
         padding-top: 60px;
+    }
+    .sect2 .image_box img {
+        max-width: 320px;
     }
     .sect3 .image_box {
         padding-top: 70px;
