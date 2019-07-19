@@ -573,7 +573,7 @@ th, td {
   color: #3f3f3f;
 }
 
-#page-content-wrapper .spec-des h1, #page-content-wrapper .spec-des h3, #page-content-wrapper .spec-des h4 {
+#page-content-wrapper .spec-des h1, #page-content-wrapper .spec-des h2, #page-content-wrapper .spec-des h3, #page-content-wrapper .spec-des h4 {
   font-family: 'Helvetica Neue Medium';
   letter-spacing: 0px;
 }
@@ -584,6 +584,23 @@ th, td {
 }
 
 #page-content-wrapper .spec-des h1::after {
+  content: '';
+  position: relative;
+  top: 15px;
+  right: 0;
+  background-color: #aaa9a8;
+  height: 3px;
+  border-radius: 10px;
+  width: 100px;
+  display: block;
+}
+
+#page-content-wrapper .spec-des h2 {
+  font-size: 2rem;
+  padding-bottom: 25px;
+}
+
+#page-content-wrapper .spec-des h2::after {
   content: '';
   position: relative;
   top: 15px;

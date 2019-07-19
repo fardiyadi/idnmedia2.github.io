@@ -1,0 +1,122 @@
+// Materi display banner IDN Media //
+// Update 25 Juni 2019 //
+// Gunakan Ctrl+F untuk pencarian cepat //
+// Ganti {} dengan materi image/video/url landing page/code embed youtube //
+// Untuk TVC Spot Masthead bisa ubah style (width, height, left, right, dll) untuk menyesuakan posisi video yang diinginkan //
+
+
+
+
+*** DESKTOP ***
+
+Leaderboard Compare Desktop 
+===========================
+
+<style>@import url("https://ads.idntimes.com/ads-assets/internal/css/desktop/leaderboard_compare_image.css");</style>
+<script src="https://ads.idntimes.com/ads-assets/internal/js/desktop/leaderboard_compare_image.js"></script>
+<div class="leaderboard_comp" style="left: 0; right: 0; margin: auto;">
+    <div class="comp_img">
+        <a href="{clickurl 1}" target="_blank">
+            <img src="{https://url-image-1.jpg}" alt="" width="970" height="250">
+        </a>
+    </div>
+    <div class="comp_img overlay">
+        <a href="{clickurl 2}" target="_blank">
+            <img src="{https://url-image-2.jpg}" alt="" width="970" height="250">
+        </a>
+    </div>
+</div>     
+<script type="text/javascript">
+    initComparisons();
+</script>
+
+
+
+TVC Spot Masthead Desktop (Embed Youtube) 
+=========================================
+
+<center>
+    <div style="height: 250px; width: 970px; position: relative; display: block">
+        <a href="{clickurl}" target="_blank" style="position: absolute; width: 970px; height: 250px;"></a>
+        <iframe width="391" height="220" src="https://www.youtube.com/embed/{--*code embed youtube*--}?modestbranding=1&autoplay=1&mute=1&controls=1&showinfo=1&disablekb=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="position: absolute; left: 15px; top: 15px;"></iframe>
+        <img src="{https://url-image.jpg}" alt="leaderboard"/>
+        </div>
+</center>
+
+
+
+TVC Spot Masthead Desktop (Embed CDN)
+=====================================
+
+<center>
+    <div style="height: 250px; width: 970px; position: relative; display: block">
+        <a href="{clickurl}" target="_blank" style="position: absolute; width: 970px; height: 250px;"></a>
+        <video controls autoplay muted loop playsinline preload="metadata" style="width: 391px; height: 220px; position: absolute; left: 14px; top: 15px; z-index: 1;">
+            <source src="{https://url-video.mp4}" type="video/mp4">
+        </video>
+        <img src="{https://url-image.jpg}" alt="leaderboard"/>
+    </div>
+</center>
+
+
+
+
+
+*** MOBILE ***
+
+TVC Spot Masthead Mobile (Embed CDN)
+====================================
+
+<div style="position: relative; width: 300px; height: 250px; display: block; left: 0; right: 0; margin: auto;">
+    <a href="{clickurl}" target="_blank" style="position: absolute; display: block; width: 300px; height: 250px;"></a>
+        <video controls autoplay muted loop playsinline preload="metadata" style="width: 270px; height: 152px; position: absolute; left: 15px; top: 7px; z-index: 1;">
+            <source src="{https://url-video.mp4}" type="video/mp4">
+        </video>
+    <img src="{https://url-image.jpg}" alt="leaderboard" style="max-width: 300px; height: auto;">
+</div>
+
+
+
+Bottom Slide Mobile
+===================
+
+<style>@import url("https://ads.idntimes.com/ads-assets/internal/css/mobile/bottomslide.css?rev1");</style>   
+<div id="bottom_slide">
+    <div class="bs_sticky">
+        <img src="{https://url-image-320x50px.jpg}">
+    </div>
+    <div class="bs_ad">
+        <a href="{clickurl}" target="_blank">
+            <img src="{https://url-image-320x480px.jpg}">
+        </a>
+        <div class="close_bs">
+            <img src="https://ads.idntimes.com/ads-assets/internal/images/button/close.gif" alt="">
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://ads.idntimes.com/ads-assets/internal/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://ads.idntimes.com/ads-assets/internal/js/mobile/bottomslide.js?rev1"></script>
+
+
+
+Leaderboard Expand Mobile
+==========================
+
+<style>@import url("https://ads.idntimes.com/ads-assets/internal/css/mobile/leaderboard-expand.css");</style>
+<div id="leaderboard_expand">
+    <div class="leaderboard_small">
+       <img src="{https://url-image-320x100px.jpg}" alt="">
+    </div>
+
+    <div class="leaderboard_big">
+        <a href="{clickurl}" target="_blank">
+            <img src="{https://url-image-320x400px.jpg}" alt="">
+        </a>
+        <div class="close_big kanan">
+            <img src="https://ads.idntimes.com/ads-assets/internal/images/button/close.gif" alt="">
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://ads.idntimes.com/ads-assets/internal/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://ads.idntimes.com/ads-assets/internal/js/mobile/leaderboard-expand.js"></script>
+
