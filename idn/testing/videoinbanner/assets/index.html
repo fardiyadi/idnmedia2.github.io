@@ -1,0 +1,46 @@
+<html>
+    <body style="margin: 0;">
+        
+        
+        
+        <a href="{clickurl}" target="_blank" style="position: absolute; width: 300px; height: 220px; z-index: 3; top: 0;"></a>
+
+        <video id="videoInBanner" controls muted playsinline preload="metadata" style="width: 300px; height: 250px; position: absolute; z-index: 1;">
+            <source src="https://ads.idntimes.com/ads-assets/client/pertamina/mei2019/video_pertamina.mp4" type="video/mp4">
+        </video>
+        <script src="https://ads.idntimes.com/ads-assets/internal/js/jquery-3.3.1.min.js"></script>
+        <script>
+            $(window.parent).scroll(function(e)
+              {
+                var offsetRange = $(window.parent).height() / 3,
+                    offsetTop = $(window.parent).scrollTop() + offsetRange + $(window.parent.document.getElementById("header")).outerHeight(true),
+                    offsetBottom = offsetTop + offsetRange;
+
+                $("#videoInBanner").each(function () { 
+                  var y1 = $(this).offset().top;
+                  var y2 = offsetTop;
+                  if (y1 + $(this).outerHeight(true) < y2 || y1 > offsetBottom) {
+                    this.play(); 
+                  } else {
+                    this.pause();
+                  }
+                });
+            });
+        </script>
+                
+        
+        
+        
+        
+<!--
+        <script>
+            setTimeout(function(){
+  document.getElementById("myvideo").play();
+}, 5000);
+        </script>
+-->
+
+  
+        
+    </body>
+</html>
