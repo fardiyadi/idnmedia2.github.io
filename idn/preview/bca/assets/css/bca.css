@@ -658,7 +658,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1999px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
     .sect1, .sect2, .sect3, .sect4, .sect5  {
         height: 700px;
     }
@@ -744,8 +744,9 @@ body {
         display: block;
     }
     .sect2 h2, .sect3 h2, .sect4 h2, .sect5 h2, .sect6 h2, .sect7 h2, .sect8 h2, .sect10 h2 {
-        font-size: 22px;
+        font-size: 32px;
         margin-bottom: 25px;
+        letter-spacing: 1px;
     }
     .sect2 p, .sect3 p, .sect4 p, .sect5 p, .sect6 p, .sect7 p, .sect8 p, .sect9 p, .sect10 p {
         font-size: 14px;
@@ -896,11 +897,11 @@ body {
 
 @media only screen and (max-width: 480px) {
     .sect2 h2, .sect3 h2, .sect4 h2, .sect5 h2, .sect6 h2, .sect7 h2, .sect8 h2, .sect10 h2 {
-        font-size: 20px;
+        font-size: 30px;
         margin-bottom: 25px;
     }
     .sect2 p, .sect3 p, .sect4 p, .sect5 p, .sect6 p, .sect7 p, .sect8 p, .sect9 p, .sect10 p {
-        font-size: 13px;
+        font-size: 15px;
     }
     .sect4 .text_box {
         margin-bottom: 110px;
@@ -936,14 +937,16 @@ body {
     .sect8 .image_box img {
         max-width: 240px;
     }
-    .carousel-item img {
-        max-width: 130px;
-    }
     .sect10 .end_text p {
         font-size: 17px;
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .sect6 .image_box {
+        top: 430px;
+    }
+}
 @media (max-width: 360px) {
     .sect2 h2, .sect3 h2, .sect4 h2, .sect5 h2, .sect6 h2, .sect7 h2, .sect8 h2, .sect10 h2 {
         font-size: 18px;
