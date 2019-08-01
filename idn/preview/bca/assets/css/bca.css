@@ -125,7 +125,7 @@ body {
     margin-top: -100px;
     text-align: center;
 }
-.sect2 .image_box img {
+.sect2 .image_box object {
     max-width: 650px;
     position: absolute;
     left: 0;
@@ -611,7 +611,7 @@ body {
     .sect2 p, .sect3 p, .sect4 p, .sect5 p, .sect6 p, .sect7 p, .sect8 p, .sect9 p {
         font-size: 16px;
     }
-    .sect2 .image_box img {
+    .sect2 .image_box object {
         max-width: 500px;
     }
     .sect3 {
@@ -688,7 +688,7 @@ body {
     .sect2 .image_box {
         margin-top: -50px;
     }
-    .sect2 .image_box img {
+    .sect2 .image_box object {
         max-width: 450px;
     }
     .sect3 .image_box img {
@@ -781,7 +781,7 @@ body {
     .sect2 .image_box {
         margin-top: 0;
     }
-    .sect2 .image_box img {
+    .sect2 .image_box object {
         max-width: 300px;
     }
     .sect3 {
@@ -910,8 +910,8 @@ body {
         max-width: 230px;
     }
     .sect5 .text_box {
-        margin-top: 120px;
-        max-width: 260px;
+        margin-top: 170px;
+        max-width: 300px;
     }
     .sect5 .image_box {
         margin-top: 0px;
@@ -920,10 +920,10 @@ body {
         max-width: 200px;
     }
     .sect6 .image_box {
-        top: 360px;
+        top: 500px;
     }
     .sect6 .image_box img {
-        max-width: 300px;
+        max-width: 400px;
     }
     .sect7 .text_box {
         margin-top: 100px;
@@ -942,17 +942,12 @@ body {
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .sect6 .image_box {
-        top: 430px;
-    }
-}
 @media (max-width: 360px) {
     .sect2 h2, .sect3 h2, .sect4 h2, .sect5 h2, .sect6 h2, .sect7 h2, .sect8 h2, .sect10 h2 {
-        font-size: 18px;
+        font-size: 22px;
     }
     .sect2 p, .sect3 p, .sect4 p, .sect5 p, .sect6 p, .sect7 p, .sect8 p, .sect9 p, .sect10 p {
-        font-size: 11px;
+        font-size: 13px;
     }
     .sect1 p {
         letter-spacing: 0;
@@ -965,7 +960,7 @@ body {
     .sect2 .text_box {
         margin-bottom: 40px;
     }
-    .sect2 .image_box img {
+    .sect2 .image_box object {
         max-width: 240px;
     }
     .sect3 .image_box img {
@@ -977,14 +972,14 @@ body {
     .sect4 .text_box {
         margin-bottom: 20px;
     }
+    .sect4 .image_box {
+        margin-top: 100px;
+    }
     .sect4 .image_box img {
         max-width: 180px;
     }
     .sect5 .text_box {
-        margin-top: 100px;
-    }
-    .sect5 .image_box {
-        margin-top: -10px;
+        margin-top: 130px;
     }
     .sect5 .image_box img {
         max-width: 140px;
@@ -993,7 +988,7 @@ body {
         max-width: 240px;
     }
     .sect6 .image_box {
-        top: 260px;
+        top: 400px;
     }
     .sect7 .text_box {
         margin-top: 60px;
@@ -1004,6 +999,9 @@ body {
     .sect8 .text_box {
         margin-bottom: 0;
         margin-top: 20px;
+    }
+    .sect8 .image_box {
+        top: 50px;
     }
     .sect8 .image_box img {
         max-width: 180px;
@@ -1023,7 +1021,7 @@ body {
         height: 70px;
     }
     .carousel-item img {
-        max-width: 110px;
+        max-width: 140px;
     }
     .carousel-indicators li {
         width: 10px!important;
