@@ -68,6 +68,22 @@ body {
     height: 100vh;
 }
 
+
+a.bca_cta {
+    color: white;
+    background-color: #194cb1;
+    font-family: 'SourceSansPro-Semibold', sans-serif;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 10px; 
+    text-decoration: none;
+}
+a.bca_cta:hover {
+    background-color: #2264e6;
+    text-decoration: none;
+    color: white;
+}
+
 /* ========== section 1 ========== */
 .sect1 {
     background-image: url(../svg/sect1.svg);
@@ -94,6 +110,7 @@ body {
     color: #fff;
     line-height: 32px;
     letter-spacing: .6px;
+    
 }
 
 
@@ -360,6 +377,7 @@ body {
     font-family: 'SourceSansPro-Regular', sans-serif;
     font-size: 18px;
     color: #1E2034;
+    margin-bottom: 20px;
 }
 .sect8 .image_box {
     max-width: 500px;
