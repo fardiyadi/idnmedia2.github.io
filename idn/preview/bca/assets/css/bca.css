@@ -425,10 +425,13 @@ a.bca_cta:hover {
 
 /* ========== section 10 ========== */
 .sect10 {
-     background-color: #f2f2f2;
+    background-image: url(../images/sect10.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
     width: 100vw;
     position: relative;
-    padding-top: 10%;
+    padding: 5% 0;
 }
 .sect10 .end_text {
     position: relative;
