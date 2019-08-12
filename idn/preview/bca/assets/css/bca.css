@@ -1124,6 +1124,14 @@ a.bca_cta:hover {
         max-width: 100px;
     }
 }
+@media (max-width: 321px) {
+    .sect4 .image_box {
+        margin-top: 30px;
+    }
+    .sect6 .image_box {
+        top: 330px;
+    }
+}
 
 
 
