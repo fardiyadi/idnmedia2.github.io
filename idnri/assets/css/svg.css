@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+/* common css */
+.mapbg {
+    fill:#DBDBDB;
+}
+
+#global-issue {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    fill:#fff;
+    font-size: 22px;
+    text-shadow: 1px 1px 10px #333;
+}
+.issue-name {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    fill:#333333;
+    font-size: 12px;
+}
+.issue-icon {
+    fill: #fff;
+}
+.key-issue-name {
+    fill: #666666;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #fff;
+}
+.key {
+    cursor: pointer;
+}
+#lingkar-luar {
+    fill:none;stroke:#999999;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:5,8;
+}
+#lingkar-dalam {
+    fill:none;stroke:#999999;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:20,8;
+}
+.key circle {
+    fill:#FFFFFF;stroke:#0A9DEF;stroke-miterlimit:10;
+}
+svg {
+    display: none;
+}
+#lingkar-luar {
+    fill:none;stroke:#999999;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:5,8;
+}
+#lingkar-dalam {
+    fill:none;stroke:#999999;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:20,8;
+}
+path {
+    fill:none;stroke:#FFFFFF;stroke-width:1.5;stroke-miterlimit:10;
+}
+#detail1 {
+    display: none;
+}
+.dnone {
+    display: none;
+}
+.dblock {
+    display: block;
+}
+#keyA:hover, #keyB:hover, #keyC:hover, #keyD:hover {
+    cursor: pointer;
+}
+.keyA:hover, .keyB:hover, .keyC:hover, .keyD:hover {
+    cursor: pointer;
+    fill: #0d89f9!important;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+polygon.aktif {
+        fill: #0d89f9!important;
+        -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.aktif line, .aktif path {
+    stroke :#0d89f9!important;
+        -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.aktif circle {
+    fill: #0d89f9!important;
+        -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+/*
+.hightlight .st5 {
+    fill: #0d89f9;
+    stroke: #fff;
+}
+.st1, .st5, .st9 {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.st1:hover {
+    stroke: #0d89f9;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.st5:hover, .st9:hover {
+    fill: #0d89f9;
+    stroke: #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.st7 {
+    
+}
+*/
