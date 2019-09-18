@@ -1,3 +1,13 @@
+// smooth scroll
+
+jQuery(document).ready(function($) {
+  $("#scroll").click(function(event) {
+    event.preventDefault();
+    var x = $(this).offset().top;
+    $('html,body').animate({scrollTop: x - 0 }, 1500);
+  });
+})
+
 // Lazy load image
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -43,20 +53,26 @@ document.addEventListener("DOMContentLoaded", function() {
 jQuery(document).ready(function(){
     jQuery('#key1A').click(function(event){
         jQuery('.aktif').removeClass('aktif');
+        jQuery('.showing').removeClass('showing');
         jQuery(this).addClass('aktif');   
         jQuery('.key1A').addClass('aktif');   
+        jQuery('.area1A').addClass('showing');   
         event.preventDefault();
     });
     jQuery('#key1B').click(function(event){
         jQuery('.aktif').removeClass('aktif');
+        jQuery('.showing').removeClass('showing');
         jQuery(this).addClass('aktif');   
-        jQuery('.key1B').addClass('aktif');   
+        jQuery('.key1B').addClass('aktif');  
+        jQuery('.area1B').addClass('showing');  
         event.preventDefault();
     });
     jQuery('#key1C').click(function(event){
         jQuery('.aktif').removeClass('aktif');
+        jQuery('.showing').removeClass('showing');
         jQuery(this).addClass('aktif');   
-        jQuery('.key1C').addClass('aktif');   
+        jQuery('.key1C').addClass('aktif');  
+        jQuery('.area1C').addClass('showing');  
         event.preventDefault();
     });
 });
@@ -90,21 +106,36 @@ $(document).ready(function() {
 
 // read more
 
-function myFunctionmore() {
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+//function myFunctionmore() {
+//    var moreText = document.getElementById("more");
+//    var btnText = document.getElementsByClassName("myBtn");
+//    var desc = document.getElementsByClassName("desc");
+//
+//  if (moreText.style.height === "60vh") {
+//      moreText.style.height = "100px";
+//      btnText.innerHTML = "Read more"; 
+//      
+//  } else {
+//      moreText.style.height = "60vh";
+//      btnText.innerHTML = "Read less"; 
+//  }
+//}
 
-  if (moreText.style.height === "auto") {
-    moreText.style.height = "100px";
-    btnText.innerHTML = "Read more"; 
-  } else {
-    moreText.style.height = "auto";
-    btnText.innerHTML = "Read less"; 
-  }
-}
 
+$('.toggle').click(function(e) {
+    e.preventDefault();
 
+    var $this = $(this);
 
+    if ($this.prev().hasClass('expand')) {
+        $this.prev().removeClass('expand');
+        this.innerHTML = "Read more";
+
+    } else {
+        $this.prev().toggleClass('expand');
+        this.innerHTML = "Read less";
+    }
+});
 
 
 
