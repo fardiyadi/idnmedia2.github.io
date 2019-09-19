@@ -32,100 +32,59 @@
 </head>
 
 <body>
-    
-    <!-- Preloader Begin -->
-<!--
-    <div class='preloader w-100 h-100 position-fixed'>
-        <div class="loader">
-            <img class="icon"  src="assets/img/preloader.png" alt="">
-        </div>
-    </div>
--->
-    <!-- Preloader End -->
-
     <!-- Header Begin -->
     <header class="header fixed-top">
-        <!-- Header Style One Begin -->
-        <div class="fixed-top header-main style--one">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-3 col-sm-4 col-8">
-                        <!-- Logo Begin -->
-                        <div class="logo">
-                            <a href="index.html">
-                                <img class="default-logo" src="assets/images/IDN-Research-Institute.png" data-rjs="2" alt="">
-                                <img class="sticky-logo" src="assets/images/IDN-Research-Institute.png" data-rjs="2" alt="">
-                            </a>
-                        </div>
-                        <!-- Logo End -->
+        <div class="container">
+            <div class="row align-items-center myheader">
+                <div class="col-lg-3 col-sm-4 col-8">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img class="default-logo" src="assets/images/IDN-Research-Institute.png" data-rjs="2" alt="Logo IDN Research Institute">
+                        </a>
                     </div>
-
-                    <div class="col-lg-9 col-sm-8 col-4">
-                        <!-- Main Menu Begin -->
-                        <div class="main-menu d-flex align-items-center justify-content-end">
-                            <ul class="nav align-items-center">
-                                <li class="current-menu-parent menu-item-has-children" >
-                                    <a href="#">Lorem</a>
-<!--
-                                    <ul class="sub-menu">
-                                        <li class="current-menu-item"><a href="index.html">Landing Page</a></li>
-                                        <li><a href="home-1.html">home v1</a></li>
-                                        <li><a href="home-2.html">home v2</a></li>
-                                    </ul>
--->
-                                </li>
-<!--
-                                <li class="menu-item-has-children">
-                                    <a href="#">Services</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="service.html">service v1</a></li>
-                                        <li><a href="service-two.html">service v2</a></li>
-                                        <li><a href="service-details.html">service details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Project</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="projects.html">Projects</a></li>
-                                        <li><a href="project-details.html">project details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Pages</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="coming-soon.html">Coming Soon</a></li>
-                                        <li><a href="404.html">404</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Blog</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog.html">Blog Default</a></li>
-                                        <li><a href="blog-single-column.html">Blog Single Colunm</a></li>
-                                        <li><a href="blog-two-column.html">Blog two Colunm</a></li>
-                                        <li><a href="blog-with-sidebar.html">Blog with Sidebar</a></li>
-                                        <li><a href="blog-details.html">blog details</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">Contact</a></li>
--->
-                            </ul>
-                            
-                            <span class="offcanvas-trigger text-right d-none d-lg-block">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
-                           
-                        </div>
-                        <!-- Main Menu ENd -->
+                </div>
+                
+                <div class="col-lg-9 col-sm-8 col-4">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <ul class="nav align-items-center">
+                            <div class="search-box-filter">
+                                <i class="fa fa-search"></i><input type="text" id="myInput" onkeyup="myFunctionSearch()" placeholder="Search for issue.." title="Type in a name">
+                                <ul id="myUL" class="">
+                                    <li><a href="detail.html?issue=1">Advance Manufacturing and Production</a></li>
+                                    <li><a href="detail.html?issue=2">Agriculture and Forestry</a></li>
+                                    <li><a href="detail.html?issue=3">Applied Artificial Intelligence</a></li>
+                                    <li><a href="detail.html?issue=4">Automotive</a></li>
+                                    <li><a href="detail.html?issue=5">Banking and Capital Market</a></li>
+                                    <li><a href="detail.html?issue=6">Business and Entrepreneurship</a></li>
+                                    <li><a href="detail.html?issue=7">Cities and Urbanization</a></li>
+                                    <li><a href="detail.html?issue=8">Digital Economy and Society</a></li>
+                                    <li><a href="detail.html?issue=9">Education</a></li>
+                                    <li><a href="detail.html?issue=10">Environment and Natural Resource Security</a></li>
+                                    <li><a href="detail.html?issue=11">Family Life and Child Development</a></li>
+                                    <li><a href="detail.html?issue=12">Future of Health and Healthcare</a></li>
+                                    <li><a href="detail.html?issue=13">Gender Equality and Social Inclusion</a></li>
+                                    <li><a href="detail.html?issue=14">Government, Politics, and Public Policy</a></li>
+                                    <li><a href="detail.html?issue=15">Harmony in a Multicultural Society</a></li>
+                                    <li><a href="detail.html?issue=16">High Income Country</a></li>
+                                    <li><a href="detail.html?issue=17">Infrastructure in a Maritime Country</a></li>
+                                    <li><a href="detail.html?issue=18">Media and Entertainment</a></li>
+                                    <li><a href="detail.html?issue=19">Oil, Gas, and Renewable Energy</a></li>
+                                    <li><a href="detail.html?issue=20">Religion, Value, and Tradition</a></li>
+                                    <li><a href="detail.html?issue=21">Retail, Consumer Goods and Lifestyle</a></li>
+                                    <li><a href="detail.html?issue=22">Sustainable Development Goals</a></li>
+                                    <li><a href="detail.html?issue=23">Transportation and Logistics</a></li>
+                                    <li><a href="detail.html?issue=24">Travel and Tourism</a></li>
+                                    <li><a href="detail.html?issue=25">Workforce and Employment</a></li>
+                                </ul>
+                            </div>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Header Style One End -->
     </header>
+    
+    <div class="search-over-bg"></div>
     <!-- Header End -->
 
     <!-- Offcanvas Begin -->

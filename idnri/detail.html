@@ -36,41 +36,57 @@
 
     <!-- Header Begin -->
     <header class="header fixed-top">
-        <!-- Header Style One Begin -->
-        <div class="fixed-top header-main style--one">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-3 col-sm-4 col-8">
-                        <!-- Logo Begin -->
-                        <div class="logo">
-                            <a href="index.html">
-                                <img class="default-logo" src="assets/images/IDN-Research-Institute.png" data-rjs="2" alt="">
-                                <img class="sticky-logo" src="assets/images/IDN-Research-Institute.png" data-rjs="2" alt="">
-                            </a>
-                        </div>
-                        <!-- Logo End -->
+        <div class="container">
+            <div class="row align-items-center myheader">
+                <div class="col-lg-3 col-sm-4 col-8">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img class="default-logo" src="assets/images/IDN-Research-Institute.png" data-rjs="2" alt="Logo IDN Research Institute">
+                        </a>
                     </div>
-
-                    <div class="col-lg-9 col-sm-8 col-4">
-                        <!-- Main Menu Begin -->
-                        <div class="main-menu d-flex align-items-center justify-content-end">
-                            <ul class="nav align-items-center">
-                                <li class="menu-item-has-children">
-                                    <a href="#">Home</a>
-                                </li>
-                            </ul>
-
-                            <!-- Offcanvas Trigger End -->
-                        </div>
-                        <!-- Main Menu ENd -->
+                </div>
+                
+                <div class="col-lg-9 col-sm-8 col-4">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <ul class="nav align-items-center">
+                            <div class="search-box-filter">
+                                <i class="fa fa-search"></i><input type="text" id="myInput" onkeyup="myFunctionSearch()" placeholder="Search for issue.." title="Type in a name">
+                                <ul id="myUL" class="">
+                                    <li><a href="detail.html?issue=1">Advance Manufacturing and Production</a></li>
+                                    <li><a href="detail.html?issue=2">Agriculture and Forestry</a></li>
+                                    <li><a href="detail.html?issue=3">Applied Artificial Intelligence</a></li>
+                                    <li><a href="detail.html?issue=4">Automotive</a></li>
+                                    <li><a href="detail.html?issue=5">Banking and Capital Market</a></li>
+                                    <li><a href="detail.html?issue=6">Business and Entrepreneurship</a></li>
+                                    <li><a href="detail.html?issue=7">Cities and Urbanization</a></li>
+                                    <li><a href="detail.html?issue=8">Digital Economy and Society</a></li>
+                                    <li><a href="detail.html?issue=9">Education</a></li>
+                                    <li><a href="detail.html?issue=10">Environment and Natural Resource Security</a></li>
+                                    <li><a href="detail.html?issue=11">Family Life and Child Development</a></li>
+                                    <li><a href="detail.html?issue=12">Future of Health and Healthcare</a></li>
+                                    <li><a href="detail.html?issue=13">Gender Equality and Social Inclusion</a></li>
+                                    <li><a href="detail.html?issue=14">Government, Politics, and Public Policy</a></li>
+                                    <li><a href="detail.html?issue=15">Harmony in a Multicultural Society</a></li>
+                                    <li><a href="detail.html?issue=16">High Income Country</a></li>
+                                    <li><a href="detail.html?issue=17">Infrastructure in a Maritime Country</a></li>
+                                    <li><a href="detail.html?issue=18">Media and Entertainment</a></li>
+                                    <li><a href="detail.html?issue=19">Oil, Gas, and Renewable Energy</a></li>
+                                    <li><a href="detail.html?issue=20">Religion, Value, and Tradition</a></li>
+                                    <li><a href="detail.html?issue=21">Retail, Consumer Goods and Lifestyle</a></li>
+                                    <li><a href="detail.html?issue=22">Sustainable Development Goals</a></li>
+                                    <li><a href="detail.html?issue=23">Transportation and Logistics</a></li>
+                                    <li><a href="detail.html?issue=24">Travel and Tourism</a></li>
+                                    <li><a href="detail.html?issue=25">Workforce and Employment</a></li>
+                                </ul>
+                            </div>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Header Style One End -->
     </header>
     <!-- Header End -->
-    
+    <div class="search-over-bg"></div>
 
     <!-- About Section Begin -->
     <section id="issue-detail">
@@ -82,15 +98,14 @@
                     <?xml version="1.0" encoding="utf-8"?>
                     <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                     
-                    <!-- map 1 -->
+                    <!-- ===== Map 1 ===== -->
                     
-                    <svg id="map1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
-
-                        
-                    <g id="issue1">
+                    <svg id="map1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">  
+                        <g id="issue1">
                         
                         <rect y="0" class="mapbg" width="1000" height="1000"/>
-                        <circle id="lingkar-luar" cx="500" cy="500" r="313.9"/>
+                        <polygon id="lingkar-luar" points="500,187.6 371.1,215 264.4,292.5 198.5,406.6 184.7,537.7 225.5,663.1 313.7,761.1 
+                        434.1,814.7 565.9,814.7 686.3,761.1 774.5,663.1 815.3,537.7 801.5,406.6 735.6,292.5 628.9,215 	"/>
                         <circle id="lingkar-dalam" cx="500" cy="500" r="124.6"/>
                         <g>
                             <g id="key1A" class="key">
@@ -158,8 +173,10 @@
                                 <text transform="matrix(0.9896 -0.1438 0.1438 0.9896 106.8939 545.6367)"><tspan x="0" y="0" class="issue-name">Cities and</tspan><tspan x="-17.8" y="14.9" class="issue-name">Urbanization</tspan></text>
                             </g>
                             <g>
-                                <polygon class="issue-icon key1A key1C" points="189,418.5 189,391.6 203.8,391.6 210.6,398.4 210.6,418.5 			"/>
-                                <text transform="matrix(0.9363 0.3512 -0.3512 0.9363 86.4751 362.878)"><tspan x="0" y="0" class="issue-name">Digital Economy</tspan><tspan x="26.7" y="14.9" class="issue-name">and Society</tspan></text>
+                                <a href="detail.html?issue=8">
+                                    <polygon class="issue-icon key1A key1C" points="189,418.5 189,391.6 203.8,391.6 210.6,398.4 210.6,418.5 			"/>
+                                    <text transform="matrix(0.9363 0.3512 -0.3512 0.9363 86.4751 362.878)"><tspan x="0" y="0" class="issue-name">Digital Economy</tspan><tspan x="26.7" y="14.9" class="issue-name">and Society</tspan></text>
+                                </a>
                             </g>
                             <g>
                                 <polygon class="issue-icon key1A" points="253,305.7 253,278.7 267.7,278.7 274.6,285.6 274.6,305.7 			"/>
@@ -212,25 +229,203 @@
                         <circle class="red-circle" cx="500" cy="500" r="97.5" fill="url(#imageis1)"/>
                         <text id="global-issue" transform="matrix(1 0 0 1 455.7024 480.5598)"><tspan x="0" y="0">Advance</tspan><tspan x="-31" y="27.1">Manufacturing</tspan><tspan x="-33.4" y="54.3">and Production</tspan></text>
                     </g>
-
                     </svg>
 
-                    <!-- map 6 -->
+                    <!-- ===== Map 8 ===== -->
+                    
+                    <svg id="map8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+    
+                        <g id="issue8">
+                            <rect y="0" class="mapbg" width="1000" height="1000"/>
+                            <polygon id="lingkar-luar" points="570.5,194.4 429.5,194.4 302.3,255.6 214.4,365.9 183,503.5 214.4,641 
+                                302.3,751.3 429.5,812.5 570.5,812.5 697.7,751.3 785.6,641 817,503.5 785.6,365.9 697.7,255.6 	"/>
+                            <circle id="lingkar-dalam" cx="500" cy="500" r="124.6"/>
+                            <g>
+                                <g id="key8A" class="key">
+                                    <g>
+                                        <path d="M375.4,503c0,0-30.1,122.1,57.8,309.5"/>
+                                        <path d="M375.9,499.7c0,0-52.7,76.1-70.3,253.2"/>
+                                        <line x1="375.4" y1="500" x2="183" y2="503.5"/>
+                                        <path d="M375.4,500c0,0-91.2-35.7-156.8-131"/>
+                                        <path d="M375.9,499.7c0,0-116.2-84.8-73.6-244.1"/>
+                                        <path d="M373.8,503c0,0-108.5-169.8,59.3-308.6"/>
+                                        <path d="M375.4,500c0,0,243.8-116.4,316.7-244.4"/>
+                                        <path d="M375.9,499.7c0,0,267.8-127.8,441.1,3.8"/>
+                                        <path d="M375.4,503c0,0,81.9,226.6,324.3,245.8"/>
+                                        <path d="M375.4,503c0,0-1.2,126.1,191.2,309.5"/>
+                                    </g>
+                                    <circle cx="375.9" cy="499.7" r="14"/>
+                                    <text transform="matrix(1 0 0 1 201.6016 496.2844)"><tspan x="0" y="0" class="key-issue-name">Digital Transformation</tspan><tspan x="63.2" y="18" class="key-issue-name">and Economy</tspan></text>
+                                </g>
+                                <g id="key8B" class="key">
+                                    <g>
+                                        <path d="M625.5,499.6c0,0,60.8,146.4-192.4,312.9"/>
+                                        <path d="M625.5,499.6c0,0,59.6,237.4-406.9,141.4"/>
+                                        <path d="M625.5,499.6c0,0,54.2,242.7-443.6,3.9"/>
+                                        <path d="M625.5,499.6c0,0-42.7-178.4-323.3-243.4"/>
+                                        <path d="M625.5,499.6c0,0-56.1-202.1-417.8-134.6"/>
+                                        <path d="M625.5,499.6c0,0-51.9-202-194.4-304"/>
+                                        <path d="M625.5,499.6c0,0,0.1-169-58.9-304"/>
+                                        <path d="M625.5,499.6c0-13.9,67.6-132.5,63.3-248.2"/>
+                                        <line x1="625.5" y1="499.6" x2="816.6" y2="499.6"/>
+                                        <path d="M625.5,499.6c0,0,105.6-40.1,158.1-134.6"/>
+                                        <path d="M625.5,499.6c0,0,58.2,127.6,77.4,250.8"/>
+                                        <path d="M625.5,499.6c0,0,60.6,105.4,158.1,141.4"/>
+                                        <path d="M625.5,499.6c0,0,69.1,221-58.9,315.5"/>
+                                    </g>
+                                    <circle cx="625.5" cy="499.6" r="13.9"/>
+                                    <text id="behavior-disruption" transform="matrix(1 0 0 1 648.8564 496.2916)"><tspan x="0" y="0" class="key-issue-name">Behavior Disruption</tspan><tspan x="0" y="18" class="key-issue-name">of Transactions</tspan></text>
+                                </g>
+                                <g>
+                                    <polygon class="issue-icon" points="422.3,826 422.3,799.1 437.1,799.1 444,805.9 444,826 			"/>
+                                    <text transform="matrix(0.1737 -0.9848 0.9848 0.1737 407.2768 881.2294)"><tspan x="0" y="0" class="issue-name">Advance</tspan><tspan x="-34.1" y="14.9" class="issue-name">Manufacturing</tspan><tspan x="-36.6" y="29.8" class="issue-name">and Production</tspan></text>
+                                </g>
+                                <g>
+                                    <polygon class="issue-icon" points="294.8,763.8 294.8,736.8 309.6,736.8 316.4,743.7 316.4,763.8 			"/>
+                                    <text transform="matrix(0.6428 -0.766 0.766 0.6428 252.4701 796.7326)"><tspan x="0" y="0" class="issue-name">Applied</tspan><tspan x="-5.4" y="14.9" class="issue-name">Artificial</tspan><tspan x="-21.9" y="29.8" class="issue-name">Intelligence</tspan></text>
+                                </g>
+                                <g>
+                                    <polygon class="issue-icon" points="207.8,654.5 207.8,627.6 222.5,627.6 229.4,634.4 229.4,654.5 			"/>
+                                    <text transform="matrix(0.9063 -0.4226 0.4226 0.9063 136.3178 687.1432)" class="issue-name">Automotive</text>
+                                </g>
+                                <g>
+                                    <polygon class="issue-icon" points="171.1,516.5 171.1,489.5 185.9,489.5 192.8,496.4 192.8,516.5 			"/>
+                                    <text transform="matrix(1 0 0 1 91.1452 499.6375)"><tspan x="0" y="0" class="issue-name">Banking and</tspan><tspan x="-15.3" y="14.9" class="issue-name">Capital Market</tspan></text>
+                                </g>
+                                <g>
+                                    <polygon class="issue-icon" points="203.1,378.5 203.1,351.6 217.9,351.6 224.7,358.4 224.7,378.5 			"/>
+                                    <text transform="matrix(0.9113 0.4118 -0.4118 0.9113 124.056 315.8105)"><tspan x="0" y="0" class="issue-name">Business and</tspan><tspan x="-26.6" y="14.9" class="issue-name">Entrepreneurship</tspan></text>
+                                </g>
+                                <g>
+                                    <polygon class="issue-icon" points="291.4,268.5 291.4,241.6 306.1,241.6 313,248.5 313,268.5 			"/>
+                                    <text transform="matrix(0.6265 0.7794 -0.7794 0.6265 255.4049 187.0118)"><tspan x="0" y="0" class="issue-name">Cities and</tspan><tspan x="-17.8" y="14.9" class="issue-name">Urbanization</tspan></text>
+                                </g>
+                                <g>
+                                    <polygon class="issue-icon" points="422.3,207.9 422.3,180.9 437.1,180.9 444,187.8 444,207.9 			"/>
+                                    <text transform="matrix(0.1736 0.9848 -0.9848 0.1736 416.2592 114.4192)" class="issue-name">Education</text>
+                                </g>
+                                <g>
+                                    <polygon class="issue-icon" points="555.8,207.9 555.8,180.9 570.5,180.9 577.4,187.8 577.4,207.9 			"/>
+                                    <text transform="matrix(0.1736 -0.9848 0.9848 0.1736 555.7897 167.1886)"><tspan x="0" y="0" class="issue-name">Future of</tspan><tspan x="0" y="14.9" class="issue-name">Health </tspan><tspan x="0" y="29.8" class="issue-name">and Healthcare</tspan></text>
+                                </g>
+                                <g>
+                                    <polygon class="issue-icon" points="681.3,268.5 681.3,241.6 696,241.6 702.9,248.5 702.9,268.5 			"/>
+                                    <text transform="matrix(0.6318 -0.7751 0.7751 0.6318 706.0604 229.802)"><tspan x="0" y="0" class="issue-name">Government,</tspan><tspan x="0" y="14.9" class="issue-name">Politics and</tspan><tspan x="0" y="29.8" class="issue-name">Public Policy</tspan></text>
+                                </g>
+                                <g>
+                                    <polygon class="issue-icon" points="772.8,378.5 772.8,351.6 787.5,351.6 794.4,358.4 794.4,378.5 			"/>
+                                    <text transform="matrix(0.9078 -0.4194 0.4194 0.9078 803.9634 350.1099)"><tspan x="0" y="0" class="issue-name">Media and</tspan><tspan x="0" y="14.9" class="issue-name">Entertainment</tspan></text>
+                                </g>
+                                <g>
+                                    <polygon class="issue-icon" points="806.2,516.5 806.2,489.5 820.9,489.5 827.8,496.4 827.8,516.5 			"/>
+                                    <text transform="matrix(1 -5.862286e-06 5.862286e-06 1 840.0419 490.8004)"><tspan x="0" y="0" class="issue-name">Retail,</tspan><tspan x="0" y="14.9" class="issue-name">Consumer Goods</tspan><tspan x="0" y="29.8" class="issue-name">and Lifestyle</tspan></text>
+                                </g>
+                                <g>
+                                    <polygon class="issue-icon" points="772.8,654.5 772.8,627.6 787.5,627.6 794.4,634.4 794.4,654.5 			"/>
+                                    <text transform="matrix(0.9063 0.4226 -0.4226 0.9063 811.7664 650.5415)"><tspan x="0" y="0" class="issue-name">Transportations</tspan><tspan x="0" y="14.9" class="issue-name">and Logistics</tspan></text>
+                                </g>
+                                <g>
+                                    <polygon class="issue-icon" points="688.8,763.8 688.8,736.9 703.6,736.9 710.5,743.8 710.5,763.8 			"/>
+                                    <text transform="matrix(0.6428 0.766 -0.766 0.6428 717.4573 768.3416)"><tspan x="0" y="0" class="issue-name">Travel and</tspan><tspan x="0" y="14.9" class="issue-name">Tourism</tspan></text>
+                                </g>
+                                <g>
+                                    <polygon class="issue-icon" points="555.8,826 555.8,799.1 570.5,799.1 577.4,805.9 577.4,826 			"/>
+                                    <text transform="matrix(0.1736 0.9848 -0.9848 0.1736 574.626 833.3795)"><tspan x="0" y="0" class="issue-name">Workforce and</tspan><tspan x="0" y="14.9" class="issue-name">Employment</tspan></text>
+                                </g>
+                            </g>
+                            
+                            <pattern id="imageis8" x="0" y="0" patternUnits="userSpaceOnUse" height="400" width="400">
+                                <image x="0" y="0" xlink:href="assets/images/thumbnail/digital-economy-and-society.jpg"></image>
+                            </pattern>
+                            
+                            <circle class="red-circle" cx="500" cy="500" r="97.5" fill="url(#imageis8)"/>
+                            <text id="global-issue" transform="matrix(1 0 0 1 417.3083 493.0679)"><tspan x="0" y="0">Digital Economy</tspan><tspan x="24.3" y="27.1">and Society</tspan></text>
+                        </g>
+                    </svg>
 
                     
 
                 </div>
                 
                 
+                
+                
+                
+                
+                
+                
+                <!-- ==========================  RIGHT AREA  ========================== -->
+                
+                
                 <div class="col-lg-6 col-md-6 right-area">
                     
-                    <!-- map1 -->
+                    <!-- ===== Map 1 Detail ===== -->
+                    
                     <div id="detail1" class="">
                         <div class="detail-cover" style="background-image: url(assets/images/cover-head/advanced-manufacturing-and-production.jpg);">
                             <h3>Advance Manufacturing and Production</h3>
                             <h4>Global Issue</h4>
+                            <span class="cr-image">Source image : toyotaindonesiamanufacturing.co.id</span>
                         </div>
-                        <!-- Section Title Begin -->
+                        
+                        
+                        <!-- detail global 1 -->
+                        <div class="info-global area1">
+                            <div class="desc">
+                                <h4>Summary</h4>
+                                <p id="more">The rapid growth of computer science, sensors, artificial intelligence, robotics, mobile connectivity, and advanced materials are transforming manufacturing and production system. The significant change brought by the Fourth Industrial Revolution, especially in its technological progress, will definitely create a dynamic relation between innovation and productivity in Indonesia. Based on the Ministry of Industry, the government is targeting the creation of 1000 technopreneurs by 2020, with a business valuation of 100 billion US dollars and a total e-commerce value of 130 billion US dollars. The emergence of Fourth Industrial Revolution should be an opportunity for every organization to take full advantage in increasing its innovation and productivity with new technologies.</p>
+                                <button class="toggle">Read more</button>
+                                
+                                <div class="artikel">
+                                    <div class="list-artikel">
+                                        <div class="thumb-artikel">
+                                            <img src="assets/images/issues/transportations-and-logistics.jpg">
+                                        </div>
+                                        
+                                        <a href="https://www.idntimes.com/news/indonesia/aulia-fitria/mrt-jakarta-dan-pdw-architects-dapat-penghargaan-dari-sip-awards" target="_blank">
+                                            <h3>Mengenaskan! Raja Ular Rimba Kalimantan Hangus Akibat Kebakaran Hutan</h3>
+                                        </a>
+                                        <span>17 September 2019 </span>
+                                    </div>
+                                    
+                                    <div class="list-artikel">
+                                        <div class="thumb-artikel">
+                                            <img src="assets/images/issues/workforce-and-employment.jpg">
+                                        </div>
+                                        
+                                        <a href="https://www.idntimes.com/news/indonesia/aulia-fitria/mrt-jakarta-dan-pdw-architects-dapat-penghargaan-dari-sip-awards" target="_blank">
+                                            <h3>MRT Jakarta dan PDW Architects dapat Penghargaan dari SIP Awards</h3>
+                                        </a>
+                                        <span>17 September 2019 </span>
+                                    </div>
+                                    <div class="list-artikel">
+                                        <div class="thumb-artikel">
+                                            <img src="assets/images/issues/retail-consumer-goods-and-lifestyle.jpg">
+                                        </div>
+                                        
+                                        <a href="https://www.idntimes.com/news/indonesia/aulia-fitria/mrt-jakarta-dan-pdw-architects-dapat-penghargaan-dari-sip-awards" target="_blank">
+                                            <h3>MRT Jakarta dan PDW Architects dapat Penghargaan dari SIP Awards</h3>
+                                        </a>
+                                        <span>17 September 2019 </span>
+                                    </div>
+                                    <div class="list-artikel">
+                                        <div class="thumb-artikel">
+                                            <img src="assets/images/issues/government-politics-and-public-policy.jpg">
+                                        </div>
+                                        
+                                        <a href="https://www.idntimes.com/news/indonesia/aulia-fitria/mrt-jakarta-dan-pdw-architects-dapat-penghargaan-dari-sip-awards" target="_blank">
+                                            <h3>MRT Jakarta dan PDW Architects dapat Penghargaan dari SIP Awards</h3>
+                                        </a>
+                                        <span>17 September 2019 </span>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            
+                        </div>
+                        </div>
+
                         <div class="info-area area1A">
                             <div class="desc">
                                 <h4>Supply Chain Disruption</h4>
@@ -406,14 +601,12 @@
 
     <!-- ======= jQuery Library ======= -->
     <script src="assets/js/jquery.min.js"></script>
-    
 
     <!-- ======= Bootstrap Bundle JS ======= -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
     <!-- =======  Mobile Menu JS ======= -->
     <script src="assets/js/menu.min.js"></script>
-
 
     <!-- ======= Retina JS ======= -->
     <script src="assets/plugins/retinajs/retina.min.js"></script>
@@ -424,29 +617,6 @@
     
     <!-- ======= Custom JS ======= -->
     <script src="assets/js/custom.js"></script>
-    <script>
-    
-   $(document).ready(function(){
-  $("#x").click(function(){
-    $("#line-x").addClass("dnone");
-      $("#x").addClass("dnone");
-      $("#line-y").removeClass("dnone");
-  });
-       
-       $("#y").click(function(){
-    $("#line-y").addClass("dnone");
-      $("#line-x").removeClass("dnone");
-  });
-       
-       $(".issue-name").click(function(){
-    $("#xyz11").addClass("dii");
-           $("#xyz22").addClass("iid");
-  });
-});
-
-
-    </script>
-    
     
 </body>
 

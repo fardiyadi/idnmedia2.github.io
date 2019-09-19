@@ -8,6 +8,43 @@ jQuery(document).ready(function($) {
   });
 })
 
+
+// search filter
+
+function myFunctionSearch() {
+    var input, filter, ul, li, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+jQuery(document).ready(function(){
+    jQuery('#myInput').click(function(event){
+        jQuery('#myUL').addClass('aktif');
+        jQuery('.search-over-bg').addClass('aktif');
+        jQuery('body').addClass('overHide');
+        event.preventDefault();
+    });
+    jQuery('.search-over-bg').click(function(event){
+        jQuery('#myUL').removeClass('aktif');
+        jQuery('.search-over-bg').removeClass('aktif');
+        jQuery('body').removeClass('overHide');
+        event.preventDefault();
+    });
+
+});
+
+
 // Lazy load image
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -57,6 +94,7 @@ jQuery(document).ready(function(){
         jQuery(this).addClass('aktif');   
         jQuery('.key1A').addClass('aktif');   
         jQuery('.area1A').addClass('showing');   
+        jQuery('.area1').addClass('dnone');   
         event.preventDefault();
     });
     jQuery('#key1B').click(function(event){
@@ -65,6 +103,7 @@ jQuery(document).ready(function(){
         jQuery(this).addClass('aktif');   
         jQuery('.key1B').addClass('aktif');  
         jQuery('.area1B').addClass('showing');  
+        jQuery('.area1').addClass('dnone');  
         event.preventDefault();
     });
     jQuery('#key1C').click(function(event){
@@ -72,7 +111,8 @@ jQuery(document).ready(function(){
         jQuery('.showing').removeClass('showing');
         jQuery(this).addClass('aktif');   
         jQuery('.key1C').addClass('aktif');  
-        jQuery('.area1C').addClass('showing');  
+        jQuery('.area1C').addClass('showing');
+        jQuery('.area1').addClass('dnone');  
         event.preventDefault();
     });
 });
@@ -98,7 +138,7 @@ $(document).ready(function() {
         $('#detail1').show();
     }
     else {
-        $('#map6').show();
+        $('#map8').show();
     }
 });
 

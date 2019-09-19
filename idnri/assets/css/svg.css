@@ -1,28 +1,71 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+/*
+== Step ==
+1. svg id
+2. <rect y="0" class="mapbg"
+3. <g id="keyid" class="key">
+<text class="key-issue-name">
+<polygon class="issue-icon & id tiap key a/b/c dst
+<a href="detail.html?issue=id"> after <g> tiap isu
+<tspan class="issue-name"
+global issue class = red-circle (ada dibawah)
+
+// thumbnail image, taro di atas red-circle
+<pattern id="imageis1" x="0" y="0" patternUnits="userSpaceOnUse" height="400" width="400">
+<image x="0" y="0" xlink:href="assets/images/thumbnail/advanced-manufacturing-and-production.jpg"></image>
+</pattern>
+fill="url(#imageis1)"/> 1 id map
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 /* common css */
 .mapbg {
     fill:#DBDBDB;
 }
 
 #global-issue {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     fill:#fff;
     font-size: 22px;
     text-shadow: 1px 1px 10px #333;
 }
 .issue-name {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     fill:#333333;
     font-size: 12px;
 }
-.issue-icon {
+.issue-icon, .key circle {
     fill: #fff;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.issue-icon:hover, .key circle:hover {
+    cursor: pointer;
+    fill: #0A9DEF;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.key path:hover {
+    cursor: pointer;
+    stroke: #0A9DEF;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 .key-issue-name {
     fill: #666666;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     text-shadow: 1px 1px 2px #fff;
 }
@@ -69,18 +112,18 @@ path {
     transition: all 0.4s ease;
 }
 polygon.aktif {
-        fill: #0d89f9!important;
-        -webkit-transition: all 0.4s ease;
+    fill: #0d89f9!important;
+    -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
 .aktif line, .aktif path {
     stroke :#0d89f9!important;
-        -webkit-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
 .aktif circle {
     fill: #0d89f9!important;
-        -webkit-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
 /*
