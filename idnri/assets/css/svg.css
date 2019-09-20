@@ -3,19 +3,25 @@
 1. svg id
 2. <rect y="0" class="mapbg"
 3. <g id="keyid" class="key">
-<text class="key-issue-name">
-<polygon class="issue-icon & id tiap key a/b/c dst
-<a href="detail.html?issue=id"> after <g> tiap isu
-<tspan class="issue-name"
-global issue class = red-circle (ada dibawah)
+4. <text class="key-issue-name">
+5. <polygon class="issue-icon & id tiap key a/b/c dst
+6. <a href="detail.html?issue=id"> after <g> tiap isu
+7. <tspan class="issue-name"
+8. global issue class = red-circle (ada dibawah)
 
 // thumbnail image, taro di atas red-circle
+
+
 <pattern id="imageis1" x="0" y="0" patternUnits="userSpaceOnUse" height="400" width="400">
 <image x="0" y="0" xlink:href="assets/images/thumbnail/advanced-manufacturing-and-production.jpg"></image>
-</pattern>
+                        </pattern>
+
 fill="url(#imageis1)"/> 1 id map
 
 
+
+
+//// update
 
 
 */

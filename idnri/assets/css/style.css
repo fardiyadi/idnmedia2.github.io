@@ -493,7 +493,7 @@ body {
 }
 
 .c1-bg, ::selection, .bg-overlay:after, .btn-inline:hover:after, #menu-button.menu-opened span::before, #menu-button.menu-opened span::after, -thumb.offcanvas-wrapper::-webkit-scrollbar, .single-blog-item .blog-hover {
-  background-color: #fb4275;
+  background-color: #000;
 }
 
 .c1-bo, .owl-carousel .owl-nav button:before, .pagination li a:hover, .pagination li a.active,

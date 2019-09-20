@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // end lazy load image
 
-// aktif class
+// aktif class map 1
 jQuery(document).ready(function(){
     jQuery('#key1A').click(function(event){
         jQuery('.aktif').removeClass('aktif');
@@ -117,6 +117,27 @@ jQuery(document).ready(function(){
     });
 });
 
+// aktif class map 2
+jQuery(document).ready(function(){
+    jQuery('#key2A').click(function(event){
+        jQuery('.aktif').removeClass('aktif');
+        jQuery('.showing').removeClass('showing');
+        jQuery(this).addClass('aktif');   
+        jQuery('.key2A').addClass('aktif');   
+        jQuery('.area2A').addClass('showing');   
+        jQuery('.area2').addClass('dnone');   
+        event.preventDefault();
+    });
+    jQuery('#key2B').click(function(event){
+        jQuery('.aktif').removeClass('aktif');
+        jQuery('.showing').removeClass('showing');
+        jQuery(this).addClass('aktif');   
+        jQuery('.key2B').addClass('aktif');  
+        jQuery('.area2B').addClass('showing');  
+        jQuery('.area2').addClass('dnone');  
+        event.preventDefault();
+    });
+});
 
 
 
@@ -137,8 +158,12 @@ $(document).ready(function() {
         $('#map1').show();
         $('#detail1').show();
     }
+    else if (dynamicContent == '2') {
+        $('#map2').show();
+        $('#detail2').show();
+    }
     else {
-        $('#map8').show();
+        $('#default').show();
     }
 });
 
