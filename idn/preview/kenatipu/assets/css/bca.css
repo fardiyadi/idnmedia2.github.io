@@ -1161,6 +1161,9 @@ a.bca_cta:hover {
     .sect10 p {
         font-size: 13px;
     }
+    .sect1 {
+        height: 100vh;
+    }
     .sect1 p {
         letter-spacing: 0;
         font-size: 17px;
@@ -1171,9 +1174,13 @@ a.bca_cta:hover {
     }
     .sect2 .text_box {
         margin-bottom: 40px;
+        margin-top: 10%;
     }
-    .sect2 .image_box object {
-        max-width: 240px;
+    .sect2 .image_box img {
+        max-width: 200px;
+    }
+    .sect3 {
+        padding-top: 20%;
     }
     .sect3 .image_box img {
         max-width: 220px;
@@ -1183,27 +1190,36 @@ a.bca_cta:hover {
     }
     .sect4 .text_box {
         margin-bottom: 20px;
+        margin-top: 0;
     }
     .sect4 .image_box {
         margin-top: 100px;
     }
     .sect4 .image_box img {
-        max-width: 180px;
+        max-width: 250px;
     }
     .sect5 .text_box {
-        margin-top: 130px;
+        margin-top: 20%;
+        max-width: 100%;
+        margin-bottom: 50px;
     }
     .sect5 .image_box img {
-        max-width: 140px;
+        max-width: 280px;
     }
     .sect6 .image_box img {
         max-width: 240px;
+    }
+    .sect6 .text_box {
+        top: 0;
+        margin-top: 0;
+        padding-left: 20px;
     }
     .sect6 .image_box {
         top: 400px;
     }
     .sect7 .text_box {
         margin-top: 60px;
+        max-width: 100%;
     }
     .sect7 .image_box img {
         max-width: 200px;
@@ -1223,14 +1239,22 @@ a.bca_cta:hover {
         top: 30px;
     }
     .sect10 {
-        height: 110vh;
+        height: 60vh;
     }
-    .sect10 .end_text p {
-        font-size: 14px;
+    .sect10 a.button {
+        font-size: 20px;
+        padding: 10px 70px;
+    }
+    .sect10 p {
+        font-size: 16px;
+    }
+    .sect10 h4 {
+        font-size: 18px;
     }
     .desc {
-        max-width: 200px;
-        height: 70px;
+        max-width: 70%;
+        height: 260px;
+        margin-top: 10px;
     }
     .carousel-item img {
         max-width: 140px;
