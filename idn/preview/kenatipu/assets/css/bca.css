@@ -1092,7 +1092,7 @@ a.bca_cta:hover {
     }
 }
 
-@media (max-width: 419px) and (max-height: 740px) {
+@media (max-width: 419px) {
     .sect2 h2, .sect3 h2, .sect4 h2, .sect5 h2, .sect6 h2, .sect7 h2, .sect8 h2, .sect10 h2 {
         font-size: 26px;
         margin-bottom: 25px;
