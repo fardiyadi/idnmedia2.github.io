@@ -1250,10 +1250,10 @@ a.bca_cta:hover {
 }
 @media (max-width: 419px) and (max-height: 847px) {
     .sect1 p {
-        font-size: 16px;
+        font-size: 14px;
     }
     .sect1 {
-        height: 90vh;
+        height: 70vh;
     }
     .sect2 .text_box {
         margin-bottom: 30px;
@@ -1280,7 +1280,7 @@ a.bca_cta:hover {
         top: 0;
         margin-top: 10px;
         position: relative;
-        padding-left: 20px;
+        padding-left: 30px;
     }
     .sect6 .image_box img {
         max-width: 320px;
@@ -1288,6 +1288,9 @@ a.bca_cta:hover {
     .sect6 .image_box {
         top: 0;
         margin-top: 50px;
+    }
+    .sect7 {
+        height: 80vh;
     }
     .sect10 a.button {
         font-size: 20px;
@@ -1348,7 +1351,7 @@ a.bca_cta:hover {
     .sect1 p {
         letter-spacing: 0;
         font-size: 14px;
-        line-height: 20px;
+        line-height: auto;
     }
     .sect1 .text_box {
         top: 50px;
@@ -1453,11 +1456,34 @@ a.bca_cta:hover {
     }
 }
 @media (max-width: 321px) {
+    .sect2 p, .sect3 p, .sect4 p, .sect5 p, .sect6 p, .sect7 p, .sect8 p, .sect9 p {
+        font-size: 13px;
+    }
+    .sect6, .sect7 {
+        height: 120vh;
+    }
+    .sect2 .image_box img {
+        max-width: 130px;
+    }
+    .sect3 {
+        padding-top: 7%;
+    }
+    .sect3 .image_box img {
+        max-width: 200px;
+        margin-top: 20px;
+    }
     .sect4 .image_box {
         margin-top: 30px;
     }
+    .sect6 {
+        padding-top: 20%;
+    }
     .sect6 .image_box {
-        top: 330px;
+        top: 0px;
+        margin-top: 20px;
+    }
+    .sect10 {
+        height: 80vh;
     }
 }
 
