@@ -264,6 +264,8 @@ a.bca_cta:hover {
     padding: 0 10px;
     max-width: 500px;
     margin-top: 30%;
+    z-index: 2;
+    position: relative;
 }
 
 
@@ -497,6 +499,8 @@ a.bca_cta:hover {
     padding: 0 10px;
     margin-top: 100px;
     text-align: center;
+    z-index: 2;
+    position: relative;
 }
 
 
@@ -1461,6 +1465,15 @@ a.bca_cta:hover {
     }
     .sect6, .sect7 {
         height: 120vh;
+    }
+    .sect1 .text_box {
+        top: 0;
+    }
+    .sect1 p {
+        font-size: 13px;
+    }
+    .sect1 .text_box2 {
+        margin-top: 20px;
     }
     .sect2 .image_box img {
         max-width: 130px;
