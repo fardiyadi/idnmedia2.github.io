@@ -1011,24 +1011,28 @@ a.bca_cta:hover {
     .sect6 {
         background-image: none;
         background-color: #f2d9c9;
-        height: 100vh;
+        height: auto;
+        position: relative;
+        padding: 50px 0;
     }
     .sect6 .text_box {
         text-align: left;
-        position: absolute;
-        right: 20px;
+        position: relative;
         max-width: auto;
-        margin-top: 60px;
+        top: 0;
+        margin-top: 0;
+        margin-bottom: 50px;
     }
     .sect6 .image_box {
         position: relative;
         left: 0;
         right: 0;
         margin: auto;
-        top: 480px;
+        top: 0;
+        height: 300px;
     }
     .sect6 .image_box img {
-        max-width: 450px;
+        max-width: 320px;
         left: 0;
         right: 0;
         margin: auto;
