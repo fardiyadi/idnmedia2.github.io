@@ -1004,14 +1004,18 @@ a.bca_cta:hover {
     .sect5 {
         background-image: none;
         background-color: #f2d9c9;
-        height: 100vh;
+        height: auto;
+        position: relative;
+        padding: 50px 0;
     }
     .sect5 .text_box {
-        margin-top: 180px;
+        margin-top: 0;
         text-align: right;
+        margin-bottom: 40px;
     }
     .sect5 .image_box {
-        margin-top: 50px;
+        margin-top: 0px;
+        height: 300px;
     }
     .sect5 .image_box img {
         max-width: 400px;
@@ -1127,12 +1131,8 @@ a.bca_cta:hover {
     .sect4 .image_box img {
         max-width: 310px;
     }
-    .sect5 {
-        height: 70vh;
-    }
+
     .sect5 .text_box {
-        margin-top: 10px;
-        margin-bottom: 70px;
         max-width: auto;
     }
     .sect5 .image_box {
@@ -1208,9 +1208,7 @@ a.bca_cta:hover {
         max-width: 320px;
     }
     .sect5 .text_box {
-        margin-top: 30px;
         max-width: 100%;
-        margin-bottom: 50px;
     }
     .sect5 .image_box {
         margin-top: 0px;
@@ -1294,7 +1292,7 @@ a.bca_cta:hover {
         max-width: 320px;
     }
     .sect5 .text_box {
-        margin-top: 50px;
+        margin-top: 0;
     }
     .sect5 .image_box img {
         max-width: 320px;
@@ -1403,7 +1401,6 @@ a.bca_cta:hover {
         max-width: 250px;
     }
     .sect5 .text_box {
-        margin-top: 20%;
         max-width: 100%;
         margin-bottom: 50px;
     }
