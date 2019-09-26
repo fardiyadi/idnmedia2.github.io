@@ -926,7 +926,7 @@ a.bca_cta:hover {
         background-color: #f2d9c9;
         height: auto;
         background-image: none;
-        padding-top: 30%;
+        padding: 100px 0;
     }
     .sect1 p {
         font-size: 18px;
@@ -944,14 +944,16 @@ a.bca_cta:hover {
         position: relative;
         margin-top: 100px;
         text-align: center;
-    }
+    } 
     .sect2 {
         background-image: none;
         background-color: #f2d9c9;
-        height: 100vh;
+        height: auto;
+        position: relative;
+        padding: 60px 0;
     }
     .sect2 .text_box {
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
     .sect2 .image_box {
         margin-top: 0;
