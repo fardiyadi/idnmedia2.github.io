@@ -991,7 +991,9 @@ a.bca_cta:hover {
         padding: 70px 0;
     }
     .sect4 .text_box {
-        margin-bottom: 140px;
+        margin-bottom: 60px;
+        margin-top: 0;
+        top: 0;
     }
     .sect4 .image_box {
         position: relative;
@@ -999,7 +1001,7 @@ a.bca_cta:hover {
         height: 330px;
     }
     .sect4 .image_box img {
-        max-width: 400px;
+        max-width: 320px;
     }
     .sect5 {
         background-image: none;
@@ -1018,7 +1020,7 @@ a.bca_cta:hover {
         height: 300px;
     }
     .sect5 .image_box img {
-        max-width: 400px;
+        max-width: 320px;
         left: 0;
         right: 0;
         margin: auto;
@@ -1060,8 +1062,9 @@ a.bca_cta:hover {
         padding-top: 60px;
     }
     .sect7 .text_box {
-        margin-top: 200px;
+        margin-top: 50px;
         text-align: center;
+        max-width: 100%;
     }
     .sect7 .image_box {
         margin-top: 50px;
@@ -1149,7 +1152,6 @@ a.bca_cta:hover {
     }
     .sect6 .text_box {
         top: 0;
-        padding-left: 20px;
     }
     .sect7 .text_box {
         margin-top: 100px;
@@ -1301,7 +1303,6 @@ a.bca_cta:hover {
         top: 0;
         margin-top: 10px;
         position: relative;
-        padding-left: 30px;
     }
     .sect6 .image_box img {
         max-width: 320px;
@@ -1413,7 +1414,6 @@ a.bca_cta:hover {
     .sect6 .text_box {
         top: 0;
         margin-top: 0;
-        padding-left: 20px;
     }
     .sect6 .image_box {
         top: 20px;
