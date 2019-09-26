@@ -1464,7 +1464,7 @@ a.bca_cta:hover {
         font-size: 13px;
     }
     .sect6, .sect7 {
-        height: 120vh;
+        height: 120vh!important;
     }
     .sect1 .text_box {
         top: 0;
