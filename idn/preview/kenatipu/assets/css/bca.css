@@ -959,7 +959,7 @@ a.bca_cta:hover {
     .sect2 .image_box {
         margin-top: 0;
         position: relative;
-        height: 300px;
+        height: 380px;
     }
     .sect2 .image_box img {
         max-width: 280px;
@@ -983,7 +983,9 @@ a.bca_cta:hover {
     .sect4 {
         background-image: none;
         background-color: #f2d9c9;
-        height: 100vh;
+        height: auto;
+        position: relative;
+        padding: 70p 0;
     }
     .sect4 .text_box {
         margin-bottom: 140px;
@@ -991,6 +993,7 @@ a.bca_cta:hover {
     .sect4 .image_box {
         position: relative;
         margin-top: 0px;
+        height: 330px;
     }
     .sect4 .image_box img {
         max-width: 400px;
@@ -1114,8 +1117,8 @@ a.bca_cta:hover {
         margin-bottom: 100px;
     }
     .sect4 .text_box {
-        margin-bottom: 110px;
-        margin-top: 100px;
+        margin-bottom: 70px;
+        margin-top: 0px;
     }
     .sect4 .image_box img {
         max-width: 310px;
