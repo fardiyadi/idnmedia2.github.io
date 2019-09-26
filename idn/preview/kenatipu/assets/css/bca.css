@@ -571,16 +571,17 @@ a.bca_cta:hover {
     box-shadow: 0px 15px 0px #000;
     margin-top: 20px;
     margin-bottom: 55px;
-    animation: tombol 2s ease-in-out infinite;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    transform: translateY(0px);
+/*    animation: tombol 2s ease-in-out infinite;*/
 }
-/*
 .sect10 a.button:hover {
     transform: translateY(8px);
     box-shadow: 0px 7px 0px #000;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
-*/
 
 /* carousel */
 #bca_slide {
@@ -1054,7 +1055,8 @@ a.bca_cta:hover {
     .sect8 {
         background-image: none;
         background-color: #f2d9c9;
-        height: 50vh;
+        height: auto;
+        padding: 100px 0;
     }
     .sect8 .image_box img {
         max-width: 260px;
@@ -1064,7 +1066,9 @@ a.bca_cta:hover {
         background-color: #f2d9c9;
     }
     .sect10 {
-        height: 55vh;
+        height: auto;
+        padding-bottom: 140px;
+        padding-top: 100px;
     }
     .carousel-item img {
         max-width: 350px;
@@ -1160,10 +1164,8 @@ a.bca_cta:hover {
         font-size: 15px;
     }
     .sect1 {
-        height: 80vh;
-    }
-    .sect1 .text_box2 {
-        margin-top: 50px;
+        height: auto;
+        padding: 60px 0;
     }
     .sect2 .text_box {
         margin-top: 10%;
@@ -1219,8 +1221,8 @@ a.bca_cta:hover {
         max-width: 280px;
     }
     .sect8 {
-        height: 40vh;
-        padding-top: 15%;
+        height: auto;
+        padding: 100px 0;
     }
     .sect8 .text_box {
         margin-top: 50px;
@@ -1236,7 +1238,7 @@ a.bca_cta:hover {
         position: relative;
     }
     .sect10 {
-        height: 70vh;
+        height: auto;
     }
     .sect10 h4 {
         font-size: 20px;
@@ -1257,7 +1259,7 @@ a.bca_cta:hover {
         font-size: 14px;
     }
     .sect1 {
-        height: 70vh;
+        height: auto;
     }
     .sect2 .text_box {
         margin-bottom: 30px;
@@ -1294,7 +1296,7 @@ a.bca_cta:hover {
         margin-top: 50px;
     }
     .sect7 {
-        height: 80vh;
+        height: auto;
     }
     .sect10 a.button {
         font-size: 20px;
@@ -1350,15 +1352,12 @@ a.bca_cta:hover {
         font-size: 13px;
     }
     .sect1 {
-        height: 100vh;
+        height: auto;
     }
     .sect1 p {
         letter-spacing: 0;
         font-size: 14px;
         line-height: auto;
-    }
-    .sect1 .text_box {
-        top: 50px;
     }
     .sect2 .text_box {
         margin-bottom: 40px;
@@ -1405,6 +1404,9 @@ a.bca_cta:hover {
     .sect6 .image_box {
         top: 20px;
     }
+    .sect7 {
+        height: auto;
+    }
     .sect7 .text_box {
         margin-top: 60px;
         max-width: 100%;
@@ -1427,7 +1429,7 @@ a.bca_cta:hover {
         top: 30px;
     }
     .sect10 {
-        height: 60vh;
+        height: auto;
     }
     .sect10 a.button {
         font-size: 20px;
@@ -1463,7 +1465,7 @@ a.bca_cta:hover {
     .sect2 p, .sect3 p, .sect4 p, .sect5 p, .sect6 p, .sect7 p, .sect8 p, .sect9 p {
         font-size: 13px;
     }
-    .sect6, .sect7 {
+    .sect6 {
         height: 120vh!important;
     }
     .sect1 .text_box {
@@ -1471,9 +1473,6 @@ a.bca_cta:hover {
     }
     .sect1 p {
         font-size: 13px;
-    }
-    .sect1 .text_box2 {
-        margin-top: 20px;
     }
     .sect2 .image_box img {
         max-width: 130px;
@@ -1496,7 +1495,10 @@ a.bca_cta:hover {
         margin-top: 20px;
     }
     .sect10 {
-        height: 80vh;
+        height: auto;
+    }
+    .sect7 {
+        height: auto;
     }
 }
 
