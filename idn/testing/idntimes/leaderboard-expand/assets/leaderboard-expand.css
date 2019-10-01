@@ -1,0 +1,50 @@
+/* update 9 april 2019 */
+#leaderboard_expand {
+    width: 320px;
+    height: 100px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+#leaderboard_expand img {
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#leaderboard_expand .leaderboard_small { 
+    width:320px; 
+    height:100px; 
+}
+#leaderboard_expand .leaderboard_big { 
+    width:320px; 
+    height:400px; 
+    display: none;
+}
+.close_big {
+    position: absolute;
+    display: block;
+    z-index: 2;
+}
+.close_big.kanan {
+    top: 0;
+    right: 0;
+}
+.close_big.kiri {
+    top: 0;
+    left: 0;
+}
+.close_big.bawah {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #f10303;
+}
+.close_big > img {
+    height: 20px;
+}

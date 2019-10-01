@@ -1,0 +1,47 @@
+/* update 9 mei 2019 */
+/* CSS UV Format mobile IDN Times */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#uvformat_m {
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+}
+#uvformat_m img {
+    max-width: 380px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#uvformat_m .uv_banner { 
+    width: 100%; 
+    height: 100px; 
+    text-align: center;
+}
+#uvformat_m .uv_ads_container { 
+    width: 100%; 
+    height: 480px; 
+    display: none;
+}
+.uv_ads_container iframe {
+    overflow: scroll;
+}
+#uvformat_m .uv_btn {
+    position: absolute;
+    background-color: #ee1a23;
+    z-index: 9;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 3px 0;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}

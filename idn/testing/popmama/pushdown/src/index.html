@@ -1,0 +1,75 @@
+<html>
+    <head></head>
+    <body>
+        <style>
+            body {
+                margin: 0;
+            }
+            .pushdown-container {
+                position: fixed;
+                text-align: center;
+                width: 100%;
+                background-color: black;
+                padding-top: 10px;
+            }
+            .pushdown {
+                position: relative;
+                max-width: 320px;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+            .close-btn {
+                position: absolute;
+                right: 5px;
+                top: 5px;
+            }
+            .close-btn img {
+                max-width: 30px;
+                opacity: .8;
+                cursor: pointer;
+            }
+        </style>
+        <script src="https://ads.idntimes.com/ads-assets/internal/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script>
+            var pushdownStart = function(){
+                parent.document.body.style = '-webkit-transition: all .5s linear 0s; -moz-transition: all .5s linear 0s;-ms-transition: all .5s linear 0s;-o-transition: all .5s linear 0s; transition: all .5s linear 0s; margin-top:490px; position: relative;';
+                $(window.parent.document.getElementsByClassName("navbar-fixed-top")).css('position','absolute');
+            }
+            var pushdownEnd = function(){
+                parent.document.body.style = '-webkit-transition: all .5s linear 0s; -moz-transition: all .5s linear 0s;-ms-transition: all .5s linear 0s;-o-transition: all .5s linear 0s; transition: all .5s linear 0s; margin-top:0px; position: relative;';
+                $(window.parent.document.getElementsByClassName("navbar-fixed-top")).css('position','fixed');
+
+            }
+            
+            $(document).ready(function(){
+                setTimeout(function(){ 
+                    pushdownStart();
+                }, 2000);  
+            });
+
+            
+            var elementPosition = $(window.parent.document.getElementsByClassName("navbar-fixed-top")).offset();
+
+            $(window.parent).scroll(function () {
+                if ($(window.parent).scrollTop() > 500) {
+                    $(window.parent.document.getElementsByClassName("navbar-fixed-top")).css('position', 'fixed');        
+                } else {
+                    $(window.parent.document.getElementsByClassName("navbar-fixed-top")).css('position', 'absolute');
+                }
+             });
+             
+        </script>
+          
+        <div class="pushdown-container">
+            <div class="pushdown">
+                <div class="close-btn" onclick="pushdownEnd()">
+                    <img src="close.png">
+                </div>
+                <a href="#" target="_blank">
+                    <img src="320x480.jpg">
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
