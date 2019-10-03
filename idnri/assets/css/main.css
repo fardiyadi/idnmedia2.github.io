@@ -245,31 +245,12 @@ body {
     height: 100vh;
     overflow: hidden;
 }
-.left-area svg {
-    height: 100vh;
+.right-area svg {
+    height: 95vh;
     left: 0;
     right: 0;
     margin: auto;
-    margin-top: -40px;
-}
-.right-area {
-    height: calc(100vh - 65px);
-    background-color: white;
-    padding: 0;
-    
-}
-#more {
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    height: 100px;
-    overflow: hidden;
-}
-.detail-cover {
-    background-size: cover;
-    height: 150px;
-    padding: 10px;
-    position: relative;
-    display: block;
+    margin-top: 0px;
 }
 .detail-cover h3 {
     color: white;
@@ -290,6 +271,58 @@ body {
     bottom: 0;
     right: 0; 
 }
+/* === Global Issue ID === */
+
+#issue1 {
+    background-image: url(../images/cover-head/advanced-manufacturing-and-production.jpg);
+}
+#issue2 {
+    background-image: url(../images/cover-head/agriculture-and-forestry.jpg);
+}
+#issue3 {
+    background-image: url(../images/cover-head/applied-artificial-intellegence.jpg);
+}
+#issue4 {
+    background-image: url(../images/cover-head/automotive.jpg);
+}
+
+
+/* ======= Left Area Style ======= */
+
+.left-area {
+    height: calc(100vh - 65px);
+    background-color: white;
+    padding: 0; 
+}
+
+/* Top Content */
+.top-content {
+    background-size: cover;
+    height: 150px;
+    padding: 10px;
+    position: relative;
+    display: block;
+    background-repeat: no-repeat;
+}
+.top-content h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.top-content h4 {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+.top-content span {
+    position: absolute;
+    bottom: 0;
+    right: 0; 
+}
 span.cr-image {
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
@@ -298,6 +331,90 @@ span.cr-image {
     font-style: italic;
     border-top-left-radius: 3px;
 }
+
+/* Body Content */
+.body-content {
+    padding: 10px;
+    height: calc(100vh - 215px);
+}
+.body-content .desc {
+    min-height: 40%;
+    padding-bottom: 10px;
+}
+.body-content .desc h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.body-content .desc p {
+    font-family: 'Roboto', sans-serif;
+    color: #202020;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding-right: 10px;
+    font-size: 15px;
+}
+.desc #more {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    height: 100px;
+    overflow: hidden;
+}
+.related {
+    display: none;
+}
+.isShow {
+    display: block;
+}
+.isHide {
+    display: none;
+}
+
+/* Artikel Area */
+.article-list-container {
+    overflow-y: scroll;
+    height: 60%;
+    display: block;
+    position: relative;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+}
+.article-list-container .article-list {
+    min-height: 80px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    margin-bottom: 10px;
+}
+.article-list .article-thumbnail {
+    height: 70px;
+    width: 70px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+.article-list .article-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.article-list h3 {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    vertical-align: top;
+    margin-left: 5px;
+}
+.article-list span {
+    display: block;
+    margin-top: 5px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
 .info-global {
     padding: 0px;
     padding-right: 0;
@@ -321,23 +438,7 @@ span.cr-image {
     z-index: 99;
     display: block;
 }
-.desc {
-    padding: 10px;
-}
-.desc h4 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    padding-bottom: 10px;
-}
-.desc p {
-    font-family: 'Roboto', sans-serif;
-    color: #202020;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    padding-right: 10px;
-    font-size: 15px;
-}
+
 .toggle {
     padding: 1px 20px;
     background-color: white;
@@ -360,47 +461,10 @@ span.cr-image {
     border-top: 1px solid #eee;
     margin-top: 15px;
 }
-.artikel {
-    overflow-y: scroll;
-    height: 45vh;
-    display: block;
-    position: relative;
-    padding-bottom: 10px;
-}
-.list-artikel {
-    min-height: 80px;
-    padding-top: 10px;
-    border-top: 1px solid #eee;
-    margin-bottom: 10px;
-}
-.artikel .thumb-artikel {
-    height: 70px;
-    width: 70px;
-    display: block;
-    float: left;
-    margin-right: 10px;
-}
-.artikel .thumb-artikel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-}
-.artikel h3 {
-    font-size: 16px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    display: block;
-    vertical-align: top;
-    margin-left: 5px;
-}
-.artikel span {
-    display: block;
-    margin-top: 5px;
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-}
+
+/* Article */
+
+
 
 
 .scroll{
@@ -475,7 +539,7 @@ span.cr-image {
     #issue-detail {
         height: auto;
     }
-    .left-area svg {
+    .right-area svg {
         width: 100%;
         height: auto!important;
         margin-top: 0;
@@ -496,7 +560,7 @@ span.cr-image {
     .artikel span {
         font-size: 12px;
     }
-    .right-area {
+    .left-area {
         height: auto!important;
     }
     .toggle {

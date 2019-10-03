@@ -48,7 +48,7 @@ fill="url(#imageis1)"/> 1 id map
 }
 .issue-name {
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-weight: 400;
     fill:#333333;
     font-size: 12px;
 }
@@ -74,6 +74,7 @@ fill="url(#imageis1)"/> 1 id map
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     text-shadow: 1px 1px 2px #fff;
+    font-size: 14px;
 }
 .key {
     cursor: pointer;
@@ -88,7 +89,7 @@ fill="url(#imageis1)"/> 1 id map
     fill:#FFFFFF;stroke:#0A9DEF;stroke-miterlimit:10;
 }
 svg {
-    display: none;
+    display: block;
 }
 #lingkar-luar {
     fill:none;stroke:#999999;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:5,8;
@@ -97,11 +98,13 @@ svg {
     fill:none;stroke:#999999;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:20,8;
 }
 path {
-    fill:none;stroke:#FFFFFF;stroke-width:1.5;stroke-miterlimit:10;
+    fill:none;
+    stroke:#FFFFFF;
+    stroke-width:1.5;
+    stroke-miterlimit:10;
+    opacity: .5;
 }
-#detail1 {
-    display: none;
-}
+
 .dnone {
     display: none;
 }
@@ -126,6 +129,7 @@ polygon.aktif {
     stroke :#0d89f9!important;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    opacity: 1;
 }
 .aktif circle {
     fill: #0d89f9!important;

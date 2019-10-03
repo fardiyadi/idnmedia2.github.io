@@ -86,86 +86,83 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // end lazy load image
 
-// aktif class map 1
+//for showing aticle base on key class
+var $btns = $('.key').click(function() {
+  if (this.id == '') {
+    $('#allArticle > div').fadeIn(450);
+  } else {
+    var $el = $('.' + this.id).fadeIn(450);
+    $('#allArticle > div').not($el).hide();
+  }
+})
+
+// aktif class onclick
 jQuery(document).ready(function(){
-    jQuery('#key1A').click(function(event){
+    jQuery('#keyA').click(function(event){
         jQuery('.aktif').removeClass('aktif');
         jQuery('.showing').removeClass('showing');
         jQuery(this).addClass('aktif');   
-        jQuery('.key1A').addClass('aktif');   
-        jQuery('.area1A').addClass('showing');   
-        jQuery('.area1').addClass('dnone');   
+        jQuery('.keyA').addClass('aktif');      
+        jQuery('.keyGlobal').addClass('dnone');      
+        jQuery('.A').addClass('showing');      
         event.preventDefault();
     });
-    jQuery('#key1B').click(function(event){
+    jQuery('#keyB').click(function(event){
         jQuery('.aktif').removeClass('aktif');
         jQuery('.showing').removeClass('showing');
         jQuery(this).addClass('aktif');   
-        jQuery('.key1B').addClass('aktif');  
-        jQuery('.area1B').addClass('showing');  
-        jQuery('.area1').addClass('dnone');  
+        jQuery('.keyB').addClass('aktif');  
+        jQuery('.keyGlobal').addClass('dnone');      
+        jQuery('.B').addClass('showing'); 
         event.preventDefault();
     });
-    jQuery('#key1C').click(function(event){
+    jQuery('#keyC').click(function(event){
         jQuery('.aktif').removeClass('aktif');
         jQuery('.showing').removeClass('showing');
         jQuery(this).addClass('aktif');   
-        jQuery('.key1C').addClass('aktif');  
-        jQuery('.area1C').addClass('showing');
-        jQuery('.area1').addClass('dnone');  
+        jQuery('.keyC').addClass('aktif');  
+        jQuery('.keyGlobal').addClass('dnone');      
+        jQuery('.C').addClass('showing'); 
         event.preventDefault();
     });
-});
-
-// aktif class map 2
-jQuery(document).ready(function(){
-    jQuery('#key2A').click(function(event){
+    jQuery('#keyD').click(function(event){
         jQuery('.aktif').removeClass('aktif');
         jQuery('.showing').removeClass('showing');
         jQuery(this).addClass('aktif');   
-        jQuery('.key2A').addClass('aktif');   
-        jQuery('.area2A').addClass('showing');   
-        jQuery('.area2').addClass('dnone');   
-        event.preventDefault();
-    });
-    jQuery('#key2B').click(function(event){
-        jQuery('.aktif').removeClass('aktif');
-        jQuery('.showing').removeClass('showing');
-        jQuery(this).addClass('aktif');   
-        jQuery('.key2B').addClass('aktif');  
-        jQuery('.area2B').addClass('showing');  
-        jQuery('.area2').addClass('dnone');  
+        jQuery('.keyD').addClass('aktif');  
+        jQuery('.keyGlobal').addClass('dnone');      
+        jQuery('.D').addClass('showing'); 
         event.preventDefault();
     });
 });
 
 
 
-// link parameter
+// link parameter ** cancel
 
-function getParameterByName(name, url) {
-    if (!url) url = window.location.href;
-    name = name.replace(/[\[\]]/g, "\\$&");
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
-}
-var dynamicContent = getParameterByName('issue');
-$(document).ready(function() {
-    if (dynamicContent == '1') {
-        $('#map1').show();
-        $('#detail1').show();
-    }
-    else if (dynamicContent == '2') {
-        $('#map2').show();
-        $('#detail2').show();
-    }
-    else {
-        $('#default').show();
-    }
-});
+//function getParameterByName(name, url) {
+//    if (!url) url = window.location.href;
+//    name = name.replace(/[\[\]]/g, "\\$&");
+//    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+//        results = regex.exec(url);
+//    if (!results) return null;
+//    if (!results[2]) return '';
+//    return decodeURIComponent(results[2].replace(/\+/g, " "));
+//}
+//var dynamicContent = getParameterByName('issue');
+//$(document).ready(function() {
+//    if (dynamicContent == '1') {
+//        $('#map1').show();
+//        $('#detail1').show();
+//    }
+//    else if (dynamicContent == '2') {
+//        $('#map2').show();
+//        $('#detail2').show();
+//    }
+//    else {
+//        $('#default').show();
+//    }
+//});
 
 // end link parameter
 
