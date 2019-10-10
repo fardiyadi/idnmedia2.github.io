@@ -520,6 +520,7 @@ body {
     position: relative;
     display: block;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .top-content h2 {
     color: white;
