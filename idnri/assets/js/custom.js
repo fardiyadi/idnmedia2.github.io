@@ -200,6 +200,11 @@ $('.toggle').click(function(e) {
 });
 
 
+// goback to prev page
+
+function goBack() {
+  window.history.back();
+}
 
 
 

@@ -1,5 +1,144 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@font-face {
+  font-family: 'Helvetica Neue Black';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeueBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeueMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue-Condensed.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeue-Light.woff") format("woff");
+}
+
+
+
+
+.videoContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.videoContainer::before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url(../images/wave-cover-bg.png) no-repeat center center;
+  background-size: cover;
+  background-size: cover;
+}
+
+.videoContainer iframe {
+  position: absolute;
+  height: 150%;
+  width: 150%;
+  display: block;
+  left: -25%;
+  top: -25%;
+}
+
+.background {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.background::before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: url(../images/wave-cover-bg.png) no-repeat center center;
+  background-size: cover;
+  background-size: cover;
+}
+
+.background #video-background {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+.overlay {
+  background: linear-gradient(180deg, #00000070 0%, #000c 90%, #000 100%);
+  position: absolute;
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#home_awal {
+  height: 100vh;
+  width: auto;
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+}
+
+
 body {
     background-color: black;
 }
@@ -9,6 +148,7 @@ body {
 }
 .header {
     background-color: white;
+    box-shadow: 1px 1px 6px #ccc;
 }
 .myheader {
     padding: 15px 0;
@@ -76,10 +216,11 @@ body {
 }
 #myInput {
     border: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-family: 'Helvetica Neue Light', sans-serif;
+    font-size: 13px;
     color: #333;
-    width: 260px;
+    width: calc(100% - 25px);
+    letter-spacing: .4px;
 }
 .search-over-bg {
     width: 0;
@@ -119,11 +260,11 @@ body {
     background-repeat: no-repeat;
     background-position: bottom center;
 }
-.main-cover .main-intro {
+.main-intro {
     position: relative;
     top: 50%;
     transform: translateY(-55%);
-    max-width: 40%;
+    max-width: 60%;
     left: 0;
     right: 0;
     margin: auto;
@@ -134,29 +275,42 @@ body {
     margin-bottom: 15px;
 }
 .main-intro h1 {
-    font-size: 45px;
+    font-size: 50px;
+    font-family: 'Helvetica Neue Medium', serif;
+    line-height: 4rem;
 }
 .main-intro p {
     font-size: 18px;
     letter-spacing: .4px;
 }
+.section-title {
+    margin-top: 60px;
+}
 .expand {
     height: 50vh!important;
-    overflow-y: scroll;
+    overflow-y: scroll!important;
+}
+.copy-image {
+    position: relative;
+    top: 10px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 12px;
+    font-style: italic;
 }
 .header-main {
     background-color: white;
 }
 .banner .banner-content h1, .banner .banner-content p {
     color: white;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Helvetica Neue Medium', sans-serif;
 }
 .section-title h2 {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Helvetica Neue Bold', sans-serif;
     color: white;
 }
 .category-nav {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Helvetica Neue Medium', sans-serif;
     color: white;
 }
 .category-nav li {
@@ -210,12 +364,13 @@ body {
 }
 .category-text {
     position: absolute;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Helvetica Neue Medium', sans-serif;
     color: white;
     bottom: 5px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     padding: 15px;
+    letter-spacing: .4px;
 }
 .category-text p {
     font-size: 14px;
@@ -230,7 +385,7 @@ body {
     font-weight: 600;
     color: white;
     margin-bottom: 15px;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Helvetica Neue Medium', sans-serif;
 
 }
 .category-container:hover .category-text p , .category-container:hover ~ .category-text p {
@@ -297,6 +452,55 @@ body {
 #issue8 {
     background-image: url(../images/cover-head/digital-economy-and-society.jpg);
 }
+#issue9 {
+    background-image: url(../images/cover-head/education.jpg);
+}
+#issue10 {
+    background-image: url(../images/cover-head/family-life-and-child-development.jpg);
+}
+#issue11 {
+    background-image: url(../images/cover-head/future-of-health-and-healthcare.jpg);
+}
+#issue12 {
+    background-image: url(../images/cover-head/gender-equality-and-social-inclusion.jpg);
+}
+#issue13 {
+    background-image: url(../images/cover-head/government-politics-and-public-policy.jpg);
+}
+#issue14 {
+    background-image: url(../images/cover-head/harmony-in-a-multicultural-society.jpg);
+}
+#issue15 {
+    background-image: url(../images/cover-head/high-income-countries.jpg);
+}
+#issue16 {
+    background-image: url(../images/cover-head/infrastructure-in-maritime-country.jpg);
+}
+#issue17 {
+    background-image: url(../images/cover-head/media-and-entertainment.jpg);
+}
+#issue18 {
+    background-image: url(../images/cover-head/oil-gas-and-renewable-energy.jpg);
+}
+#issue19 {
+    background-image: url(../images/cover-head/religion-value-and-tradition.jpg);
+}
+#issue20 {
+    background-image: url(../images/cover-head/retail-consumer-goods-and-lifestyle.jpg);
+}
+#issue21 {
+    background-image: url(../images/cover-head/sustainable-develoment-goals.jpg);
+}
+#issue22 {
+    background-image: url(../images/cover-head/transportations-and-logistics.jpg);
+}
+#issue23 {
+    background-image: url(../images/cover-head/travel-and-tourism.jpg);
+}
+#issue24 {
+    background-image: url(../images/cover-head/workforce-and-employment.jpg);
+}
+
 
 
 
@@ -319,9 +523,8 @@ body {
 }
 .top-content h2 {
     color: white;
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-family: 'Helvetica Neue Medium', sans-serif;
     padding-bottom: 20px;
     padding-top: 10px;
 }
@@ -329,12 +532,17 @@ body {
     color: white;
     font-size: 16px;
     font-weight: 400;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Helvetica Neue Medium', sans-serif;
 }
-.top-content span {
+.goback {
+   color: white;
+    font-size: 12px;
+    text-decoration: underline;
+    font-style: italic;
+    font-family: 'Helvetica Neue Medium', sans-serif;
     position: absolute;
-    bottom: 0;
-    right: 0; 
+    bottom: 10px;
+    cursor: pointer;
 }
 span.cr-image {
     background-color: rgba(0, 0, 0, 0.6);
@@ -355,24 +563,29 @@ span.cr-image {
     padding-bottom: 10px;
 }
 .body-content .desc h4 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-family: 'Helvetica Neue Medium', sans-serif;
     font-size: 18px;
     padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    letter-spacing: .6px;
 }
 .body-content .desc p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Helvetica Neue Light', sans-serif;
     color: #202020;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     padding-right: 10px;
     font-size: 15px;
+    letter-spacing: .6px;
 }
 .desc #more {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     height: 100px;
     overflow: hidden;
+    position: relative;
 }
 .related {
     display: none;
@@ -461,6 +674,7 @@ span.cr-image {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 .toggle:hover {
     background-color: black;
@@ -533,24 +747,31 @@ span.cr-image {
     .logo a img {
         max-width: 180px;
     }
-    #myInput {
-        width: 50px;
-    }
     .search-box-filter {
         width: 140px;
     }
     .main-cover {
         height: 100vh;
     }
-    .main-cover .main-intro {
+    .main-intro {
         max-width: 90%;
     }
     .main-intro h1 {
         margin-bottom: 40px;
-        font-size: 40px;
+        font-size: 26px;
+        line-height: 2.5rem;
+    }
+    .section-title h2 {
+        font-size: 35px;
     }
     #issue-detail {
         height: auto;
+    }
+    .body-content {
+        height: auto;
+    }
+    .right-area {
+        padding: 0px;
     }
     .right-area svg {
         width: 100%;

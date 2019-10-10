@@ -30,24 +30,19 @@ fill="url(#imageis1)"/> 1 id map
 
 
 
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 /* common css */
 .mapbg {
     fill:#DBDBDB;
 }
 
 #global-issue {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-family: 'Helvetica Neue Medium', sans-serif;
     fill:#fff;
     font-size: 22px;
-    text-shadow: 1px 1px 10px #333;
+    text-shadow: 1px 1px 1px #000;
 }
 .issue-name {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Helvetica Neue Medium', sans-serif;
     font-weight: 400;
     fill:#333333;
     font-size: 12px;
@@ -59,13 +54,13 @@ fill="url(#imageis1)"/> 1 id map
 }
 .issue-icon:hover, .key circle:hover {
     cursor: pointer;
-    fill: #0A9DEF;
+    fill: #ca1116 ;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
 .key path:hover {
     cursor: pointer;
-    stroke: #0A9DEF;
+    stroke: #ca1116;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
@@ -86,7 +81,7 @@ fill="url(#imageis1)"/> 1 id map
     fill:none;stroke:#999999;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:20,8;
 }
 .key circle {
-    fill:#FFFFFF;stroke:#0A9DEF;stroke-miterlimit:10;
+    fill:#FFFFFF;stroke:#ca1116 ;stroke-miterlimit:10;
 }
 svg {
     display: block;
@@ -116,23 +111,23 @@ path {
 }
 .keyA:hover, .keyB:hover, .keyC:hover, .keyD:hover {
     cursor: pointer;
-    fill: #0d89f9!important;
+    fill: #ca1116 !important;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
 polygon.aktif {
-    fill: #0d89f9!important;
+    fill: #ca1116 !important;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
 .aktif line, .aktif path {
-    stroke :#0d89f9!important;
+    stroke :#ca1116 !important;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     opacity: 1;
 }
 .aktif circle {
-    fill: #0d89f9!important;
+    fill: #ca1116 !important;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
