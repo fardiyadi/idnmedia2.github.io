@@ -295,9 +295,10 @@ body {
     top: 10px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    font-size: 12px;
+    font-size: 8px;
     font-style: italic;
 }
+
 .header-main {
     background-color: white;
 }
@@ -691,8 +692,12 @@ span.cr-image {
 }
 
 /* Article */
-
-
+.channel {
+    margin-bottom: 20px;
+}
+.channel img {
+    max-width: 200px;
+}
 
 
 .scroll{
@@ -760,7 +765,7 @@ span.cr-image {
     .main-intro h1 {
         margin-bottom: 40px;
         font-size: 26px;
-        line-height: 2.5rem;
+        line-height: 2rem;
     }
     .section-title h2 {
         font-size: 35px;
