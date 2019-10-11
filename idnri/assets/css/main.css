@@ -180,7 +180,7 @@ body {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     left: 0;
-    
+    scrollbar-width: thin;
 }
 #myUL.aktif {
     position: absolute;
@@ -289,6 +289,7 @@ body {
 .expand {
     height: 50vh!important;
     overflow-y: scroll!important;
+    scrollbar-width: thin;
 }
 .copy-image {
     position: relative;
@@ -337,6 +338,7 @@ body {
 .category-container .thumbnail {
      -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    height: 220px;
 }
 .thumbnail img {
     height: 100%;
@@ -380,7 +382,7 @@ body {
     opacity: 0;
 }
 .category-text h5 {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 20px;
     font-weight: 600;
     color: white;
@@ -802,8 +804,17 @@ span.cr-image {
     .left-area {
         height: auto!important;
     }
+    .category-text h5 {
+        font-size: 16px;
+    }
     .toggle {
         font-size: 13px;
+    }
+    .category-container {
+        height: 170px;
+    }
+    .category-container .thumbnail {
+        height: 170px;
     }
 }
 

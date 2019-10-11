@@ -40,6 +40,7 @@ fill="url(#imageis1)"/> 1 id map
     fill:#fff;
     font-size: 22px;
     text-shadow: 1px 1px 1px #000;
+    cursor: pointer;
 }
 .issue-name {
     font-family: 'Helvetica Neue Medium', sans-serif;
@@ -47,10 +48,29 @@ fill="url(#imageis1)"/> 1 id map
     fill:#333333;
     font-size: 12px;
 }
-.issue-icon, .key circle {
+.issue-icon {
     fill: #fff;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+}
+.key circle {
+    fill: #fff;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-animation: kelip 1s 3 ease-in-out;
+    animation: kelip 1s 3 ease-in-out;
+    animation-delay: 3s;
+}
+@-webkit-keyframes kelip {
+  0% {
+	fill: #fff;
+  }
+  50% {
+	fill: #ca1116;
+  }
+  100% {
+	fill: #fff;
+  }
 }
 .issue-icon:hover, .key circle:hover {
     cursor: pointer;

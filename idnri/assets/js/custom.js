@@ -98,6 +98,14 @@ var $btns = $('.key').click(function() {
 
 // aktif class onclick
 jQuery(document).ready(function(){
+    jQuery('#global-issue').click(function(event){
+        jQuery('.aktif').removeClass('aktif');
+        jQuery('.showing').removeClass('showing');
+        jQuery('.dnone').removeClass('dnone');  
+        jQuery(this).addClass('aktif');
+        jQuery('.keyGlobal').addClass('showing'); 
+        event.preventDefault();
+    });
     jQuery('#keyA').click(function(event){
         jQuery('.aktif').removeClass('aktif');
         jQuery('.showing').removeClass('showing');
