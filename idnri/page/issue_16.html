@@ -317,10 +317,18 @@
                                 </a>
                             </g>
                         </g>
-                        <pattern id="imageis16" x="0" y="0" patternUnits="userSpaceOnUse" height="400" width="400">
-                                <image x="0" y="0" xlink:href="../assets/images/thumbnail/infrastructure-in-maritime-country.jpg"></image>
-                            </pattern>
-                        <circle class="red-circle" cx="500" cy="500" r="97.5" fill="url(#imageis16)"/>
+                        <g>
+                            <defs>
+                                <circle id="SVGID_1_" cx="500" cy="500" r="97.5"/>
+                            </defs>
+                            <clipPath id="SVGID_2_">
+                                <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                            </clipPath>
+                            <g style="clip-path:url(#SVGID_2_);">
+                                <image style="overflow:visible;" width="200" height="200" xlink:href="../assets/images/thumbnail/infrastructure-in-maritime-country.jpg"  transform="matrix(1 0 0 1 400.5404 398.9859)">
+                                </image>
+                            </g>
+                        </g>
                         <text id="global-issue" transform="matrix(1 0 0 1 428.2842 480.5598)"><tspan x="0" y="0" class="st10 st8 st15">Infrastructure</tspan><tspan x="4.8" y="27.1" class="st10 st8 st15">in a Maritime</tspan><tspan x="29.8" y="54.3" class="st10 st8 st15">Country</tspan></text>
                     </g>
                     </svg>
