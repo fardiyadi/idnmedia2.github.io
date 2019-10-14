@@ -223,19 +223,19 @@ body {
     letter-spacing: .4px;
 }
 .search-over-bg {
-    width: 0;
-    height: 0;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     left: 0;
     right: 0;
     margin: auto;
     top: 0;
-    z-index: 999;
+    z-index: -99;
     background-color: rgba(255, 255, 255, 0.9);
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
     opacity: 0;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 .search-over-bg.aktif {
     width: 100vw;
@@ -380,6 +380,7 @@ body {
     -webkit-transition: all .7s ease-out;
     transition: all .7s ease-out;
     opacity: 0;
+    line-height: 17px;
 }
 .category-text h5 {
     font-size: 20px;
@@ -746,7 +747,9 @@ span.cr-image {
     }
 }
 
-
+.copyright-text {
+    color: #7a7a7a;
+}
 
 /* Responsive CSS */
 
@@ -759,6 +762,11 @@ span.cr-image {
     }
     .main-cover {
         height: 100vh;
+    }
+    #myUL, #myUL.aktif {
+        width: 220px;
+        margin-left: -80px;
+        margin-top: 18px;
     }
     .main-intro {
         max-width: 90%;
@@ -816,8 +824,36 @@ span.cr-image {
     .category-container .thumbnail {
         height: 170px;
     }
+    .channel img {
+        max-width: 160px;
+    }
+    .copyright-text {
+        font-size: 14px;
+    }
 }
 
+@media (max-width: 321px) {
+    .logo a img {
+        max-width: 140px;
+    }
+    .search-box-filter {
+        max-width: 130px;
+    }
+    .section-title h2 {
+        font-size: 30px;
+    }
+    #myUL, #myUL.aktif {
+        width: 200px;
+        margin-left: -70px;
+        margin-top: 18px;
+    }
+    .category-text p {
+        display: none;
+    }
+    .category-container .thumbnail, .category-container {
+        height: 145px;
+    }
+}
 
 
 
