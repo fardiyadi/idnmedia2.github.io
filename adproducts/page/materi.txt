@@ -1,5 +1,5 @@
 // Materi display banner IDN Media //
-// Update 25 Juni 2019 //
+// Update 19 Agustus 2019 //
 // Gunakan Ctrl+F untuk pencarian cepat //
 // Ganti {} dengan materi image/video/url landing page/code embed youtube //
 // Untuk TVC Spot Masthead bisa ubah style (width, height, left, right, dll) untuk menyesuakan posisi video yang diinginkan //
@@ -118,5 +118,54 @@ Leaderboard Expand Mobile
     </div>
 </div>
 <script type="text/javascript" src="https://ads.idntimes.com/ads-assets/internal/js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="https://ads.idntimes.com/ads-assets/internal/js/mobile/leaderboard-expand.js"></script>
+<script type="text/javascript" src="https://ads.idntimes.com/ads-assets/internal/js/mobile/leaderboard-expand.js?upv2"></script>
+
+
+
+
+
+
+
+
+
+
+===== baru running text navbar =======
+
+Running text
+=============
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.rt-ad {
+
+    margin: 0;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    color: #333;
+
+    font-family: Roboto,sans-serif;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+}
+
+</style>
+
+<a href="%%CLICK_URL_UNESC%%https://www.yummy.co.id/" target="_blank" class="rt-ad">
+
+   Bingung Mau Masak Apa dengan Bahan yang ada di Kulkas?
+
+</a>
+
+
 
