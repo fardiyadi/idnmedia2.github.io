@@ -1,0 +1,16 @@
+
+.newtag span {
+    position: absolute;
+    font-family: 'Helvetica Neue Light', sans-serif;
+    font-size: 8px;
+    background-color: red;
+    padding: 2px 5px;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    right: 55px;
+    float: right;
+    border-radius: 10px;
+    text-indent: 0;
+    top: 5px;
+}

@@ -1,0 +1,91 @@
+<html>
+    <body style="margin: 0">
+         <style>
+            @font-face {
+              font-family: 'Helvetica Neue Medium';
+              font-style: normal;
+              font-weight: normal;
+              src: url("https://ads.idntimes.com/page/assets/fonts/HelveticaNeueMedium.woff") format("woff");
+            }
+             .videoads-container {
+                 width: 300px;
+                 height: 250px;
+                 overflow: hidden;
+                 position: relative;
+                 display: block;
+                 background-color: red;
+                 border: 1px solid #ccc;
+             }
+             .videoads-container video {
+                 width: 300px;
+                 height: 200px;
+                 background-color: black;
+             }
+             .videoads-info {
+                 width: 300px;
+                 position: relative;
+                 background-color: white;
+                 height: 50px;
+                 overflow: hidden;
+             }
+             .videoads-info > a {
+                 text-decoration: none;
+             }
+             .videoads-info > a > .videoads-title {
+                 width: 200px;
+                 font-size: 12px;
+                 color: black;
+                 font-style: normal;
+                 text-decoration: none;
+                 font-family: 'Helvetica Neue Medium';
+                 text-align: center;
+                 position: relative;
+                 top: 50%;
+                 transform: translateY(-50%);
+             }
+             .videoads-info > a > .videoads-cta {
+                 font-family: 'Helvetica Neue Medium';
+                 float: right;
+                 display: inline-block;
+                 background-color: black;
+                 color: white;
+                 font-size: 12px;
+                 padding: 3px 5px;
+             }
+        </style>
+        
+        
+        <div class="videoads-container">
+            <video id="videoInBanner" controls muted playsinline preload="metadata">
+                <source src="https://ads.idntimes.com/ads-assets/client/indosat/oktober2019/29/video-indosat.mp4" type="video/mp4">
+            </video>
+            <div class="videoads-info">
+                <a href="#" target="_blank">
+                    <div class="videoads-title">Internetan 24 jam kapanpun!</div>
+                    <div class="videoads-cta">Selengkapnya ></div>
+                </a>
+            </div>
+        </div>
+        
+        <script src="https://ads.idntimes.com/ads-assets/internal/js/jquery-3.3.1.min.js"></script>
+        <script>
+            $(window.parent).scroll(function(e)
+              {
+                var offsetRange = $(window.parent).height() / 3,
+                    offsetTop = $(window.parent).scrollTop() + offsetRange + $(window.parent.document.getElementById("header")).outerHeight(true),
+                    offsetBottom = offsetTop + offsetRange;
+                $("#videoInBanner").each(function () { 
+                  var y1 = $(window.parent.document.getElementById("inarticle1")).offset().top;
+                  var y2 = offsetTop;
+                  console.log(y1);
+                  console.log(offsetBottom);
+                  if (y1 + $(this).outerHeight(true) < y2 || y1 > offsetBottom) {
+                    this.pause(); 
+                  } else {
+                    this.play();
+                  }
+                });
+            });
+        </script>
+    </body>
+</html>
