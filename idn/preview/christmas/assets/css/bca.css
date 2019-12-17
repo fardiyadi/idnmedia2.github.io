@@ -1131,6 +1131,9 @@ a.bca_cta:hover {
         background-image: url(../images/mobile/sect9.png);
         height: 70vh;
     }
+    .sect9 .text_box {
+        top: 0;
+    }
     .sect9 a.button {
         font-size: 25px;
     }
@@ -1320,7 +1323,7 @@ a.bca_cta:hover {
         height: 100vh;
     }
     .sect9 .text_box {
-        top: 50%;
+        top: 0;
         position: relative;
     }
     .sect10 {
