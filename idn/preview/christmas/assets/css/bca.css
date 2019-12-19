@@ -1615,7 +1615,7 @@ a.bca_cta:hover {
         display: block;
     }
     .carousel-item img {
-        max-width: 140px;
+        max-width: 260px;
     }
     .carousel-indicators li {
         width: 10px!important;
