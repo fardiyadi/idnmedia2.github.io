@@ -4,94 +4,37 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Manulife</title>
+	<title>Seberapa Millennialnya Kamu</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Mathew Njuguna, UX, UI, Web Developer">
-	<meta name="author" content="Mathew Njuguna">
+	<meta name="description" content="Pembagian generasi manusia memang sudah familiar, mulai dari generasi tradisionalis hingga generasi alpha. Tapi kalau diibaratkan sebagai karakter millennial, kamu akan seperti apa ya?">
+	<meta name="author" content="IDN Media, Manulife">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="https://fyi.idntimes.com/favicon.ico" type="image/x-icon" sizes="16x16">
+    
+    <!-- meta facebook -->
+    <meta property="fb:app_id" content="" />
+    <meta property="og:title" content="Seberapa Millennialnya Kamu" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="images/og-image.jpg" />
+    <meta property="og:description" content="Pembagian generasi manusia memang sudah familiar, mulai dari generasi tradisionalis hingga generasi alpha. Tapi kalau diibaratkan sebagai karakter millennial, kamu akan seperti apa ya?" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    
+    <!-- meta twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="" />
+    <meta property="og:url" content="http://bits.blogs.nytimes.com/2011/12/08/a-twitter-for-my-sister/" />
+    <meta property="og:title" content="Seberapa Millennialnya Kamu" />
+    <meta property="og:description" content="Pembagian generasi manusia memang sudah familiar, mulai dari generasi tradisionalis hingga generasi alpha. Tapi kalau diibaratkan sebagai karakter millennial, kamu akan seperti apa ya?" />
+    <meta property="og:image" content="http://graphics8.nytimes.com/images/2011/12/08/technology/bits-newtwitter/bits-newtwitter-tmagArticle.jpg" />
 
 	<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
 	<link rel="stylesheet" type="text/css" href="css/custom.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-	<script src="js/jquery-3.4.1.min.js"></script>
 
-	<script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
-	
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-			* Plugin intialization
-			*/
-	    	$('#pagepiling').pagepiling({
-	          	direction: 'horizontal',
-	    		menu: '#menu',
-	    		
-			    navigation: {
-			    	'position': 'right',
-			   	},
-			    afterRender: function(){
-			    	$('#pp-nav').addClass('custom');
-			    },
-			    afterLoad: function(anchorLink, index){
-			    	if(index>1){
-			    		$('#pp-nav').removeClass('custom');
-			    	}else{
-			    		$('#pp-nav').addClass('custom');
-			    	}
-			    }
-			});
-	    });
-    </script>
-
-
-
-    <style>
-	#section1 img{
-		margin: 20px 0;
-		opacity: 0.7;
-	}
-	/* colors
-	 * --------------------------------------- */
-	#colors2,
-	#colors3{
-		position: absolute;
-		height: 163px;
-		width: 362px;
-		z-index: 1;
-		background-repeat: no-repeat;
-		left: 0;
-		margin: 0 auto;
-		right: 0;
-	}
-	#colors2{
-		background-image: url(imgs/colors2.gif);
-		top:0;
-	}
-	#colors3{
-		background-image: url(imgs/colors3.gif);
-		bottom:0;
-	}
-
-
-	/* Overwriting fullPage.js tooltip color
-	* --------------------------------------- */
-	#pp-nav.custom .pp-tooltip{
-		color: #AAA;
-	}
-        #pp-nav{
-    margin: 0 auto !important;
-    left:0;
-    right: 0;
-    top: auto !important;
-    bottom: 17px;
-    display: inline-block;
-}
-#pp-nav li, .pp-slidesNav li{
-    display:inline-block;
-}
-
-</style>
 
 </head>
     
@@ -105,254 +48,72 @@
                 </li>
             </ul>
             
-            <!-- page 1 -->
-            <div class="section" id="page1" data-anchor="page1">
-                <div class="container">
-                    <div class="row text-center">
-                        <div class="col-md-12">
-                            <div class="text-box">
-                                <p>Pembagian generasi manusia memang sudah familiar, mulai dari generasi tradisionalis hingga generasi alpha. Tapi kalau diibaratkan sebagai karakter millennial, kamu akan seperti apa ya?</p>
-                                <a href="#page2">Mulai Tes</a>
-                            </div>
-                            
-                        </div>
+            <div class="section" id="homepage1" data-anchor="homepage1">
+                <div class="scroll-wrap">
+                    <div id="paraContainer" class="_desktop">
+                        <div class="para1"></div>
+                        <div class="para2"></div>
+                        <div class="para3"></div>
+                        <div class="para4"></div>
+                        <div class="para5"></div>
                     </div>
+                    <a href="#homepage2" class="scroll-down"><span>Scroll to discover</span><img src="images/scrolldown.png" style="max-width: 30px;"> </a>
                 </div>
             </div>
             
-            <!-- page 2 -->
-            <div class="section" id="page2" data-anchor="page2">
+            
+            <!-- page 1 -->
+            <div class="section" id="homepage2" data-anchor="homepage2">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <div class="question">
-                                <h3>Sejauh ini, hal apa yang paling ingin kamu lakukan bersama teman?</h3>
+                            <div class="text-box">
+                                <p>Pembagian generasi manusia memang sudah familiar, mulai dari generasi tradisionalis hingga generasi alpha. Tapi kalau diibaratkan sebagai karakter millennial, kamu akan seperti apa ya?</p>
+                                <a href="quiz.html" class="starq">Mulai Quiz</a>
                             </div>
-                        </div>
-                        
-                        <div class="col-md-12">
-                            <div class="answ-box">
-                                <label class="answ">
-                                    <h4>Nonton konser favorit di luar negeri</h4>
-                                    <input type="radio" name="Q2" value="A1" onclick="show2();" class="radio">
-                                </label>
-                            
-                                <label class="answ">
-                                    <h4>Bikin bisnis bareng kayaknya menguntungkan nih!</h4>
-                                    <input type="radio" name="Q2" value="A2">
-                                </label>
-                                
-                                <label class="answ">
-                                    <h4>Saat sukses nanti, mau bikin amal bareng</h4>
-                                    <input type="radio" name="Q2" value="A3">
-                                </label>
-                            
-                                <label class="answ">
-                                    <h4>Bikin grup musik kali ya?</h4>
-                                    <input type="radio" name="Q2" value="A4">
-                                </label>
-                            </div>
-                        </div>
-                        <a href="#page1">Mulai Test</a>
-                        <button id="xxx" type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
-                        
+                        </div>                    
                     </div>
                 </div>
             </div>
-	    <div class="section" id="page2">
-					<div class="mauto sevn">
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            </div>
-					
-	    </div>
-	    <div class="section" id="section1">
-					<div class="mauto sevn">
-            
-            
-            
-            
-            
-            <input type="radio" name="Q3" value="A1">A1
-    <br>
-    <input type="radio" name="Q3" value="A2">A2
-    <br>
-    <input type="radio" name="Q3" value="A3">A3
-    <br>
-    <input type="radio" name="Q3" value="A4">A4
-            
-            
-            
-            
-            </div>
-	    	
-	    </div>
-	    <div class="section">
-					<div class="mauto sevn">
-            
-            
-            
-            
-            
-            
-            <input type="radio" name="Q4" value="A1">A1
-    <br>
-    <input type="radio" name="Q4" value="A2">A2
-    <br>
-    <input type="radio" name="Q4" value="A3">A3
-    <br>
-    <input type="radio" name="Q4" value="A4">A4
-            
-            
-            
-            
-            
-            </div>
-					
-	    </div>
-	    <div class="section">
-					<div class="mauto twente">
-            
-            
-            
-            
-            
-            <input type="radio" name="Q5" value="A1">A1
-    <br>
-    <input type="radio" name="Q5" value="A2">A2
-    <br>
-    <input type="radio" name="Q5" value="A3">A3
-    <br>
-    <input type="radio" name="Q5" value="A4">A4
-            
-            
-            
-            
-            
-            
-            </div>
-				
-	    </div>
+        </div>
+        
+        <!-- jquery -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        
+        <!-- plugin -->
+        <script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
+        <script type="text/javascript" src="js/twmax.js"></script>
+        
+        <!-- custom js -->
+        <script type="text/javascript" src="js/parallax.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+			/*
+			* Plugin intialization
+			*/
+                $('#pagepiling').pagepiling({
+                    direction: 'vertical',
+                    menu: '#menu',
+                    anchors: ['homepage1', 'homepage2'],
+                    navigation: {
+                        'position': 'right',
+                    },
+                    afterRender: function(){
+			    	$('#pp-nav').addClass('custom');
+                    },
+                    afterLoad: function(anchorLink, index){
+                        if(index>1){
+                            $('#pp-nav').removeClass('custom');
+                        }
+                        else{
+                            $('#pp-nav').addClass('custom');
+                        }
+                    }
+                });
+            });
+        </script>
 
-
-	
-	
-	
-
-
-	</div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <script>
-    function checkTest() {
-    var a1 = 0;
-    var a2 = 0;
-
-    if ($('input[type="radio"][name=Q1]:checked').val() == "A1") {
-        a1++;
-    }
-    if ($('input[type="radio"][name=Q2]:checked').val() == "A1") {
-        a1++;
-    }
-    if ($('input[type="radio"][name=Q3]:checked').val() == "A1") {
-        a1++;
-    }
-    if ($('input[type="radio"][name=Q4]:checked').val() == "A1") {
-        a1++;
-    }
-    if ($('input[type="radio"][name=Q5]:checked').val() == "A1") {
-        a1++;
-    }
-    if ($('input[type="radio"][name=Q1]:checked').val() == "A2") {
-        a2++;
-    }
-    if ($('input[type="radio"][name=Q2]:checked').val() == "A2") {
-        a2++;
-    }
-    if ($('input[type="radio"][name=Q3]:checked').val() == "A2") {
-        a2++;
-    }
-    if ($('input[type="radio"][name=Q4]:checked').val() == "A2") {
-        a2++;
-    }
-    if ($('input[type="radio"][name=Q5]:checked').val() == "A2") {
-        a2++;
-    }
-    if (a1 > 1) {
-        alert("Congratulations! You Passed! A");
-    } else if (a2 > 1) {
-        alert("Congratulations! You Passed! B");
-    }
-     else {
-        alert("You answered too many questions incorrectly. Try again.");
-    }
-}
-    
-    </script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <script type="text/javascript" src="js/custom.js"></script>
-    
-        <script>
-$.fn.pagepiling.setAllowScrolling = function (value){
- if(value){
-  $.fn.pagepiling.setMouseWheelScrolling(false);
-  addTouchHandler();
- }else{
-  $.fn.pagepiling.setMouseWheelScrolling(false);
-  removeTouchHandler();
- }
-};
-    </script>
-
-</body>
+    </body>
 </html>

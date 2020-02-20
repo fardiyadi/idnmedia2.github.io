@@ -93,3 +93,23 @@ $('.radio').change(function(){
         alert("You answered too many questions incorrectly. Try again.");
     }
 }
+
+$(window).on('load', function(){
+
+
+
+		/*-------------------------------------------------------------------------------
+		  Wow.js
+		-------------------------------------------------------------------------------*/
+
+
+
+		$('.loader').fadeOut(2000);
+		var wow = new WOW({
+		    offset: 150,          
+		    mobile: false
+		  }
+		);
+		
+		wow.init();
+	});
