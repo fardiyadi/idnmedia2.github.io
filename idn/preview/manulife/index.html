@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Manulife</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Mathew Njuguna, UX, UI, Web Developer">
+	<meta name="author" content="Mathew Njuguna">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			* Plugin intialization
+			*/
+	    	$('#pagepiling').pagepiling({
+	          	direction: 'horizontal',
+	    		menu: '#menu',
+	    		
+			    navigation: {
+			    	'position': 'right',
+			   	},
+			    afterRender: function(){
+			    	$('#pp-nav').addClass('custom');
+			    },
+			    afterLoad: function(anchorLink, index){
+			    	if(index>1){
+			    		$('#pp-nav').removeClass('custom');
+			    	}else{
+			    		$('#pp-nav').addClass('custom');
+			    	}
+			    }
+			});
+	    });
+    </script>
+
+
+
+    <style>
+	#section1 img{
+		margin: 20px 0;
+		opacity: 0.7;
+	}
+	/* colors
+	 * --------------------------------------- */
+	#colors2,
+	#colors3{
+		position: absolute;
+		height: 163px;
+		width: 362px;
+		z-index: 1;
+		background-repeat: no-repeat;
+		left: 0;
+		margin: 0 auto;
+		right: 0;
+	}
+	#colors2{
+		background-image: url(imgs/colors2.gif);
+		top:0;
+	}
+	#colors3{
+		background-image: url(imgs/colors3.gif);
+		bottom:0;
+	}
+
+
+	/* Overwriting fullPage.js tooltip color
+	* --------------------------------------- */
+	#pp-nav.custom .pp-tooltip{
+		color: #AAA;
+	}
+        #pp-nav{
+    margin: 0 auto !important;
+    left:0;
+    right: 0;
+    top: auto !important;
+    bottom: 17px;
+    display: inline-block;
+}
+#pp-nav li, .pp-slidesNav li{
+    display:inline-block;
+}
+
+</style>
+
+</head>
+    
+    <body>
+        <div id="pagepiling">
+            <ul id="menu">
+                <li>
+                    <a href="index.html">
+                        <img src="images/logo-manulife.png" class="img-fluid" style="max-width: 140px;">
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- page 1 -->
+            <div class="section" id="page1" data-anchor="page1">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <div class="text-box">
+                                <p>Pembagian generasi manusia memang sudah familiar, mulai dari generasi tradisionalis hingga generasi alpha. Tapi kalau diibaratkan sebagai karakter millennial, kamu akan seperti apa ya?</p>
+                                <a href="#page2">Mulai Tes</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- page 2 -->
+            <div class="section" id="page2" data-anchor="page2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="question">
+                                <h3>Sejauh ini, hal apa yang paling ingin kamu lakukan bersama teman?</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <div class="answ-box">
+                                <label class="answ">
+                                    <h4>Nonton konser favorit di luar negeri</h4>
+                                    <input type="radio" name="Q2" value="A1" onclick="show2();" class="radio">
+                                </label>
+                            
+                                <label class="answ">
+                                    <h4>Bikin bisnis bareng kayaknya menguntungkan nih!</h4>
+                                    <input type="radio" name="Q2" value="A2">
+                                </label>
+                                
+                                <label class="answ">
+                                    <h4>Saat sukses nanti, mau bikin amal bareng</h4>
+                                    <input type="radio" name="Q2" value="A3">
+                                </label>
+                            
+                                <label class="answ">
+                                    <h4>Bikin grup musik kali ya?</h4>
+                                    <input type="radio" name="Q2" value="A4">
+                                </label>
+                            </div>
+                        </div>
+                        <a href="#page1">Mulai Test</a>
+                        <button id="xxx" type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+                        
+                    </div>
+                </div>
+            </div>
+	    <div class="section" id="page2">
+					<div class="mauto sevn">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+					
+	    </div>
+	    <div class="section" id="section1">
+					<div class="mauto sevn">
+            
+            
+            
+            
+            
+            <input type="radio" name="Q3" value="A1">A1
+    <br>
+    <input type="radio" name="Q3" value="A2">A2
+    <br>
+    <input type="radio" name="Q3" value="A3">A3
+    <br>
+    <input type="radio" name="Q3" value="A4">A4
+            
+            
+            
+            
+            </div>
+	    	
+	    </div>
+	    <div class="section">
+					<div class="mauto sevn">
+            
+            
+            
+            
+            
+            
+            <input type="radio" name="Q4" value="A1">A1
+    <br>
+    <input type="radio" name="Q4" value="A2">A2
+    <br>
+    <input type="radio" name="Q4" value="A3">A3
+    <br>
+    <input type="radio" name="Q4" value="A4">A4
+            
+            
+            
+            
+            
+            </div>
+					
+	    </div>
+	    <div class="section">
+					<div class="mauto twente">
+            
+            
+            
+            
+            
+            <input type="radio" name="Q5" value="A1">A1
+    <br>
+    <input type="radio" name="Q5" value="A2">A2
+    <br>
+    <input type="radio" name="Q5" value="A3">A3
+    <br>
+    <input type="radio" name="Q5" value="A4">A4
+            
+            
+            
+            
+            
+            
+            </div>
+				
+	    </div>
+
+
+	
+	
+	
+
+
+	</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+    function checkTest() {
+    var a1 = 0;
+    var a2 = 0;
+
+    if ($('input[type="radio"][name=Q1]:checked').val() == "A1") {
+        a1++;
+    }
+    if ($('input[type="radio"][name=Q2]:checked').val() == "A1") {
+        a1++;
+    }
+    if ($('input[type="radio"][name=Q3]:checked').val() == "A1") {
+        a1++;
+    }
+    if ($('input[type="radio"][name=Q4]:checked').val() == "A1") {
+        a1++;
+    }
+    if ($('input[type="radio"][name=Q5]:checked').val() == "A1") {
+        a1++;
+    }
+    if ($('input[type="radio"][name=Q1]:checked').val() == "A2") {
+        a2++;
+    }
+    if ($('input[type="radio"][name=Q2]:checked').val() == "A2") {
+        a2++;
+    }
+    if ($('input[type="radio"][name=Q3]:checked').val() == "A2") {
+        a2++;
+    }
+    if ($('input[type="radio"][name=Q4]:checked').val() == "A2") {
+        a2++;
+    }
+    if ($('input[type="radio"][name=Q5]:checked').val() == "A2") {
+        a2++;
+    }
+    if (a1 > 1) {
+        alert("Congratulations! You Passed! A");
+    } else if (a2 > 1) {
+        alert("Congratulations! You Passed! B");
+    }
+     else {
+        alert("You answered too many questions incorrectly. Try again.");
+    }
+}
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script type="text/javascript" src="js/custom.js"></script>
+    
+        <script>
+$.fn.pagepiling.setAllowScrolling = function (value){
+ if(value){
+  $.fn.pagepiling.setMouseWheelScrolling(false);
+  addTouchHandler();
+ }else{
+  $.fn.pagepiling.setMouseWheelScrolling(false);
+  removeTouchHandler();
+ }
+};
+    </script>
+
+</body>
+</html>

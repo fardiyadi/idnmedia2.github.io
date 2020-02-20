@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Seberapa Millennialnya Kamu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Pembagian generasi manusia memang sudah familiar, mulai dari generasi tradisionalis hingga generasi alpha. Tapi kalau diibaratkan sebagai karakter millennial, kamu akan seperti apa ya?">
+	<meta name="author" content="IDN Media, Manulife">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="https://fyi.idntimes.com/favicon.ico" type="image/x-icon" sizes="16x16">
+    
+    <!-- meta facebook -->
+    <meta property="fb:app_id" content="" />
+    <meta property="og:title" content="Seberapa Millennialnya Kamu" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="images/og-image.jpg" />
+    <meta property="og:description" content="Pembagian generasi manusia memang sudah familiar, mulai dari generasi tradisionalis hingga generasi alpha. Tapi kalau diibaratkan sebagai karakter millennial, kamu akan seperti apa ya?" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    
+    <!-- meta twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="" />
+    <meta property="og:url" content="http://bits.blogs.nytimes.com/2011/12/08/a-twitter-for-my-sister/" />
+    <meta property="og:title" content="Seberapa Millennialnya Kamu" />
+    <meta property="og:description" content="Pembagian generasi manusia memang sudah familiar, mulai dari generasi tradisionalis hingga generasi alpha. Tapi kalau diibaratkan sebagai karakter millennial, kamu akan seperti apa ya?" />
+    <meta property="og:image" content="http://graphics8.nytimes.com/images/2011/12/08/technology/bits-newtwitter/bits-newtwitter-tmagArticle.jpg" />
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			* Plugin intialization
+			*/
+	    	$('#pagepiling').pagepiling({
+	          	direction: 'horizontal',
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+			    navigation: {
+			    	'position': 'right',
+			   	},
+			    afterRender: function(){
+			    	$('#pp-nav').addClass('custom');
+			    },
+			    afterLoad: function(anchorLink, index){
+			    	if(index>1){
+			    		$('#pp-nav').removeClass('custom');
+			    	}else{
+			    		$('#pp-nav').addClass('custom');
+			    	}
+			    }
+			});
+	    });
+    </script>
+
+
+
+    <style>
+
+
+
+	/* Overwriting fullPage.js tooltip color
+	* --------------------------------------- */
+	#pp-nav.custom .pp-tooltip{
+		color: #AAA;
+	}
+        #pp-nav{
+    margin: 0 auto !important;
+    left:0;
+    right: 0;
+    top: auto !important;
+    bottom: 17px;
+    display: inline-block;
+}
+#pp-nav li, .pp-slidesNav li{
+    display:inline-block;
+}
+
+</style>
+
+</head>
+    
+    <body>
+        <div id="pagepiling">
+            <ul id="menu">
+                <li>
+                    <a href="index.html">
+                        <img src="images/logo-manulife.png" class="img-fluid" style="max-width: 140px;">
+                    </a>
+                </li>
+            </ul>
+            
+
+            
+            <!-- page 1 -->
+            <div class="section" id="page1" data-anchor="page1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="question">
+                                <h3>Sejauh ini, hal apa yang paling ingin kamu lakukan bersama teman?</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <div class="answ-box">
+                                <label class="answ">
+                                    <h4>Nonton konser favorit di luar negeri</h4>
+                                    <input type="radio" name="Q1" value="A1" onclick="show2();" class="radio">
+                                </label>
+                            
+                                <label class="answ">
+                                    <h4>Bikin bisnis bareng kayaknya menguntungkan nih!</h4>
+                                    <input type="radio" name="Q1" value="A2">
+                                </label>
+                                
+                                <label class="answ">
+                                    <h4>Saat sukses nanti, mau bikin amal bareng</h4>
+                                    <input type="radio" name="Q1" value="A3">
+                                </label>
+                            
+                                <label class="answ">
+                                    <h4>Bikin grup musik kali ya?</h4>
+                                    <input type="radio" name="Q1" value="A4">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="np-box">
+                                <a href="#page2" class="next-btn">Next</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section" id="page2" data-anchor="page2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="question">
+                                <h3>Lalu untuk urusan karier, kamu adalah tipe yang...</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <div class="answ-box">
+                                <label class="answ">
+                                    <h4>Kutu loncat, selama gaji dan jabatannya naik</h4>
+                                    <input type="radio" name="Q2" value="A1" onclick="show2();" class="radio">
+                                </label>
+                            
+                                <label class="answ">
+                                    <h4>Loyal dengan perusahaan, niscaya karier juga bagus</h4>
+                                    <input type="radio" name="Q2" value="A2">
+                                </label>
+                                
+                                <label class="answ">
+                                    <h4>Selalu mendiskusikannya dengan orang rumah</h4>
+                                    <input type="radio" name="Q2" value="A3">
+                                </label>
+                            
+                                <label class="answ">
+                                    <h4>Mudah nyaman di kantor</h4>
+                                    <input type="radio" name="Q2" value="A4">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="np-box">
+                                <a href="#page1" class="prev-btn">Prev</a>
+                                <a href="#page3" class="next-btn">Next</a>
+                            </div>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section" id="page3" data-anchor="page3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="question">
+                                <h3>Mau tahu juga dong pandanganmu soal asmara, kamu percaya dengan...</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <div class="answ-box">
+                                <label class="answ">
+                                    <h4>Aplikasi kencan online dong!</h4>
+                                    <input type="radio" name="Q3" value="A1" onclick="show2();" class="radio">
+                                </label>
+                            
+                                <label class="answ">
+                                    <h4>Kenalan sama temannya teman</h4>
+                                    <input type="radio" name="Q3" value="A2">
+                                </label>
+                                
+                                <label class="answ">
+                                    <h4>Jatuh cinta dengan teman lama</h4>
+                                    <input type="radio" name="Q3" value="A3">
+                                </label>
+                            
+                                <label class="answ">
+                                    <h4>Balikan dengan mantan, kenapa nggak?</h4>
+                                    <input type="radio" name="Q3" value="A4">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="np-box">
+                                <a href="#page2" class="prev-btn">Prev</a>
+                                <a href="#page4" class="next-btn">Next</a>
+                            </div>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section" id="page4" data-anchor="page4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="question">
+                                <h3>Waduh, badan kamu drop dan sakit! Apa yang kamu lakukan?</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <div class="answ-box">
+                                <label class="answ">
+                                    <h4>Kayaknya kalau dibawa tidur bisa sehat</h4>
+                                    <input type="radio" name="Q4" value="A1" onclick="show2();" class="radio">
+                                </label>
+                            
+                                <label class="answ">
+                                    <h4>Cari penyembuhannya di internet</h4>
+                                    <input type="radio" name="Q4" value="A2">
+                                </label>
+                                
+                                <label class="answ">
+                                    <h4>Beli obat di apotek atau ke klinik</h4>
+                                    <input type="radio" name="Q4" value="A3">
+                                </label>
+                            
+                                <label class="answ">
+                                    <h4>Bawa ke rumah sakit dan pilih kelas VIP</h4>
+                                    <input type="radio" name="Q4" value="A4">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="np-box">
+                                <a href="#page3" class="prev-btn">Prev</a>
+                                <a href="#page5" class="next-btn">Next</a>
+                            </div>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section" id="page5" data-anchor="page5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="question">
+                                <h3>Seperti apa MiSSION kamu untuk 10 tahun mendatang?</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <div class="answ-box">
+                                <label class="answ">
+                                    <h4>Bisa traveling dan keliling dunia</h4>
+                                    <input type="radio" name="Q5" value="A1" onclick="show2();" class="radio">
+                                </label>
+                            
+                                <label class="answ">
+                                    <h4>Karier dan keuangan yang mapan</h4>
+                                    <input type="radio" name="Q5" value="A2">
+                                </label>
+                                
+                                <label class="answ">
+                                    <h4>Tambah pengalaman bekerja di luar negeri</h4>
+                                    <input type="radio" name="Q5" value="A3">
+                                </label>
+                            
+                                <label class="answ">
+                                    <h4>Punya keluarga kecil dan hidup bahagia</h4>
+                                    <input type="radio" name="Q5" value="A4">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="np-box">
+                                <a href="#page4" class="prev-btn">Prev</a>
+                                <a href="#page6" class="next-btn">Next</a>
+                            </div>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section" id="page6" data-anchor="page6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="mauto twente"><button type="button" onclick="checkTest()">Submit Test!</button></div>
+                        </div>
+                        
+                        
+                                         
+                    </div>
+                </div>
+            </div>
+	    
+	    
+
+
+	
+	
+	
+
+
+	</div>
+    
+    
+   
+    
+    
+    
+    
+    
+    <script type="text/javascript" src="js/custom.js"></script>
+
+
+</body>
+</html>
