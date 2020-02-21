@@ -8,11 +8,14 @@ $('#paraContainer').mousemove(function(e){
 });
 
 function callParallax(e){
-  parallaxIt(e, '.para1', -30);
+  parallaxIt(e, '.para1', -60);
   parallaxIt(e, '.para2', -80);
   parallaxIt(e, '.para3', -72);
   parallaxIt(e, '.para4', -45);
   parallaxIt(e, '.para5', -60);
+  parallaxIt(e, '.para6', -90);
+  parallaxIt(e, '.para7', -65);
+  parallaxIt(e, '.para8', -70);
 }
 
 function parallaxIt(e, target, movement){
