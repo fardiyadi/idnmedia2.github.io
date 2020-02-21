@@ -89,7 +89,7 @@ $('.radio').change(function(){
     else if (a4 > a1 && a4 > a2 && a4 > a3) {
         window.location.href = 'result-collabolator.html';
     }
-     else if {
+     else {
         window.location.href = 'result-visionary.html';
     }
 }
