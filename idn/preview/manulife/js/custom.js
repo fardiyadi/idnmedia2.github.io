@@ -8,6 +8,21 @@ $('.radio').change(function(){
     $('.next-btn').removeAttr('disabled');
 });
 
+function showNPB(){
+  document.getElementById('np1').style.display = 'block';
+};
+function showNPB2(){
+  document.getElementById('np2').style.display = 'block';
+};
+function showNPB3(){
+  document.getElementById('np3').style.display = 'block';
+};
+function showNPB4(){
+  document.getElementById('np4').style.display = 'block';
+};
+function showNPB5(){
+  document.getElementById('np5').style.display = 'block';
+};
 
 // quiz
 
@@ -92,17 +107,9 @@ $('.radio').change(function(){
      else {
         window.location.href = 'result-visionary.html';
     }
-}
+};
 
 $(window).on('load', function(){
-
-
-
-		/*-------------------------------------------------------------------------------
-		  Wow.js
-		-------------------------------------------------------------------------------*/
-
-
 
 		$('.loader').fadeOut(2000);
 		var wow = new WOW({
@@ -113,3 +120,8 @@ $(window).on('load', function(){
 		
 		wow.init();
 	});
+
+function sosexpand() {
+   var element = document.getElementById("fbtw");
+   element.classList.toggle("sos-fbtw-show");
+}
