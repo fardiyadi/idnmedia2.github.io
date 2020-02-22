@@ -181,6 +181,7 @@ a:focus {
 a.prev-btn img, a.next-btn img {
     max-width: 30px;
     cursor: pointer;
+    margin: 0 10px;
 }
 a.prev-btn:hover, a.next-btn:hover {
     text-decoration: none;
@@ -497,12 +498,17 @@ a.scroll-down:hover {
 
 /* result page */
 .desktop_ {
-    display: block;
+    display: block
 }
 .mobile_ {
     display: none;
 }
-
+.downloadD {
+    display: inline-block;
+}
+.downloadM {
+    display: none;
+}
 a.logo-manulife img {
     max-width: 150px;
     margin-bottom: 10px;
@@ -953,6 +959,12 @@ Menu
     .mobile_ {
         display: block;
     }
+    .downloadD {
+    display: none;
+    }
+    .downloadM {
+        display: inline-block;
+    }
     #pp-nav {
         text-align: center;
     }
@@ -992,11 +1004,29 @@ Menu
 
 
 @media only screen and (max-width: 480px) {
+
+    #homepage1 {
+        background-image: url(../images/mobile/homepage1.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
     #homepage2 {
         background-image: url(../images/mobile/homepage2.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+    }
+    a.scroll-down {
+        font-size: 14px;
+        max-width: 100px;
+        padding: 10px;
+    }
+    .para1 {
+        background-image: url(../images/mobile/homepage1-para.png)!important;
+    }
+    .para2, .para3, .para4, .para5, .para6, .para7, .para8, .para9 {
+        background-image: none!important;
     }
     #page1 {
         background-image: url(../images/mobile/page1.png);
