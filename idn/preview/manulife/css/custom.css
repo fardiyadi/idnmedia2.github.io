@@ -30,7 +30,10 @@ a:focus {
     text-decoration-color: none;
     border: none;
 }
-
+.navbar-brand img {
+    max-width: 105px;
+    height: auto;
+}
 #homepage1 {
     
 }
@@ -510,7 +513,7 @@ a.scroll-down:hover {
     display: none;
 }
 a.logo-manulife img {
-    max-width: 150px;
+    max-width: 105px;
     margin-bottom: 10px;
 }
 img.logo-ojk {
@@ -524,13 +527,14 @@ img.logo-ojk {
 }
 .left-side {
     background-color: #282b3e;
-    padding: 40px 15px 30px 15px;
+    padding: 30px 15px 30px 15px;
     height: 100%;
 }
 .left-side h2 {
     color: #00a758;
     font-size: 60px;
     font-family: 'ManulifeJHSans-Bold', sans-serif;
+    margin: 5px 0;
 }
 .left-side h4 {
     color: white;
@@ -743,7 +747,9 @@ Menu
 	padding: 0;
 	margin:0;
 }
-
+#menu img {
+    max-width: 105px;
+}
 
 .intro p{
 	width: 50%;
@@ -1004,7 +1010,10 @@ Menu
 
 
 @media only screen and (max-width: 480px) {
-
+    
+    .navbar-brand img {
+        max-width: 110px;
+    }
     #homepage1 {
         background-image: url(../images/mobile/homepage1.png);
         background-size: cover;
