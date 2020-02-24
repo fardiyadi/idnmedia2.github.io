@@ -46,6 +46,7 @@
         </div>
         
         <div id="pagepiling">
+<!--
             <ul id="menu">
                 <li>
                     <a href="index.html">
@@ -54,6 +55,7 @@
                 </li>
             </ul>
             
+-->
 
             
             <!-- page 1 -->
@@ -92,7 +94,7 @@
                     </div>
                 </div>
                 <div id="np1" class="np-box">
-                    <a href="#page2" class="next-btn"><img src="images/icon/next.png"></a>
+                    <a href="#page2" class="next-btn"><img src="images/icon/next.png" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Next"></a>
                 </div>
             </div>
             
@@ -132,8 +134,8 @@
                     </div>
                 </div>
                 <div id="np2" class="np-box">
-                    <a href="#page1" class="prev-btn"><img src="images/icon/prev.png"></a>
-                    <a href="#page3" class="next-btn"><img src="images/icon/next.png"></a>
+                    <a href="#page1" class="prev-btn"><img src="images/icon/prev.png" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Previous"></a>
+                    <a href="#page3" class="next-btn"><img src="images/icon/next.png" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Next"></a>
                 </div>
             </div>
             
@@ -173,8 +175,8 @@
                     </div>
                 </div>
                 <div id="np3" class="np-box">
-                    <a href="#page2" class="prev-btn"><img src="images/icon/prev.png"></a>
-                    <a href="#page4" class="next-btn"><img src="images/icon/next.png"></a>
+                    <a href="#page2" class="prev-btn"><img src="images/icon/prev.png" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Previous"></a>
+                    <a href="#page4" class="next-btn"><img src="images/icon/next.png" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Next"></a>
                 </div>
             </div>
             
@@ -214,8 +216,8 @@
                     </div>
                 </div>
                 <div id="np4" class="np-box">
-                    <a href="#page3" class="prev-btn"><img src="images/icon/prev.png"></a>
-                    <a href="#page5" class="next-btn"><img src="images/icon/next.png"></a>
+                    <a href="#page3" class="prev-btn"><img src="images/icon/prev.png" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Previous"></a>
+                    <a href="#page5" class="next-btn"><img src="images/icon/next.png" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Next"></a>
                 </div>
             </div>
             
@@ -256,8 +258,8 @@
                     </div>
                 </div>
                 <div id="np5" class="np-box">
-                    <a href="#page4" class="prev-btn"><img src="images/icon/prev.png"></a>
-                    <a href="#page6" class="next-btn"><img src="images/icon/next.png"></a>
+                    <a href="#page4" class="prev-btn"><img src="images/icon/prev.png" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Previous"></a>
+                    <a href="#page6" class="next-btn"><img src="images/icon/next.png" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Next"></a>
                 </div>
             </div>
             
@@ -266,10 +268,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <div class=""><button type="button" onclick="checkTest()" class="submit-test">SELESAI</button></div>
+                            <div class=""><button type="button" onclick="checkTest()" class="submit-test" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Click to Submit">SELESAI</button></div>
                         </div>                
                     </div>
                 </div>
+                <div class="ojk pageQ">Manulife Indonesia terdaftar dan diawasi oleh Otoritas Jasa Keuangan  <img src="images/logo-ojk.png" class="logo-ojk"> </div>
             </div>
         </div>
     
@@ -279,6 +282,8 @@
         
         <!-- plugin -->
         <script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/twmax.js"></script>
         
         <!-- custom js -->

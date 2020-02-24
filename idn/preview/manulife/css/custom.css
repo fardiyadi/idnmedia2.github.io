@@ -113,9 +113,10 @@ a:focus {
     right: 0;
     margin: auto;
 }
+
 .question h3 {
     color: white;
-    font-size: 34px;
+    font-size: 32px;
     font-family: 'ManulifeJHSans-Bold', sans-serif;
 }
 .answ-box {
@@ -525,6 +526,14 @@ img.logo-ojk {
     font-family: 'ManulifeJHSans-Regular', sans-serif;
     color: white;
 }
+.pageQ {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
 .left-side {
     background-color: #282b3e;
     padding: 30px 15px 30px 15px;
@@ -621,6 +630,12 @@ letter-spacing: .2px;
     width: 50vw;
     height: 100vh;
 }
+.right-sideM {
+    background-size: cover;
+    background-position: top center;
+    height: 40vh;
+}
+/* bg rs desktop */
 #result1 .right-side {
     background-image: url(../images/res/res_1_bg.jpg);  
 }
@@ -632,6 +647,20 @@ letter-spacing: .2px;
 }
 #result4 .right-side {
     background-image: url(../images/res/res_4_bg.jpg);
+}
+
+/* bg rs mobile */
+#result1 .right-sideM {
+    background-image: url(../images/res/res_1_bgm.jpg);  
+}
+#result2 .right-sideM {
+    background-image: url(../images/res/res_2_bgm.jpg);
+}
+#result3 .right-sideM {
+    background-image: url(../images/res/res_3_bgm.jpg);
+}
+#result4 .right-sideM {
+    background-image: url(../images/res/res_4_bgm.jpg);
 }
 
 
@@ -1000,12 +1029,6 @@ Menu
     .answ h4 {
        font-size: 14px; 
     }
-    .np-box {
-        float: none;
-        text-align: center;
-        width: 100%;
-        margin-top: 15px;
-    }
 }
 
 
@@ -1031,6 +1054,9 @@ Menu
         max-width: 100px;
         padding: 10px;
     }
+    #pp-nav {
+        display: none;
+    }
     .para1 {
         background-image: url(../images/mobile/homepage1-para.png)!important;
     }
@@ -1052,7 +1078,7 @@ Menu
     #page5 {
         background-image: url(../images/mobile/page5.png);
     }
-    #page5 {
+    #page6 {
         background-image: url(../images/mobile/page6.png);
     }
     .left-side {
@@ -1082,9 +1108,8 @@ Menu
         max-width: 120px;
     }
     .np-box {
-        left: 0!important;
-        right: 0!important;
-        margin: auto!important;
+        bottom: 25px;
+        right: 25px;
     }
     .left-side a.selengkapnya-btn {
         font-size: 15px;

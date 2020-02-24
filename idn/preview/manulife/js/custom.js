@@ -125,3 +125,8 @@ function sosexpand() {
    var element = document.getElementById("fbtw");
    element.classList.toggle("sos-fbtw-show");
 }
+
+$(document).ready(function(){
+                $('[data-toggle="popover"]').popover();   
+            });
+
