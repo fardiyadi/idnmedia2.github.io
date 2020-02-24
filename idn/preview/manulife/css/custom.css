@@ -509,9 +509,11 @@ a.scroll-down:hover {
 }
 .downloadD {
     display: inline-block;
+    
 }
 .downloadM {
     display: none;
+    margin: 0 5px;
 }
 a.logo-manulife img {
     max-width: 105px;
@@ -1037,6 +1039,13 @@ Menu
     .navbar-brand img {
         max-width: 110px;
     }
+    .logo-manulifeM {
+        position: absolute;
+        left: 20px;
+    }
+    .logo-manulifeM img{
+        max-width: 90px;
+    }
     #homepage1 {
         background-image: url(../images/mobile/homepage1.png);
         background-size: cover;
@@ -1093,6 +1102,7 @@ Menu
     } 
     .left-side h2 {
         font-size: 32px;
+        margin-top: 40px;
     }
     .left-side h4 {
         font-size: 13px;
@@ -1113,6 +1123,9 @@ Menu
     }
     .left-side a.selengkapnya-btn {
         font-size: 15px;
+    }
+    .left-side .sosmed-box a img, .sosexpand img {
+        max-width: 30px;
     }
     .ojk {
         font-size: 7px;
