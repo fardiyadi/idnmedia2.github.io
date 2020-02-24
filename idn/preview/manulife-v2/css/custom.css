@@ -1042,6 +1042,7 @@ Menu
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        height: 100vh;
     }
     #homepage2 {
         background-image: url(../images/mobile/homepage2.png);
