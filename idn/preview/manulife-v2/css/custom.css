@@ -1038,10 +1038,10 @@ Menu
         max-width: 90px;
     }
     #homepage1 {
-        background-image: url(../images/mobile/homepage1.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-image: url(../images/mobile/homepage1-para.png), url(../images/mobile/homepage1.png);
+        background-size: cover, cover;
+        background-position: center, top center;
+        background-repeat: no-repeat, no-repeat;
         height: 100vh;
     }
     #homepage2 {
