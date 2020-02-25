@@ -30,12 +30,15 @@ a:focus {
     text-decoration-color: none;
     border: none;
 }
+.navbar {
+    z-index: 99;
+}
 .navbar-brand img {
     max-width: 105px;
     height: auto;
 }
 #homepage1 {
-    
+    top: 0!important;
 }
 #homepage2 {
     background-image: url(../images/cover/homepage2.png);
@@ -106,7 +109,7 @@ a:focus {
     font-size: 32px;
 }
 .question {
-    max-width: 90%;
+    max-width: 75%;
     padding: 20px 0;
     position: relative;
     left: 0;
@@ -505,7 +508,7 @@ a.scroll-down:hover {
     display: block
 }
 .mobile_ {
-    display: none;
+    display: none!important;
 }
 .downloadD {
     display: inline-block;
@@ -991,10 +994,10 @@ Menu
 }
 @media only screen and (max-width: 600px) {
     .desktop_ {
-        display: none;
+        display: none!important;
     }
     .mobile_ {
-        display: block;
+        display: block!important;
     }
     .downloadD {
     display: none;
@@ -1006,8 +1009,8 @@ Menu
         text-align: center;
     }
     #homepage2 .text-box p {
-        font-size: 20px;
-        line-height: 40px;
+        font-size: 14px;
+        line-height: 22px;
     }
     .right-side {
         width: 100vw;
@@ -1025,7 +1028,7 @@ Menu
     .answ {
         width: 250px;
         height: 60px;
-        margin: 5px;
+        margin: 12px 0;
         padding: 15px;
     }
     .answ h4 {

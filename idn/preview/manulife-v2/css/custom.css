@@ -30,12 +30,15 @@ a:focus {
     text-decoration-color: none;
     border: none;
 }
+.navbar {
+    z-index: 99;
+}
 .navbar-brand img {
     max-width: 105px;
     height: auto;
 }
 #homepage1 {
-    
+    top: 0!important;
 }
 #homepage2 {
     background-image: url(../images/cover/homepage2.png);
@@ -493,10 +496,10 @@ a.scroll-down img {
 
 /* result page */
 .desktop_ {
-    display: block
+    display: block;
 }
 .mobile_ {
-    display: none;
+    display: none!important;
 }
 .downloadD {
     display: inline-block;
@@ -985,7 +988,7 @@ Menu
         display: none;
     }
     .mobile_ {
-        display: block;
+        display: block!important;
     }
     .downloadD {
     display: none;
@@ -1055,6 +1058,8 @@ Menu
     }
     #homepage2 .text-box p {
         margin-bottom: 50px;
+        font-size: 14px;
+        line-height: 22px;
     }
     .scroll-down {
         top: 70%;
