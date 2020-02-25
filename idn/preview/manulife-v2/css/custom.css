@@ -1057,7 +1057,7 @@ Menu
         margin-bottom: 50px;
     }
     .scroll-down {
-        bottom: 10%;
+        top: 75%;
     }
     a.scroll-down img {
         max-width: 100px;
