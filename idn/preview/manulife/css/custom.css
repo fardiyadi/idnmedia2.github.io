@@ -57,13 +57,18 @@ a:focus {
     color: white;
     font-size: 28px;
     font-family: 'ManulifeJHSans-Regular', sans-serif;
+    margin-bottom: 40px;
 }
 #homepage2 .text-box a {
     color: white;
     background-color: #f49600;
     font-family: 'ManulifeJHSans-Regular', sans-serif;
-    padding: 10px 20px;
-    font-size: 22px;
+    padding: 15px 30px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#homepage2 .text-box a:hover {
+    text-decoration: none;
 }
 #page1 {
     background-image: url(../images/page1-bg.png);
@@ -84,9 +89,9 @@ a:focus {
     background-repeat: no-repeat;
 }
 #page4 {
-    background-image: url(../images/page4-bg.png);
+    background-image: url(../images/page4-atas-bg.png), url(../images/page4-kanan-bg.png), url(../images/page4-kiri-bg.png);
     background-size: cover;
-    background-position: center;
+    background-position: top center, right, left;
     background-repeat: no-repeat;
 }
 #page5 {
@@ -186,7 +191,7 @@ a:focus {
     display: none;
 }
 a.prev-btn img, a.next-btn img {
-    max-width: 30px;
+    max-width: 35px;
     cursor: pointer;
     margin: 0 10px;
 }
@@ -212,24 +217,10 @@ a.prev-btn:hover, a.next-btn:hover {
     display: block;
     z-index: 2;
 }
-a.scroll-down {
-    background-color: #f49600;
-    color: white;
-    padding: 18px 25px;
-    max-width: 200px;
-    -webkit-transition: all .5s ease-in .3s;
-    transition: all .5s ease-in .3s;
-    font-family: 'ManulifeJHSans-Regular', sans-serif;
-    text-align: center;
-    letter-spacing: 1px;
+a.scroll-down img {
+    max-width: 120px;
 }
-a.scroll-down:hover {
-    text-decoration: none;
-    background-color: #ffac33;
-    -webkit-transition: all .5s ease-in .3s;
-    transition: all .5s ease-in .3s;
-    color: white;
-}
+
 .scroll-down span {
     color: #205731;
     
@@ -498,14 +489,14 @@ a.scroll-down:hover {
     background-image: url(../images/cover/9.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: bottom center;
     height: 100%;
     width: 100%;
 }
 
 /* result page */
 .desktop_ {
-    display: block
+    display: block;
 }
 .mobile_ {
     display: none!important;
@@ -994,7 +985,7 @@ Menu
 }
 @media only screen and (max-width: 600px) {
     .desktop_ {
-        display: none!important;
+        display: none;
     }
     .mobile_ {
         display: block!important;
@@ -1009,8 +1000,8 @@ Menu
         text-align: center;
     }
     #homepage2 .text-box p {
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 20px;
+        line-height: 40px;
     }
     .right-side {
         width: 100vw;
@@ -1028,7 +1019,7 @@ Menu
     .answ {
         width: 250px;
         height: 60px;
-        margin: 12px 0;
+        margin: 8px 0;
         padding: 15px;
     }
     .answ h4 {
@@ -1039,6 +1030,10 @@ Menu
 
 @media only screen and (max-width: 480px) {
     
+    
+    .mt100 {
+        margin-top: -100px;
+    }
     .navbar-brand img {
         max-width: 110px;
     }
@@ -1054,6 +1049,7 @@ Menu
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        height: 100vh;
     }
     #homepage2 {
         background-image: url(../images/mobile/homepage2.png);
@@ -1061,10 +1057,19 @@ Menu
         background-position: center;
         background-repeat: no-repeat;
     }
-    a.scroll-down {
+    #homepage2 .text-box a {
+        font-size: 16px;
+    }
+    #homepage2 .text-box p {
+        margin-bottom: 50px;
         font-size: 14px;
+        line-height: 22px;
+    }
+    .scroll-down {
+        top: 70%;
+    }
+    a.scroll-down img {
         max-width: 100px;
-        padding: 10px;
     }
     #pp-nav {
         display: none;
@@ -1093,6 +1098,9 @@ Menu
     #page6 {
         background-image: url(../images/mobile/page6.png);
     }
+    .answ {
+        
+    }
     .left-side {
         padding: 15px;
         text-align: center;
@@ -1102,6 +1110,8 @@ Menu
         max-height: 100%!important;
         padding-right: 10px;
         padding-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 0px;
     } 
     .left-side h2 {
         font-size: 32px;
@@ -1121,8 +1131,8 @@ Menu
         max-width: 120px;
     }
     .np-box {
-        bottom: 25px;
-        right: 25px;
+        bottom: 20px;
+        right: 20px;
     }
     .left-side a.selengkapnya-btn {
         font-size: 15px;
