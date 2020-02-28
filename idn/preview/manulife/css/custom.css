@@ -139,15 +139,26 @@ a:focus {
     flex-wrap: wrap;
 }
 .answ {
-    width: 350px;
-    margin: 20px;
-    padding: 20px;
-    height: 160px;
-    background-color: #06874e;
-    cursor: pointer;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    display: table;
+    font-family: "ManulifeJHSans-Regular", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+  justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+  align-items: center;
+  width: 350px;
+  margin: 20px;
+  padding: 20px;
+  height: 160px;
+  background-color: #06874e;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 22px;
 }
 .answ:hover {
     background-color: #0da05a;
@@ -159,7 +170,9 @@ a:focus {
 }
 .answ input {
     visibility: hidden;
+    position: absolute;
 }
+
 .answ h4 {
     color: white;
     font-size: 22px;
@@ -1099,7 +1112,7 @@ Menu
         background-image: url(../images/mobile/page6.png);
     }
     .answ {
-        
+        font-size: 14px;
     }
     .left-side {
         padding: 15px;
