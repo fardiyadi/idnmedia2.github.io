@@ -1,3 +1,4 @@
+/* last update jam 19.20 2 maret 2019 */
 @font-face {
     font-family: ManulifeJHSans-Bold;
     src: url("../fonts/ManulifeJHSans-Bold.otf") format("opentype");
@@ -91,7 +92,7 @@ a:focus {
 #page4 {
     background-image: url(../images/page4-atas-bg.png), url(../images/page4-kanan-bg.png), url(../images/page4-kiri-bg.png);
     background-size: cover, cover, cover;
-    background-position: top center, left center right center;
+    background-position: top center, left center, right center;
     background-repeat: no-repeat, no-repeat, no-repeat;
 }
 #page5 {
