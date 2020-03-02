@@ -72,37 +72,37 @@ a:focus {
 }
 #page1 {
     background-image: url(../images/page1-bg.png);
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 #page2 {
     background-image: url(../images/page2-bg.png);
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 #page3 {
     background-image: url(../images/page3-bg.png);
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 #page4 {
-    background-image: url(../images/page4-bg.png);
-    background-size: auto;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url(../images/page4-atas-bg.png), url(../images/page4-kanan-bg.png), url(../images/page4-kiri-bg.png);
+    background-size: cover, cover, cover;
+    background-position: top center, left center right center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
 }
 #page5 {
     background-image: url(../images/page5-bg.png);
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 #page6 {
     background-image: url(../images/page6-bg.png);
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -635,9 +635,10 @@ letter-spacing: .2px;
 }
 .right-side {
     background-size: cover;
-    background-position: center;
+    background-position: bottom center;
     width: 50vw;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
 }
 .right-sideM {
     background-size: cover;
