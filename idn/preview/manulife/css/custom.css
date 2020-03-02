@@ -72,37 +72,37 @@ a:focus {
 }
 #page1 {
     background-image: url(../images/page1-bg.png);
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
 }
 #page2 {
     background-image: url(../images/page2-bg.png);
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
 }
 #page3 {
     background-image: url(../images/page3-bg.png);
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
 }
 #page4 {
-    background-image: url(../images/page4-atas-bg.png), url(../images/page4-kanan-bg.png), url(../images/page4-kiri-bg.png);
-    background-size: cover;
-    background-position: top center, right, left;
+    background-image: url(../images/page4-bg.png);
+    background-size: auto;
+    background-position: center;
     background-repeat: no-repeat;
 }
 #page5 {
     background-image: url(../images/page5-bg.png);
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
 }
 #page6 {
     background-image: url(../images/page6-bg.png);
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -1095,21 +1095,27 @@ Menu
     }
     #page1 {
         background-image: url(../images/mobile/page1.png);
+        background-size: cover;
     }
     #page2 {
         background-image: url(../images/mobile/page2.png);
+        background-size: cover;
     }
     #page3 {
         background-image: url(../images/mobile/page3.png);
+        background-size: cover;
     }
     #page4 {
         background-image: url(../images/mobile/page4.png);
+        background-size: cover;
     }
     #page5 {
         background-image: url(../images/mobile/page5.png);
+        background-size: cover;
     }
     #page6 {
         background-image: url(../images/mobile/page6.png);
+        background-size: cover;
     }
     .answ {
         font-size: 14px;
