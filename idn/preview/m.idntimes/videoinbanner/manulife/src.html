@@ -24,10 +24,10 @@
             }
         </style>
         
-        <a href="https://www.smartfren.com/wow/undian#layanantar?utm_source=Publisher&utm_medium=scaling-media&utm_campaign=wow_tahap5_IDN_video_in_article&utm_content=tahap5&utm_term=all_all_all" target="_blank" class="cta-btn">Selengkapnya ></a>
+        <a href="{landingpage}" target="_blank" class="cta-btn">Selengkapnya ></a>
 
         <video id="videoInBanner" controls muted playsinline preload="metadata" style="width: 300px; height: 250px; position: absolute; z-index: 1; background-color: black;">
-            <source src="https://ads.idntimes.com/ads-assets/client/smartfren/februari2020/video.mp4" type="video/mp4">
+            <source src="https://ads.idntimes.com/ads-assets/client/manulife/maret2020/video-compressed.mp4" type="video/mp4">
         </video>
         
         <script src="https://ads.idntimes.com/ads-assets/internal/js/jquery-3.3.1.min.js"></script>
@@ -38,7 +38,7 @@
                     offsetTop = $(window.parent).scrollTop() + offsetRange + $(window.parent.document.getElementsByClassName("header-filler")).outerHeight(true),
                     offsetBottom = offsetTop + offsetRange;
                 $("#videoInBanner").each(function () { 
-                  var y1 = $(window.parent.document.getElementById("div-gpt-ad-inarticle1")).offset().top;
+                  var y1 = $(window.parent.document.getElementById("inarticle1")).offset().top;
                   var y2 = offsetTop;
                   console.log(y1);
                   console.log(offsetBottom);
