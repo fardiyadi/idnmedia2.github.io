@@ -31,9 +31,7 @@ body {
     max-width: 200px;
 }
 
-img.bca_mobile {
-    max-width: 150px;
-}
+
 .mt200 {
     margin-top: 200px;
 }
@@ -186,6 +184,10 @@ img.bca_mobile {
     height: 100vh;
 }
 
+.sect0 {
+    position: relative;
+    margin-top: -300px;
+}
 
 /* ========== section 1 ========== */
 .sect1 {
