@@ -1522,7 +1522,7 @@ function callAnalytics(path, queryString) {
                         margin-top: 8px;
                         font-size: 22px;
                     }
-                    input#jumlahZakat {
+                    #jumlahZakat {
                         width: 100%;
                         background-color: transparent;
                         border: none;
@@ -1582,8 +1582,37 @@ function callAnalytics(path, queryString) {
                         border-radius: 4px;
                         cursor: pointer;
                     }
+                    .btn-hitung {
+                        text-align: center;
+                        background-color: #fcb50d;
+                        color: white;
+                        padding: 10px 25px;
+                        display: inline-block;
+                        border-radius: 4px;
+                        margin-bottom: 10px;
+                        cursor: pointer;
+                    }
                 </style>
                 <script>
+                    function hitungZakatProfesi(){
+                        var zakatprofesi = 0.0;
+                        if($('#pendapatan1').val() != ''){
+                            zakatprofesi = parseFloat($('#pendapatan1').val().replace(/\./g, ""));
+                        }
+
+                        var zakatlainprofesi = 0.0;
+                        if($('#pendapatan2').val() != ''){
+                            zakatlainprofesi = parseFloat($('#pendapatan2').val().replace(/\./g, ""));
+                        }
+
+                        var total = (zakatprofesi+zakatlainprofesi)*(0.025);
+                        if(isNaN(total)){
+                            total = 0;
+                        }
+
+                        total = total.toLocaleString('id-ID', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+                        $('#jumlahZakat').html(total);
+                    }
                     function wkzPopup() {
                         var x = document.getElementById("wkzPopup");
                         if (x.style.display === "block") {
@@ -1607,11 +1636,14 @@ function callAnalytics(path, queryString) {
                             <span class="rupiah">Rp.</span>
                             <input type="text" id="pendapatan2" name="pendapatan2"><br><br>
                         </div>
+                        <div class="relative-box" style="text-align: center;">
+                            <div class="btn-hitung" onclick="hitungZakatProfesi();">hitung</div>
+                        </div>
                         <span class="wkz-sample" onclick="wkzPopup();">&#8505; Klik disini untuk lihat studi kasus</span>
                         <div class="zakat-box">
                             <label for="jumlahZakat">Zakat Penghasilan Perbulan</label><br>
                             <span class="rupiah">Rp.</span>
-                            <input type="text" id="jumlahZakat" name="jumlahZakat" disabled>
+                            <div id="jumlahZakat"></div>
                         </div>
                     </div>
                     <div id="wkzPopup" class="wkz-popup">
