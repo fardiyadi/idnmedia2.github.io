@@ -707,6 +707,8 @@ function callAnalytics(path, queryString) {
                         border-bottom: 2px solid #eee;
                         padding: 7px 5px;
                         background-color: white;
+                        border-top-left-radius: 4px;
+                        border-top-right-radius: 4px;
                     }
                     .wts-nextprev .wts-tanggal {
                         display: inline-block;
@@ -732,6 +734,8 @@ function callAnalytics(path, queryString) {
                     .wts-waktu {
                         padding: 10px;
                         background-color: white;
+                        border-bottom-left-radius: 4px;
+                        border-bottom-right-radius: 4px;
                     }
                     .wts-kota select {
                         position: relative!important;
@@ -748,13 +752,14 @@ function callAnalytics(path, queryString) {
                         
                     }
                 </style>
+
                 <div class="wts-container">
                     <a href="{landingpage}" target="_blank" class="landingpage"></a>
                     <div class="jadwal-box">
                         <div class="wts-kota">
-                            <select class="custom">
-                                <option value="DKI">DKI Jakarta</option>
-                                <option value="Bandung">Bandung</option>
+                            <select class="custom" >
+                                <option value="1">DKI Jakarta</option>
+                                <option value="2">Bandung</option>
                             </select>
                         </div>
                         <div class="wts-nextprev">
