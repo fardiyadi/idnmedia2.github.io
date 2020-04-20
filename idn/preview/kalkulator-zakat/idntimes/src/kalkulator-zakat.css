@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+.wkz-container {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 600px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.wkz-container a.landingpage {
+    position: absolute;
+    width: 300px;
+    height: 600px;
+}
+.wkz-sample {
+    position: relative;
+    display: block;
+    color: #3a9cd1;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#wkzPopup {
+    display: none;
+}
+.wkz-popup {
+    width: 300px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+}
+.wkz-popup h3 {
+    color: #3a9cd1;
+    font-size: 20px;
+    font-weight: bold;
+}
+.wkz-popup p {
+    color: #4d4d4d;
+    font-size: 14px;
+}
+.wkz-popup-container {
+    background-color: white;
+    position: absolute;
+    width: 240px;
+    padding: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 4px;
+}
+.wkz-popup-btn {
+    position: relative;
+    display: inline-block;
+    color: white;
+    background-color: #3a9cd1;
+    padding: 5px 45px;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.box-zakat {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    position: absolute;
+    width: 270px;
+    left: 15px;
+    top: 80px;
+    box-sizing: border-box;
+}
+.zakat-input-group label {
+    font-size: 12px;
+    font-weight:bold;
+    color: #000;
+}
+.zakat-input {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 4px 4px;
+    background-color: #F8F8F8;
+    margin-bottom: 16px;
+    margin-top: 6px;
+}
+.zakat-input-prepend {
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: -1px;
+}
+
+.zakat-input-prepend span{ 
+    padding: .375rem .75rem;
+    font-size: 12px;
+    color: #DDDDDD;
+    border-radius: 4px 4px
+}
+.zakat-input input {
+    display: block;
+    width: 100%;
+    position: relative;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    min-width: 0;
+    margin-bottom: 0;
+    border: 0;
+    color: #000;
+    border-radius: 4px 4px;
+    text-align:right;
+    padding-right: .75rem;
+    outline: 0;
+    background-color: #F8F8F8;
+}
+.zakat-input.onFocus, .zakat-input-group.hasValue .zakat-input {
+    color: #495057;
+    border-color: #205CE4;
+}
+.zakat-input.onFocus input,
+.zakat-input-group.hasValue input {
+    outline: 0;
+    background-color: #fff;
+}
+.zakat-input.onFocus span,
+.zakat-input-group.hasValue .zakat-input span {
+    color: #000;
+    background-color: #fff;
+}
+.zakat-total {
+    background-color: #3a9cd1;
+    color: #fff;
+    padding: 16px 16px;
+    border-radius: 4px 4px;
+}
+.zakat-total p {
+    font-weight: bold;
+    font-size: 14px;
+}
+.zakat-total > div {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+}
+.zakat-total > div::before {
+    content: "Rp";
+    float: left;
+}
