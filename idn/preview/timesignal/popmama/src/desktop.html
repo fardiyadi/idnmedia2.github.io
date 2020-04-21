@@ -1,0 +1,57 @@
+<html>
+    <body style="margin: 0;">
+        <style>
+            @import url("https://ads.idntimes.com/ads-assets/internal/css/ramadhan2020/css-idntimes.css");
+            @import url("wts-desktop-popmama.css");
+            .jadwal-box {
+                top: 10px;
+                right: 15px;
+            }
+        </style>
+        
+        <div class="wts clearfix">
+            <a href="{landingpage}" target="_blank" class="landingpage"></a>
+            <div class="jadwal-box">
+                <div class="wts-city">
+                    <select name="" class="wts-city-select"></select>
+                </div>
+                <div class="wts-time">
+                    <div class="wts-day"></div>
+                </div>
+            </div>
+            <img src="1080x300.jpg">
+        </div>
+
+        <script src="https://ads.idntimes.com/ads-assets/internal/js/ramadhan2020/js-idntimes.js" type="text/javascript"></script>
+        <script src="https://ads.idntimes.com/ads-assets/internal/js/ramadhan2020/js-jadwalsholat.js" type="text/javascript"></script>
+        
+        <script>
+            $(function() {
+                var currentDay = 1;
+                var dataCities = [];
+                $.each( cities, function( key, city ) {
+                    dataCities.push({
+                        'id': city.slug,
+                        'text': city.name,
+                    });
+                });
+                $('select.wts-city-select').select2({
+                    data: dataCities,
+                    placeholder: 'Select a city'
+                });
+
+                $('select.wts-city-select').on('select2:select', function (e) {
+                    var val = $(this).val();
+                    initSchedules(val, currentDay);
+                });
+                initSchedules(cities[0].slug, currentDay);
+            });
+        </script>
+        <script type="text/javascript">
+            if(top!=self){
+                window.frameElement.style = 'position: relative; width: 1080px; height: 300px; margin-bottom: 10px; left: 50%; transform: translateX(-50%)';
+            };
+        </script>
+                
+    </body>
+</html>
