@@ -11,10 +11,6 @@
     width: 260px;
     z-index: 2;
     position: absolute;
-    top: 10px;
-    left: 0;
-    right: 0;
-    margin: auto;
 }
 .wts {
     position: relative;
