@@ -60,9 +60,23 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
 
             gtag('config', 'UA-143089233-1');
         </script>
-
+<script>
+    
+    
+    window.onload = function() {
+        setTimeout(function() {
+          var ad = document.querySelector("ins.adsbygoogle");
+          if (ad && ad.innerHTML.replace(/\s/g, "").length == 0) {
+            ad.style.cssText = 'display:block !important';
+            ad.innerHTML = "You seem to blocking Google AdSense ads in your browser.";
+          }
+        }, 2000);
+      };
+</script>
         
     </head>
+    
+    
 
     <!-- last update 23 oktober 2019 -->
     
@@ -78,9 +92,11 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                     </a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
+<!--
                     <li>
                         <a href="page/idntimes/contact-us.html" class="contact-us" target="myiframe" onclick="remove_home()">Contact Us</a>
                     </li>
+-->
                 </ul>
             </div>
         </nav>
@@ -119,6 +135,15 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                         </li>
                                         
                                         <li>
+                                            <a href="page/m.idntimes/videosticky.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                                Video Sticky Bottom
+                                            </a>
+                                            <a href="page/m.idntimes/videosticky.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
+                                                Video Sticky Bottom
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
                                             <a href="page/m.idntimes/videoinbanner-inarticle1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 1</a>
                                             <a href="page/m.idntimes/videoinbanner-inarticle1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
                                         </li>
@@ -135,17 +160,17 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                         
                                         <li>
                                             <a href="page/m.idntimes/videoinbanner-infeed1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 1</a>
-                                            <a href="page/m.idntimes/videoinbanner-infeed1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
+                                            <a href="page/m.idntimes/videoinbanner-infeed1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 1</a>
                                         </li>
                                         
                                         <li>
                                             <a href="page/m.idntimes/videoinbanner-infeed2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 2</a>
-                                            <a href="page/m.idntimes/videoinbanner-infeed2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 2</a>
+                                            <a href="page/m.idntimes/videoinbanner-infeed2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 2</a>
                                         </li>
                                         
                                         <li>
                                             <a href="page/m.idntimes/videoinbanner-infeed3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 3</a>
-                                            <a href="page/m.idntimes/videoinbanner-infeed3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 3</a>
+                                            <a href="page/m.idntimes/videoinbanner-infeed3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 3</a>
                                         </li>
                                         
                                         <!-- idntimes mobile video perform -->
@@ -163,10 +188,10 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                     <ul class="inner nakga">
                                         
                                         <li>
-                                            <a href="page/idntimes/tvcspot-desktop.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                            <a href="page/idntimes/masthead-desktop.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
                                                 Masthead
                                             </a>
-                                            <a href="page/idntimes/tvcspot-desktop.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
+                                            <a href="page/idntimes/masthead-desktop.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
                                                 Masthead
                                             </a>
                                         </li>
@@ -225,6 +250,10 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                             <a href="page/m.idntimes/mega-billboard.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Mega Billboard</a>
                                         </li>
                                         <li>
+                                            <a href="page/m.idntimes/parallax-billboard.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Parallax Billboard</a>
+                                            <a href="page/m.idntimes/parallax-billboard.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Parallax Billboard</a>
+                                        </li>
+                                        <li>
                                             <a href="page/m.idntimes/bottom-slide.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Bottom Slide</a>
                                             <a href="page/m.idntimes/bottom-slide.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Bottom Slide</a>
                                         </li>
@@ -232,12 +261,6 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                             <a href="page/m.idntimes/leaderboard-expand.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard Expand</a>
                                             <a href="page/m.idntimes/leaderboard-expand.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard Expand</a>
                                         </li>
-<!--
-                                        <li>
-                                            <a href="page/m.idntimes/popup.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Pop Up Mobile</a>
-                                            <a href="page/m.idntimes/popup.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Pop Up Mobile</a>
-                                        </li>
--->
 
                                         <li>
                                             <a href="page/m.idntimes/sticky.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Sticky Bottom</a>
@@ -267,23 +290,17 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                             <a href="page/m.idntimes/inart3-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 3</a>
                                             <a href="page/m.idntimes/inart3-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 3</a>
                                         </li>
-                                        <li>
-                                            <a href="page/m.idntimes/infeed1-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 1</a>
-                                            <a href="page/m.idntimes/infeed1-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="page/m.idntimes/infeed2-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 2</a>
-                                            <a href="page/m.idntimes/infeed2-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="page/m.idntimes/infeed3-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 3</a>
-                                            <a href="page/m.idntimes/infeed3-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 3</a>
-                                        </li>
                                         
                                         <!-- idntimes display mobile perform -->
                                         <li>
                                             <a href="page/m.idntimes/performance-ads.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
                                             <a href="page/m.idntimes/performance-ads.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
+                                        </li>
+                                        
+                                        <!-- CPC -->
+                                        <li>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Display CPC</a>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Display CPC</a>
                                         </li>
 
                                     </ul>
@@ -298,68 +315,48 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                             <a href="page/idntimes/fullsitetakeover.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Full Site Take Over</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/leaderboard-compare.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard Compare</a>
-                                            <a href="page/idntimes/leaderboard-compare.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard Compare</a>
+                                            <a href="page/idntimes/leaderboardcompare.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard Compare</a>
+                                            <a href="page/idntimes/leaderboardcompare.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard Compare</a>
                                         </li>
-<!--
                                         <li>
-                                            <a href="page/idntimes/popup.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Pop Up</a>
-                                            <a href="page/idntimes/popup.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Pop Up</a>
-                                        </li>
--->
-                                        <li>
-                                            <a href="page/idntimes/sticky.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Sticky Bottom</a>
-                                            <a href="page/idntimes/sticky.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Sticky Bottom</a>
+                                            <a href="page/idntimes/stickybottom.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Sticky Bottom</a>
+                                            <a href="page/idntimes/stickybottom.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Sticky Bottom</a>
                                         </li>
                                         <li>
                                             <a href="page/idntimes/skinad.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Skin Ad</a>
                                             <a href="page/idntimes/skinad.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Skin Ad</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/br-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Big Rectangle 1</a>
-                                            <a href="page/idntimes/br-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Big Rectangle 1</a>
+                                            <a href="page/idntimes/verticalbillboard.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Vertical Billboard</a>
+                                            <a href="page/idntimes/verticalbillboard.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Vertical Billboard</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/br-2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Big Rectangle 2</a>
-                                            <a href="page/idntimes/br-2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Big Rectangle 2</a>
+                                            <a href="page/idntimes/inarticle1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 1</a>
+                                            <a href="page/idntimes/inarticle1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/inart1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 1</a>
-                                            <a href="page/idntimes/inart1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
+                                            <a href="page/idntimes/inarticle2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 2</a>
+                                            <a href="page/idntimes/inarticle2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 2</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/inart2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 2</a>
-                                            <a href="page/idntimes/inart2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 2</a>
+                                            <a href="page/idntimes/inarticle3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 3</a>
+                                            <a href="page/idntimes/inarticle3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 3</a>
                                         </li>
                                         <li>
-                                            <a href="page/idntimes/inart3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 3</a>
-                                            <a href="page/idntimes/inart3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 3</a>
-                                        </li>
-                                        <li>
-                                            <a href="page/idntimes/infeed1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 1</a>
-                                            <a href="page/idntimes/infeed1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="page/idntimes/infeed2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 2</a>
-                                            <a href="page/idntimes/infeed2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="page/idntimes/infeed3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 3</a>
-                                            <a href="page/idntimes/infeed3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 3</a>
-                                        </li>
-                                        <li>
-                                            <a href="page/idntimes/mr-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Medium Rectangle 1</a>
-                                            <a href="page/idntimes/mr-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Medium Rectangle 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="page/idntimes/mr-2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Medium Rectangle 2</a>
-                                            <a href="page/idntimes/mr-2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Medium Rectangle 2</a>
+                                            <a href="page/idntimes/mediumrectangle.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Medium Rectangle</a>
+                                            <a href="page/idntimes/mediumrectangle.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Medium Rectangle</a>
                                         </li>
                                         
                                         <!-- idntimes display desktop perform -->
                                         <li>
                                             <a href="page/idntimes/performance-ads.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
                                             <a href="page/idntimes/performance-ads.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
+                                        </li>
+                                        
+                                        <!-- CPC -->
+                                        <li>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Display CPC</a>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Display CPC</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -378,8 +375,18 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                         Native In/Out
                                     </a>
                                 </li>
+                                
+                                <li>
+                                    <a href="page/m.idntimes/pushnotification.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                        Push Notification (Web)
+                                    </a>
+                                    <a href="page/m.idntimes/pushnotification.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
+                                        Push Notification (Web)
+                                    </a>
+                                </li>
                             </ul>
-                        </li>                       
+                        </li> 
+                        
                         
                         <!-- idntimes content -->
                         <li>
@@ -394,6 +401,11 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                 <li>
                                     <a href="page/idntimes/int-oneweek-adv.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Intensive One-week Adv</a>
                                     <a href="page/idntimes/int-oneweek-adv.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Intensive One-week Adv</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/cont-stickyheadline.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Sticky Headline</a>
+                                    <a href="page/idntimes/cont-stickyheadline.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Sticky Headline</a>
                                 </li>
                                 
                                 <li>
@@ -417,10 +429,12 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                 </li>
                                 
                                 <!-- idntimes content native editorial -->
+<!--
                                 <li>
                                     <a href="page/idntimes/cont-native.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Native Editorial</a>
                                     <a href="page/idntimes/cont-native.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Native Editorial</a>
                                 </li>
+-->
                                 
                                 <!-- idntimes content branded quiz -->
                                 <li>
@@ -485,11 +499,6 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Social</a>
                             <ul class="inner nakwa">
                                  
-                                <!-- idntimes social media LINE Broadcast -->
-                                <li>
-                                    <a href="page/idntimes/sos-line.html" target="myiframe" onclick="remove_home()" class="menu-desktop">LINE Broadcast</a>
-                                    <a href="page/idntimes/sos-line.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">LINE Broadcast</a>
-                                </li>
                                 
                                 <!-- idntimes social media WA Broadcast -->
                                 <li>
@@ -631,6 +640,11 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                 <li>
                                     <a href="page/idntimes/on-act.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Custom Online Activation</a>
                                     <a href="page/idntimes/on-act.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Custom Online Activation</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/custom-survey.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Custom Survey</a>
+                                    <a href="page/idntimes/custom-survey.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Custom Survey</a>
                                 </li>
                             </ul>
                         </li>
@@ -844,10 +858,12 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                     <a href="page/idntimes/video-kaleidoskop.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Video Kaleidoskop</a>
                                 </li>
                                 
+<!--
                                 <li>
                                     <a href="page/idntimes/video-infografis-motion.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Video Infografis Motion</a>
                                     <a href="page/idntimes/video-infografis-motion.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Video Infografis Motion</a>
                                 </li>
+-->
                             </ul>
                         </li>
 
@@ -971,7 +987,14 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                                 Masthead
                                             </a>
                                         </li>
-                                        
+                                        <li>
+                                            <a href="page/m.popbela/videosticky.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                                Video Sticky Bottom
+                                            </a>
+                                            <a href="page/m.popbela/videosticky.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
+                                                Video Sticky Bottom
+                                            </a>
+                                        </li>
                                         <li>
                                             <a href="page/m.popbela/video-banner-inart1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 1</a>
                                             <a href="page/m.popbela/video-banner-inart1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
@@ -1003,6 +1026,8 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                             <a href="page/m.idntimes/performance-ads-video.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
                                             <a href="page/m.idntimes/performance-ads-video.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
                                         </li>
+                                        
+            
 
                                     </ul>
                                 </li>
@@ -1071,6 +1096,12 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                             <a href="page/m.popbela/fullsitetakeover.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Full Site Takeover</a>
                                             <a href="page/m.popbela/fullsitetakeover.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Full Site Takeover</a>
                                         </li>
+                                        
+                                        <li>
+                                            <a href="page/m.popbela/mega-billboard.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Mega Billboard</a>
+                                            <a href="page/m.popbela/mega-billboard.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Mega Billboard</a>
+                                        </li>
+                                        
                                         <li>
                                             <a href="page/m.popbela/bottom-slide.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Bottom Slide</a>
                                             <a href="page/m.popbela/bottom-slide.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Bottom Slide</a>
@@ -1079,12 +1110,7 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                             <a href="page/m.popbela/leaderboard-expand.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard Expand</a>
                                             <a href="page/m.popbela/leaderboard-expand.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard Expand</a>
                                         </li>
-<!--
-                                        <li>
-                                            <a href="page/m.popbela/popup.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Pop Up Mobile</a>
-                                            <a href="page/m.popbela/popup.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Pop Up Mobile</a>
-                                        </li>
--->
+
                                         <li>
                                             <a href="page/m.popbela/sticky.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Sticky Bottom</a>
                                             <a href="page/m.popbela/sticky.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Sticky Bottom</a>
@@ -1125,18 +1151,17 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                             <a href="page/m.popbela/infeed3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Feed 3</a>
                                             <a href="page/m.popbela/infeed3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Feed 3</a>
                                         </li>
-<!--
                                         <li>
                                             <a href="page/m.popbela/performance-ads.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
                                             <a href="page/m.popbela/performance-ads.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
                                         </li>
--->
                                         
-                                        <!-- popbela display mobile perform -->
+                                        <!-- CPC -->
                                         <li>
-                                            <a href="page/m.idntimes/performance-ads.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
-                                            <a href="page/m.idntimes/performance-ads.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Display CPC</a>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Display CPC</a>
                                         </li>
+                                        
                                     </ul>
                                 </li>
                                 
@@ -1152,12 +1177,7 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                             <a href="page/popbela/leaderboard-compare.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard Compare</a>
                                             <a href="page/popbela/leaderboard-compare.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard Compare</a>
                                         </li>
-<!--
-                                        <li>
-                                            <a href="page/popbela/popup.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Pop Up</a>
-                                            <a href="page/popbela/popup.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Pop Up</a>
-                                        </li>
--->
+
                                         <li>
                                             <a href="page/popbela/sticky.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Sticky Bottom</a>
                                             <a href="page/popbela/sticky.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Sticky Bottom</a>
@@ -1166,10 +1186,7 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                             <a href="page/popbela/skinner.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Skin Ad</a>
                                             <a href="page/popbela/skinner.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Skin Ad</a>
                                         </li>
-                                        <li>
-                                            <a href="page/popbela/br1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Big Rectangle 1</a>
-                                            <a href="page/popbela/br1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Big Rectangle 1</a>
-                                        </li>
+
                                         <li>
                                             <a href="page/popbela/br2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Big Rectangle 2</a>
                                             <a href="page/popbela/br2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Big Rectangle 2</a>
@@ -1202,26 +1219,38 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                             <a href="page/popbela/mr1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Medium Rectangle 1</a>
                                             <a href="page/popbela/mr1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Medium Rectangle 1</a>
                                         </li>
-                                        <li>
-                                            <a href="page/popbela/mr2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Medium Rectangle 2</a>
-                                            <a href="page/popbela/mr2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Medium Rectangle 2</a>
-                                        </li>
 
-                                        <!-- popbela display mobile perform -->
-                                        <li>
-                                            <a href="page/idntimes/performance-ads.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
-                                            <a href="page/idntimes/performance-ads.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
-                                        </li>
-<!--
                                         <li>
                                             <a href="page/popbela/performance-ads.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
                                             <a href="page/popbela/performance-ads.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
                                         </li>
--->
+                                        
+                                        <!-- CPC -->
+                                        <li>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Display CPC</a>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Display CPC</a>
+                                        </li>
+
                                     </ul>
                                 </li>
                             </ul>
                         </li>
+                        
+                        <!-- popbela native -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-down"></i>Native</a>
+                            <ul class="inner nakwa">
+                                
+                                <li>
+                                    <a href="page/m.popbela/pushnotification.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                        Push Notification (Web)
+                                    </a>
+                                    <a href="page/m.popbela/pushnotification.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
+                                        Push Notification (Web)
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> 
                         
                         
                          <!-- popbela content -->
@@ -1237,6 +1266,11 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                 <li>
                                     <a href="page/popbela/int-oneweek-adv.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Intensive One-week Adv</a>
                                     <a href="page/popbela/int-oneweek-adv.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Intensive One-week Adv</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/popbela/cont-stickyheadline.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Sticky Headline</a>
+                                    <a href="page/popbela/cont-stickyheadline.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Sticky Headline</a>
                                 </li>
                                 
                                 <li>
@@ -1297,10 +1331,6 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Social</a>
                             <ul class="inner nakwa">
                                 
-                                <li>
-                                    <a href="page/popbela/sos-line.html" target="myiframe" onclick="remove_home()" class="menu-desktop">LINE Broadcast</a>
-                                    <a href="page/popbela/sos-line.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">LINE Broadcast</a>
-                                </li>
                                 <li>
                                     <a href="page/popbela/sos-wabroad.html" target="myiframe" onclick="remove_home()" class="menu-desktop">WhatsApp Broadcast</a>
                                     <a href="page/popbela/sos-wabroad.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">WhatsApp Broadcast</a>
@@ -1424,6 +1454,10 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                 <li>
                                     <a href="page/popbela/on-custom.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Custom Online Activation</a>
                                     <a href="page/popbela/on-custom.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Custom Online Activation</a>
+                                </li>
+                                <li>
+                                    <a href="page/idntimes/custom-survey.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Custom Survey</a>
+                                    <a href="page/idntimes/custom-survey.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Custom Survey</a>
                                 </li>
                                 
                             </ul>
@@ -1673,40 +1707,18 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Video</a>
                             <ul class="inner nakwa">
                                 
-                                <!-- popmama tvc spot -->
-                                
                                 <li>
-                                    <a href="#" class="toggle"><i class="fa fa-angle-down"></i>TVC Spot Masthead</a>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-down"></i>Mobile</a>
                                     <ul class="inner nakga">
                                         <li>
                                             <a href="page/popmama/tvcspot-mobile.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
-                                                Mobile
+                                                Masthead
                                             </a>
                                             <a href="page/popmama/tvcspot-mobile.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
-                                                Mobile
+                                                Masthead
                                             </a>
                                         </li>
                                         
-                                        <li>
-                                            <a href="#" class="menu-desktop">
-                                                <i>Desktop (soon..)</i>
-                                            </a>
-                                            <a href="#" class="menu-mobile">
-                                                <i>Desktop (soon..)</i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                
-                                
-                                <!-- popmama video outsreem -->
-                                <li>
-                                    <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Outstream</a>
-                                    <ul class="inner nakga">
-                                        <li>
-                                            <a href="page/popmama/video-banner-mr1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Medium Rectangle 1</a>
-                                            <a href="page/popmama/video-banner-mr1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Medium Rectangle 1</a>
-                                        </li>
                                         <li>
                                             <a href="page/m.popmama/video-banner-inart1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 1</a>
                                             <a href="page/m.popmama/video-banner-inart1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
@@ -1719,10 +1731,32 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                             <a href="page/m.popmama/video-banner-inart3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 3</a>
                                             <a href="page/m.popmama/video-banner-inart3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 3</a>
                                         </li>
+                                        <li>
+                                            <a href="page/m.idntimes/performance-ads-video.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
+                                            <a href="page/m.idntimes/performance-ads-video.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 
-                                <!-- popbela video other platform -->
+                                <li>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-down"></i>Desktop</a>
+                                    <ul class="inner nakga">
+                                        <li>
+                                            <a href="page/popmama/masthead.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Masthead</a>
+                                            <a href="page/popmama/masthead.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Masthead</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="page/popmama/video-banner-mr1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Medium Rectangle 1</a>
+                                            <a href="page/popmama/video-banner-mr1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Medium Rectangle 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/performance-ads-video.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
+                                            <a href="page/idntimes/performance-ads-video.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
                                 <li>
                                     <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Other Platform</a>
                                     <ul class="inner nakga">
@@ -1758,6 +1792,17 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                             <a href="page/m.popmama/fullsitetakeover.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Full Site Takeover</a>
                                             <a href="page/m.popmama/fullsitetakeover.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Full Site Takeover</a>
                                         </li>
+                                        
+                                        <li>
+                                            <a href="page/m.popmama/megabillboard.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Mega Billboard</a>
+                                            <a href="page/m.popmama/megabillboard.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Mega Billboard</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="page/m.popmama/parallax-billboard.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Parallax Billboard</a>
+                                            <a href="page/m.popmama/parallax-billboard.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Parallax Billboard</a>
+                                        </li>
+                                        
                                         <li>
                                             <a href="page/m.popmama/bottom-slide.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Bottom Slide</a>
                                             <a href="page/m.popmama/bottom-slide.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Bottom Slide</a>
@@ -1808,6 +1853,12 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                             <a href="page/m.popmama/performance-ads.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
                                             <a href="page/m.popmama/performance-ads.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
                                         </li>
+                                        
+                                        <!-- CPC -->
+                                        <li>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Display CPC</a>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Display CPC</a>
+                                        </li>
                                         <!-- <li>
                                             <a href="page/m.popmama/leaderboard-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard V1</a>
                                             <a href="page/m.popmama/leaderboard-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard V1</a>
@@ -1841,10 +1892,12 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                             <a href="page/popmama/skinner.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Skin Ad</a>
                                             <a href="page/popmama/skinner.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Skin Ad</a>
                                         </li>
+<!--
                                         <li>
                                             <a href="page/popmama/br1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Big Rectangle 1</a>
                                             <a href="page/popmama/br1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Big Rectangle 1</a>
                                         </li>
+-->
                                         <li>
                                             <a href="page/popmama/br2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Big Rectangle 2</a>
                                             <a href="page/popmama/br2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Big Rectangle 2</a>
@@ -1889,19 +1942,43 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                             <a href="page/popmama/mr1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Medium Rectangle 1</a>
                                             <a href="page/popmama/mr1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Medium Rectangle 1</a>
                                         </li>
+<!--
                                         <li>
                                             <a href="page/popmama/mr2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Medium Rectangle 2</a>
                                             <a href="page/popmama/mr2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Medium Rectangle 2</a>
                                         </li>
+-->
                                         <li>
                                             <a href="page/popmama/performance-ads.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
                                             <a href="page/popmama/performance-ads.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
+                                        </li>
+                                        
+                                        <!-- CPC -->
+                                        <li>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Display CPC</a>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Display CPC</a>
                                         </li>
                                         
                                     </ul>
                                 </li>
                             </ul>
                         </li>
+                        
+                        <!-- popmama native -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-down"></i>Native</a>
+                            <ul class="inner nakwa">
+                                
+                                <li>
+                                    <a href="page/m.popmama/pushnotification.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                        Push Notification (Web)
+                                    </a>
+                                    <a href="page/m.popmama/pushnotification.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
+                                        Push Notification (Web)
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> 
                                          
                         <!-- popmama content -->
                         <li>
@@ -1916,6 +1993,11 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                 <li>
                                     <a href="page/popmama/cont-int-1w-adv.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Intensive One-week Adv</a>
                                     <a href="page/popmama/cont-int-1w-adv.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Intensive One-week Adv</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/popbela/cont-stickyheadline.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Sticky Headline</a>
+                                    <a href="page/popbela/cont-stickyheadline.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Sticky Headline</a>
                                 </li>
                                 
                                 <li>
@@ -1934,8 +2016,8 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                 </li>
                                 
                                 <li>
-                                    <a href="page/popbela/cont-adv-createonly.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Advertorial (Creation only)</a>
-                                    <a href="page/popbela/cont-adv-createonly.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Advertorial (Creation only)</a>
+                                    <a href="page/popmama/cont-adv-createonly.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Advertorial (Creation only)</a>
+                                    <a href="page/popmama/cont-adv-createonly.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Advertorial (Creation only)</a>
                                 </li>
                                 
                                 <!-- popbela content event coverage -->
@@ -1981,13 +2063,7 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                         <li>
                             <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Social</a>
                             <ul class="inner nakwa">
-                                
-<!--
-                                <li>
-                                    <a href="page/popmama/sos-line.html" target="myiframe" onclick="remove_home()" class="menu-desktop">LINE Broadcast</a>
-                                    <a href="page/popmama/sos-line.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">LINE Broadcast</a>
-                                </li>
--->
+
                                 <li>
                                     <a href="page/popmama/sos-wabrod.html" target="myiframe" onclick="remove_home()" class="menu-desktop">WhatsApp Broadcast</a>
                                     <a href="page/popmama/sos-wabrod.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">WhatsApp Broadcast</a>
@@ -2111,6 +2187,11 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                                 <li>
                                     <a href="page/popmama/on-custom.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Custom Online Activation</a>
                                     <a href="page/popmama/on-custom.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Custom Online Activation</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/custom-survey.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Custom Survey</a>
+                                    <a href="page/idntimes/custom-survey.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Custom Survey</a>
                                 </li>
                                 
                             </ul>
@@ -2518,9 +2599,374 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                         <i class="fa fa-angle-right"></i>
                     </a>
                     <ul class="inner nakma" onclick="myFunction(event)">
-                        <li>Coming Soon..</li>
+                        
+                        <!-- ggpw video -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Video</a>
+                            <ul class="inner nakwa">
+                                
+                                <!-- duniaku video mobile -->
+                                <li>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-down"></i>Mobile</a>
+                                    <ul class="inner nakga">
+                                        
+                                        <li>
+                                            <a href="page/m.ggwp/masthead.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                                Masthead
+                                            </a>
+                                            <a href="page/m.ggwp/masthead.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
+                                                Masthead
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="page/m.ggwp/videosticky.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                                Video Sticky Bottom
+                                            </a>
+                                            <a href="page/m.ggwp/videosticky.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
+                                                Video Sticky Bottom
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="page/m.ggwp/videoinarticle1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 1</a>
+                                            <a href="page/m.ggwp/videoinarticle1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="page/m.ggwp/videoinarticle2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 2</a>
+                                            <a href="page/m.ggwp/videoinarticle2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 2</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="page/m.ggwp/videoinarticle3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 3</a>
+                                            <a href="page/m.ggwp/videoinarticle3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 3</a>
+                                        </li>
+                                        
+                                        <!-- ggwp mobile video perform -->
+                                        <li>
+                                            <a href="page/m.idntimes/performance-ads-video.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
+                                            <a href="page/m.idntimes/performance-ads-video.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                                
+                                <!-- ggwp video desktop -->
+                                <li>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-down"></i>Desktop</a>
+                                    <ul class="inner nakga">
+
+                                        <!-- ggwp video desktop perform -->
+                                        <li>
+                                            <a href="page/idntimes/performance-ads-video.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
+                                            <a href="page/idntimes/performance-ads-video.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- ggwp video other platform -->
+<!--
+                                <li>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Other Platform</a>
+                                    <ul class="inner nakga">
+                                        <li>
+                                            <a href="page/idntimes/video-placement-yt.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Youtube</a>
+                                            <a href="page/idntimes/video-placement-yt.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Youtube</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/instagram.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram</a>
+                                            <a href="page/idntimes/instagram.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook</a>
+                                            <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook</a>
+                                        </li>
+                                    </ul>
+                                </li>
+-->
+                                
+                            </ul>
+                        </li>
+                        
+                        <!-- ggwp display -->
+                        <li>
+                            <a href="#" class="toggle">
+                                <i class="fa fa-angle-right"></i>Display</a>
+                            <ul class="inner nakwa">
+                                
+                                <!-- ggwp  display mobile -->
+                                <li>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Mobile</a>
+                                    <ul class="inner nakga">
+                                        <li>
+                                            <a href="page/m.ggwp/fullsitetakeover.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Full Site Takeover</a>
+                                            <a href="page/m.ggwp/fullsitetakeover.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Full Site Takeover</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.ggwp/megabillboard.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Mega Billboard</a>
+                                            <a href="page/m.ggwp/megabillboard.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Mega Billboard</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="page/m.ggwp/leaderboardexpand.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard Expand</a>
+                                            <a href="page/m.ggwp/leaderboardexpand.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard Expand</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="page/m.ggwp/stickybottom.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Sticky Bottom</a>
+                                            <a href="page/m.ggwp/stickybottom.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Sticky Bottom</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.ggwp/parallax1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Parallax 1</a>
+                                            <a href="page/m.ggwp/parallax1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Parallax 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.ggwp/parallax2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Parallax 2</a>
+                                            <a href="page/m.ggwp/parallax2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Parallax 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.ggwp/parallax3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Parallax 3</a>
+                                            <a href="page/m.ggwp/parallax3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Parallax 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.ggwp/inarticle1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 1</a>
+                                            <a href="page/m.ggwp/inarticle1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.ggwp/inarticle2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 2</a>
+                                            <a href="page/m.ggwp/inarticle2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.ggwp/inarticle3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 3</a>
+                                            <a href="page/m.ggwp/inarticle3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 3</a>
+                                        </li>
+                                        
+                                        <!-- duniaku display mobile perform -->
+                                        <li>
+                                            <a href="page/m.ggwp/performance-ads.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
+                                            <a href="page/m.ggwp/performance-ads.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
+                                        </li>
+                                        
+                                        <!-- CPC -->
+                                        <li>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Display CPC</a>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Display CPC</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                
+                                <!-- ggwp display desktop -->
+                                <li>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Desktop</a>
+                                    <ul class="inner nakga">
+                                        <li>
+                                            <a href="page/ggwp/fullsitetakeover.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Full Site Take Over</a>
+                                            <a href="page/ggwp/fullsitetakeover.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Full Site Take Over</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/ggwp/fullsitetakeover.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard Compare</a>
+                                            <a href="page/ggwp/fullsitetakeover.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard Compare</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="page/ggwp/skinad.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Skin Ad</a>
+                                            <a href="page/ggwp/skinad.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Skin Ad</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/ggwp/inarticle1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 1</a>
+                                            <a href="page/ggwp/inarticle1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/ggwp/inarticle2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 2</a>
+                                            <a href="page/ggwp/inarticle2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/ggwp/inarticle3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 3</a>
+                                            <a href="page/ggwp/inarticle3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 3</a>
+                                        </li>
+                                        
+                                        <!-- duniaku display desktop perform -->
+                                        <li>
+                                            <a href="page/ggwp/performance-ads.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
+                                            <a href="page/ggwp/performance-ads.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
+                                        </li>
+                                        
+                                        <!-- CPC -->
+                                        <li>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Display CPC</a>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Display CPC</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- ggwp content -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Content</a>
+                            <ul class="inner nakwa">
+                                
+                                <li>
+                                    <a href="page/ggwp/cont-intensive-1m.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Intensive One-month Adv</a>
+                                    <a href="page/ggwp/cont-intensive-1m.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Intensive One-month Adv</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/ggwp/cont-intensive-1w.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Intensive One-week Adv</a>
+                                    <a href="page/ggwp/cont-intensive-1w.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Intensive One-week Adv</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/ggwp/cont-advetorial-guarantee.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Advertorial with Guarantee</a>
+                                    <a href="page/ggwp/cont-advetorial-guarantee.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Advertorial with Guarantee</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/ggwp/cont-product-review.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Product Review Adv</a>
+                                    <a href="page/ggwp/cont-product-review.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Product Review Adv</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/ggwp/cont-advetorial-hard.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Advertorial (Hard-sell)</a>
+                                    <a href="page/ggwp/cont-advetorial-hard.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Advertorial (Hard-sell)</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/ggwp/cont-advetorial-createonly.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Advertorial (Creation only)</a>
+                                    <a href="page/ggwp/cont-advetorial-createonly.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Advertorial (Creation only)</a>
+                                </li>
+
+
+                                <li>
+                                    <a href="page/ggwp/cont-branded-quiz.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Branded Quiz</a>
+                                    <a href="page/ggwp/cont-branded-quiz.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Branded Quiz</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/ggwp/cont-event-cov-1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Event Coverage Area 1</a>
+                                    <a href="page/ggwp/cont-event-cov-1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Event Coverage Area 1</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/ggwp/cont-event-cov-2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Event Coverage Area 2</a>
+                                    <a href="page/ggwp/cont-event-cov-2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Event Coverage area 2</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/ggwp/cont-event-cov-3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Event Coverage Area 3</a>
+                                    <a href="page/ggwp/cont-event-cov-3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Event Coverage Area 3</a>
+                                </li>
+
+                                <li>
+                                    <a href="page/ggwp/cont-special-channel.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Special Channel</a>
+                                    <a href="page/ggwp/cont-special-channel.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Special Channel</a>
+                                </li>
+
+                                <li>
+                                    <a href="page/ggwp/cont-static-infographic.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Regular Infographic</a>
+                                    <a href="page/ggwp/cont-static-infographic.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Regular Infographic</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <!-- ggwp social media -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Social</a>
+                            <ul class="inner nakwa">
+                                 
+                                                   
+                                <li>
+                                    <a href="page/ggwp/sos-igstory.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Story</a>
+                                    <a href="page/ggwp/sos-igstory.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Story</a>
+                                </li>
+                                                                
+                                <li>
+                                    <a href="page/ggwp/sos-igpost.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Post</a>
+                                    <a href="page/ggwp/sos-igpost.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Post</a>
+                                </li>
+                                                                
+                                <li>
+                                    <a href="page/ggwp/sos-iglive.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Live</a>
+                                    <a href="page/ggwp/sos-iglive.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Live</a>
+                                </li>
+                                                                
+                                <li>
+                                    <a href="page/ggwp/sos-igcarousel.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Carousel</a>
+                                    <a href="page/ggwp/sos-igcarousel.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Carousel</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/ggwp/sos-fbpost.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Post</a>
+                                    <a href="page/ggwp/sos-fbpost.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Post</a>
+                                </li>
+                                                                
+                                <li>
+                                    <a href="page/ggwp/sos-fbpoll.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Live Poll</a>
+                                    <a href="page/ggwp/sos-fbpoll.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Live Poll</a>
+                                </li>
+                                                                
+                                <li>
+                                    <a href="page/ggwp/sos-fbevent.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Live Event</a>
+                                    <a href="page/ggwp/sos-fbevent.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Live Event</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/fb-ads-pageview.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Ads Pageviews</a>
+                                    <a href="page/idntimes/fb-ads-pageview.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Ads Pageviews</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/fb-ads-reach.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Ads Reach</a>
+                                    <a href="page/idntimes/fb-ads-reach.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Ads Reach</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/fb-ads-imp.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Ads Impression</a>
+                                    <a href="page/idntimes/fb-ads-imp.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Ads Impression</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/fb-ads-engagement.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Ads Engagement</a>
+                                    <a href="page/idntimes/fb-ads-engagement.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Ads Engagement</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/ig-ads-reach.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Post Ads Reach</a>
+                                    <a href="page/idntimes/ig-ads-reach.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Post Ads Reach</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/ig-ads-imp.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Post Ads Imp</a>
+                                    <a href="page/idntimes/ig-ads-imp.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Post Ads Imp</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/ig-ads-engagement.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Post Ads Eng</a>
+                                    <a href="page/idntimes/ig-ads-engagement.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Post Ads Eng</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/ig-story-ads-reach.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Story Ads Reach</a>
+                                    <a href="page/idntimes/ig-story-ads-reach.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Story Ads Reach</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/ig-story-ads-imp.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Story Ads Imp</a>
+                                    <a href="page/idntimes/ig-story-ads-imp.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Story Ads Imp</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/ig-story-ads-eng.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Story Ads Click</a>
+                                    <a href="page/idntimes/ig-story-ads-eng.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Story Ads Click</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
+                
                 
                 <!-- duniaku -->
                 
@@ -2530,7 +2976,426 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
                         <i class="fa fa-angle-right"></i>
                     </a>
                     <ul class="inner nakma" onclick="myFunction(event)">
-                        <li>Coming Soon..</li>
+                        
+                        <!-- duniaku video -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Video</a>
+                            <ul class="inner nakwa">
+                                
+                                <!-- duniaku video mobile -->
+                                <li>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-down"></i>Mobile</a>
+                                    <ul class="inner nakga">
+                                        
+                                        <li>
+                                            <a href="page/m.duniaku/masthead.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                                Masthead
+                                            </a>
+                                            <a href="page/m.duniaku/masthead.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
+                                                Masthead
+                                            </a>
+                                        </li>
+                                        
+<!--
+                                        <li>
+                                            <a href="page/m.idntimes/videosticky.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                                Video Sticky Bottom
+                                            </a>
+                                            <a href="page/m.idntimes/videosticky.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
+                                                Video Sticky Bottom
+                                            </a>
+                                        </li>
+-->
+                                        
+                                        <li>
+                                            <a href="page/m.duniaku/videoinarticle1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 1</a>
+                                            <a href="page/m.duniaku/videoinarticle1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="page/m.duniaku/videoinarticle2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 2</a>
+                                            <a href="page/m.duniaku/videoinarticle2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 2</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="page/m.duniaku/videoinarticle3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 3</a>
+                                            <a href="page/m.duniaku/videoinarticle3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 3</a>
+                                        </li>
+                                        
+                                        <!-- idntimes mobile video perform -->
+                                        <li>
+                                            <a href="page/m.idntimes/performance-ads-video.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
+                                            <a href="page/m.idntimes/performance-ads-video.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                                
+                                <!-- duniaku video desktop -->
+                                <li>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-down"></i>Desktop</a>
+                                    <ul class="inner nakga">
+                                        
+                                        <li>
+                                            <a href="page/duniaku/masthead.html" target="myiframe" onclick="remove_home()" class="menu-desktop">
+                                                Masthead
+                                            </a>
+                                            <a href="page/duniaku/masthead.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">
+                                                Masthead
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="page/duniaku/videomediumrectangle.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Medium Rectangle 1</a>
+                                            <a href="page/duniaku/videomediumrectangle.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Medium Rectangle 1</a>
+                                        </li>
+
+                                        <!-- idntimes video desktop perform -->
+                                        <li>
+                                            <a href="page/idntimes/performance-ads-video.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
+                                            <a href="page/idntimes/performance-ads-video.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- duniaku video other platform -->
+<!--
+                                <li>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Other Platform</a>
+                                    <ul class="inner nakga">
+                                        <li>
+                                            <a href="page/idntimes/video-placement-yt.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Youtube</a>
+                                            <a href="page/idntimes/video-placement-yt.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Youtube</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/instagram.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram</a>
+                                            <a href="page/idntimes/instagram.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook</a>
+                                            <a href="page/idntimes/video-placement.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook</a>
+                                        </li>
+                                    </ul>
+                                </li>
+-->
+                                
+                            </ul>
+                        </li>
+                        
+                        <!-- duniaku display -->
+                        <li>
+                            <a href="#" class="toggle">
+                                <i class="fa fa-angle-right"></i>Display</a>
+                            <ul class="inner nakwa">
+                                
+                                <!-- duniaku  display mobile -->
+                                <li>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Mobile</a>
+                                    <ul class="inner nakga">
+                                        <li>
+                                            <a href="page/m.duniaku/fullsitetakeover.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Full Site Takeover</a>
+                                            <a href="page/m.duniaku/fullsitetakeover.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Full Site Takeover</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.duniaku/megabillboard.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Mega Billboard</a>
+                                            <a href="page/m.duniaku/megabillboard.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Mega Billboard</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="page/m.duniaku/leaderboardexpand.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard Expand</a>
+                                            <a href="page/m.duniaku/leaderboardexpand.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard Expand</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="page/m.duniaku/stickybottom.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Sticky Bottom</a>
+                                            <a href="page/m.duniaku/stickybottom.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Sticky Bottom</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.duniaku/parallax1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Parallax 1</a>
+                                            <a href="page/m.duniaku/parallax1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Parallax 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.duniaku/parallax2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Parallax 2</a>
+                                            <a href="page/m.duniaku/parallax2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Parallax 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.duniaku/parallax3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Parallax 3</a>
+                                            <a href="page/m.duniaku/parallax3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Parallax 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.duniaku/inarticle1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 1</a>
+                                            <a href="page/m.duniaku/inarticle1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.duniaku/inarticle2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 2</a>
+                                            <a href="page/m.duniaku/inarticle2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/m.duniaku/inarticle3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 3</a>
+                                            <a href="page/m.duniaku/inarticle3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 3</a>
+                                        </li>
+                                        
+                                        <!-- duniaku display mobile perform -->
+                                        <li>
+                                            <a href="page/m.duniaku/performance-ads.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
+                                            <a href="page/m.duniaku/performance-ads.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
+                                        </li>
+                                        
+                                        <!-- CPC -->
+                                        <li>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Display CPC</a>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Display CPC</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                
+                                <!-- duniaku display desktop -->
+                                <li>
+                                    <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Desktop</a>
+                                    <ul class="inner nakga">
+                                        <li>
+                                            <a href="page/duniaku/fullsitetakeover.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Full Site Take Over</a>
+                                            <a href="page/duniaku/fullsitetakeover.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Full Site Take Over</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/duniaku/leaderboardcompare.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Leaderboard Compare</a>
+                                            <a href="page/duniaku/leaderboardcompare.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Leaderboard Compare</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="page/duniaku/skinad.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Skin Ad</a>
+                                            <a href="page/duniaku/skinad.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Skin Ad</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/duniaku/inarticle1.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 1</a>
+                                            <a href="page/duniaku/inarticle1.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/duniaku/inarticle2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 2</a>
+                                            <a href="page/duniaku/inarticle2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="page/duniaku/inarticle3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">In Article 3</a>
+                                            <a href="page/duniaku/inarticle3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">In Article 3</a>
+                                        </li>
+                                        
+                                        <!-- duniaku display desktop perform -->
+                                        <li>
+                                            <a href="page/idntimes/performance-ads.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Performance Ads</a>
+                                            <a href="page/idntimes/performance-ads.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Performance Ads</a>
+                                        </li>
+                                        
+                                        <!-- CPC -->
+                                        <li>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Display CPC</a>
+                                            <a href="page/idntimes/cpc.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Display CPC</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- duniaku content -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Content</a>
+                            <ul class="inner nakwa">
+                                
+                                <li>
+                                    <a href="page/idntimes/int-onemonth-adv.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Intensive One-month Adv</a>
+                                    <a href="page/idntimes/int-onemonth-adv.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Intensive One-month Adv</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/int-oneweek-adv.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Intensive One-week Adv</a>
+                                    <a href="page/idntimes/int-oneweek-adv.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Intensive One-week Adv</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/adv.guarant.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Advertorial with Guarantee</a>
+                                    <a href="page/idntimes/adv.guarant.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Advertorial with Guarantee</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/product-review.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Product Review Adv</a>
+                                    <a href="page/idntimes/product-review.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Product Review Adv</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/advetorial-hard.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Advertorial (Hard-sell)</a>
+                                    <a href="page/idntimes/advetorial-hard.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Advertorial (Hard-sell)</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/advetorial-creation-only.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Advertorial (Creation only)</a>
+                                    <a href="page/idntimes/advetorial-creation-only.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Advertorial (Creation only)</a>
+                                </li>
+                                
+                               
+<!--
+                                <li>
+                                    <a href="page/idntimes/cont-native.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Native Editorial</a>
+                                    <a href="page/idntimes/cont-native.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Native Editorial</a>
+                                </li>
+-->
+                                
+                                
+                                <li>
+                                    <a href="page/idntimes/cont-quiz.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Branded Quiz</a>
+                                    <a href="page/idntimes/cont-quiz.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Branded Quiz</a>
+                                </li>
+                                
+                                
+                                <li>
+                                    <a href="page/idntimes/cont-event.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Event Coverage Area 1</a>
+                                    <a href="page/idntimes/cont-event.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Event Coverage Area 1</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/cont-event2.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Event Coverage Area 2</a>
+                                    <a href="page/idntimes/cont-event2.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Event Coverage area 2</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/cont-event3.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Event Coverage Area 3</a>
+                                    <a href="page/idntimes/cont-event3.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Event Coverage Area 3</a>
+                                </li>
+                                
+                                
+                                <li>
+                                    <a href="page/idntimes/cont-comart.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Community Article</a>
+                                    <a href="page/idntimes/cont-comart.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Community Article</a>
+                                </li>
+                                
+                                
+                                <li>
+                                    <a href="page/idntimes/cont-fyi.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Interactive Infographic</a>
+                                    <a href="page/idntimes/cont-fyi.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Interactive Infographic</a>
+                                </li>
+                                
+                                
+                                <li>
+                                    <a href="page/idntimes/cont-spchan.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Special Channel</a>
+                                    <a href="page/idntimes/cont-spchan.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Special Channel</a>
+                                </li>
+                                
+                                
+                                <li>
+                                    <a href="page/idntimes/cont-infograph.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Regular Infographic</a>
+                                    <a href="page/idntimes/cont-infograph.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Regular Infographic</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/advetorial-gov.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Advertorial (Government)</a>
+                                    <a href="page/idntimes/advetorial-gov.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Advertorial (Government)</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/unlimited-adv.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Unlimited Advertorial (Gov)</a>
+                                    <a href="page/idntimes/unlimited-adv.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Unlimited Advertorial (Gov)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- duniaku social media -->
+                        <li>
+                            <a href="#" class="toggle"><i class="fa fa-angle-right"></i>Social</a>
+                            <ul class="inner nakwa">
+
+                                                   
+                                <!-- duniaku social media instagram story -->
+                                <li>
+                                    <a href="page/duniaku/sos-igstory.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Story</a>
+                                    <a href="page/duniaku/sos-igstory.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Story</a>
+                                </li>
+                                                                
+                                <!-- duniaku social media instagram post -->
+                                <li>
+                                    <a href="page/duniaku/sos-igpost.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Post</a>
+                                    <a href="page/duniaku/sos-igpost.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Post</a>
+                                </li>
+                                                                
+                                <!-- duniaku social media instagram live -->
+                                <li>
+                                    <a href="page/duniaku/sos-iglive.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Live</a>
+                                    <a href="page/duniaku/sos-iglive.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Live</a>
+                                </li>
+                                                                
+                                <!-- duniaku social media instagram post carousel -->
+                                <li>
+                                    <a href="page/duniaku/sos-igcarousel.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Carousel</a>
+                                    <a href="page/duniaku/sos-igcarousel.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Carousel</a>
+                                </li>
+                                
+                                <!-- duniaku social media facebook post -->
+                                <li>
+                                    <a href="page/duniaku/sos-fbpost.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Post</a>
+                                    <a href="page/duniaku/sos-fbpost.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Post</a>
+                                </li>
+                                                                
+                                <!-- duniaku social media facebook live poll -->
+                                <li>
+                                    <a href="page/duniaku/sos-fbpoll.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Live Poll</a>
+                                    <a href="page/duniaku/sos-fbpoll.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Live Poll</a>
+                                </li>
+                                                                
+                                <!-- duniaku social media facebook live event coverage -->
+                                <li>
+                                    <a href="page/duniaku/sos-fbpoll.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Live Event</a>
+                                    <a href="page/duniaku/sos-fbevent.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Live Event</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/fb-ads-pageview.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Ads Pageviews</a>
+                                    <a href="page/idntimes/fb-ads-pageview.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Ads Pageviews</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/fb-ads-reach.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Ads Reach</a>
+                                    <a href="page/idntimes/fb-ads-reach.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Ads Reach</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/fb-ads-imp.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Ads Impression</a>
+                                    <a href="page/idntimes/fb-ads-imp.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Ads Impression</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/fb-ads-engagement.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Facebook Ads Engagement</a>
+                                    <a href="page/idntimes/fb-ads-engagement.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Facebook Ads Engagement</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/ig-ads-reach.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Post Ads Reach</a>
+                                    <a href="page/idntimes/ig-ads-reach.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Post Ads Reach</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/ig-ads-imp.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Post Ads Imp</a>
+                                    <a href="page/idntimes/ig-ads-imp.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Post Ads Imp</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/ig-ads-engagement.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Post Ads Eng</a>
+                                    <a href="page/idntimes/ig-ads-engagement.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Post Ads Eng</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/ig-story-ads-reach.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Story Ads Reach</a>
+                                    <a href="page/idntimes/ig-story-ads-reach.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Story Ads Reach</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/ig-story-ads-imp.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Story Ads Imp</a>
+                                    <a href="page/idntimes/ig-story-ads-imp.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Story Ads Imp</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="page/idntimes/ig-story-ads-eng.html" target="myiframe" onclick="remove_home()" class="menu-desktop">Instagram Story Ads Click</a>
+                                    <a href="page/idntimes/ig-story-ads-eng.html" target="myiframe" onclick="remove_home_mobile()" class="menu-mobile">Instagram Story Ads Click</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 
