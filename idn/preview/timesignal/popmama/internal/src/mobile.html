@@ -1,0 +1,56 @@
+<html>
+    <body style="margin: 0;">
+         <style>
+            @import url("https://ads.idntimes.com/ads-assets/internal/css/ramadhan2020/css-idntimes.css");
+            @import url("https://ads.idntimes.com/ads-assets/internal/images/popmama/ramadhan2020/wts-mobile-popmama.css");
+             .jadwal-box {
+                 bottom: 15px;
+                 left: 10px;
+             }
+        </style>
+        <div class="wts clearfix">
+            <a href="{landingpage}" target="_blank" class="landingpage"></a>
+            <div class="jadwal-box">
+                <div class="wts-city">
+                    <select name="" class="wts-city-select"></select>
+                </div>
+                <div class="wts-time">
+                    <div class="wts-day"></div>
+                </div>
+            </div>
+            
+            <img src="https://ads.idntimes.com/ads-assets/internal/images/popmama/ramadhan2020/320x480.jpg">
+        </div>
+
+        <script src="https://ads.idntimes.com/ads-assets/internal/js/ramadhan2020/js-idntimes.js" type="text/javascript"></script>
+        <script src="https://ads.idntimes.com/ads-assets/internal/js/ramadhan2020/js-jadwalsholat.js" type="text/javascript"></script>
+        
+        <script>
+            $(function() {
+                var currentDay = 20;
+                var dataCities = [];
+                $.each( cities, function( key, city ) {
+                    dataCities.push({
+                        'id': city.slug,
+                        'text': city.name,
+                    });
+                });
+                $('select.wts-city-select').select2({
+                    data: dataCities,
+                    placeholder: 'Select a city'
+                });
+
+                $('select.wts-city-select').on('select2:select', function (e) {
+                    var val = $(this).val();
+                    initSchedules(val, currentDay);
+                });
+                initSchedules(cities[0].slug, currentDay);
+            });
+        </script>
+        <script type="text/javascript">
+            if(top!=self){
+                window.frameElement.style = 'width: 320px; height: 480px; margin-bottom: 10px; position: relative;';
+            };
+        </script>
+    </body>
+</html>
