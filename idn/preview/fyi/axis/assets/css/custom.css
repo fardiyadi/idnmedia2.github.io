@@ -609,6 +609,13 @@ body {
 .text-box h4 {
     line-height: 40px;
 }
+.carousel-item a {
+    color: #000;
+}
+.carousel-item a:hover {
+    color: #000;
+    text-decoration: none;
+}
 .carousel-item img {
     max-height: 400px;
 }
