@@ -44,7 +44,8 @@ body {
 .mt200 {
     margin-top: 200px;
 }
-/* parallax versi 2 */
+
+/* parallax goyang */
 #paraContainer {
     position: relative;
     height: 100vh;
@@ -139,6 +140,10 @@ body {
     width: 100%;
 }
 
+
+
+/* parallax */
+/*
 .parallax {
   height: 100vh;
   position: relative;
@@ -154,7 +159,6 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 .parallax-layer__1 {
     background-image: url(../images/cover/1.png);
     width: 120%;
@@ -226,52 +230,8 @@ body {
     left: -5%;
     bottom: -5%
 }
+*/
 
-
-.break-sect {
-    position: absolute;
-    z-index: 1;
-}
-.bs1 {
-    right: 0;
-    margin-top: -300px;
-    z-index: 1;
-}
-.bs1 img {
-    max-width: 500px;
-}
-
-.bs2 {
-    right: 0;
-    margin-top: -300px;
-}
-.bs2 img {
-    max-width: 500px;
-}
-.bs2b {
-    left: 0;
-    margin-top: -350px;
-    animation: awangerak 5s linear infinite;
-    z-index: 1;
-}
-.bs2b img {
-    max-width: 700px;
-}
-.bs3 {
-    right: 0;
-    margin-top: -150px;
-    z-index: 1;
-}
-.bs4 {
-    right: 0;
-    margin-top: -250px;
-    z-index: 1;
-}
-.bs5 {
-    left: 0;
-    margin-top: -100px;
-    z-index: 1;
-}
 
 
 /* ========== client class ========== */
@@ -903,9 +863,13 @@ body {
         top: -100px;
     }
     
+    
 }
 
 @media only screen and (max-width: 481px) {
+    .containeriframe {
+        padding-top: 130%;
+    }
 }
 
 @media (max-width: 420px) and (max-height: 740px) {
@@ -929,7 +893,55 @@ body {
 }
 
 
+.spinner {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  
+  -webkit-animation: sk-rotate 2.0s infinite linear;
+  animation: sk-rotate 2.0s infinite linear;
+}
 
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #3dd8d8;
+  border-radius: 100%;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+/*
 .spinner {
   margin: 100px auto 0;
   width: 70px;
@@ -956,6 +968,7 @@ body {
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
+*/
 
 @-webkit-keyframes sk-bouncedelay {
   0%, 80%, 100% { -webkit-transform: scale(0) }
