@@ -576,7 +576,7 @@ body {
     max-width: 50%;
     margin: auto;
     padding-top: 5%;
-    padding-bottom: 20%;
+    padding-bottom: 5%;
 }
 .sect11 h3 {
     color: #044d4f;
@@ -631,9 +631,14 @@ body {
     font-family: 'GothamMedium', sans-serif;
     font-size: 30px;
     margin: 70px 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .sect13 a.cta:hover {
     text-decoration: none;
+    background-color: #096769;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 /* ========== section 13 ========== */
