@@ -243,7 +243,7 @@ p.nominalBounds = new cjs.Rectangle(-2.4,-3.9,4.8,7.8);
 	this.instance.parent = this;
 	this.instance.setTransform(826,19);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(71).to({skewY:180,x:943},0).wait(73));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(144));
 
 }).prototype = p = new cjs.MovieClip();
 
