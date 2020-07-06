@@ -544,22 +544,28 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
-.sect10 .prevbtn, .sect10 .prevbtn:focus, .sect10 .prevbtn:active {
+.sect10 .prevbtn {
     background-image: url(../images/panah-kiri-2.png);
     width: 50px;
     height: 52px;
     display: block;
     background-size: cover;
 }
+.sect10 .prevbtn:active {
+    background-image: url(../images/panah-kiri-2.png)!important;
+}
 .sect10 .prevbtn:hover {
     background-image: url(../images/panah-kiri-hover.png);
 }
-.sect10 .nextbtn, .sect10 .nextbtn:focus, .sect10 .nextbtn:active {
+.sect10 .nextbtn {
     background-image: url(../images/panah-kanan-2.png);
     width: 50px;
     height: 52px;
     display: block;
     background-size: cover;
+}
+.sect10 .nextbtn:active {
+    background-image: url(../images/panah-kanan-2.png)!important;
 }
 .sect10 .nextbtn:hover {
     background-image: url(../images/panah-kanan-hover.png);
@@ -742,9 +748,6 @@ body {
     display: block;
     background-size: cover;
 }
-.prevbtn:focus {
-    background-image: url(../images/panah-kiri.png)!important;
-}
 .prevbtn:active {
     background-image: url(../images/panah-kiri.png)!important;
 }
@@ -757,9 +760,6 @@ body {
     height: 52px;
     display: block;
     background-size: cover;
-}
-.nextbtn:focus {
-    background-image: url(../images/panah-kanan.png)!important;
 }
 .nextbtn:active {
     background-image: url(../images/panah-kanan.png)!important;
@@ -876,6 +876,31 @@ body {
         right: 0;
         top: -100px;
     }
+    .sect10 .prevbtn:active {
+    background-image: url(../images/panah-kiri-hover.png)!important;
+    }
+    .sect10 .nextbtn:active {
+        background-image: url(../images/panah-kanan-hover.png)!important;
+    }
+    .prevbtn:active {
+        background-image: url(../images/panah-kiri-hover.png)!important;
+    }
+    .nextbtn:active {
+        background-image: url(../images/panah-kanan-hover.png)!important;
+    }
+    .sect10 .prevbtn:hover {
+    background-image: url(../images/panah-kiri-2.png)!important;
+    }
+    .sect10 .nextbtn:hover {
+        background-image: url(../images/panah-kanan-2.png)!important;
+    }
+    .prevbtn:hover {
+        background-image: url(../images/panah-kiri.png)!important;
+    }
+    .nextbtn:hover {
+        background-image: url(../images/panah-kanan.png)!important;
+    }
+    
     
     
 }
