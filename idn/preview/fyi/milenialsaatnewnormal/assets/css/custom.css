@@ -51,10 +51,6 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-image: url(../images/cover/bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
 }
 .para1 {
     display: block;
@@ -176,7 +172,11 @@ body {
 }
 
 .sect0 {
-    position: relative;
+    background-image: url(../images/cover/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    background-color: #ff1658;
 }
 .sect .container-fluid {
     padding: 0 8%!important;
@@ -188,18 +188,24 @@ body {
     height: 100%;
     min-height: 150vh;
     width: 100%;
+/*
     background-image: url(../images/sect1-alt2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+*/
 }
 .sect1 .image-box {
     position: relative;
     display: block;
-    margin-top: 100px;
+    margin-top: 20%;
 }
 .sect1 .image-box img {
     position: absolute;
+    max-width: 80%;
+    margin: auto;
+    left: 0;
+    right: 0;
 }
 .sect1 .text-box {
     margin: auto;
@@ -770,6 +776,9 @@ img.tech {
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
+    .sect1 .image-box {
+        margin-top: 35%;
+    }
     .sect8 .image-box img {
         max-width: 60%;
     }
