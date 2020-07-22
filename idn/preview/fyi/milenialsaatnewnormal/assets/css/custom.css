@@ -769,25 +769,25 @@ img.tech {
 
 @media only screen and (min-width: 1500px) {
     .sect1 .image-box {
-        margin-top: 20%;
+        margin-top: 20%!important;
     }
 }
 
 @media only screen and (min-width: 1367px) and (max-width: 1499px) {
     .sect1 .image-box {
-        margin-top: 30%;
+        margin-top: 30%!important;
     }
 }
 
 @media only screen and (min-width: 1301px) and (max-width: 1366px) {
     
     .sect1 .image-box {
-        margin-top: 15%;
+        margin-top: 15%!important;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1300px) {
     .sect1 .image-box {
-        margin-top: 35%;
+        margin-top: 15%;
     }
     .sect8 .image-box img {
         max-width: 60%;
