@@ -565,8 +565,8 @@ img.tech {
 }
 .sect10 .prevbtn {
     background-image: url(../images/panah-kiri.png);
-    width: 38px;
-    height: 77px;
+    width: 26px;
+    height: 53px;
     display: block;
     background-size: cover;
 }
@@ -578,8 +578,8 @@ img.tech {
 }
 .sect10 .nextbtn {
     background-image: url(../images/panah-kanan.png);
-    width: 38px;
-    height: 77px;
+    width: 26px;
+    height: 53px;
     display: block;
     background-size: cover;
 }
@@ -787,7 +787,7 @@ img.tech {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1300px) {
     .sect1 .image-box {
-        margin-top: 15%;
+        margin-top: 20%;
     }
     .sect8 .image-box img {
         max-width: 60%;
