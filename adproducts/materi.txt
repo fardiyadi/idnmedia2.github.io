@@ -1,0 +1,13 @@
+Video in Banner
+===============
+
+<div style="position: relative; width: 300px; height: 250px;">
+   <a href="{landingpage}" target="_blank">
+        <img src="https://ads.idntimes.com/ads-assets/internal/images/button/selengkapnya-btn.png?upv2" style="position: absolute; z-index: 9; right: 0; bottom: 30px; max-width: 110px;">
+   </a>
+
+   <video id="videoInBanner" autoplay controls muted playsinline preload="metadata" style="width: 300px; height: 250px; position: absolute; z-index: 1; background-color: black;">
+         <source src="https://ads.idntimes.com/ads-assets/client/kemenparekraf/agustus2020/video-compressed.mp4" type="video/mp4">
+   </video>
+</div>
+
