@@ -46,7 +46,9 @@ body, html {
   overflow-x: hidden;
   background-color: white;
 }
-
+.pad20 {
+    padding: 20px;
+}
 .videoContainer {
   position: fixed;
   width: 100%;
@@ -566,7 +568,7 @@ th, td {
 }
 
 #page-content-wrapper .spec-des {
-  padding: 20px 20px 20px 30px;
+  padding: 0;
   font-family: 'Helvetica Neue Light', sans-serif;
   letter-spacing: 1px;
   font-size: 1.35rem;
@@ -579,10 +581,26 @@ th, td {
 }
 
 #page-content-wrapper .spec-des h1 {
-  font-size: 2.5rem;
-  padding-bottom: 25px;
+  font-size: 2rem;
+  padding: 10px;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
-
+#bg-image #page-content-wrapper .spec-des h1, #bg-image #page-content-wrapper .spec-des h2 {
+    background-color: #ed2028;
+}
+#popmama-style #page-content-wrapper .spec-des h1, #popmama-style #page-content-wrapper .spec-des h2 {
+    background-color: #9c80d7;
+}
+#popbela-style #page-content-wrapper .spec-des h1, #popbela-style #page-content-wrapper .spec-des h2 {
+    background-color: #d41968;
+}
+#yummy-style #page-content-wrapper .spec-des h1, #yummy-style #page-content-wrapper .spec-des h2 {
+    background-color: #f59523;
+}
+/*
 #page-content-wrapper .spec-des h1::after {
   content: '';
   position: relative;
@@ -594,12 +612,18 @@ th, td {
   width: 100px;
   display: block;
 }
+*/
 
 #page-content-wrapper .spec-des h2 {
   font-size: 2rem;
-  padding-bottom: 25px;
+  padding: 10px;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
+/*
 #page-content-wrapper .spec-des h2::after {
   content: '';
   position: relative;
@@ -611,6 +635,7 @@ th, td {
   width: 100px;
   display: block;
 }
+*/
 
 #page-content-wrapper .spec-des h3 {
   font-size: 1.8rem;
@@ -666,8 +691,12 @@ th, td {
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
   border: 1px solid #e5e5e4;
+    height: 100%;
+    border-radius: 20px;
 }
-
+.spec-des a.preview {
+    margin-bottom: 15px;
+}
 #bg-image .spec-des a.preview {
   background-color: transparent;
   color: #ed2028;
