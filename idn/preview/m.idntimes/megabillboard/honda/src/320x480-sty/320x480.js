@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"320x480_atlas_", frames: [[644,964,320,480],[644,1446,320,480],[1610,1446,320,480],[966,1446,320,480],[1288,964,320,480],[1288,1446,320,480],[322,1446,320,480],[644,482,320,480],[966,482,320,480],[1288,482,320,480],[1610,482,320,480],[966,964,320,480],[1610,964,320,480],[0,1446,320,480],[322,0,320,480],[644,0,320,480],[966,0,320,480],[1288,0,320,480],[1610,0,320,480],[322,482,320,480],[322,964,320,480],[0,964,320,480],[0,482,320,480],[0,0,320,480]]},
+		{name:"320x480_atlas_", frames: [[0,964,320,480],[0,1446,320,480],[0,482,320,480],[0,0,320,480],[322,0,320,480],[644,482,320,480],[1288,482,320,480],[644,0,320,480],[322,964,320,480],[1288,1446,320,480],[1610,1446,320,480],[322,1446,320,480],[644,964,320,480],[1610,482,320,480],[322,482,320,480],[1288,0,320,480],[966,1446,320,480],[1288,964,320,480],[1610,0,320,480],[644,1446,320,480],[1610,964,320,480],[966,482,320,480],[966,964,320,480],[966,0,320,480]]},
 		{name:"320x480_atlas_2", frames: [[0,0,320,480],[0,482,320,480]]}
 ];
 
@@ -48,141 +48,141 @@ lib.ssMetadata = [
 
 
 (lib._1image4 = function() {
-	this.initialize(ss["320x480_atlas_2"]);
-	this.gotoAndStop(0);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib._1image5 = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._1textatas = function() {
+(lib._1image5 = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._1textbawah = function() {
+(lib._1textatas = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._2bg = function() {
-	this.initialize(ss["320x480_atlas_2"]);
-	this.gotoAndStop(1);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib._2image = function() {
+(lib._1textbawah = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._2textatas = function() {
+(lib._2bg = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._2textbawah = function() {
+(lib._2image = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._2textklik = function() {
+(lib._2textatas = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._3bg = function() {
+(lib._2textbawah = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._3textatas = function() {
+(lib._2textklik = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._3textbawah = function() {
+(lib._3bg = function() {
+	this.initialize(ss["320x480_atlas_2"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib._3textatas = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._3textservice1 = function() {
+(lib._3textbawah = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._3textservice2 = function() {
+(lib._3textservice1 = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._3textservice3 = function() {
+(lib._3textservice2 = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.end = function() {
+(lib._3textservice3 = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.kv1bg = function() {
+(lib.end = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.kv1image = function() {
+(lib.kv1bg = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(20);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.kv1textatas = function() {
+(lib.kv1image = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.kv1textbawah = function() {
+(lib.kv1textatas = function() {
 	this.initialize(ss["320x480_atlas_"]);
 	this.gotoAndStop(22);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.kv1textbawah = function() {
+	this.initialize(ss["320x480_atlas_2"]);
+	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
