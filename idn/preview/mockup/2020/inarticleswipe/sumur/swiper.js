@@ -111,7 +111,7 @@ function onWndLoad() {
          
           initX =mouseX;
           e.preventDefault();
-          if (Math.abs(transX) >= curSlide.offsetWidth-30) {
+          if (Math.abs(transX) >= curSlide.offsetWidth-130) {
            
               document.removeEventListener('mousemove', slideMouseMove, false);
               document.removeEventListener('touchmove', slideMouseMove, false);
