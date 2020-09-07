@@ -19,7 +19,7 @@ function onWndLoad() {
     var curSlide = null;
     
     var Z_DIS = 50;
-    var Y_DIS = 10;
+    var Y_DIS = 15;
     var TRANS_DUR = 0.4;
   
      var images=document.querySelectorAll('img');
