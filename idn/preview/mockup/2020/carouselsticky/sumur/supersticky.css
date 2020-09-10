@@ -1,0 +1,69 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.gallery-cell {
+  width: 320px;
+  height: 100px;
+  margin-right: 5px;
+  counter-increment: gallery-cell;
+}
+/* position dots in gallery */
+.flickity-page-dots {
+  bottom: 0px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+.gallery {
+    background-color: white;
+}
+#bottom_slide {
+    width: 320px;
+    height: 100px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: fixed;
+    display: block;
+    text-align: center;
+    bottom: 0;
+}
+#bottom_slide img {
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#bottom_slide .bs_sticky { 
+    width:320px; 
+    height:100px;
+    position: fixed;
+    bottom: 0;
+}
+#bottom_slide .bs_ad { 
+    width:320px; 
+    height:480px; 
+    display: none;
+}
+.close_bs {
+    position: absolute;
+    display: block;
+    z-index: 9;
+    top: 0;
+    right: 0;
+}
+.close_bs > img {
+    height: 20px;
+}
