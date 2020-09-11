@@ -7,7 +7,7 @@
 .slider-container {
     position: relative;
     background-color: black;
-    height: 300px;
+    height: 320px;
     width: 100%;
 }
 .slider{
@@ -20,7 +20,7 @@
     -webkit-animation:animation ease 1s;
     animation-delay:.8s;
     animation-fill-mode:backwards;
-    height:270px;
+    height:250px;
     width:300px;
     position: relative;
     perspective:1000px;

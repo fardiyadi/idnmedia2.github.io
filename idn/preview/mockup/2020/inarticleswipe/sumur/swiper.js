@@ -18,8 +18,9 @@ function onWndLoad() {
    
     var curSlide = null;
     
-    var Z_DIS = 50;
-    var Y_DIS = 15;
+    var Z_DIS = 120;
+    var X_DIS = 0;
+    var Y_DIS = -30;
     var TRANS_DUR = 0.4;
   
      var images=document.querySelectorAll('img');
@@ -37,13 +38,14 @@ function onWndLoad() {
   
     function init() {
        
-        var z = 0, y = 0;
+        var z = 0, y = 0, x = 0;
 
         for (var i = sliders.length-1; i >=0; i--) {
-            sliders[i].style.transform = 'translateZ(' + z + 'px) translateY(' + y + 'px)';
+            sliders[i].style.transform = 'translateX(' + x +'px) translateZ(' + z + 'px) translateY(' + y + 'px)';
            
             z -= Z_DIS;
             y += Y_DIS;
+            x += X_DIS;
         }
 
 
@@ -101,8 +103,8 @@ function onWndLoad() {
         //remains elements
          for (var i = sliders.length -2; i >= 0; i--) {
 
-        sliders[i].style.webkitTransform = 'translateX(' + transX/(2*j) + 'px)' + ' rotateZ(' + rotZ/(2*j) + 'deg)' + ' translateY(' + (Y_DIS*j) + 'px)'+ ' translateZ(' + (-Z_DIS*j) + 'px)';
-        sliders[i].style.transform = 'translateX(' + transX/(2*j) + 'px)' + ' rotateZ(' + rotZ/(2*j) + 'deg)' + ' translateY(' + (Y_DIS*j) + 'px)'+ ' translateZ(' + (-Z_DIS*j) + 'px)';
+        sliders[i].style.webkitTransform = 'translateX(' + (X_DIS*j) + 'px)' + ' rotateZ(' + rotZ/(2*j) + 'deg)' + ' translateY(' + (Y_DIS*j) + 'px)'+ ' translateZ(' + (-Z_DIS*j) + 'px)';
+        sliders[i].style.transform = 'translateX(' + (X_DIS*j) + 'px)' + ' rotateZ(' + rotZ/(2*j) + 'deg)' + ' translateY(' + (Y_DIS*j) + 'px)'+ ' translateZ(' + (-Z_DIS*j) + 'px)';
         sliders[i].style.transition = 'none';
         j++;
         }      
@@ -152,8 +154,8 @@ function onWndLoad() {
         var j = 1;
         for (var i = sliders.length -  2; i >= 0; i--) {
                sliders[i].style.transition = 'cubic-bezier(0,1.95,.49,.73) ' + TRANS_DUR / (j + 0.9) + 's';
-        sliders[i].style.webkitTransform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' + ' translateY(' + (Y_DIS*j) + 'px)' + ' translateZ(' + (-Z_DIS*j) + 'px)';
-           sliders[i].style.transform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' + ' translateY(' + (Y_DIS*j) + 'px)' + ' translateZ(' + (-Z_DIS*j) + 'px)';
+        sliders[i].style.webkitTransform = 'translateX(' + (X_DIS*j) + 'px)' + 'rotateZ(' + rotZ + 'deg)' + ' translateY(' + (Y_DIS*j) + 'px)' + ' translateZ(' + (-Z_DIS*j) + 'px)';
+           sliders[i].style.transform = 'translateX(' + (X_DIS*j) + 'px)' + 'rotateZ(' + rotZ + 'deg)' + ' translateY(' + (Y_DIS*j) + 'px)' + ' translateZ(' + (-Z_DIS*j) + 'px)';
 
         j++;
         }
