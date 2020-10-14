@@ -1,0 +1,51 @@
+/* masthead sticky */ 
+/* update 28 agustus 2020 */
+#mastheadsticky {
+    width: 320px;
+    height: 100px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: fixed;
+    display: block;
+    text-align: center;
+    bottom: 0;
+}
+#mastheadsticky img {
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#mastheadsticky .ms_small { 
+    width:320px; 
+    height:100px;
+    position: fixed;
+    bottom: 0;
+}
+#mastheadsticky .ms_big { 
+    width:320px; 
+    height:480px; 
+    display: none;
+}
+.close_big {
+    position: absolute;
+    display: block;
+    z-index: 9;
+    top: 0;
+    right: 0;
+}
+.close_big > img {
+    height: 20px;
+}
+.close_ms {
+    position: absolute;
+    display: block;
+    z-index: 9;
+    top: 0;
+    right: 0;
+}
+.close_ms > img {
+    height: 15px;
+}
