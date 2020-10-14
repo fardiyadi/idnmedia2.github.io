@@ -2,7 +2,7 @@
 /* update 28 agustus 2020 */
 #mastheadsticky {
     width: 320px;
-    height: 100px;
+    height: 65px;
     overflow: hidden;
     left: 0;
     right: 0;
@@ -20,13 +20,12 @@
 }
 #mastheadsticky .ms_small { 
     width:320px; 
-    height:100px;
-    position: fixed;
+    height:50px!important;
     bottom: 0;
 }
 #mastheadsticky .ms_big { 
     width:320px; 
-    height:480px; 
+    height:320px; 
     display: none;
 }
 .close_big {
