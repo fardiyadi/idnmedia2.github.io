@@ -610,22 +610,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
        <div style="position: relative; width: 300px; height: 250px; display: block; left: 0; right: 0; margin: auto;">
                   <a href="https://play.google.com/store/apps/details?id=com.lestari.user.recycle" target="_blank" style="position: absolute; display: block; width: 300px; height: 250px;"></a>
-<!--
-                  <video controls autoplay muted playsinline preload="metadata" style="width: 275px; height: 168px; position: absolute; right: 0; left: 0; margin: auto; top: 46px; z-index: 1;">
+                  <video id="mastV" controls muted playsinline preload="metadata" style="width: 275px; height: 168px; position: absolute; right: 0; left: 0; margin: auto; top: 46px; z-index: 1;">
                       <source src="video.mp4" type="video/mp4">
                   </video>
--->
            
            
+<!--
             <video onloadeddata="this.play();" poster="poster.png" playsinline muted controls style="width: 275px; height: 168px; position: absolute; right: 0; left: 0; margin: auto; top: 46px; z-index: 1;">
                 <source src="video.mp4" type="video/mp4" />
                 <source src="video.mp4.webm" type="video/webm" />
                 <source src="video.mp4.ogg" type="video/ogg" />
                 Your browser does not support the video tag or the file format of this video.
             </video>
+-->
 
                 <img src="300x250-v2.gif" style="max-width: 300px; height: 250px;">
             </div>
+        <script>
+            setTimeout(function(){
+              document.getElementById("mastV").play();
+            }, 3000);
+        </script>   
 
         
         
