@@ -1,57 +1,14 @@
 <html>
     <body style="margin: 0;">
         
-        <style>
-            @font-face {
-              font-family: 'Helvetica Neue Medium';
-              font-style: normal;
-              font-weight: normal;
-              src: url("https://ads.idntimes.com/page/assets/fonts/HelveticaNeueMedium.woff") format("woff");
-            }
-            .cta-btn {
-                font-family: 'Helvetica Neue Medium';
-                position: absolute;
-                z-index: 5;
-                color: white;
-                background-color: rgba(0, 0, 0, 0.5);;
-                font-size: 12px;
-                padding: 3px 9px;
-                bottom: 45px;
-                right: -1px;
-                border: 1px solid #333;
-                text-decoration: none;
-                opacity: .7;
-            }
-        </style>
-        
-        <a href="https://www.youtube.com/playlist?list=PLxTvIZ558mosNRXjzCbNSDiBCu9AEoIO6" target="_blank" class="cta-btn">Selengkapnya ></a>
+        <div style="position: relative; width: 300px; height: 250px;">
+          <a href="#" target="_blank" style="position: absolute; width: 300px; height: 215px; z-index:4;"> </a>
+          <img src="https://ads.idntimes.com/ads-assets/internal/images/button/selengkapnya-btn.png?upv2" style="position: absolute; z-index: 2; right: 0; bottom: 30px; max-width: 110px;">
 
-        <video id="videoInBanner" controls muted playsinline preload="metadata" style="width: 300px; height: 250px; position: absolute; z-index: 1; background-color: black;">
-            <source src="https://ads.idntimes.com/ads-assets/client/pertamina/juli2020/video-compress-min.mp4" type="video/mp4">
-        </video>
-        
-        <script src="https://ads.idntimes.com/ads-assets/internal/js/jquery-3.3.1.min.js"></script>
-        <script>
-            $(window.parent).scroll(function(e)
-              {
-                var offsetRange = $(window.parent).height() / 3,
-                    offsetTop = $(window.parent).scrollTop() + offsetRange + $(window.parent.document.getElementsByClassName("header-filler")).outerHeight(true),
-                    offsetBottom = offsetTop + offsetRange;
-                $("#videoInBanner").each(function () { 
-                  var y1 = $(window.parent.document.getElementById("inarticle1")).offset().top;
-                  var y2 = offsetTop;
-                  console.log(y1);
-                  console.log(offsetBottom);
-                  if (y1 + $(this).outerHeight(true) < y2 || y1 > offsetBottom) {
-                    this.pause(); 
-                  } else {
-                    this.play();
-                  }
-                });
-            });
-        </script>
-                
-  
+          <video id="videoInBanner" autoplay controls muted playsinline preload="metadata" style="width: 300px; height: 250px; position: absolute; z-index: 1; background-color: black;">
+            <source src="https://ads.idntimes.com/ads-assets/client/pertamina/28ok/video-compressed.mp4" type="video/mp4">
+          </video>
+        </div>
         
     </body>
 </html>
