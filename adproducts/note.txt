@@ -1,0 +1,22 @@
+next 
+leaderboard compare popmama desktop
+
+
+<a href="%c[%ClickthroughURL%]" title="[%Hovertext%]" target="[%Targetwindow%]">
+	<span style="color:[%Linkcolor%]">[%Linktitle%]</span>
+</a>
+
+<div class="prom-tags" style="background: #FC5922; color: white">
+	<a href="%c[%ClickthroughURL%]" title="[%Hovertext%]" target="[%Targetwindow%]">
+		<span style="color:[%Linkcolor%]">[%Linktitle%]</span>
+	</a>
+</div>
+
+<div class="prom-tags">
+	<a href="%c[%ClickthroughURL%]" title="[%Hovertext%]" target="[%Targetwindow%]">
+		<span style="background-color: [%Backgroundcolor%]; color: [%Textcolor%]; padding: [%Textpadding%]; border-radius: [%Paddingradius%];">[%Text%]</span>
+	</a>
+</div>
+<div class="prom-tags" style="background: #EECD02">dummy 2</div>
+
+<div class="prom-tags" style="background: #398E4C; color: white">dummy 3</div>
