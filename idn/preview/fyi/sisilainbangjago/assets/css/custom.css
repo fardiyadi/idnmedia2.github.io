@@ -593,7 +593,7 @@ body {
 }
 @media 
     only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1400px), 
-    only screen and (min-resolution: 192dpi) and (min-width: 899px) {
+    only screen and (min-resolution: 192dpi) and (min-width: 1400px) {
         .bg1 {
             background-size: 1500px!important;
             background-image: url(../images/bg1.png);
@@ -603,14 +603,19 @@ body {
         .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14 {
             height: 835px;
         }
+        .sec1 p, .sec2 p, .sec3 p, .sec5 p, .sec6 p, .sec8 p, .sec9 p, .sec10 p, .sec11 p, .sec12 p, .sec14 p {
+            font-size: 26px;
+            font-family: 'Platform-Regular', sans-serif;
+            letter-spacing: 1px;
+        }
         .sec3 {
-            padding-top: 20%;
+            padding-top: 12%;
         }
         .sec5 {
             padding-top: 18%;
-        }
-    
+        }   
 }
+
 @media only screen (min-width: 1367px) and (max-width: 1499px) {
     .bg1 {
         background-size: 1500px!important;
@@ -682,22 +687,6 @@ body {
     #mobile-only {
         display: block;
     }
-    .text-box h4 {
-        line-height: 20px;
-    }
-    .sect1 .text-box, .sect2 .text-box, .sect3 .text-box, .sect4 .text-box, .sect5 .text-box, .sect6 .text-box, .sect7 .text-box, .sect8 .text-box, .sect10 .text-box, .sect11 .text-box, .sect12 .text-box, .sect13 .text-box, .sect14 ul {
-        max-width: 90%;
-    }
-    .sect14 ul {
-        padding: 0;
-    }
-    .sect1 p, .sect2 p, .sect3 p, .sect4 p, .sect5 p, .sect6 p, .sect7 p, .sect8 p, .sect9 p, .sect11 p, .sect13 p {
-        font-size: 14px;
-    }
-    .sect1 h3, .sect2 h3, .sect3 h3, .sect4 h3, .sect5 h3, .sect6 h3, .sect7 h3, .sect8 h3, .sect9 h3, .sect10 h3, .sect11 h3, .sect12 h3 {
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
     .sect10 .prevbtn, .prevbtn {
         width: 24px;
         height: 25px;
@@ -709,32 +698,7 @@ body {
     .carousel-item .desc h3, .sect10 .carousel-item .desc h3 {
         font-size: 16px;
     }
-    .sect10 .carousel-item .desc p {
-        font-size: 14px;
-    }
-    .carousel-item img {
-        max-width: 300px;
-    }
-    .sect13 a.cta {
-        font-size: 18px;
-    }
-    .sect5 {
-        padding-top: 20%;
-        padding-bottom: 20px;
-    }
-    .sect5 img {
-        max-width: 140px;
-        top: -140px;
-        left: 0;
-    }
-    .sect6 {
-        padding-top: 60%;
-    }
-    .sect6 img {
-        max-width: 200px;
-        right: 0;
-        top: -100px;
-    }
+
     .sect10 .prevbtn:active {
     background-image: url(../images/panah-kiri-hover.png)!important;
     }
