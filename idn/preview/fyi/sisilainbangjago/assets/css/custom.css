@@ -588,7 +588,7 @@ body {
         background-size: cover!important;
     }
     .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14 {
-        height: 100vh;
+        height: 845px;
     }
 }
 
@@ -597,7 +597,7 @@ body {
         background-size: 1500px!important;
     }
     .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14 {
-        height: 100vh;
+        height: 800px;
     }
 }
 
