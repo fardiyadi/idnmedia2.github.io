@@ -611,7 +611,12 @@ body {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    
+    .bg1 {
+        background-size: 1366px!important;
+    }
+    .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14 {
+        height: 760px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
