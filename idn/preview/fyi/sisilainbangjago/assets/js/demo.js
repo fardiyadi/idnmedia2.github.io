@@ -58,7 +58,7 @@
                     // when the item's top value (relative to the viewport) equals "-item's height" (item just exited the viewport) the translation = maximum value
                     setValue: () => {
                         const maxValue = this.renderedStyles.innerTranslationY.maxValue;
-                        const minValue = -1 * maxValue;
+                        const minValue = -2 * maxValue;
                         return Math.max(Math.min(MathUtils.map(this.props.top - docScroll, winsize.height, -1 * this.props.height, minValue, maxValue), maxValue), minValue)
                     }
                 }
