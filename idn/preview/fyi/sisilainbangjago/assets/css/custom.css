@@ -617,6 +617,31 @@ body {
     .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14 {
         height: 760px;
     }
+    .sec1 .img_box {
+        margin-top: -70px;
+    }
+    .sec1 img {
+        max-width: 550px;
+    }
+    .ornamen1 .ornamen_box img {
+        max-width: 200px;
+    }
+    .ornamen2 .ornamen_box img {
+        max-width: 180px;
+    }
+    .ornamen3 .ornamen_box img {
+        max-width: 150px;
+    }
+    .ornamen4 .ornamen_box img {
+        max-width: 180px;
+    }
+    .ornamen4 .ornamen_box {
+        margin-right: 40px;
+    }
+    .sec10 .img_box img {
+        max-width: 80%;
+        margin-top: 100px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
