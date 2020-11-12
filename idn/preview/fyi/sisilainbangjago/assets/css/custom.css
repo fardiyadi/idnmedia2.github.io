@@ -592,23 +592,23 @@ body {
     }
 }
 @media 
-(-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) { 
-    .bg1 {
-        background-size: 1500px!important;
-        background-image: url(../images/bg1.png);
-        background-repeat: no-repeat;
-        background-position: top center;
-    }
-    .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14 {
-        height: 835px;
-    }
-    .sec3 {
-        padding-top: 20%;
-    }
-    .sec5 {
-        padding-top: 18%;
-    }
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1400px), 
+    only screen and (min-resolution: 192dpi) and (min-width: 899px) {
+        .bg1 {
+            background-size: 1500px!important;
+            background-image: url(../images/bg1.png);
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+        .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14 {
+            height: 835px;
+        }
+        .sec3 {
+            padding-top: 20%;
+        }
+        .sec5 {
+            padding-top: 18%;
+        }
     
 }
 @media only screen (min-width: 1367px) and (max-width: 1499px) {
