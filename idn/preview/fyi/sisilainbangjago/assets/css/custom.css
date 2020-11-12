@@ -730,6 +730,9 @@ body {
 
 @media only screen and (max-width: 481px) {
     .bg1 {
+        background-image: url(../images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-position: top center;
         background-size: cover!important;
     }
     .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14 {
@@ -821,6 +824,9 @@ body {
         margin-right: 40px;
         margin-top: 100px;
     }
+    .carousel-item img {
+        max-width: 300px;
+    }
 }
 
 @media (max-width: 420px) and (max-height: 740px) {
@@ -837,10 +843,25 @@ body {
     
 }
 @media only screen and (max-width: 361px) { 
+    .carousel-item img {
+        max-width: 250px;
+    }
 
 }
 @media (max-width: 321px) {
-    
+    .sec1 p, .sec2 p, .sec3 p, .sec5 p, .sec6 p, .sec8 p, .sec9 p, .sec10 p, .sec11 p, .sec12 p, .sec14 p {
+        font-size: 14px;
+    }
+    .sec1 img {
+        max-width: 250px;
+    }
+    .ornamen2 .ornamen_box img, .ornamen3 .ornamen_box img {
+        max-width: 100px;
+        margin-top: 100px;
+    }
+    .sec9 {
+        padding-top: 30%;
+    }
 }
 
 
