@@ -1,5 +1,5 @@
 if(top!=self){
-    window.frameElement.style = '-webkit-transition: all .5s linear 0s; -moz-transition: all .5s linear 0s;-ms-transition: all .5s linear 0s;-o-transition: all .5s linear 0s;transition: all .5s linear 0s; height: 100px; width: 100%; position: fixed; bottom: 0; left:0; right:0; margin:auto;';
+    window.frameElement.style = '-webkit-transition: all .5s linear 0s; -moz-transition: all .5s linear 0s;-ms-transition: all .5s linear 0s;-o-transition: all .5s linear 0s;transition: all .5s linear 0s; height: 100px; width: 100%; position: relative; bottom: 0; left:0; right:0; margin:auto;';
 }
 
 
