@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+
+body {
+	margin: 0;
+	--color-text: #1c1b1b;
+	--color-bg: #efe6e1;
+	--color-link: #b07656;
+	--color-link-hover: #000;
+	--color-deco: #e4dbd6;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	font-family: paralucent, sans-serif;
+	font-family: quiroh, sans-serif;
+	font-family: mr-eaves-xl-sans, sans-serif;
+}
+
+[data-scroll] {
+	will-change: transform;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	counter-reset: figure; 
+}
+
+.item {
+	margin: 10px auto;
+	max-width: 100%;
+	position: relative;
+	will-change: transform;
+}
+
+.item__img-wrap {
+	--aspect-ratio: 1/1.5;
+/*	overflow: hidden;*/
+	width: 500px;
+	margin: 0 auto;
+	padding-bottom: calc(100% / (var(--aspect-ratio)));
+	max-width: calc(100% - 2rem);
+	will-change: transform;
+}
+
+
+
+.item__img {
+	--overflow: 40px;
+	height: calc(100% + (2 * var(--overflow)));
+	top: calc( -1 * var(--overflow));
+	width: 100%;
+	position: absolute;
+	background-image: var(--image);
+	background-size: cover;
+	background-position: 50% 0%;
+	will-change: transform;
+}
+
+
