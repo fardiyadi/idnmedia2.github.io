@@ -919,10 +919,10 @@ body {
 /* Responsive Layar desktop zoom in 120% dari layar 1366x768 */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .bg1 {
-        background-size: 1366px!important;
+        background-size: 1200px!important;
     }
     .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14 {
-        height: 768px;
+        height: 675px;
     }
 
 }
