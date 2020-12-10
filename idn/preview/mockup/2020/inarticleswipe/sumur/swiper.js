@@ -65,11 +65,13 @@ function onWndLoad() {
     
         if (e.touches) {
             initX = e.touches[0].clientX;
-            $('#swipeIcon').animate({'opacity':'0'},"slow");
+            $('#swipeIcon').animate({'display':'0'},"slow");
+            $('#swipeIcon').animate({'width':'0px'},"slow");
         }
         else {
             initX = e.pageX;
             $('#swipeIcon').animate({'opacity':'0'},"slow");
+            $('#swipeIcon').animate({'width':'0px'},"slow");
         }
      
        
@@ -87,10 +89,12 @@ function onWndLoad() {
         if (e.touches) {
             mouseX = e.touches[0].clientX;
              $('#swipeIcon').animate({'opacity':'0'},"slow");
+            $('#swipeIcon').animate({'width':'0px'},"slow");
         }
         else {
             mouseX = e.pageX;
             $('#swipeIcon').animate({'opacity':'0'},"slow");
+            $('#swipeIcon').animate({'width':'0px'},"slow");
         }
 
         transX += mouseX - initX;
