@@ -54,3 +54,50 @@
 
 
 
+/* anim swipe */
+
+/* Standard syntax */
+@keyframes swipe {
+
+
+    0% {
+        left: -60px;
+    }
+    20% {
+        left: -60px;
+    }
+    40% {
+        left: 60px;
+    }
+    60% {
+        left: 60px;
+    }
+    80% {
+        left: 60px;
+    }
+    100% {
+        left: -60px;
+    }
+
+
+
+}
+
+.guide-anim {
+    animation: swipe 2s infinite; /* IE 10+, Fx 29+ */
+    animation-timing-function: linear;
+
+}
+img.guide-anim {
+    position: absolute;
+    max-width: 50px;
+    z-index: 9;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+

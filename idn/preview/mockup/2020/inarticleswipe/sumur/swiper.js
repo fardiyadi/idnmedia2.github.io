@@ -65,9 +65,11 @@ function onWndLoad() {
     
         if (e.touches) {
             initX = e.touches[0].clientX;
+            $('#swipeIcon').animate({'opacity':'0'},"slow");
         }
         else {
             initX = e.pageX;
+            $('#swipeIcon').animate({'opacity':'0'},"slow");
         }
      
        
@@ -84,9 +86,11 @@ function onWndLoad() {
       
         if (e.touches) {
             mouseX = e.touches[0].clientX;
+             $('#swipeIcon').animate({'opacity':'0'},"slow");
         }
         else {
             mouseX = e.pageX;
+            $('#swipeIcon').animate({'opacity':'0'},"slow");
         }
 
         transX += mouseX - initX;
