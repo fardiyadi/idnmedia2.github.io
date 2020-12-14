@@ -1044,12 +1044,14 @@ img.swipeicon {
         background-repeat: no-repeat;
         background-position: top center;
         background-size: cover!important;
+        background-position: center;
     }
     .cover {
         background-image: url(../images/mobile/cover-mobile.png);
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
+        background-position: center;
     }
     .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14, .sec15, .sec16, .sec17, .sec18, .sec19, .sec20 {
         height: 100vh;
@@ -1095,14 +1097,32 @@ img.swipeicon {
         right: 20px;
         top: 120px;
     }
+    .sec7 .text-box2 {
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        top: 200px;
+    }
     .sec7 .text-box2 p {
         font-size: 10px;
+        text-align: center;
+    }
+    .sec7 img.swipeicon {
+        top: 300px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
     .sec8 p {
         font-size: 14px;
     }
     .sec10 .text-box {
         top: -200px;
+    }
+    .sec10 img.swipeicon {
+        bottom: 400px;
     }
     .sec12 .text-box {
         top: 150px;
@@ -1115,12 +1135,59 @@ img.swipeicon {
 }
 
 @media (max-width: 420px) and (max-height: 740px) {
-
+    .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14, .sec15, .sec16, .sec17, .sec18, .sec19, .sec20 {
+        height: 100vh;
+    }
+    .sec5 .image-box img {
+        max-width: 100%;
+        top: 50px;
+    }
+    .sec6 img.image1 {
+        top: 180px;
+        max-width: 300px;
+    }
+    .sec6 img.image2 {
+        max-width: 80px;
+        top: 220px;
+    }
+    .sec8 .text-box {
+        top: -300px;
+    }
+    .carousel-item img {
+        max-width: 300px;
+    }
+    .sec13 .image-box img {
+        top: 140px;
+    }
+    .sec15 .image-box img {
+        bottom: 200px;
+    }
+    .sec17 .image-box {
+        top: -50px;
+    }
 }
 
 /* galaxy note 9 */
 @media (max-width: 419px) and (max-height: 847px) {
-
+    .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14, .sec15, .sec16, .sec17, .sec18, .sec19, .sec20 {
+        height: 100vh;
+    }
+    .sec5 .image-box img {
+        max-width: 100%;
+        top: 50px;
+    }
+    .carousel-item img {
+        max-width: 350px;
+    }
+    .sec13 .image-box img {
+        top: 250px;
+    }
+    .sec15 .image-box img {
+        bottom: 200px;
+    }
+    .sec17 .image-box img {
+        top: 270px;
+    }
 }
 
 /* Iphone 6/7/8 */
@@ -1177,6 +1244,14 @@ img.swipeicon {
     img.swipeicon {
         margin-top: 20px;
     }
+    .sec6 img.image1 {
+        max-width: 220px;
+        top: 150px;
+    }
+    .sec6 img.image2 {
+        max-height: 72px;
+        top: 200px;
+    }
     .sec7 .text-box2 p {
         font-size: 12px!important;
     }
@@ -1190,6 +1265,9 @@ img.swipeicon {
     }
     .sec17 .image-box {
         top: -40px;
+    }
+    .sec17 .image-box img {
+        top: 0;
     }
 
 }
@@ -1208,6 +1286,23 @@ img.swipeicon {
     }
     .sec17 .image-box {
         top: -20px;
+    }
+    .sec6 img.image1 {
+        max-width: 170px;
+        top: 120px;
+    }
+    .sec6 img.image2 {
+        max-height: 70px;
+        top: 160px;
+    }
+    .sec17 .image-box img {
+        top: 0px;
+    }
+    .sec8 img.swipeicon {
+        bottom: 350px;
+    }
+    .carousel-item .desc {
+        height: 150px;
     }
 }
 
