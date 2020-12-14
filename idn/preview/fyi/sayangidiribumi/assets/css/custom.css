@@ -1102,6 +1102,9 @@ img.swipeicon {
     .sec5 .text-box {
         bottom: 100px;
     }
+    .sec5 .image-box img {
+        top: 50px;
+    }
     .sec6 img.image1 {
         max-width: 200px;
         left: -40px;
