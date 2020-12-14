@@ -1044,7 +1044,6 @@ img.swipeicon {
         background-repeat: no-repeat;
         background-position: top center;
         background-size: cover!important;
-        background-position: center;
     }
     .cover {
         background-image: url(../images/mobile/cover-mobile.png);
@@ -1190,13 +1189,12 @@ img.swipeicon {
     }
 }
 
+
+/* Note FE */
+
+
 /* Iphone 6/7/8 */
-@media (max-width: 376px) and (max-height: 668px) {
-    .bg1 {
-        background-image: url(../images/bg-mobile.png);
-        background-repeat: no-repeat;
-        background-position: top center;
-    }
+@media (max-width: 380px) and (max-height: 668px) {
     .sec4 .text-box {
         bottom: 120px;
     }
@@ -1228,6 +1226,12 @@ img.swipeicon {
     }
     .sec10 img.swipeicon {
         bottom: 400px;
+    }
+    .carousel-item img {
+        max-width: 300px;
+    }
+    .sec17 .image-box img {
+        top: 0;
     }
 
      
