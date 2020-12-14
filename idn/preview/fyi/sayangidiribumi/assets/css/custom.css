@@ -1,0 +1,1418 @@
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url("../fonts/Montserrat-Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url("../fonts/Montserrat-Bold.otf") format("opentype");
+}
+
+body {
+    background-color: #1d4a23  !important;
+}
+
+.no-padding {
+    padding: 0!important;
+}
+#cover {
+    
+}
+
+.bg1 {
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+/* parallax goyang ikutin cursor */
+/*
+.parallax {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.parallax-layer__1 {
+    background-image: url(../images/cover/1.png);
+    width: 120%;
+    height: 120%;
+    left: -10%;
+    top: -10%;
+}
+.parallax-layer__2 {
+  background-image: url(../images/cover/2.png);
+    width: 110%;
+    height: 110%;
+    left: -5%;
+    top: -5%;
+}
+.parallax-layer__3 {
+  background-image: url(../images/cover/3.png);
+    width: 110%;
+    height: 110%;
+    left: -5%;
+    top: -5%;
+}
+.parallax-layer__4 {
+  background-image: url(../images/cover/4.png);
+    width: 110%;
+    height: 110%;
+    left: -5%;
+    top: -5%;
+}
+.parallax-layer__5 {
+  background-image: url(../images/cover/5.png);
+    width: 110%;
+    height: 110%;
+    left: -5%;
+    top: -5%;
+}
+.parallax-layer__6 {
+  background-image: url(../images/cover/6.png);
+    width: 122%;
+    height: 122%;
+    left: -11%;
+    top: -10%;
+}
+.parallax-layer__7 {
+  background-image: url(../images/cover/7.png);
+    width: 110%;
+    height: 110%;
+    left: -10%;
+    top: -5%;
+}
+.parallax-layer__8 {
+    background-image: url(../images/cover/8.png);
+    width: 110%;
+    height: 100%;
+    left: -5%;
+    bottom: -50%
+    
+}
+.parallax-layer__9 {
+    background-image: url(../images/cover/9.png);
+    width: 110%;
+    height: 110%;
+    left: -5%;
+    bottom: -5%
+}
+.parallax-layer__10 {
+    background-image: url(../images/cover/10.png);
+    width: 110%;
+    height: 110%;
+    left: -5%;
+    bottom: -5%
+}
+*/
+
+
+/* parallax goyang berlawanan cursor */
+/*
+#paraContainer {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #ededed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+.para1 {
+    display: block;
+    position: absolute;
+    background-image: url(../images/cover/cover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 100vh;
+    width: 100%;
+}
+.para2 {
+    display: block;
+    position: absolute;
+    background-image: url(../images/cover/title1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+.para3 {
+    display: block;
+    position: absolute;
+    background-image: url(../images/cover/title2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+.para4 {
+    display: block;
+    position: absolute;
+    background-image: url(../images/cover/title3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 100vh;
+    width: 100%;
+}
+.para5 {
+    display: block;
+    position: absolute;
+    background-image: url(../images/cover/5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+.para6 {
+    display: block;
+    position: absolute;
+    background-image: url(../images/cover/6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+.para7 {
+    display: block;
+    position: absolute;
+    background-image: url(../images/cover/7.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+*/
+
+
+
+/* ===== General ==== */
+.sec3 h3, .sec4 h3, .sec5 h3, .sec6 h3, .sec9 h3, .sec14 h3 , .sec16 h3, .sec17 h3 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+.sec2 p, .sec3 p, .sec4 p, .sec5 p, .sec6 p, .sec7 p, .sec10 p, .sec12 p, .sec14 p, .sec16 p, .sec17 p, .sec18 p {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 22px;
+    line-height: 2.6rem;
+}
+.tengah {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+img.swipeicon {
+    max-width: 60px;
+    margin-top: 70PX;
+}
+
+/* ===== Section 1 ==== */
+
+.sec1 .text-box {
+    max-width: 60%;
+    text-align: center;
+    color: white;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.sec1 h2 {
+    font-family: 'Montserrat-Medium', sans-serif;
+    width: 100%;
+    font-size: 45px;
+}
+
+
+/* ===== Section 2 ==== */
+
+.sec2 .text-box {
+    text-align: center;
+    color: white;
+    max-width: 77%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+/* ===== Section 3 ==== */
+
+.sec3 {
+    padding-top: 14%;
+    text-align: center;
+}
+.sec3 .text-box {
+    color: white;
+    max-width: 60%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+/* ===== Section 4 ==== */
+
+.sec4 {
+    text-align: center;
+}
+.sec4 .text-box {
+    color: white;
+    max-width: 66%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 5px;
+}
+
+
+/* ===== Section 5 ==== */
+
+.sec5 {
+    text-align: center;
+}
+.sec5 .image-box {
+    position: relative;
+    text-align: center;
+}
+.sec5 .image-box img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 82%;
+}
+.sec5 .text-box {
+    color: #2b7339;
+    max-width: 70%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+}
+
+
+/* ===== Section 6 ==== */
+
+.sec6 img.image1 {
+    max-width: 600px;
+    position: absolute;
+    left: -80px;
+    top: 100px;
+}
+.sec6 img.image2 {
+    max-width: 250px;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+}
+.sec6 .text-box {
+    text-align: center;
+    color: #2b7339;
+    max-width: 60%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 30px;
+}
+
+/* ===== Section 7 ==== */
+
+.sec7 {
+    text-align: center;
+    padding-top: 10%;
+}
+.sec7 .text-box {
+    color: #2b7339;
+    max-width: 60%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.sec7 .text-box2 {
+    color: #fff;
+    max-width: 100%;
+    position: absolute;
+    float: right;
+    right: 30px;
+    text-align: right!important;
+}
+.sec7 .text-box2 p {
+    font-size: 16px!important;
+    line-height: 1.6rem!important;
+}
+
+
+/* ===== Section 8 ==== */
+
+.sec8 .text-box {
+    width: 750px;
+    text-align: center;
+    color: white;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -100px;
+}
+.sec8 p {
+    font-family: 'Montserrat-Medium', sans-serif;
+    width: 90%;
+    font-size: 26px;
+    z-index: -1;
+    background-color: #2b7339;
+    border-radius: 30px;
+    padding: 20px 10px;
+    box-shadow: 5px 8px 8px #000;
+}
+.sec8 img.swipeicon {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+/* ===== Section 9 ==== */
+
+.sec9 {
+    text-align: center;
+}
+.sec9 .text-box {
+    color: #fff;
+    max-width: 60%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.sec9  .image-box img {
+    max-width: 550px;
+}
+
+
+/* ===== Section 10 ==== */
+
+.sec10 {
+    text-align: center;
+}
+.sec10 .text-box {
+    color: #fff;
+    max-width: 60%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.sec10 img.swipeicon {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+/* ===== Section 11 ==== */
+
+.sec11 {
+    padding-top: 5%;
+}
+
+
+/* ===== Section 12 ==== */
+
+.sec12 .text-box {
+    text-align: center;
+    color: #fff;
+    max-width: 60%;
+}
+
+
+/* ===== Section 13 ==== */
+
+
+.sec13 .image-box {
+    position: relative;
+    text-align: center;
+}
+.sec13 .image-box img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 600px;
+}
+.sec13 img.swipeicon {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+/* ===== Section 14 ==== */
+
+.sec14 {
+    padding-top: 15%
+}
+.sec14 .text-box {
+    text-align: center;
+    color: #fff;
+    max-width: 70%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+/* ===== Section 15 ==== */
+
+.sec15 .image-box {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+}
+.sec15 .image-box img {
+    position: absolute;
+    max-width: 600px;
+    left: 100px;
+    bottom: 100px;
+}
+
+
+/* ===== Section 16 ==== */
+
+.sec16 {
+    padding-top: 5%;
+}
+.sec16 .text-box {
+    text-align: center;
+    color: #fff;
+    max-width: 65%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+/* ===== Section 17 ==== */
+
+.sec17 .image-box {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -300px;
+}
+.sec17 .image-box img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.sec17 .text-box {
+    text-align: center;
+    color: #fff;
+    max-width: 65%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+/* ===== Section 18 ==== */
+
+.sec18 .text-box {
+    text-align: center;
+    color: #fff;
+    max-width: 65%;
+}
+
+
+/* ===== Section 18 ==== */
+
+.sec19 {
+    text-align: center;
+    padding-top: 5%;
+}
+.sec19 img {
+    max-width: 550px;
+}
+
+
+
+
+/* ========== client class ========== */
+
+/* ========== welcome page ========== */
+
+#mobile-only {
+    background-image: url(../images/mobile/cover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+
+#slide1 {
+    max-width: 1000px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    z-index: 99;
+}
+
+.carousel-item a {
+    color: #000;
+}
+.carousel-item a:hover {
+    color: #000;
+    text-decoration: none;
+}
+.carousel-item img {
+    max-width: 500px;
+}
+.carousel-item .desc {
+    max-width: 90%;
+    margin: auto;
+    height: 100px;
+    margin-top: 30px;
+}
+#slide1 .carousel-item .desc h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+#slide1 .carousel-item .desc p {
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    font-size: 22px;
+}
+#slide2 .carousel-item .desc h3 {
+    font-family: 'Platform-Medium', sans-serif;
+    color: #000;
+    font-size: 26px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#slide2 .carousel-item .desc p {
+    font-family: 'Platform-Medium', sans-serif;
+    color: #000;
+    font-size: 22px;
+}
+#slide3 .carousel-item .desc {
+    max-width: 42%;
+}
+#slide3 .carousel-item .desc h3 {
+    font-family: 'Platform-Medium', sans-serif;
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#slide3 .carousel-item .desc p {
+    font-family: 'Platform-Regular', sans-serif;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.carousel-control-next, .carousel-control-prev {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin: auto;
+    list-style: none;
+}
+.carousel-indicators li {
+    opacity: 1!important;
+    margin: 0 10px!important;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: transparent!important;
+    border: 1px solid #D2E603;
+    border-radius: 50%;
+}
+.carousel-indicators .active, .sect10 .carousel-indicators .active {
+    margin: 0 10px!important;
+    background-color: #D2E603!important;
+}
+.sect10 .carousel-indicators li {
+    background-color: #0c0b3c!important;
+}
+.carousel-inner {
+    padding-top: 50px;
+}
+.prevbtn {
+    background-image: url(../images/panah-kiri.png);
+    width: 50px;
+    height: 52px;
+    display: block;
+    background-size: cover;
+}
+.prevbtn:active {
+    background-image: url(../images/panah-kiri.png)!important;
+}
+.prevbtn:hover {
+    background-image: url(../images/panah-kiri-hover.png);
+}
+.nextbtn {
+    background-image: url(../images/panah-kanan.png);
+    width: 50px;
+    height: 52px;
+    display: block;
+    background-size: cover;
+}
+.nextbtn:active {
+    background-image: url(../images/panah-kanan.png)!important;
+}
+.nextbtn:hover {
+    background-image: url(../images/panah-kanan-hover.png);
+}
+
+
+
+#slide2 .prevbtn {
+    background-image: url(../images/panah-kiri-2.png);
+    width: 50px;
+    height: 52px;
+    display: block;
+    background-size: cover;
+}
+#slide2 .prevbtn:active {
+    background-image: url(../images/panah-kiri-2.png)!important;
+}
+#slide2 .prevbtn:hover {
+    background-image: url(../images/panah-kiri-2-hover.png);
+}
+#slide2 .nextbtn {
+    background-image: url(../images/panah-kanan-2.png);
+    width: 50px;
+    height: 52px;
+    display: block;
+    background-size: cover;
+}
+#slide2 .nextbtn:active {
+    background-image: url(../images/panah-kanan-2.png)!important;
+}
+#slide2 .nextbtn:hover {
+    background-image: url(../images/panah-kanan-2-hover.png);
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+
+.desktop_{
+    display: block;
+}
+.mobile_ {
+    display: none
+}
+
+
+
+
+/* ================== responsive ==================== */
+
+@media 
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1600px), 
+    only screen and (min-resolution: 192dpi) and (min-width: 1600px) {
+        
+        .bg1 {
+        background-size: cover!important;
+        }
+}
+
+
+/* Responsive Layar desktop zoom out 80% dari layar 1366x768 */
+@media only screen and (min-width: 1600px) {
+    .bg1 {
+        background-size: cover!important;
+    }
+    .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14, .sec15, .sec16, .sec17, .sec18, .sec19, .sec20 {
+        height: 948px;
+    }
+    .sec3 h3, .sec4 h3, .sec5 h3, .sec6 h3, .sec9 h3, .sec14 h3, .sec16 h3, .sec17 h3 {
+        font-size: 38px;
+    }
+    .sec2 p, .sec3 p, .sec4 p, .sec5 p, .sec6 p, .sec7 p, .sec10 p, .sec12 p, .sec14 p, .sec16 p, .sec17 p, .sec18 p {
+        font-size: 28px;
+        line-height: 3rem;
+    }
+    .sec1 h2 {
+        font-size: 60px;
+    }
+    .sec6 img.image1 {
+        max-width: 700px;
+        top: 140px;
+    }
+    .sec6 img.image2 {
+        max-width: 300px;
+        top: 150px;
+    }
+    .sec8 .text-box {
+        width: 70%;
+        top: -200px;
+    }
+    .sec8 p {
+        width: 80%;
+        font-size: 30px;
+        padding: 40px 80px;
+    }
+    .sec9 .image-box img {
+        max-width: 60%;
+    }
+    #slide1 {
+        max-width: 1300px;
+    }
+    .carousel-item img {
+        max-width: 850px;
+    }
+    .carousel-item .desc {
+        max-width: 70%;
+        height: 150px;
+    }
+    #slide1 .carousel-item .desc p {
+        font-size: 28px;
+    }
+    .sec13 .image-box img {
+        max-width: 80%;
+    }
+    .sec15 .image-box img {
+        max-width: 800px;
+    }
+    .sec19 img {
+        max-width: 700px;
+    }
+    
+}
+
+/* Responsive Layar desktop zoom out 90% dari layar 1366x768 */
+@media only screen and (min-width: 1500px) and (max-width: 1599px) {
+    .bg1 {
+        background-size: cover!important;
+    }
+    .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14, .sec15, .sec16, .sec17, .sec18, .sec19, .sec20 {
+        height: 844px;
+    }
+    .sec2 p, .sec3 p, .sec4 p, .sec5 p, .sec6 p, .sec7 p, .sec10 p, .sec12 p, .sec14 p, .sec16 p, .sec17 p, .sec18 p {
+        font-size: 25px;
+    }
+    .sec5 .image-box img {
+        max-width: 80%;
+        top: 50px;
+    }
+    .sec6 img.image1 {
+        max-width: 650px;
+        top: 130px;
+    }
+    .sec6 img.image2 {
+        max-width: 300px;
+    }
+    .sec9 .image-box img {
+        max-width: 650px;
+    }
+    #slide1 {
+        max-height: 1100px;
+    }
+    .carousel-item img {
+        max-width: 640px;
+    }
+    .carousel-item .desc {
+        max-width: 80%;
+        height: 122px;
+    }
+    #slide1 .carousel-item .desc p {
+        font-size: 26px;
+    }
+    .sec13 .image-box img {
+        top: 100px;
+    }
+    .sec15 .image-box img {
+        bottom: 100px;
+        max-height: 750px;
+    }
+    .sec16 .text-box {
+        top: 50px;
+    }
+    .sec19 img {
+        max-width: 650px;
+    }
+}
+
+
+@media 
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1400px), 
+    only screen and (min-resolution: 192dpi) and (min-width: 1400px) {
+        .bg1 {
+            background-size: cover;
+            background-image: url(../images/bg.png);
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+        .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14, .sec15, .sec16, .sec17, .sec18, .sec19, .sec20 {
+            height: 830px;
+        }
+        .sec6 img.image1, .sec6 img.image2 {
+            top: 130px;
+        }
+        .sec13 .image-box img {
+            top: 100px;
+        }
+        .sec15 .image-box img {
+            max-width: 750px;
+            bottom: 120px;
+            left: 40px;
+        }
+}
+
+@media only screen (min-width: 1367px) and (max-width: 1499px) {
+
+}
+
+/* Responsive Layar desktop 100% dari layar 1366x768 */
+@media only screen and (min-width: 1200px) and (max-width: 1366px) {
+    .bg1 {
+        background-size: 1366px!important;
+    }
+    .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14, .sec15, .sec16, .sec17, .sec18, .sec19, .sec20 {
+        height: 768px;
+    }
+}
+
+/* Responsive Layar desktop zoom in 120% dari layar 1366x768 */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .bg1 {
+        background-size: cover;
+    }
+    .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14, .sec15, .sec16, .sec17, .sec18, .sec19, .sec20 {
+        height: 675px;
+    }
+    .sec3 h3, .sec4 h3, .sec5 h3, .sec6 h3, .sec9 h3, .sec14 h3, .sec16 h3, .sec17 h3 {
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+    .sec2 p, .sec3 p, .sec4 p, .sec5 p, .sec6 p, .sec7 p, .sec10 p, .sec12 p, .sec14 p, .sec16 p, .sec17 p, .sec18 p {
+        font-size: 17px;
+        line-height: 2rem;
+    }
+    .sec1 h2 {
+        font-size: 25px;
+    }
+    .sec5 .image-box img {
+        max-width: 77%;
+        top: 50px;
+    }
+    .sec5 .text-box {
+        max-height: 80%;
+    }
+    .sec6 img.image1 {
+        max-width: 500px;
+    }
+    .sec6 img.image2 {
+        max-width: 200px;
+    }
+    .sec8 .text-box {
+        top: -200px;
+    }
+    #slide1 {
+        max-width: 900px;
+    }
+    #slide1 .carousel-item .desc p {
+        font-size: 17px;
+    }
+    .carousel-item .desc {
+        max-width: 70%;
+    }
+    .sec13 .image-box img {
+        max-width: 450px;
+        top: 100px;
+    }
+    .sec15 .image-box img {
+        bottom: 100px;
+        left: 30px;
+    }
+    .sec19 img {
+        max-width: 500px;
+    }
+
+}
+
+/* buat yang jail ngecilin browse */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    .bg1 {
+        background-size: cover;
+    }
+    .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14, .sec15, .sec16, .sec17, .sec18, .sec19, .sec20 {
+        height: 768px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    [data-aos-delay] {
+        transition-delay: 0s !important;
+    }
+    
+    .break-sect {
+        display: none;
+    }
+    .desktop_ {
+        display: none!important;
+    }
+    .mobile_ {
+        display: block;
+    }
+    .sec11 .text_box p {
+        margin-bottom: 0;
+    }
+    .sec12 h3 {
+        margin-bottom: 0;
+    }
+    #desktop-only {
+        display: none;
+    }
+    #mobile-only {
+        display: block;
+    }
+    
+}
+
+/* mobile general */
+@media only screen and (max-width: 481px) {
+    .bg1 {
+        background-image: url(../images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover!important;
+    }
+    .cover {
+        background-image: url(../images/mobile/cover-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14, .sec15, .sec16, .sec17, .sec18, .sec19, .sec20 {
+        height: 100vh;
+    }
+    .sec3 h3, .sec4 h3, .sec5 h3, .sec6 h3, .sec9 h3, .sec14 h3, .sec16 h3, .sec17 h3 {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .sec2 p, .sec3 p, .sec4 p, .sec5 p, .sec6 p, .sec7 p, .sec10 p, .sec12 p, .sec14 p, .sec16 p, .sec17 p, .sec18 p {
+        font-size: 16px;
+        line-height: 2rem;
+    }
+    .sec1 .text-box, .sec2 .text-box, .sec3 .text-box, .sec4 .text-box, .sec5 .text-box, .sec6 .text-box, .sec7 .text-box, .sec8 .text-box, .sec9 .text-box, .sec10 .text-box, .sec12 .text-box, .sec14 .text-box, .sec16 .text-box, .sec17 .text-box, .sec18 .text-box {
+        max-width: 90%;
+    }
+    .sec1 h2 {
+        font-size: 20px;
+    }
+    .sec9 .image-box img, .sec13 .image-box img, .sec19 img {
+        max-width: 300px;
+    }
+    #slide1 .carousel-item .desc p {
+        font-size: 15px;
+    }
+    .carousel-item .desc {
+        margin-top: 0px;
+        height: 120px;
+    }
+    .sec15 .image-box img {
+        max-width: 300px;
+        left: 0;
+    }
+    .sec5 .text-box {
+        bottom: 100px;
+    }
+    .sec6 img.image1 {
+        max-width: 200px;
+        left: -40px;
+        top: 140px;
+    }
+    .sec6 img.image2 {
+        max-width: 100px;
+        right: 20px;
+        top: 120px;
+    }
+    .sec7 .text-box2 p {
+        font-size: 10px;
+    }
+    .sec8 p {
+        font-size: 14px;
+    }
+    .sec10 .text-box {
+        top: -200px;
+    }
+    .sec12 .text-box {
+        top: 150px;
+    }
+    .nextbtn, .prevbtn {
+        width: 32px;
+        height: 33px;
+    }
+ 
+}
+
+@media (max-width: 420px) and (max-height: 740px) {
+
+}
+
+/* galaxy note 9 */
+@media (max-width: 419px) and (max-height: 847px) {
+
+}
+
+/* Iphone 6/7/8 */
+@media (max-width: 376px) and (max-height: 668px) {
+    .bg1 {
+        background-image: url(../images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    .sec4 .text-box {
+        bottom: 120px;
+    }
+    .sec5 .image-box img {
+        max-width: 100%;
+        top: 50px;
+    }
+    .sec7 .text-box2 {
+        float: none!important;
+        top: 220px;
+        text-align: center!important;
+        right: 0;
+    }
+    .sec7 .text-box2 p {
+        font-size: 12px;
+    }
+    .sec7 img.swipeicon {
+        position: absolute;
+        top: 330px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .sec8 .text-box {
+        top: -220px;
+    }
+    .sec8 img.swipeicon {
+        bottom: 400px;
+    }
+    .sec10 img.swipeicon {
+        bottom: 400px;
+    }
+
+     
+}
+@media (max-width: 361px) and (max-height: 741px) {
+    
+}
+
+/* HP ukuran layar 5 inch */
+@media only screen and (max-width: 361px) { 
+    .carousel-item img {
+        max-width: 250px;
+    }
+    img.swipeicon {
+        margin-top: 20px;
+    }
+    .sec7 .text-box2 p {
+        font-size: 12px!important;
+    }
+    .sec7 .text-box2 {
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    .sec13 .image-box img {
+        top: 100px;
+    }
+    .sec17 .image-box {
+        top: -40px;
+    }
+
+}
+
+/* Iphone 5 */
+@media (max-width: 321px) {
+    .sec2 p, .sec3 p, .sec4 p, .sec5 p, .sec6 p, .sec7 p, .sec10 p, .sec12 p, .sec14 p, .sec16 p, .sec17 p, .sec18 p {
+        font-size: 13px;
+        line-height: 1.6rem;
+    }
+    .sec4 .text-box {
+        bottom: 100px;
+    }
+    .sec9 .image-box img, .sec13 .image-box img, .sec15 .image-box img, .sec19 img {
+        max-width: 250px;
+    }
+    .sec17 .image-box {
+        top: -20px;
+    }
+}
+
+
+.loader {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99999;
+    background: #1d4b24;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s; 
+}
+.loader._show {
+    visibility: visible;
+    opacity: 1;
+}
+.loader--main {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; 
+}
+.spinner {
+    margin: 100px auto;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    font-size: 10px;
+}
+.spinner > div {
+    background-color: #fff;
+    height: 100%;
+    width: 10px;
+    display: inline-block;
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+.sk-chase {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  animation: sk-chase 2.5s infinite linear both;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.sk-chase-dot {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; 
+  animation: sk-chase-dot 2.0s infinite ease-in-out both; 
+}
+
+.sk-chase-dot:before {
+  content: '';
+  display: block;
+  width: 25%;
+  height: 25%;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
+}
+
+.sk-chase-dot:nth-child(1) { animation-delay: -1.1s; }
+.sk-chase-dot:nth-child(2) { animation-delay: -1.0s; }
+.sk-chase-dot:nth-child(3) { animation-delay: -0.9s; }
+.sk-chase-dot:nth-child(4) { animation-delay: -0.8s; }
+.sk-chase-dot:nth-child(5) { animation-delay: -0.7s; }
+.sk-chase-dot:nth-child(6) { animation-delay: -0.6s; }
+.sk-chase-dot:nth-child(1):before { animation-delay: -1.1s; }
+.sk-chase-dot:nth-child(2):before { animation-delay: -1.0s; }
+.sk-chase-dot:nth-child(3):before { animation-delay: -0.9s; }
+.sk-chase-dot:nth-child(4):before { animation-delay: -0.8s; }
+.sk-chase-dot:nth-child(5):before { animation-delay: -0.7s; }
+.sk-chase-dot:nth-child(6):before { animation-delay: -0.6s; }
+
+@keyframes sk-chase {
+  100% { transform: rotate(360deg); } 
+}
+
+@keyframes sk-chase-dot {
+  80%, 100% { transform: rotate(360deg); } 
+}
+
+@keyframes sk-chase-dot-before {
+  50% {
+    transform: scale(0.4); 
+  } 100%, 0% {
+    transform: scale(1.0); 
+  } 
+}
+
+
+
+.home .top--section {
+  height: 100vh;
+  background: #CAE8F2; }
+  
+  .home .top--section--base {
+    height: 715px;
+    width: 100%;
+    background: #CAE8F2; }
+    @media (max-width: 1199px) {
+      .home .top--section--base {
+        height: 500px; } }
+    @media (max-width: 992px) {
+      .home .top--section--base {
+        height: 500px; } }
+    @media (max-width: 768px) {
+      .home .top--section--base {
+        height: 420px; } }
+    @media (max-width: 480px) {
+      .home .top--section--base {
+        height: 200px; } }
+  .home .top--section_wraper {
+    position: relative;
+    width: 100%;
+    background: #CAE8F2; }
+  .home .top--section_background {
+    position: relative;
+    left: 0; }
+    .home .top--section_background img {
+      width: 100%; }
+    .home .top--section_background-inside {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0; }
+      .home .top--section_background-inside img {
+        width: 100%; }
+  .home .top--section ._layer--full {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;}
+    @media (max-width: 480px) {
+      .home .top--section ._layer--full {
+        bottom: auto;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+           -moz-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end; }
+        .home .top--section ._layer--full._sky {
+          -webkit-box-align: start;
+             -moz-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start; } }
+  .home .top--section .layer--title {
+    text-align: center;
+    margin-top: 0%; }
+    .home .top--section .layer--title img {
+      width: 90%;
+      margin: 0 auto; }
+      @media (max-width: 480px) {
+        .home .top--section .layer--title img {
+          width: 140%;
+          margin-left: -20%; } }
+  .home .top--section .layer--normal {
+    margin-top: 0; }
