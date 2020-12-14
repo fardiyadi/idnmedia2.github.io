@@ -1034,6 +1034,22 @@ img.swipeicon {
     #mobile-only {
         display: block;
     }
+        .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14, .sec15, .sec16, .sec17, .sec18, .sec19, .sec20 {
+        height: 100vh;
+    }
+    .bg1 {
+        background-image: url(../images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover!important;
+    }
+    .cover {
+        background-image: url(../images/mobile/cover-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+    }
     
 }
 
@@ -1133,7 +1149,7 @@ img.swipeicon {
  
 }
 
-@media (max-width: 421px) and (max-height: 748px) {
+@media (max-width: 419) and (max-height: 721px) {
     .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14, .sec15, .sec16, .sec17, .sec18, .sec19, .sec20 {
         height: 100vh;
     }
