@@ -14,9 +14,49 @@ body {
 .no-padding {
     padding: 0!important;
 }
-#cover {
-    
+.cover1 {
+    background-image: url(../images/cover/1.png);
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh
 }
+.cover2 {
+    background-image: url(../images/cover/2.png);
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh
+}
+.cover3 {
+    background-image: url(../images/cover/3.png);
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh
+}
+.cover4 {
+    background-image: url(../images/cover/4.png);
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh
+}
+.cover5 {
+    background-image: url(../images/cover/5.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh
+}
+.cover6 {
+    background-image: url(../images/cover/6.png);
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh
+}
+.cover7 {
+    background-image: url(../images/cover/7.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh
+}
+
 
 .bg1 {
     background-image: url(../images/bg.png);
@@ -226,6 +266,7 @@ body {
 img.swipeicon {
     max-width: 60px;
     margin-top: 50PX;
+    visibility: hidden;
 }
 img.cover-swipe {
     position: absolute;
@@ -1507,64 +1548,78 @@ img.cover-swipe {
 
 
 .home .top--section {
-  height: 100vh;
-  background: #CAE8F2; }
-  
-  .home .top--section--base {
-    height: 715px;
-    width: 100%;
-    background: #CAE8F2; }
-  .home .top--section_wraper {
-    position: relative;
-    width: 100%;
-    background: #CAE8F2; }
-  .home .top--section_background {
-    position: relative;
-    left: 0; }
-    .home .top--section_background img {
-      width: 100%; }
-    .home .top--section_background-inside {
-      position: absolute;
-      width: 100%;
-      left: 0;
-      top: 0; }
-      .home .top--section_background-inside img {
-        width: 100%; }
-  .home .top--section ._layer--full {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;}
-    @media (max-width: 480px) {
-      .home .top--section ._layer--full {
-        bottom: auto;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: end;
-           -moz-box-align: end;
-            -ms-flex-align: end;
-                align-items: flex-end; }
-        .home .top--section ._layer--full._sky {
-          -webkit-box-align: start;
-             -moz-box-align: start;
-              -ms-flex-align: start;
-                  align-items: flex-start; } }
-  .home .top--section .layer--title {
-    text-align: center;
-    margin-top: 0%; }
-    .home .top--section .layer--title img {
-      width: 90%;
-      margin: 0 auto; }
-      @media (max-width: 480px) {
-        .home .top--section .layer--title img {
-          width: 140%;
-          margin-left: -20%; } }
-  .home .top--section .layer--normal {
-    margin-top: 0; }
-
+	height: 100vh!important;
+	background: #CAE8F2;
+}
+.home .top--section--base {
+	height: 100vh;
+	width: 100%;
+	background: #CAE8F2;
+}
+.home .top--section_wraper {
+	position: relative;
+	width: 100%;
+	background: #1d4a23;
+}
+.home .top--section_background {
+	position: relative;
+	left: 0;
+}
+.home .top--section_background img {
+	width: 100%;
+}
+.home .top--section_background-inside {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+.home .top--section_background-inside img {
+	width: 100%;
+}
+.home .top--section ._layer--full {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+@media (max-width: 480px) {
+	.home .top--section ._layer--full {
+		bottom: auto;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: end;
+		-moz-box-align: end;
+		-ms-flex-align: end;
+		align-items: flex-end;
+	}
+	.home .top--section ._layer--full._sky {
+		-webkit-box-align: start;
+		-moz-box-align: start;
+		-ms-flex-align: start;
+		align-items: flex-start;
+	}
+}
+.home .top--section .layer--title {
+	text-align: center;
+	margin-top: 0%;
+}
+.home .top--section .layer--title img {
+	width: 90%;
+	margin: 0 auto;
+}
+@media (max-width: 480px) {
+	.home .top--section .layer--title img {
+		width: 140%;
+		margin-left: -20%;
+	}
+}
+.home .top--section .layer--normal {
+	margin-top: 0;
+}
 
 .bounce-5 {
         animation-name: bounce-5;
@@ -1579,4 +1634,3 @@ img.cover-swipe {
         64%  { transform: scale(1,1)    translateY(0); }
         100% { transform: scale(1,1)    translateY(0); }
     }
-
