@@ -782,6 +782,11 @@ img.swipeicon {
         .bg1 {
         background-size: cover!important;
         }
+        
+        .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14, .sec15, .sec16, .sec17, .sec18, .sec19, .sec20 {
+            height: 1160px!important;
+        }
+
 }
 
 
@@ -902,6 +907,19 @@ img.swipeicon {
 }
 
 
+/* Responsive untuk MacBook Air */
+@media only screen and (min-width: 1367px) and (max-width: 1499px) {
+     .bg1 {
+        background-size: cover!important;
+    }
+
+    .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14, .sec15, .sec16, .sec17, .sec18, .sec19, .sec20 {
+        height: 800px!important;
+    }
+
+}
+
+/* Responsive untuk MacBook Pro */
 @media 
     only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1400px), 
     only screen and (min-resolution: 192dpi) and (min-width: 1400px) {
@@ -927,9 +945,7 @@ img.swipeicon {
         }
 }
 
-@media only screen (min-width: 1367px) and (max-width: 1499px) {
 
-}
 
 /* Responsive Layar desktop 100% dari layar 1366x768 */
 @media only screen and (min-width: 1200px) and (max-width: 1366px) {
@@ -1487,18 +1503,6 @@ img.swipeicon {
     height: 715px;
     width: 100%;
     background: #CAE8F2; }
-    @media (max-width: 1199px) {
-      .home .top--section--base {
-        height: 500px; } }
-    @media (max-width: 992px) {
-      .home .top--section--base {
-        height: 500px; } }
-    @media (max-width: 768px) {
-      .home .top--section--base {
-        height: 420px; } }
-    @media (max-width: 480px) {
-      .home .top--section--base {
-        height: 200px; } }
   .home .top--section_wraper {
     position: relative;
     width: 100%;
