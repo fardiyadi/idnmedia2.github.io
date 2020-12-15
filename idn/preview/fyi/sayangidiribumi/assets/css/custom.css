@@ -225,7 +225,7 @@ body {
 }
 img.swipeicon {
     max-width: 60px;
-    margin-top: 70PX;
+    margin-top: 50PX;
 }
 
 /* ===== Section 1 ==== */
@@ -938,6 +938,9 @@ img.swipeicon {
     }
     .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14, .sec15, .sec16, .sec17, .sec18, .sec19, .sec20 {
         height: 768px;
+    }
+    .sec13 .image-box img {
+        top: 50px;
     }
 }
 
