@@ -1120,6 +1120,7 @@ img.cover-swipe {
         background-size: cover;
         height: 100vh;
         background-position: center;
+        position: relative;
     }
     
 }
@@ -1138,6 +1139,17 @@ img.cover-swipe {
         background-size: cover;
         height: 100vh;
         background-position: center;
+        position: relative;
+    }
+    img.cover-swipe {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 70px;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
     }
     .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .sec7, .sec8, .sec9, .sec10, .sec11, .sec12, .sec13, .sec14, .sec15, .sec16, .sec17, .sec18, .sec19, .sec20 {
         height: 105vh;
