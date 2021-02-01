@@ -14,39 +14,162 @@
 
         <!-- Custom styles  -->
         <link href="../assets/css/main.css" rel="stylesheet">
+        <link href="../assets/css/adpreview.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
+    
+    <style>
+        #leaderboard_expand {
+            width: 300px;
+            height: 94px;
+            overflow: hidden;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: relative;
+            display: block;
+            text-align: center;
+        }
+        #leaderboard_expand img {
+            max-width: 100%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #leaderboard_expand .leaderboard_small, .leaderboard_small img { 
+            width:300px; 
+            height:94px; 
+        }
+        #leaderboard_expand .leaderboard_big { 
+            width:300px; 
+            height:375px; 
+            display: none;
+        }
+        .leaderboard_big img {
+            width:300px; 
+            height:375px; 
+        }
+        .close_big {
+            position: absolute;
+            display: block;
+            z-index: 9;
+        }
+        .close_big.kanan {
+            top: 0;
+            right: 0;
+        }
+        .close_big.kiri {
+            top: 0;
+            left: 0;
+        }
+        .close_big.bawah {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background-color: #f10303;
+        }
+        .close_big img {
+            height: 16px!important;
+            width: auto!important;
+            position: relative;
+            top: -7px;
+        }
+    </style>
+     
     <body>
         <section id="bg-image" class="" style="padding-top: 50px;">
             <div id="page-content-wrapper">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 text-center mobile-ss animated fadeIn delay-1s">
-                            <img src="screenshots/leaderboard-expand.gif" class="img-fluid">
+                        
+                        <!-- AdPreview -->
+                    
+                        <div class="col-md-7 text-center animated fadeIn delay-1s">
+                            <div id="capthis">
+                                <div id="leadexp">
+                                    <div class="takethis adpreview_mobile_box">
+                                        <div class="web_box">
+                                            <img src="images/leaderboardexpand-site1.jpg" class="site1">
+                                            <img src="images/leaderboardexpand-site2.jpg" class="site2">
+                                        </div>
+                                        <img class="mobile_frame" src="../assets/images/mobileframe.png">
+                                        <div class="banner_ad">
+                                            <div id="leaderboard_expand">
+                                            <div class="leaderboard_small">
+                                               <img id="displayad" src="images/leaderboardexpand-320x100.jpg" alt="">
+                                            </div>
+
+                                            <div class="leaderboard_big">
+                                                <img id="displayad2" src="images/leaderboardexpand-320x400.jpg" alt="">
+                                                <div class="close_big kanan">
+                                                    <img src="../assets/images/close.gif" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 spec-des animated fadeIn delay-1sets">
-                            <h1>Leaderboard Expand</h1>
-                            <div class="pad20">
-                                <h3>Pricing</h3>
-                                <ul class="font_bold">
-                                    <li>CPD : <b>IDR 110.000.000</b></li>
-                                </ul>
-                                <h3>Small Banner</h3>
-                                <ul>
-                                    <li>Width x Height : 320 x 100 pixel</li>
-                                    <li>Banner Format : JPG, PNG, or GIF</li>
-                                    <li>Max Size : 100 KB</li>
-                                </ul>
-                                <h3>Expand Banner</h3>
-                                <ul>
-                                    <li>Width x Height : 320 x 400 pixel</li>
-                                    <li>Banner Format : JPG, PNG, or GIF</li>
-                                    <li>Max Size : 150 KB</li>
-                                </ul>
+                        
+                        <div class="col-md-5 animated fadeIn delay-1sets">
+                            <div class="spec-des">
+                                <h1>Leaderboard Expand</h1>
+                                <div class="pad20">
+                                    <h3>Pricing</h3>
+                                    <ul class="font_bold">
+                                        <li>CPD : <b>IDR 130.000.000</b></li>
+                                    </ul>
+                                    <h3>Small Banner</h3>
+                                    <ul>
+                                        <li>Width x Height : 320 x 100 pixel</li>
+                                        <li>Banner Format : JPG, PNG, or GIF</li>
+                                        <li>Max Size : 100 KB</li>
+                                    </ul>
+                                    <h3>Expand Banner</h3>
+                                    <ul>
+                                        <li>Width x Height : 320 x 400 pixel</li>
+                                        <li>Banner Format : JPG, PNG, or GIF</li>
+                                        <li>Max Size : 150 KB</li>
+                                    </ul>
+                                    
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required onchange="readURL(this);">
+                                        <label class="custom-file-label" >Upload Your 320x100</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required onchange="readURL2(this);">
+                                        <label class="custom-file-label" >Upload Your 320x400</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    
+<!--
+                                    <div class="browse_box">
+                                        <div class="browse_ad animated bounceIn delay-2s">
+                                            <i class="fa fa-upload"></i> Upload Your Ad 320x100
+                                        </div>
+                                        <input class="onhov" onchange="readURL(this);" type='file' width="100">
+                                    </div>
+                                    
+                                    <div class="browse_box">
+                                        <div class="browse_ad animated bounceIn delay-2s">
+                                            <i class="fa fa-upload"></i> Upload Your Ad 320x400
+                                        </div>
+                                        <input class="onhov" onchange="readURL2(this);" type='file' width="100">
+                                    </div>
+-->
+
+                                    <div class="takess animated bounceIn delay-2s" onclick="downloadimage()">
+                                        <i class="fa fa-download"></i> <span>Download Preview</span>
+                                    </div>
 
 
-                                <a href="../../preview/mobile/idntimes/leaderboard-expand.html" target="_blank" class="preview animated bounceIn delay-2s">Go To Preview<i class="fa fa-arrow-right"></i></a>
+<!--                                    <a href="../../preview/mobile/idntimes/leaderboard-expand.html" target="_blank" class="preview animated bounceIn delay-2s">Go To Preview<i class="fa fa-arrow-right"></i></a>-->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -56,6 +179,31 @@
 
         <!-- Bootstrap core JavaScript -->
         <script src="../assets/js/jquery.min.js"></script>
-        <script src="../assets/js/bootstrap.bundle.min.js"></script>  
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/adpreview.js"></script> 
+        <script src="../assets/js/domtoimage.js"></script> 
+        
+        <script>
+            $('#leaderboard_expand').animate({'height':'375px'},"slow");
+            $('.leaderboard_small').animate({'height':'0px'},"slow");
+            $('.leaderboard_big').fadeIn('slow');
+
+            $(document).ready(function() {
+                $('.leaderboard_small').click(function() {
+                    $('#leaderboard_expand').animate({'height':'375px'},"slow");
+                    $('.leaderboard_small').animate({'height':'0px'},"slow");
+                    $('.site2').animate({'padding-top':'320px'},"slow");
+                    $('.leaderboard_big').fadeIn('slow');
+                });
+
+                $('.close_big').click(function() {
+                    $('.leaderboard_small').animate({'height':'94px'},"slow");
+                    $('#leaderboard_expand').animate({'height':'94px'},"slow");
+                    $('.site2').animate({'padding-top':'40px'},"slow");
+                    $('.leaderboard_big').fadeOut('slow');
+                });
+            });
+        </script>
+        
     </body>
 </html>

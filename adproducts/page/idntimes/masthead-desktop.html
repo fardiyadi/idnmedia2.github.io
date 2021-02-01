@@ -13,118 +13,114 @@
 
         <!-- Custom styles  -->
         <link href="../assets/css/main.css" rel="stylesheet">
-        <!-- <link href="../assets/css/idn_ads_style.css" rel="stylesheet"> -->
+        <link href="../assets/css/adpreview.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
         <section id="bg-image" class="" style="padding-top: 50px;">
             <div id="page-content-wrapper">
-                
-                
-                
-                      
-                <!-- new coba coba -->
-                
-<!--
-                <style>
-                    .adsGuide_box {
-                        max-width: 100%;
-                        height: auto;
-                        display: block;
-                        position: relative;
-                        border-radius: 15px;
-                        padding: 10px;
-                        margin-bottom: 15px;
-                        text-align: center;
-                    }
-                    .ad_unit {
-                        background-color: lightcoral;
-                        color: white;
-                        position: relative;
-                        left: 0;
-                        right: 0;
-                        margin: auto;
-                    }
-                    .ad_leaderboard {
-                        width: 970px;
-                        height: 250px;
-                        max-width: 100%;
-                        max-height: 100%;
-                    }
-                    .ad_specH {
-                        float: right;
-                        vertical-align: middle;
-                        transform: rotate(-90deg);
-                    }
-                    .ad_specH h4 {
-                        color: white;
-                    }
-                </style>
-                
-                <div class="container">
-                    <div class="adsGuide_box">
-                        <div class="ad_unit ad_leaderboard">
-                            <div class="ad_specH">
-                                <h4>250 px</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
--->
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+                            
                 <div class="container">
                     <div class="row">
                         
+<!--
                         <div class="col-md-7 animated fadeIn delay-1s">
                             <img class="d-block w-100" src="screenshots/leaderboard-tvc.png" alt="First slide">
                             <video autoplay muted loop playsinline preload="metadata" style="width: 22.8%; height: auto; position: absolute; left: 22.8%; margin: auto; top: 22%; z-index: 2;">
                                 <source src="https://ads.idntimes.com/ads-assets/internal/video/video-lazada-ultah_1.mp4" type="video/mp4">
                             </video>
                         </div>
+-->
                         
-                        <div class="col-md-5 spec-des animated fadeIn delay-1sets">
-                            <h1>Masthead (Desktop)</h1>
-                            <div class="pad20">
-                                <h3>Pricing</h3>
-                                <ul class="font_bold">
-                                    <li>IDR 33.000.000</li>
-                                </ul>
-                                <h3>Banner Specification</h3>
-                                <ul>
-                                    <li>Width : 970 pixel</li>
-                                    <li>Height : 250 pixel</li>
-                                    <li>Max Size : 150 KB</li>
-                                </ul>
-                                <h3>Banner Format</h3>
-                                <ul>
-                                    <li>JPG</li>
-                                    <li>PNG</li>
-                                    <li>GIF</li>
-                                    <li>HTML5</li>
-                                </ul>
-                                <h3>Video Specification</h3>
-                                <ul>
-                                    <li>Length : 15 - 30 sec</li>
-                                    <li>Format : .MP4</li>
-                                    <li>Max Size : 5 MB</li>
-                                </ul>
+                        <!-- AdPreview -->
+                    
+                        <div class="col-md-7 text-center animated fadeIn delay-1s">
+                            <div id="DMasthead">
+                                <div id="capthis">
+                                    <div class="adpreview_desktop_box">
+                                        <div class="web_box">
+                                            <img src="images/masthead-site.jpg">
+                                        </div>
+                                        <img class="desktop_frame" src="../assets/images/desktopframe.png">
+                                        <div class="banner_ad _idntimes">
+                                            <img id="displayad" src="images/970x250-transparent.png">
+                                            <div id="videoSourceWrapper" style="display: block!important">
+                                                <video id="video" muted loop >      
+                                                    <source id="videoSource" src="https://ads.idntimes.com/ads-assets/client/smartfren/oktober2020/video.mp4" />
+                                                </video>
+                                                <div id="uploadVideoProgressBar" style="height: 5px; width: 0%; background: #2781e9; margin-top: -5px;"></div>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                         
+                        
+                        <div class="col-md-5 animated fadeIn delay-1sets">
+                            <div class="spec-des">
+                                <h1>Masthead (Desktop)</h1>
+                                <div class="pad20">
+                                    <h3>Pricing</h3>
+                                    <ul class="font_bold">
+                                        <li>IDR 38.000.000</li>
+                                    </ul>
+                                    <h3>Banner Specification</h3>
+                                    <ul>
+                                        <li>Width : 970 pixel</li>
+                                        <li>Height : 250 pixel</li>
+                                        <li>Max Size : 150 KB</li>
+                                    </ul>
+                                    <h3>Banner Format</h3>
+                                    <ul>
+                                        <li>JPG</li>
+                                        <li>PNG</li>
+                                        <li>GIF</li>
+                                    </ul>
+                                    <h3>Video Specification</h3>
+                                    <ul>
+                                        <li>Length : 15 - 30 sec</li>
+                                        <li>Format : .MP4</li>
+                                        <li>Max Size : 5 MB</li>
+                                    </ul>
+                                    
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required onchange="readURL(this);">
+                                        <label class="custom-file-label" >Upload Your Banner</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required id="uploadVideoFile" accept="video/*" >
+                                        <label class="custom-file-label" >Upload Your Video</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    
+<!--
+                                    <div class="browse_box">
+                                        <div class="browse_ad animated bounceIn delay-2s">
+                                            <i class="fa fa-upload"></i> Upload Your Video
+                                        </div>
+                                        <input type="file" id="uploadVideoFile" accept="video/*" width="100" />
+                                    </div>
+                                    
+                                    <div class="browse_box">
+                                        <div class="browse_ad animated bounceIn delay-2s">
+                                            <i class="fa fa-upload"></i> Upload Your Banner
+                                        </div>
+                                        <input class="onhov" onchange="readURL(this);" type='file' width="100">
+                                    </div>
+-->
 
-                                <a href="../../preview/desktop/idntimes/masthead.html" target="_blank" class="preview animated bounceIn delay-2s">Go to Preview<i class="fa fa-arrow-right"></i></a>
+                                    <div class="takess animated bounceIn delay-2s" onclick="downloadimage()">
+                                        <i class="fa fa-download"></i> <span>Download Preview</span>
+                                    </div>
+                                    
+
+<!--                                    <a href="../../preview/desktop/idntimes/masthead.html" target="_blank" class="preview animated bounceIn delay-2s">Go to Preview<i class="fa fa-arrow-right"></i></a>-->
+                                </div>
                             </div>
                         </div>
                         
@@ -136,5 +132,13 @@
         <!-- Bootstrap core JavaScript -->
         <script src="../assets/js/jquery.min.js"></script>
         <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/domtoimage.js"></script>  
+        <script src="../assets/js/adpreview.js"></script> 
+        
+        <script>
+            setTimeout(function(){
+                document.getElementById("video").play();
+            }, 1000);
+        </script>
     </body>
 </html>

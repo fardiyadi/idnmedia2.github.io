@@ -14,37 +14,140 @@
 
         <!-- Custom styles  -->
         <link href="../assets/css/main.css" rel="stylesheet">
+        <link href="../assets/css/adpreview.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
+    
+    <style>
+        #bottom_slide {
+            width: 300px;
+            height: 47px;
+            overflow: hidden;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+            display: block;
+            text-align: center;
+            bottom: 22px;
+        }
+        #bottom_slide img {
+            max-width: 100%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .bs_ad img {
+            width: 300px;
+            height: 450px;
+        }
+        .bs_sticky img {
+            width: 300px;
+            height: 47px;
+        }
+        #bottom_slide .bs_sticky { 
+            width:300px; 
+            height:47px;
+            position: absolute;
+            bottom: 0;
+        }
+        #bottom_slide .bs_ad { 
+            width:300px; 
+            height:450px; 
+            display: none;
+        }
+        .close_bs {
+            position: absolute;
+            display: block;
+            z-index: 9;
+            top: 0;
+            right: 0;
+            height: 16px;
+        }
+        .close_bs img {
+            height: 18px;
+            width: 67px;
+            top: -6px;
+            position: relative;
+        }
+    </style> 
+    
     <body>
         <section id="popbela-style" class="" style="padding-top: 50px;">
             <div id="page-content-wrapper">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 text-center mobile-ss animated fadeIn delay-1s">
-                            <img src="screenshots/bottom-slide.gif" class="img-fluid">
+                        
+                        <!-- AdPreview -->
+                    
+                        <div class="col-md-7 text-center animated fadeIn delay-1s">
+                            <div id="capthis">
+                                <div id="botslide">
+                                    <div class="takethis adpreview_mobile_box">
+                                        <img src="../assets/images/mobileframe-top.png" class="topframe">
+                                        <img src="../assets/images/mobileframe-bottom.png" class="botframe">
+                                        <div class="web_box">
+                                            <img src="images/bottomsticky-site.jpg">
+                                        </div>
+                                        <img class="mobile_frame" src="../assets/images/mobileframe.png">
+                                        <div class="banner_ad">
+                                            <div id="bottom_slide">
+                                                <div class="bs_sticky">
+                                                    <img id="displayad" src="../m.idntimes/images/bottomslide-320x50.jpg">
+                                                </div>
+                                                <div class="bs_ad">
+                                                    <img id="displayad2" src="../m.idntimes/images/bottomslide-320x480.jpg">
+                                                    <div class="close_bs">
+                                                        <img src="../assets/images/close.gif" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 spec-des animated fadeIn delay-1sets">
-                            <h1>Bottom Slide</h1>
-                            <div class="pad20">
-                                <h3>Pricing</h3>
-                                <ul class="font_bold">
-                                    <li>CPD : <b>IDR 18.000.000</b></li>
-                                </ul>
-                                <h3>Small Banner</h3>
-                                <ul>
-                                    <li>Width x Height : 320 x 50 pixel</li>
-                                    <li>Banner Format : JPG, PNG, or GIF</li>
-                                    <li>Max Size : 100 KB</li>
-                                </ul>
-                                <h3>Expand Banner</h3>
-                                <ul>
-                                    <li>Width x Height : 320 x 480 pixel</li>
-                                    <li>Banner Format : JPG, PNG, or GIF</li>
-                                    <li>Max Size : 150 KB</li>
-                                </ul>
-                                <a href="../../preview/mobile/popbela/bottomslide.html" target="_blank" class="preview animated bounceIn delay-2s">Go To Preview<i class="fa fa-arrow-right"></i></a>
+                        
+                        <div class="col-md-5 animated fadeIn delay-1sets">
+                            <div class="spec-des">
+                                <h1>Bottom Slide</h1>
+                                <div class="pad20">
+                                    <h3>Pricing</h3>
+                                    <ul class="font_bold">
+                                        <li>CPD : <b>IDR 20.000.000</b></li>
+                                    </ul>
+                                    <h3>Small Banner</h3>
+                                    <ul>
+                                        <li>Width x Height : 320 x 50 pixel</li>
+                                        <li>Banner Format : JPG, PNG, or GIF</li>
+                                        <li>Max Size : 100 KB</li>
+                                    </ul>
+                                    <h3>Expand Banner</h3>
+                                    <ul>
+                                        <li>Width x Height : 320 x 480 pixel</li>
+                                        <li>Banner Format : JPG, PNG, or GIF</li>
+                                        <li>Max Size : 150 KB</li>
+                                    </ul>
+                                    
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required onchange="readURL(this);">
+                                        <label class="custom-file-label" >Upload Your 320x50</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required onchange="readURL2(this);">
+                                        <label class="custom-file-label" >Upload Your 320x480</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    
+                                    <div class="takess animated bounceIn delay-2s" onclick="downloadimage()">
+                                        <i class="fa fa-download"></i> <span>Download Preview</span>
+                                    </div>
+                                    
+<!--                                    <a href="../../preview/mobile/popbela/bottomslide.html" target="_blank" class="preview animated bounceIn delay-2s">Go To Preview<i class="fa fa-arrow-right"></i></a>-->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -54,6 +157,35 @@
 
         <!-- Bootstrap core JavaScript -->
         <script src="../assets/js/jquery.min.js"></script>
-        <script src="../assets/js/bootstrap.bundle.min.js"></script>  
+        <script src="../assets/js/bootstrap.bundle.min.js"></script> 
+        <script src="../assets/js/adpreview.js"></script> 
+        <script src="../assets/js/domtoimage.js"></script> 
+        
+        
+        <script>
+         
+            $('#bottom_slide').animate({'height':'450px'},"slow");
+            $('.bs_sticky').animate({'height':'0px'},"slow");
+            $('.bs_ad').fadeIn('slow');
+
+            $('.bs_sticky').click(function() {
+
+                $('#bottom_slide').animate({'height':'450px'},"slow");
+                $('.bs_sticky').animate({'height':'0px'},"slow");
+                $('.bs_ad').fadeIn('slow');
+            });
+            $('.close_bs').click(function() {
+
+                $('#bottom_slide').animate({'height':'47px'},"slow");
+                $('.bs_sticky').animate({'height':'47px'},"slow");
+                $('.bs_ad').fadeOut('slow');
+            });
+
+
+
+
+            const data = parent.document.getElementsByClassName('bottom-sticky-ads__wrapper')[0]
+            data.style.maxHeight = "450px"
+        </script>
     </body>
 </html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>IDN Media Sales Product</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles  -->
+        <link href="../assets/css/main.css" rel="stylesheet">
+        <link href="../assets/css/adpreview.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    
+    <style>
+        
+        @-webkit-keyframes animation{from{opacity:0; -webkit-transform:scale(1.2) rotateX(45deg);transform:scale(1.2) rotateX(45deg);} to{ }}
+
+        @-webkit-keyframes animation2{from{opacity:0; -webkit-transform:scale(1.2) rotateX(45deg);transform:scale(1.2) rotateX(45deg);} to{ }}
+
+
+        .slider-container {
+            position: relative;
+            background-color: black;
+            height: 300px;
+            width: 100%;
+            
+        }
+        .slider{
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-animation:animation ease 1s;
+            animation-delay:.8s;
+            animation-fill-mode:backwards;
+            width: 275px;
+            height: 230px;
+            position: relative;
+            perspective:1000px;
+            transition:ease-in-out .2s;
+        }
+        /*.slider:active{ -webkit-transform:rotateZ(10deg);}*/
+
+
+        .slide img { text-align:center;width:300px; height:250px; -webkit-user-drag:none;user-drag:none;-moz-user-drag:none; border-radius:2px; }
+
+
+        .slide{
+            -webkit-user-select:none;
+            user-select:none;
+            -moz-user-select:none;
+            position:absolute;
+            height:300px;
+            width:250px;
+            -webkit-transform-style:preserve-3d;
+            transform-style:preserve-3d;
+            -moz-transform-style:preserve-3d;
+            text-align:center;
+            box-sizing:border-box;    
+        }
+        .transition {
+             -webkit-transition: cubic-bezier(0,1.95,.49,.73) .4s ;
+           -moz-transition: cubic-bezier(0,1.95,.49,.73) .4s ;
+              transition: cubic-bezier(0,1.95,.49,.73) .4s ;
+        }
+
+        /* Standard syntax */
+        @keyframes swipe {
+
+
+            0% {
+                left: -60px;
+            }
+            20% {
+                left: -60px;
+            }
+            40% {
+                left: 60px;
+            }
+            60% {
+                left: 60px;
+            }
+            80% {
+                left: 60px;
+            }
+            100% {
+                left: -60px;
+            }
+
+        }
+
+        .guide-anim {
+            animation: swipe 2s infinite; /* IE 10+, Fx 29+ */
+            animation-timing-function: linear;
+
+        }
+        img.guide-anim {
+            position: absolute;
+            max-width: 50px;
+            z-index: 9;
+            bottom: 50px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+    </style>
+    
+    <body>
+        <section id="popbela-style" class="" style="padding-top: 50px;">
+            <div id="page-content-wrapper">
+                <div class="container">
+                    <div class="row">
+                        
+                        <!-- AdPreview -->
+                    
+                        <div class="col-md-7 text-center animated fadeIn delay-1s">
+                            <div id="capthis">
+                                <div id="inartswipe">
+                                    <div class="takethis adpreview_mobile_box">
+                                        <div class="web_box">
+                                            <img src="images/inarticle-site.jpg">
+                                        </div>
+                                        <img class="mobile_frame" src="../assets/images/mobileframe.png">
+                                        <div class="banner_ad">
+                                            <div class="slider-container">
+            
+                                               <img id="swipeIcon" src="../assets/images/swipe.gif" class="guide-anim" style="max-width: 50px; height: auto!important;">
+                                                <div class="slider">
+
+
+                                                    <div class="slide">
+                                                        <a href="#" target="_blank">
+                                                            <img id="displayad" src="../m.idntimes/images/inarticleswipe-300x250-1.jpg"/>
+                                                        </a>
+                                                    </div>
+                                                    <div id="guideremove" class="slide slide2">
+                                                        <a href="#" target="_blank">
+                                                            <img id="displayad2" src="../m.idntimes/images/inarticleswipe-300x250-2.jpg"/>
+                                                        </a>
+                                                    </div>
+                                                    <div class="slide" >
+                                                        <a href="#" target="_blank">
+                                                            <img id="displayad3" src="../m.idntimes/images/inarticleswipe-300x250-3.jpg"/>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-5 animated fadeIn delay-1sets">
+                            <div class="spec-des">
+                                <h1>InArticle Swipe Banner</h1>
+                                <div class="pad20">
+                                    <h3>Pricing</h3>
+                                    <ul class="font_bold">
+                                        <li>CPD : <b>IDR 30.000.000</b></li>
+                                    </ul>
+                                    <h3>Specification :</h3>
+                                    <ul>
+                                        <li>Width : 300 pixel</li>
+                                        <li>Height : 250 pixel</li>
+                                        <li>Max Size : 100 KB</li>
+                                        <li>Quantity : 3</li>
+                                    </ul>
+                                    <h3>Format</h3>
+                                    <ul>
+                                        <li>JPG</li>
+                                        <li>PNG</li>
+                                    </ul>
+                                    
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required onchange="readURL(this);">
+                                        <label class="custom-file-label" >Upload Your 300x250 (1)</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required onchange="readURL2(this);">
+                                        <label class="custom-file-label" >Upload Your 300x250 (2)</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required onchange="readURL3(this);">
+                                        <label class="custom-file-label" >Upload Your 300x250 (3)</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    
+                                    <div class="takess animated bounceIn delay-2s" onclick="downloadimage()">
+                                        <i class="fa fa-download"></i> <span>Download Preview</span>
+                                    </div>
+
+<!--                                    <a href="../../preview/mobile/popbela/inarticleswipe.html" target="_blank" class="preview animated bounceIn delay-2s">Go To Preview<i class="fa fa-arrow-right"></i></a>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>           
+        </section>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/domtoimage.js"></script>  
+        <script src="../assets/js/adpreview.js"></script> 
+        
+        <script src="https://ads.idntimes.com/ads-assets/displayad/inarticleswipe/swiper.js"></script> 
+    </body>
+</html>

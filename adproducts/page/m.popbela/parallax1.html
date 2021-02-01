@@ -13,6 +13,7 @@
 
         <!-- Custom styles  -->
         <link href="../assets/css/main.css" rel="stylesheet">
+        <link href="../assets/css/adpreview.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
@@ -21,30 +22,64 @@
             <div id="page-content-wrapper">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 text-center mobile-ss animated fadeIn delay-1s">
-                            <img src="screenshots/parallax1.png" class="img-fluid">
+                        
+                        <!-- AdPreview -->
+                    
+                        <div class="col-md-7 text-center animated fadeIn delay-1s">
+                            <div id="capthis">
+                                <div id="parallax">
+                                    <div class="takethis adpreview_mobile_box">
+                                        <img src="../assets/images/mobileframe-top.png" class="topframe">
+                                        <img src="../assets/images/mobileframe-bottom.png" class="botframe">
+                                        <img src="images/header.png" class="img_header">
+                                        <img src="../m.idntimes/images/share.png" class="img_share">
+                                        <div class="web_box">
+                                            <img src="images/parallax1-site.png">
+                                        </div>
+                                        <img class="mobile_frame" src="../assets/images/mobileframe.png">
+                                        <div class="banner_ad">
+                                            <img id="displayad" src="../m.idntimes/images/parallax-1.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 spec-des animated fadeIn delay-1sets">
-                            <h1>Parallax 1</h1>
-                            <div class="pad20">
-                                <h3>Pricing</h3>
-                                <ul class="font_bold">
-                                    <li>CPD Only : IDR 20.000.000</li>
-                                </ul>
-                                <h3>Specification :</h3>
-                                <ul>
-                                    <li>Width : 640 pixel</li>
-                                    <li>Height : 960 pixel</li>
-                                    <li>Max Size : 150 KB</li>
-                                    <li>Position : In Feed 1 / In Article 1 (parallax in detail)</li>
-                                </ul>
-                                <h3>Format</h3>
-                                <ul>
-                                    <li>JPG</li>
-                                    <li>PNG</li>
-                                </ul>
+                        
+                        <div class="col-md-5 animated fadeIn delay-1sets">
+                            <div class="spec-des">
+                                <h1>Parallax 1</h1>
+                                <div class="pad20">
+                                    <h3>Pricing</h3>
+                                    <ul class="font_bold">
+                                        <li>CPD Only : IDR 22.000.000</li>
+                                    </ul>
+                                    <h3>Specification :</h3>
+                                    <ul>
+                                        <li>Width : 640 pixel</li>
+                                        <li>Height : 900 pixel</li>
+                                        <li>Max Size : 150 KB</li>
+                                        <li>Position : In Feed 1 / In Article 1 (parallax in detail)</li>
+                                    </ul>
+                                    <h3>Format</h3>
+                                    <ul>
+                                        <li>JPG</li>
+                                        <li>PNG</li>
+                                    </ul>
+                                    
+                                    <div class="browse_box">
+                                        <div class="browse_ad animated bounceIn delay-2s">
+                                            <i class="fa fa-upload"></i> Upload Your Ad
+                                        </div>
+                                        <input class="onhov" onchange="readURL(this);" type='file' width="100">
+                                    </div>
 
-                                <a href="../../preview/mobile/popbela/parallax1.html" target="_blank" class="preview animated bounceIn delay-2s">Go To Preview<i class="fa fa-arrow-right"></i></a>
+                                    <!-- button save v2 -->
+                                    <div id="btnSave2" class="takess animated bounceIn delay-2s">
+                                        <i class="fa fa-download"></i> <span>Download Preview</span>
+                                    </div>
+
+<!--                                    <a href="../../preview/mobile/popbela/parallax1.html" target="_blank" class="preview animated bounceIn delay-2s">Go To Preview<i class="fa fa-arrow-right"></i></a>-->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -55,5 +90,9 @@
         <!-- Bootstrap core JavaScript -->
         <script src="../assets/js/jquery.min.js"></script>
         <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/domtoimage.js"></script>  
+        <script src="../assets/js/adpreview.js"></script> 
+        <script src="../assets/js/html2canvas.min.js"></script> 
+        <script src="../assets/js/canvas2image.js"></script> 
     </body>
 </html>

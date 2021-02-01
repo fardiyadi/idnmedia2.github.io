@@ -13,6 +13,7 @@
 
         <!-- Custom styles  -->
         <link href="../assets/css/main.css" rel="stylesheet">
+        <link href="../assets/css/adpreview.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
@@ -21,30 +22,82 @@
             <div id="page-content-wrapper">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-7 animated fadeIn delay-1s">
-                            <img src="screenshots/skinad.png" class="img-fluid">
+                        
+                        <!-- AdPreview -->
+                    
+                        <div class="col-md-7 text-center animated fadeIn delay-1s">
+                            <div id="capthis">
+                                <div id="DSkinad_idn">
+                                    <div class="takethis adpreview_desktop_box">
+                                        <div class="web_box">
+                                            <img src="images/skinad-site.jpg">
+                                        </div>
+                                        <img class="desktop_frame" src="../assets/images/desktopframe.png">
+                                        <div class="banner_ad_L">
+                                            <img id="displayad" src="images/120x500-transparent.png">
+                                        </div>
+                                        <div class="banner_ad_R">
+                                            <img id="displayad2" src="images/120x500-transparent.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-5 spec-des animated fadeIn delay-1sets">
-                            <h1>Skin Ad</h1>
-                            <div class="pad20">
-                                <h3>Pricing</h3>
-                                <ul class="font_bold">
-                                    <li>CPD : IDR 20.000.000</li>
-                                </ul>
-                                <h3>Specification :</h3>
-                                <ul>
-                                    <li>Width x Height : 120 x 600 pixel (or)</li>
-                                    <li>Width x Height : 160 x 600 pixel</li>
-                                </ul>
-                                <h3>Format</h3>
-                                <ul>
-                                    <li>JPG</li>
-                                    <li>PNG</li>
-                                    <li>GIF</li>
-                                    <li>HTML5</li>
-                                </ul>
+                        
+                        <div class="col-md-5 animated fadeIn delay-1sets">
+                            <div class="spec-des">
+                                <h1>Skin Ad</h1>
+                                <div class="pad20">
+                                    <h3>Pricing</h3>
+                                    <ul class="font_bold">
+                                        <li>CPD : IDR 24.000.000</li>
+                                    </ul>
+                                    <h3>Specification :</h3>
+                                    <ul>
+                                        <li>Width x Height : 120 x 500 pixel (Safe Area)</li>
+                                        <li>Max Size : 100KB</li>
+                                    </ul>
+                                    <h3>Format</h3>
+                                    <ul>
+                                        <li>JPG</li>
+                                        <li>PNG</li>
+                                        <li>GIF</li>
+                                    </ul>
+                                    
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required onchange="readURL(this);">
+                                        <label class="custom-file-label" >Upload Your Ad (Left)</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required onchange="readURL2(this);">
+                                        <label class="custom-file-label" >Upload Your Ad (Right)</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    
+<!--
+                                    <div class="browse_box">
+                                        <div class="browse_ad animated bounceIn delay-2s">
+                                            <i class="fa fa-upload"></i> Upload Your Ad (Left)
+                                        </div>
+                                        <input class="onhov" onchange="readURL(this);" type='file' width="100">
+                                    </div>
+                                    
+                                    <div class="browse_box">
+                                        <div class="browse_ad animated bounceIn delay-2s">
+                                            <i class="fa fa-upload"></i> Upload Your Ad (Right)
+                                        </div>
+                                        <input class="onhov" onchange="readURL2(this);" type='file' width="100">
+                                    </div>
+-->
 
-                                <a href="../../preview/desktop/idntimes/skinad.html" target="_blank" class="preview animated bounceIn delay-2s">Go to Preview<i class="fa fa-arrow-right"></i></a>
+                                    <div class="takess animated bounceIn delay-2s" onclick="downloadimage()">
+                                        <i class="fa fa-download"></i> <span>Download Preview</span>
+                                    </div>
+
+<!--                                    <a href="../../preview/desktop/idntimes/skinad.html" target="_blank" class="preview animated bounceIn delay-2s">Go to Preview<i class="fa fa-arrow-right"></i></a>-->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -55,6 +108,8 @@
         <!-- Bootstrap core JavaScript -->
         <script src="../assets/js/jquery.min.js"></script>
         <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/domtoimage.js"></script>  
+        <script src="../assets/js/adpreview.js"></script> 
     </body>
 </html>
 

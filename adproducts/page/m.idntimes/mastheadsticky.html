@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>IDN Media Sales Product</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles  -->
+        <link href="../assets/css/main.css" rel="stylesheet">
+        <link href="../assets/css/adpreview.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    
+    <style>
+        /* masthead sticky */ 
+        /* update 28 agustus 2020 */
+        #mastheadsticky {
+            width: 290px;
+            height: 60px;
+            overflow: hidden;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+            display: block;
+            text-align: center;
+            bottom: 0;
+        }
+        #mastheadsticky img {
+            max-width: 100%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #mastheadsticky .ms_small { 
+            width:290px; 
+            height:45px;
+            bottom: 0;
+            position: absolute;
+        }
+        #mastheadsticky .ms_big { 
+            width:290px; 
+            height:290px; 
+            display: none;
+        }
+        .close_big {
+            position: absolute;
+            display: block;
+            z-index: 9;
+            top: 0;
+            right: 0;
+        }
+        .close_big > img {
+            height: 20px;
+        }
+        .close_ms {
+            position: absolute;
+            display: block;
+            z-index: 9;
+            top: 0;
+            right: 0;
+        }
+        .close_ms > img {
+            height: 15px;
+        }
+    </style>
+    
+    <body>
+        <section id="bg-image" class="" style="padding-top: 50px;">
+            <div id="page-content-wrapper">
+                <div class="container">
+                    <div class="row">
+                        
+                        
+                        <!-- AdPreview -->
+                    
+                        <div class="col-md-7 text-center animated fadeIn delay-1s">
+                            <div id="MMasthead_sticky">
+                                <div id="capthis">
+                                    <div class="adpreview_mobile_box">
+                                        <div class="web_box">
+                                            <img src="images/videosticky-ste.jpg">
+                                        </div>
+                                        <img class="mobile_frame" src="../assets/images/mobileframe.png">
+                                        <div class="banner_ad">
+                                            
+                                            <div id="mastheadsticky">
+                                                <div class="ms_small">
+                                                    <img id="displayad" src="images/mastheadsticky-320x50.gif">
+                                                </div>
+                                                <div class="close_ms">
+                                                    <img src="../assets/images/close.gif" alt="" style="width: 55px; height: 15px;">
+                                                </div>
+                                                <div class="ms_big">
+                                                    <div id="videoSourceWrapper" style="display: block!important">
+                                                        <video id="video" muted loop >      
+                                                            <source id="videoSource" src="https://ads.idntimes.com/ads-assets/internal/video/yummy-video-compressed.mp4" />
+                                                        </video>
+                                                        <div id="uploadVideoProgressBar" style="height: 5px; width: 0%; background: #2781e9; margin-top: -5px;"></div>   
+                                                    </div>
+                                                     
+                                                    <img id="displayad2" src="images/mastheadsticky-320x320.jpg">
+                                                    <div class="close_big">
+                                                        <img src="../assets/images/close.gif" alt="" style="width: 55px; height: 15px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-5 animated fadeIn delay-1sets">
+                            <div class="spec-des">
+                                <h1>Masthead Sticky</h1>
+                                <div class="pad20">
+                                    <h3>Pricing</h3>
+                                    <ul class="font_bold">
+                                        <li>IDR 330.000.000</li>
+                                    </ul>
+                                    <h3>Small Banner Specification</h3>
+                                    <ul>
+                                        <li>Width : 320 pixel</li>
+                                        <li>Height : 50 pixel</li>
+                                        <li>Max Size : 100 KB</li> 
+                                    </ul>
+                                    <h3>Expand Banner Specification</h3>
+                                    <ul>
+                                        <li>Width : 320 pixel</li>
+                                        <li>Height : 320 pixel</li>
+                                        <li>Max Size : 150 KB</li> 
+                                        <li>*with blank space for video</li>
+                                    </ul>
+
+                                    <h3>Banner Format</h3>
+                                    <ul>
+                                        <li>JPG</li>
+                                        <li>PNG</li>
+                                        <li>GIF</li>
+                                    </ul>
+                                    <h3>Video Specification</h3>
+                                    <ul>
+                                        <li>Length : 15 - 30 sec</li>
+                                        <li>Format : .MP4</li>
+                                        <li>Max Size : 5 MB</li>
+                                    </ul>
+                                    
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required onchange="readURL(this);">
+                                        <label class="custom-file-label" >Upload Your 320x50</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required onchange="readURL2(this);">
+                                        <label class="custom-file-label" >Upload Your 320x320</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required id="uploadVideoFile" accept="video/*" >
+                                        <label class="custom-file-label" >Upload Your Video</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    
+                                    <div class="takess animated bounceIn delay-2s" onclick="downloadimage()">
+                                        <i class="fa fa-download"></i> <span>Download Preview</span>
+                                    </div>
+
+<!--                                    <a href="../../preview/mobile/idntimes/mastheadsticky.html" target="_blank" class="preview animated bounceIn delay-2s">Go to Preview<i class="fa fa-arrow-right"></i></a>-->
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/domtoimage.js"></script>  
+        <script src="../assets/js/adpreview.js"></script> 
+        
+        <script>
+            setTimeout(function(){
+                document.getElementById("video").play();
+            }, 1000);
+        </script>
+        
+        <script>
+
+            $('#mastheadsticky').animate({'height':'60px'},"slow");
+            $('.ms_big').animate({'height':'0px'},"slow");
+            $('.ms_small').fadeIn('slow');
+
+            $('.ms_small').click(function() {
+                $('#mastheadsticky').animate({'height':'290px'},"slow");
+                document.getElementById("video").play();
+                $('.ms_small').animate({'height':'0px'},"slow");
+                $('.ms_big').fadeIn('slow');
+            });
+            $('.close_big').click(function() {
+                document.getElementById("video").pause();
+                $('#mastheadsticky').animate({'height':'60px'},"slow");
+                $('.ms_small').animate({'height':'45px'},"slow");
+                $('.ms_big').fadeOut('slow');
+            });
+            $(".close_ms").click(function () {
+                $("#mastheadsticky").css("display", "none");
+            });
+
+            setTimeout(function(){ 
+                $('#mastheadsticky').animate({'height':'290px'},"slow");
+                $('.ms_small').animate({'height':'0px'},"slow");
+                $('.ms_big').fadeIn('slow');
+            }, 4000);
+
+            setTimeout(function(){
+              document.getElementById("video").play();
+            }, 5000);
+        </script>
+        
+    </body>
+</html>

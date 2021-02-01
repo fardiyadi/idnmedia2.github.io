@@ -14,6 +14,7 @@
 
         <!-- Custom styles  -->
         <link href="../assets/css/main.css" rel="stylesheet">
+        <link href="../assets/css/adpreview.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
@@ -22,26 +23,62 @@
             <div id="page-content-wrapper">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 text-center animated fadeIn mobile-ss delay-1s">
-                            <img src="screenshots/video-banner-inart1.png" class="img-fluid">
-                        </div>
-                        <div class="col-md-6 spec-des animated fadeIn delay-1sets">
-                            <h1>Out-stream In Article 1</h1>
-                            <div class="pad20">
-                                <h3>Pricing</h3>
-                                <ul class="font_bold">
-                                    <li>CPD : <b>IDR 35.000.000</b></li>
-                                </ul>
-                                <h3>Specification :</h3>
-                                <ul>
-                                    <li>Platform : Mobile</li>
-                                    <li>Position : In Article 1</li>
-                                    <li>Video Duration : 15 - 30 sec</li>
-                                    <li>Video Format : .MP4</li>
-                                    <li>Video Size : Max 1 MB</li>
-                                </ul>
+                        
+                        <!-- AdPreview -->
+                    
+                        <div class="col-md-7 text-center animated fadeIn delay-1s">
+                            <div id="videoinbannerMarticle">
+                                <div id="capthis">
+                                    <div class="adpreview_mobile_box">
+                                        <div class="web_box">
+                                            <img src="images/inarticle1-site.jpg">
+                                        </div>
+                                        <img class="mobile_frame" src="../assets/images/mobileframe.png">
+                                        <div class="banner_ad">
+                                            <div id="videoSourceWrapper" style="display: block!important">
+                                                <video id="video" muted>      
+                                                    <source id="videoSource" src="https://ads.idntimes.com/ads-assets/client/aqua/dec20/video-min.mp4" />
+                                                </video>
+                                                <div id="uploadVideoProgressBar" style="height: 5px; width: 0%; background: #2781e9; margin-top: -5px;"></div>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                <a href="../../preview/mobile/popbela/videoinbanner-inarticle1.html" target="_blank" class="preview animated bounceIn delay-2s">Go To Preview<i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-5 animated fadeIn delay-1sets">
+                            <div class="spec-des">
+                                <h1>Out-stream In Article 1</h1>
+                                <div class="pad20">
+                                    <h3>Pricing</h3>
+                                    <ul class="font_bold">
+                                        <li>CPD : <b>IDR 42.000.000</b></li>
+                                    </ul>
+                                    <h3>Specification :</h3>
+                                    <ul>
+                                        <li>Platform : Mobile</li>
+                                        <li>Position : In Article 1 & In Feed 1</li>
+                                        <li>Video Duration : 15 - 30 sec</li>
+                                        <li>Video Format : .MP4 (no embed youtube)</li>
+                                        <li>Video Size : Max 5 MB</li>
+                                        <li>Rules : Autoplay - Muted</li>
+                                    </ul>
+                                    
+                                    <div class="browse_box">
+                                        <div class="browse_ad animated bounceIn delay-2s">
+                                            <i class="fa fa-upload"></i> Upload Your Ad
+                                        </div>
+                                        <input type="file" id="uploadVideoFile" accept="video/*" width="100" />
+                                    </div>
+
+                                    <div class="takess animated bounceIn delay-2s" onclick="downloadimage()">
+                                        <i class="fa fa-download"></i> <span>Download Preview</span>
+                                    </div>
+
+<!--                                    <a href="../../preview/mobile/popbela/videoinbanner-inarticle1.html" target="_blank" class="preview animated bounceIn delay-2s">Go To Preview<i class="fa fa-arrow-right"></i></a>-->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -51,6 +88,14 @@
 
         <!-- Bootstrap core JavaScript -->
         <script src="../assets/js/jquery.min.js"></script>
-        <script src="../assets/js/bootstrap.bundle.min.js"></script>  
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/domtoimage.js"></script>  
+        <script src="../assets/js/adpreview.js"></script> 
+        
+        <script>
+            setTimeout(function(){
+                document.getElementById("video").play();
+            }, 1000);
+        </script>
     </body>
 </html>

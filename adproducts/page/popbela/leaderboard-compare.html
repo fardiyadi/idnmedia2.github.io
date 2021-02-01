@@ -13,39 +13,174 @@
 
         <!-- Custom styles  -->
         <link href="../assets/css/main.css" rel="stylesheet">
+        <link href="../assets/css/adpreview.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
+    
+    <style>
+        .leaderboard_comp {
+            position: relative;
+            height: 250px;
+            width: 970px;
+            display: block
+        }
+        .comp_img {
+            position: absolute;
+            width: auto;
+            height: auto;
+            overflow:hidden;
+        }
+        .com_img img {
+            display:block;
+            vertical-align:middle;
+        }
+        .leaderboard_comp_slider {
+            position: absolute;
+            z-index:9;
+            cursor: ew-resize;
+            background-image: url('https://ads.idntimes.com/ads-assets/internal/images/button/slide_button.png');
+            background-repeat: no-repeat;
+            opacity: 1;
+            width: 50px;
+            height: 28px;
+            animation-delay: 2s;
+            -webkit-animation-name: shake; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+            animation-name: shake;
+            animation-duration: 2s;
+            background-size: cover;
+        } 
+        @-webkit-keyframes shake {
+          from,
+          to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+
+          10%,
+          30%,
+          50%,
+          70%,
+          90% {
+            -webkit-transform: translate3d(-10px, 0, 0);
+            transform: translate3d(-10px, 0, 0);
+          }
+
+          20%,
+          40%,
+          60%,
+          80% {
+            -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0);
+          }
+        }
+
+        @keyframes shake {
+          from,
+          to {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+
+          10%,
+          30%,
+          50%,
+          70%,
+          90% {
+            -webkit-transform: translate3d(-10px, 0, 0);
+            transform: translate3d(-10px, 0, 0);
+          }
+
+          20%,
+          40%,
+          60%,
+          80% {
+            -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0);
+          }
+        }
+
+        .shake {
+          -webkit-animation-name: shake;
+          animation-name: shake;
+        }
+    </style>
+    
     <body>
         <section id="popbela-style" class="" style="padding-top: 50px;">
             <div id="page-content-wrapper">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-7 animated fadeIn delay-1s">
-                            <img src="screenshots/leaderboard-compare.gif" class="img-fluid">
+                        
+                        <!-- AdPreview -->
+                    
+                        <div class="col-md-7 text-center animated fadeIn delay-1s">
+                            <div id="DMasthead">
+                                <div id="capthis">
+                                    <div class="adpreview_desktop_box">
+                                        <div class="web_box">
+                                            <img src="images/masthead-site.jpg">
+                                        </div>
+                                        <img class="desktop_frame" src="../assets/images/desktopframe.png">
+                                        <div class="banner_ad _popb">
+                                            
+                                            <div class="leaderboard_comp" style="left: 0; right: 0; margin: auto;">
+                                                <div class="comp_img">
+                                                    <img id="displayad" src="../idntimes/images/leaderboardcompare-970x250-2.jpg">
+                                                </div>
+                                                <div class="comp_img overlayleadcom">
+                                                    <img id="displayad2"  src="../idntimes/images/leaderboardcompare-970x250-1.jpg">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
                         </div>
-                        <div class="col-md-5 spec-des animated fadeIn delay-1sets">
-                            <h1>Leaderboard V1</h1>
-                            <div class="pad20">
-                                <h3>Pricing</h3>
-                                <ul class="font_bold">
-                                    <li>CPD : IDR 1.000.000</li>
-                                </ul>
-                                <h3>Specification :</h3>
-                                <ul>
-                                    <li>Width : 970 pixel</li>
-                                    <li>Height : 250 pixel</li>
-                                    <li>Max Size : 150 KB</li>
-                                    <li>2 Banner & Landing Page</li>
-                                </ul>
-                                <h3>Format</h3>
-                                <ul>
-                                    <li>JPG</li>
-                                    <li>PNG</li>
-                                    <li>GIF</li>
-                                </ul>
+                        
+                        <div class="col-md-5 animated fadeIn delay-1sets">
+                            <div class="spec-des">
+                                <h1>Leaderboard Compare</h1>
+                                <div class="pad20">
+                                    <h3>Pricing</h3>
+                                    <ul class="font_bold">
+                                        <li>CPD : IDR 1.200.000</li>
+                                    </ul>
+                                    <h3>Specification :</h3>
+                                    <ul>
+                                        <li>Width : 970 pixel</li>
+                                        <li>Height : 250 pixel</li>
+                                        <li>Max Size : 150 KB</li>
+                                        <li>2 Banner & Landing Page</li>
+                                    </ul>
+                                    <h3>Format</h3>
+                                    <ul>
+                                        <li>JPG</li>
+                                        <li>PNG</li>
+                                        <li>GIF</li>
+                                    </ul>
+                                    
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required onchange="readURL(this);">
+                                        <label class="custom-file-label" >Upload Your 970x250 (1)</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" required onchange="readURL2(this);">
+                                        <label class="custom-file-label" >Upload Your 970x250 (2)</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                    </div>
+                                    
+                                    <div class="takess animated bounceIn delay-2s" onclick="downloadimage()">
+                                        <i class="fa fa-download"></i> <span>Download Preview</span>
+                                    </div>
 
-                                <a href="../../preview/desktop/popbela/leaderboard-compare.html" target="_blank" class="preview animated bounceIn delay-2s">Go to Preview<i class="fa fa-arrow-right"></i></a>
+<!--                                    <a href="../../preview/desktop/popbela/leaderboard-compare.html" target="_blank" class="preview animated bounceIn delay-2s">Go to Preview<i class="fa fa-arrow-right"></i></a>-->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -56,5 +191,90 @@
         <!-- Bootstrap core JavaScript -->
         <script src="../assets/js/jquery.min.js"></script>
         <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/js/domtoimage.js"></script>  
+        <script src="../assets/js/adpreview.js"></script>  
+        
+        <script>
+            function initComparisons() {
+                var x, i;
+                /*find all elements with an "overlay" class:*/
+                x = document.getElementsByClassName("overlayleadcom");
+                for (i = 0; i < x.length; i++) {
+                    /*once for each "overlay" element:
+                    pass the "overlay" element as a parameter when executing the compareImages function:*/
+                    compareImages(x[i]);
+                }
+                function compareImages(img) {
+                    var slider, img, clicked = 0, w, h;
+                    /*get the width and height of the img element*/
+                    w = img.offsetWidth;
+                    h = img.offsetHeight;
+                    /*set the width of the img element to 50%:*/
+                    img.style.width = (w / 2) + "px";
+                    /*create slider:*/
+                    slider = document.createElement("DIV");
+                    slider.setAttribute("class", "leaderboard_comp_slider");
+                    /*insert slider*/
+                    img.parentElement.insertBefore(slider, img);
+                    /*position the slider in the middle:*/
+                    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+                    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+                    /*execute a function when the mouse button is pressed:*/
+                    slider.addEventListener("mousedown", slideReady);
+                    /*and another function when the mouse button is released:*/
+                    window.addEventListener("mouseup", slideFinish);
+                    /*or touched (for touch screens:*/
+                    slider.addEventListener("touchstart", slideReady);
+                    /*and released (for touch screens:*/
+                    window.addEventListener("touchstop", slideFinish);
+                    function slideReady(e) {
+                        /*prevent any other actions that may occur when moving over the image:*/
+                        e.preventDefault();
+                        /*the slider is now clicked and ready to move:*/
+                        clicked = 1;
+                        /*execute a function when the slider is moved:*/
+                        window.addEventListener("mousemove", slideMove);
+                        window.addEventListener("touchmove", slideMove);
+                    }
+                    function slideFinish() {
+                        /*the slider is no longer clicked:*/
+                        clicked = 0;
+                    }
+                    function slideMove(e) {
+                        var pos;
+                        /*if the slider is no longer clicked, exit this function:*/
+                        if (clicked == 0) return false;
+                        /*get the cursor's x position:*/
+                        pos = getCursorPos(e)
+                        /*prevent the slider from being positioned outside the image:*/
+                        if (pos < 0) pos = 0;
+                        if (pos > w) pos = w;
+                        /*execute a function that will resize the overlay image according to the cursor:*/
+                        slide(pos);
+                    }
+                    function getCursorPos(e) {
+                        var a, x = 0;
+                        e = e || window.event;
+                        /*get the x positions of the image:*/
+                        a = img.getBoundingClientRect();
+                        /*calculate the cursor's x coordinate, relative to the image:*/
+                        x = e.pageX - a.left;
+                        /*consider any page scrolling:*/
+                        x = x - window.pageXOffset;
+                        return x;
+                    }
+                    function slide(x) {
+                        /*resize the image:*/
+                        img.style.width = x + "px";
+                        /*position the slider:*/
+                        slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+                    }
+                }
+            }
+        </script>
+        
+        <script type="text/javascript">
+            initComparisons();
+        </script>
     </body>
 </html>
